@@ -2,11 +2,14 @@ name: Update event data
 
 on:
   schedule:
-    - cron: "17 5 * * *" # every 24 hours, 05:17 UTC
+    - cron: "17 5 * * *"
   workflow_dispatch:
 
 permissions:
   contents: write
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
 
 jobs:
   update-events:
@@ -27,6 +30,22 @@ jobs:
         env:
           END_DATE: "2026-12-31"
         run: python scraper.py
+
+      - name: Show output summary
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p = Path("data/events.json")
+          print("events.json exists:", p.exists())
+          if p.exists():
+              data = json.loads(p.read_text())
+              events = data.get("events", [])
+              print("events found:", len(events))
+              print("generated_at:", data.get("generated_at"))
+              for e in events[:5]:
+                  print("-", e.get("organization"), e.get("date"), e.get("title"))
+          PY
 
       - name: Commit updated data
         uses: stefanzweifel/git-auto-commit-action@v5
