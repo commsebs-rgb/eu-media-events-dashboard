@@ -91,7 +91,7 @@ NAV_NOISE = {
     "past events", "become a sponsor", "sponsorship opportunities", "image", "share this event",
     "add to calendar", "google calendar", "outlook calendar", "apple calendar", "yahoo calendar",
     "ics export", "cookie policy", "copyright", "i accept", "search", "filter", "all", "next",
-    "previous", "more events", "contact us", "register here", "locatee", "[email protected]", "email protected",
+    "previous", "more events", "contact us", "register here", "[email protected]", "email protected",
 }
 
 SPONSOR_HEADING_RE = re.compile(
@@ -120,6 +120,7 @@ PUBLIC_ORG_TERMS = [
     "dg ", "directorate-general", "ministry", "minister", "government", "permanent representation",
     "united nations", "world health organization", "who", "oecd", "nato", "mep", "commissioner",
     "euronews", "politico", "euractiv", "the parliament", "parliament magazine",
+    "european union", "cinea", "european investment bank", "eib", "world bank",
 ]
 
 GENERIC_IMAGE_ALTS = {
@@ -134,6 +135,7 @@ KNOWN_PRIVATE_ENTITIES = {
     "horse technologies", "fuelseurope", "avio aero", "ge aerospace", "euturbines",
     "international copper association europe", "transport & environment", "norsk hydro", "microsoft",
     "philips", "besins", "chiesi", "corteva", "automotive coalition for europe", "adpa", "airc", "ame", "egea", "figiefa", "insurance europe", "repsol technology lab", "horse technologies", "horse powertrain",
+    "chevron", "theon group", "theon", "cyprus chamber of commerce and industry", "aegean", "getoffers.com", "getoffers", "cleantech for see", "locatee", "cyprus chamber",
 }
 
 
@@ -210,7 +212,21 @@ def normalize_company_name(name: str) -> str:
     name = re.split(r"\s+(?:will|who|where|when|date|time|speaking at|close|register|learn more|convenes|convened)\b", name, 1, flags=re.I)[0]
     name = re.split(r"[\.;\n|•]", name)[0]
     name = re.sub(r"\s{2,}", " ", name).strip(" ,:-–—")
-    return name
+    canon = {
+        "theon": "THEON Group",
+        "theon group": "THEON Group",
+        "aegean": "AEGEAN",
+        "agean": "AEGEAN",
+        "getoffers": "GetOffers.com",
+        "getoffers com": "GetOffers.com",
+        "get offers": "GetOffers.com",
+        "locatee": "LOCATEE",
+        "cleantech for see": "Cleantech for SEE",
+        "cyprus chamber": "Cyprus Chamber of Commerce & Industry",
+        "cyprus chamber of commerce industry": "Cyprus Chamber of Commerce & Industry",
+    }
+    key = re.sub(r"[^a-z0-9]+", " ", name.lower()).strip()
+    return canon.get(key, name)
 
 
 def title_from_image_src(src: str) -> str:
@@ -219,14 +235,11 @@ def title_from_image_src(src: str) -> str:
         return ""
     stem = src.split("?")[0].rstrip("/").split("/")[-1]
     stem = re.sub(r"\.(svg|png|jpe?g|webp)$", "", stem, flags=re.I)
-    stem = re.sub(r"(?:logo|sponsor|partner|colour|color|white|black|transparent|horizontal|vertical|new|final|copy|\d{2,})", " ", stem, flags=re.I)
+    stem = re.sub(r"(?:logo|sponsor|partner|colour|color|white|black|transparent|horizontal|vertical|new|final|copy|scaled|cropped|\d{2,})", " ", stem, flags=re.I)
     stem = re.sub(r"[-_+]+", " ", stem)
-    stem = clean(stem)
-    if not stem or len(stem) < 3:
-        return ""
-    # Keep acronyms upper-case, title case normal words.
-    words = [w.upper() if w.isupper() and len(w) <= 6 else w.capitalize() for w in stem.split()]
-    return normalize_company_name(" ".join(words))
+    stem = re.sub(r"\s+", " ", stem).strip()
+    # Some sites name files with useful brand strings, e.g. chevron-logo.png.
+    return normalize_company_name(stem.title() if stem.islower() else stem)
 
 
 def clean_lines(soup: BeautifulSoup) -> list[str]:
@@ -319,12 +332,15 @@ def is_plausible_sponsor(label: str, require_private: bool = True) -> bool:
         return False
     low = label.lower()
     city_noise = {c.lower() for c in LOCATION_HINTS} | {"brussels", "online", "nicosia", "prague", "renaissance hotel"}
-    hard_noise = NAV_NOISE | GENERIC_IMAGE_ALTS | TITLE_NOISE | {"register here", "locatee", "image", "source", "open", "event details", "start date", "end date"}
+    hard_noise = NAV_NOISE | GENERIC_IMAGE_ALTS | TITLE_NOISE | {"register here", "image", "source", "open", "event details", "start date", "end date"}
     if low in hard_noise or low in city_noise:
         return False
     if "@" in label or "email protected" in low or "[email" in low:
         return False
-    if any(x in low for x in ["cookie", "privacy", "terms", "copyright", "contact us", "sponsorship opportunities", "google maps", "add to calendar"]):
+    if any(x in low for x in ["cookie", "privacy", "terms", "copyright", "contact us", "sponsorship opportunities", "google maps", "add to calendar", "want to partner", "click to find", "register here"]):
+        return False
+    # Reject sentence fragments that sometimes appear near sponsor blocks.
+    if re.search(r"\b(will|can|should|would|explore|address|discuss|programme|schedule|register|interested|livestream|appear here|same topic)\b", low):
         return False
     if SPONSOR_HEADING_RE.fullmatch(label):
         return False
@@ -340,7 +356,7 @@ def is_plausible_sponsor(label: str, require_private: bool = True) -> bool:
     company_signals = [
         "ltd", "limited", "gmbh", "sa", "ag", "nv", "inc", "corp", "company", "group",
         "technologies", "technology", "europe", "foundation", "association", "alliance", "coalition",
-        "forum", "federation", "institute", "council", "union", "industries", "energy", "bank",
+        "forum", "federation", "institute", "council", "union", "industries", "industry", "chamber", "commerce", "energy", "bank",
         "aerospace", "pharma", "mobility", "systems", "power", "fuels", "copper", "transport",
         "automotive", "payments", "data", "parts", "insurance", "garage", "equipment", "aftermarket",
     ]
@@ -431,6 +447,9 @@ def domain_label_from_url(href: str) -> str:
         "horse": "Horse Technologies", "horsepowertrain": "Horse Powertrain", "visa": "Visa",
         "sanofi": "Sanofi", "bayer": "Bayer", "uber": "Uber", "fuelseurope": "FuelsEurope",
         "qualcomm": "Qualcomm", "microsoft": "Microsoft", "philips": "Philips",
+        "chevron": "Chevron", "theon": "THEON Group", "theon-group": "THEON Group",
+        "aegean": "AEGEAN", "getoffers": "GetOffers.com", "cleantech": "Cleantech for SEE",
+        "locatee": "LOCATEE",
     }
     return mapping.get(label, normalize_company_name(label.replace("-", " ").title()))
 
@@ -443,134 +462,188 @@ def add_sponsor_candidate(candidates: list[Sponsor], name: str, role: str, sourc
 
 def dedupe_sponsors(candidates: list[Sponsor]) -> list[Sponsor]:
     out: list[Sponsor] = []
-    seen: dict[str, int] = {}
     rank = {"high": 3, "medium": 2, "low": 1}
+
+    def key_for(name: str) -> str:
+        return re.sub(r"\W+", "", name).lower()
+
     for s in candidates:
         name = normalize_company_name(s.name)
-        key = re.sub(r"\W+", "", name).lower()
-        if not key or not is_plausible_sponsor(name):
+        if not key_for(name) or not is_plausible_sponsor(name):
             continue
         s.name = name
-        if key in seen:
-            idx = seen[key]
-            if rank.get(s.confidence, 0) > rank.get(out[idx].confidence, 0):
-                out[idx] = s
-            continue
-        seen[key] = len(out)
-        out.append(s)
+        k = key_for(name)
+
+        replaced = False
+        for i, existing in enumerate(list(out)):
+            ek = key_for(existing.name)
+            # Merge exact matches and subset variants from filenames such as 'cyprus-chamber-logo.png'.
+            if k == ek or (len(k) > 7 and len(ek) > 7 and (k in ek or ek in k)):
+                better = rank.get(s.confidence, 0) > rank.get(existing.confidence, 0)
+                more_specific = len(s.name) > len(existing.name) + 4
+                if better or more_specific:
+                    out[i] = s
+                replaced = True
+                break
+        if not replaced:
+            out.append(s)
     return out[:24]
 
 
 def collect_logo_and_link_names(block: Tag, source_url: str, role: str, confidence: str = "medium") -> list[Sponsor]:
-    """Collect only names that appear as links or logo metadata inside a verified sponsor/partner section."""
+    """Collect names from logo/link areas that have already been identified as sponsor/partner sections."""
     candidates: list[Sponsor] = []
-    host = urlparse(source_url).netloc.lower().replace("www.", "")
+    source_host = urlparse(source_url).netloc.lower().replace("www.", "")
 
-    for a in block.find_all("a", href=True):
-        href = urljoin(source_url, a.get("href", ""))
-        text = normalize_company_name(a.get_text(" ", strip=True))
-        if text and text.lower() not in NAV_NOISE and text.lower() not in {"image", "register", "open", "source"}:
-            add_sponsor_candidate(candidates, text, role, source_url, "auto-section-link", confidence)
-        # If the link text is just an image, infer from external domain.
-        parsed = urlparse(href)
-        link_host = parsed.netloc.lower().replace("www.", "")
-        if link_host and host not in link_host:
-            add_sponsor_candidate(candidates, domain_label_from_url(href), role, source_url, "auto-section-link-domain", confidence)
-
+    # Prefer logo metadata and outbound sponsor links. Do not treat arbitrary text in the section
+    # as a sponsor, because CTAs, cities and event metadata often live beside partner modules.
     for img in block.find_all("img"):
         values = [img.get("alt", ""), img.get("title", ""), img.get("aria-label", ""), title_from_image_src(img.get("src", ""))]
         parent_link = img.find_parent("a", href=True)
         if parent_link:
-            values.append(domain_label_from_url(urljoin(source_url, parent_link.get("href", ""))))
+            href = urljoin(source_url, parent_link.get("href", ""))
+            values.append(domain_label_from_url(href))
         for value in values:
             add_sponsor_candidate(candidates, value, role, source_url, "auto-section-logo", confidence)
+
+    for a in block.find_all("a", href=True):
+        href = urljoin(source_url, a.get("href", ""))
+        parsed = urlparse(href)
+        link_host = parsed.netloc.lower().replace("www.", "")
+        text = normalize_company_name(a.get_text(" ", strip=True))
+        has_logo = bool(a.find("img"))
+        if link_host and source_host not in link_host:
+            # External partner links are a strong signal even when the anchor only wraps a logo.
+            add_sponsor_candidate(candidates, domain_label_from_url(href), role, source_url, "auto-section-link-domain", confidence)
+        elif text and has_logo:
+            # Only use link text on internal links when it is coupled with a logo.
+            add_sponsor_candidate(candidates, text, role, source_url, "auto-section-logo-link-text", confidence)
     return candidates
 
 
-def section_blocks_after_heading(soup: BeautifulSoup, heading_regex: re.Pattern[str], max_siblings: int = 8) -> list[Tag]:
-    """Return blocks immediately after a verified sponsor/partner heading.
+def section_blocks_after_heading(soup: BeautifulSoup, heading_regex: re.Pattern[str], max_siblings: int = 10) -> list[Tag]:
+    """Return the logo/link blocks belonging to a sponsor/partner section only.
 
-    This deliberately stops at Related Events, Event Details, Programme, Speakers, Location, etc.
-    so that the dashboard does not confuse cities, CTAs or speaker affiliations for sponsors.
+    The Parliament often has a sidebar with Event details, Email, Add to calendar and then
+    Partners. Collecting the whole sidebar captures cities/emails, so this only collects the
+    heading's own small section and following siblings until another section heading appears.
     """
     blocks: list[Tag] = []
-    stop_re = re.compile(r"\b(related events|event details|programme|program|speakers|schedule|location|venue|contact|share this event|add to calendar|on the same topic)\b", re.I)
-
-    # Heading tags with exact or near-exact sponsor/partner labels.
-    for h in soup.find_all(["h1", "h2", "h3", "h4", "h5", "strong", "b", "p", "div"]):
+    stop_re = re.compile(
+        r"\b(related events|event details|programme|program|speakers|schedule|location|venue|contact|"
+        r"share this event|add to calendar|on the same topic|email|category|start date|end date|register|"
+        r"livestream|interested in this event)\b",
+        re.I,
+    )
+    heading_tags = ["h1", "h2", "h3", "h4", "h5", "strong", "b"]
+    for h in soup.find_all(heading_tags):
         label = clean(h.get_text(" ", strip=True))
-        if not label or not heading_regex.search(label):
+        if not label or not heading_regex.fullmatch(label):
             continue
-        # Avoid matching an event title such as "Media Partnership: ..."; we need section headings.
-        if len(label) > 80 and not re.fullmatch(r".*(sponsors?|partners?|supporters?).*", label, flags=re.I):
-            continue
-        parent = h.parent if isinstance(h.parent, Tag) else h
-        blocks.append(parent)
-        sib = parent.find_next_sibling()
+
+        # If the heading's own parent contains logos/links and is small enough, keep it.
+        parent = h.parent if isinstance(h.parent, Tag) else None
+        if parent and (parent.find("img") or parent.find("a", href=True)):
+            parent_text = clean(parent.get_text(" ", strip=True))
+            if len(parent_text) < 500 and not stop_re.search(parent_text.replace(label, "", 1)):
+                blocks.append(parent)
+
+        # Then collect following siblings, stopping when another content section starts.
+        sib = h.find_next_sibling()
+        if sib is None and parent is not None:
+            sib = parent.find_next_sibling()
         for _ in range(max_siblings):
             if not isinstance(sib, Tag):
                 break
             text = clean(sib.get_text(" ", strip=True))
-            if stop_re.search(text):
+            # Stop if this sibling is clearly a new non-partner section.
+            if text and stop_re.search(text) and not heading_regex.search(text):
                 break
-            blocks.append(sib)
+            # Stop at a new unrelated heading.
+            first_heading = sib.find(heading_tags)
+            if first_heading:
+                ht = clean(first_heading.get_text(" ", strip=True))
+                if ht and not heading_regex.fullmatch(ht) and stop_re.search(ht):
+                    break
+            if sib.find("img") or sib.find("a", href=True):
+                blocks.append(sib)
             sib = sib.find_next_sibling()
     return blocks
 
 
 def extract_labelled_text_sponsors(soup: BeautifulSoup, source_url: str) -> list[Sponsor]:
-    """Extract sponsors only from explicit 'sponsored by / supported by / presented by' statements."""
+    """Extract from concise explicit statements such as 'Presented by Visa'.
+
+    Avoid long page-wide matches because they commonly swallow dates, cities and registration CTAs.
+    """
     candidates: list[Sponsor] = []
-    full_text = clean(soup.get_text("\n"))
-    for pattern, role in SPONSOR_PATTERNS:
-        for m in pattern.finditer(full_text):
-            raw = m.group(1)
-            raw = re.split(r"\s*(?:Media Partner|Media Partners|Sponsors?|Partners?|Location|Panellists|Schedule|Contact)\s*:?", raw, 1, flags=re.I)[0]
+    lines = clean_lines(soup)
+    for line in lines:
+        if len(line) > 180:
+            continue
+        for pattern, role in SPONSOR_PATTERNS:
+            m = pattern.search(line)
+            if not m:
+                continue
+            raw = re.split(r"\s*(?:Media Partner|Media Partners|Sponsors?|Partners?|Location|Panellists|Panelists|Schedule|Contact|Register)\s*:?,?", m.group(1), 1, flags=re.I)[0]
             add_sponsor_candidate(candidates, raw, role, source_url, "auto-labelled-text", "medium")
     return candidates
 
 
 def extract_euractiv_sponsors(soup: BeautifulSoup, source_url: str) -> list[Sponsor]:
     candidates: list[Sponsor] = []
-    candidates.extend(extract_labelled_text_sponsors(soup, source_url))
     lines = clean_lines(soup)
-    stop_re = re.compile(r"^(media partner|media partners|location|panellists|panelists|schedule|contact|subscribe|on the same topic|events)$", re.I)
+    stop_re = re.compile(r"^(media partner|media partners|location|panellists|panelists|schedule|contact|subscribe|on the same topic|events|register here|212 events on the same topic)$", re.I)
 
+    # Concise statements like 'Organised by the Automotive Coalition for Europe'.
     for i, line in enumerate(lines):
-        # Euractiv often writes: "Organised by the Automotive Coalition for Europe:" followed by member organisations.
-        m = re.match(r"^(?:Organised|Organized|Co-organised|Co-organized|Sponsored|Supported)\s+by\s+(?:the\s+)?(.+?)(?:\s*:)?$", line, re.I)
+        m = re.match(r"^(?:Organised|Organized|Co-organised|Co-organized)\s+by\s+(?:the\s+)?(.+?)(?:\s*:)?$", line, re.I)
         if m:
-            role = "Organised by" if "organ" in line.lower() else "Sponsored / supported by"
-            lead = m.group(1).strip(" :")
-            add_sponsor_candidate(candidates, lead, role, source_url, "auto-euractiv-organised-by", "high")
-            for w in lines[i + 1 : min(i + 12, len(lines))]:
-                if stop_re.search(w) or SPONSOR_HEADING_RE.search(w) and not re.match(r"^[·•-]", w):
-                    break
-                # Keep bullet-list organisations; remove bullet characters.
-                cleaned = re.sub(r"^[·•\-*]\s*", "", w).strip()
-                add_sponsor_candidate(candidates, cleaned, "Co-organiser / member", source_url, "auto-euractiv-organiser-list", "high")
-
-        if re.match(r"^(sponsored by|sponsors|partners|partner|with the support of)$", line, re.I):
+            add_sponsor_candidate(candidates, m.group(1), "Organised by", source_url, "auto-euractiv-organised-by", "high")
+            # If a short bullet list of organisation members follows, keep those too.
             for w in lines[i + 1 : min(i + 10, len(lines))]:
-                if stop_re.search(w):
+                if stop_re.search(w) or SPONSOR_HEADING_RE.search(w):
                     break
-                add_sponsor_candidate(candidates, re.sub(r"^[·•\-*]\s*", "", w), "Sponsor / partner", source_url, "auto-euractiv-heading-lines", "medium")
+                if len(w) <= 90:
+                    add_sponsor_candidate(candidates, re.sub(r"^[·•\-*]\s*", "", w), "Co-organiser / member", source_url, "auto-euractiv-organiser-list", "high")
 
-    # Image/logo sections around sponsor/partner headings.
-    heading_re = re.compile(r"\b(sponsored by|sponsors?|partners?|organised by|organized by|supported by)\b", re.I)
-    for block in section_blocks_after_heading(soup, heading_re):
-        candidates.extend(collect_logo_and_link_names(block, source_url, "Sponsor / partner", "medium"))
+    # Sections at the bottom like 'SPONSORED BY:' with logos.
+    heading_re = re.compile(r"^(sponsored by:?|sponsors?|partners?|with the support of|supported by|organised by:?|organized by:?)$", re.I)
+    for block in section_blocks_after_heading(soup, heading_re, max_siblings=12):
+        candidates.extend(collect_logo_and_link_names(block, source_url, "Sponsor / partner", "high"))
+
+    # Fallback: if a sponsor heading is followed by a single branded line/logo alt extracted in text.
+    for i, line in enumerate(lines):
+        if re.match(r"^(sponsored by:?|sponsors?|partners?|with the support of|supported by)$", line, re.I):
+            for w in lines[i + 1 : min(i + 5, len(lines))]:
+                if stop_re.search(w) or first_date_text(w):
+                    break
+                if len(w) <= 80:
+                    add_sponsor_candidate(candidates, re.sub(r"^[·•\-*]\s*", "", w), "Sponsor / partner", source_url, "auto-euractiv-heading-lines", "medium")
+
     return dedupe_sponsors(candidates)
 
 
 def extract_parliament_sponsors(soup: BeautifulSoup, source_url: str) -> list[Sponsor]:
     candidates: list[Sponsor] = []
-    # The Parliament places sponsor/partner logos in a dedicated "Sponsors" or "Partners" section.
-    # Do not scan programme/speaker affiliations because those are not necessarily sponsors.
+    # The Parliament places partner/sponsor logos in a right-hand Partners/Sponsors module.
+    # Only scan that module, never the surrounding Event details/sidebar text.
     heading_re = re.compile(r"^(sponsors?|partners?|supporters?|event partners?|commercial partners?)$", re.I)
-    for block in section_blocks_after_heading(soup, heading_re, max_siblings=12):
-        candidates.extend(collect_logo_and_link_names(block, source_url, "Sponsor / partner", "medium"))
-    candidates.extend(extract_labelled_text_sponsors(soup, source_url))
+    for block in section_blocks_after_heading(soup, heading_re, max_siblings=14):
+        candidates.extend(collect_logo_and_link_names(block, source_url, "Partner", "high"))
+
+    # Extra fallback for WordPress-style cards: look for containers whose first heading is Partners/Sponsors.
+    for h in soup.find_all(["h2", "h3", "h4", "h5"]):
+        if not heading_re.fullmatch(clean(h.get_text(" ", strip=True))):
+            continue
+        for parent in list(h.parents)[:4]:
+            if isinstance(parent, Tag) and parent.find("img"):
+                # Remove event detail/mail/add-calendar areas by requiring that the first heading is the partner heading
+                # or that the parent text is short.
+                text = clean(parent.get_text(" ", strip=True))
+                if len(text) < 900:
+                    candidates.extend(collect_logo_and_link_names(parent, source_url, "Partner", "high"))
+                    break
     return dedupe_sponsors(candidates)
 
 
@@ -966,7 +1039,7 @@ def scrape_euronews(scraper: Scraper) -> list[Event]:
 def is_actual_event(event: Event) -> bool:
     title_low = event.title.lower()
     # Exclude logos/news/insights/editorial pages that have dates but are not event pages.
-    if any(x in title_low for x in ["insight", "insights", "news", "blog", "article", "press release", "vacancy"]):
+    if any(x in title_low for x in ["insight", "insights", "news", "blog", "article", "press release", "vacancy", "opinion", "analysis"]):
         return False
     event_words = ["conference", "summit", "forum", "roundtable", "webinar", "debate", "workshop", "dialogue", "event", "awards", "meeting"]
     if any(w in title_low for w in event_words):

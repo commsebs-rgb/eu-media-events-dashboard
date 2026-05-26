@@ -217,7 +217,7 @@
   <section class="stat-grid">
     <div class="stat"><strong id="totalEvents">—</strong><span>events tracked</span></div>
     <div class="stat"><strong id="futureEvents">—</strong><span>upcoming events</span></div>
-    <div class="stat"><strong id="sponsorEvents">—</strong><span>events with sponsor/co-organiser</span></div>
+    <div class="stat"><strong id="sponsorEvents">—</strong><span>events with sponsor/partner</span></div>
     <div class="stat"><strong id="orgCount">—</strong><span>organisations</span></div>
   </section>
 
@@ -225,8 +225,8 @@
     <input id="searchInput" type="search" placeholder="Search title, sector, sponsor, location…" />
     <select id="orgFilter"><option value="">All organisations</option></select>
     <select id="dateFilter">
-      <option value="future">Upcoming only</option>
       <option value="all">All 2026 events</option>
+      <option value="future">Upcoming only</option>
       <option value="sponsored">With sponsors only</option>
       <option value="past">Past only</option>
     </select>
@@ -250,7 +250,7 @@
   let rawEvents = [];
   let sourceNotes = [];
 
-  const state = { q: "", org: "", dateMode: "future" };
+  const state = { q: "", org: "", dateMode: "all" };
   const $ = (id) => document.getElementById(id);
 
   function parseDate(value) {
@@ -283,10 +283,61 @@
     return String(s || "").replace(/[&<>"']/g, m => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", "\"": "&quot;", "'": "&#039;"}[m]));
   }
 
+  const sponsorNoise = new Set([
+    "brussels", "online", "register here", "source", "open", "events calendar", "event", "events",
+    "email protected", "[email protected]", "image", "logo", "want to partner with us", "click to find out more",
+    "european parliament", "euractiv", "politico", "the parliament", "euronews", "logos",
+    "add to calendar", "contact", "category", "start date", "end date", "location", "venue"
+  ]);
+
+  function normaliseSponsorName(name) {
+    let n = String(name || "").replace(/\s+/g, " ").trim();
+    n = n.replace(/\s+logo$/i, "").replace(/^logo\s+/i, "").trim();
+    const key = n.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+    const canon = {
+      "tik tok": "TikTok",
+      "tiktok": "TikTok",
+      "theon": "THEON Group",
+      "theon group": "THEON Group",
+      "aegean": "AEGEAN",
+      "agean": "AEGEAN",
+      "getoffers": "GetOffers.com",
+      "getoffers com": "GetOffers.com",
+      "get offers com": "GetOffers.com",
+      "locatee": "LOCATEE",
+      "cleantech for see": "Cleantech for SEE",
+      "cyprus chamber": "Cyprus Chamber of Commerce & Industry",
+      "cyprus chamber of commerce industry": "Cyprus Chamber of Commerce & Industry"
+    };
+    return canon[key] || n;
+  }
+
+  function isUsefulSponsorName(name) {
+    const n = normaliseSponsorName(name);
+    const low = n.toLowerCase();
+    if (!n || n.length < 2 || n.length > 100) return false;
+    if (sponsorNoise.has(low)) return false;
+    if (low.includes("@") || low.includes("email protected")) return false;
+    if (/\b(cookie|privacy|terms|copyright|register|livestream|interested in this event|same topic|schedule|programme|program|panellists|speakers|contact us|google maps|add to calendar)\b/i.test(n)) return false;
+    if (/\b(will|should|would|explore|address|discuss|appears|appear here)\b/i.test(n)) return false;
+    if (n.split(/\s+/).length > 12) return false;
+    return true;
+  }
+
+  function cleanSponsors(e) {
+    const seen = new Set();
+    return (e.sponsors || []).map(s => ({...s, name: normaliseSponsorName(s.name)})).filter(s => {
+      const key = s.name.toLowerCase().replace(/\W+/g, "");
+      if (!isUsefulSponsorName(s.name) || seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+  }
+
   function eventSearchBlob(e) {
     return [
       e.organization, e.title, e.category, e.city, e.venue,
-      ...(e.sponsors || []).map(s => `${s.name} ${s.role || ""}`)
+      ...cleanSponsors(e).map(s => `${s.name} ${s.role || ""}`)
     ].join(" ").toLowerCase();
   }
 
@@ -295,7 +346,7 @@
     today.setHours(0, 0, 0, 0);
     return rawEvents.filter(e => {
       const eventDate = parseDate(e.date);
-      const hasSponsors = (e.sponsors || []).length > 0;
+      const hasSponsors = cleanSponsors(e).length > 0;
       const matchesText = !state.q || eventSearchBlob(e).includes(state.q.toLowerCase());
       const matchesOrg = !state.org || e.organization === state.org;
       const matchesDate =
@@ -312,7 +363,7 @@
     today.setHours(0, 0, 0, 0);
     $("totalEvents").textContent = rawEvents.length;
     $("futureEvents").textContent = rawEvents.filter(e => parseDate(e.date) >= today).length;
-    $("sponsorEvents").textContent = rawEvents.filter(e => (e.sponsors || []).length).length;
+    $("sponsorEvents").textContent = rawEvents.filter(e => cleanSponsors(e).length).length;
     $("orgCount").textContent = new Set(rawEvents.map(e => e.organization)).size;
   }
 
@@ -322,7 +373,7 @@
   }
 
   function sponsorBadges(e, max = 3) {
-    const sponsors = e.sponsors || [];
+    const sponsors = cleanSponsors(e);
     if (!sponsors.length) return `<span class="badge no-sponsor">No sponsor detected</span>`;
     const visible = sponsors.slice(0, max).map(s => {
       const confidence = s.confidence || "medium";
@@ -336,7 +387,7 @@
     const source = e.url ? `<a class="source-link" href="${escapeHtml(e.url)}" target="_blank" rel="noopener">Source</a>` : "";
     const title = e.url ? `<a href="${escapeHtml(e.url)}" target="_blank" rel="noopener">${escapeHtml(e.title)}</a>` : escapeHtml(e.title);
     const location = [e.venue, e.city].filter(Boolean).join(", ");
-    const sponsorState = (e.sponsors || []).length ? `<span class="badge has-sponsor">Sponsor detected</span>` : `<span class="badge no-sponsor">No sponsor detected</span>`;
+    const sponsorState = cleanSponsors(e).length ? `<span class="badge has-sponsor">Sponsor / partner listed</span>` : `<span class="badge no-sponsor">No sponsor / partner listed</span>`;
 
     return `
       <article class="card">
@@ -395,23 +446,28 @@
   function renderSponsors(events) {
     const panel = $("sponsorsPanel");
     const rows = [];
+
     for (const e of events) {
-      for (const s of (e.sponsors || [])) {
-        const confidence = s.confidence || "medium";
-        rows.push(`
-          <tr>
-            <td><strong>${escapeHtml(s.name)}</strong><br><span class="badge ${confidence}">${escapeHtml(confidence)}</span></td>
-            <td><strong>${escapeHtml(e.title)}</strong><br><span class="small">${escapeHtml(e.organization)} · ${fmtDate(e.date)}</span></td>
-            <td>${escapeHtml(s.role || "Sponsor / partner")}</td>
-            <td>${escapeHtml([e.venue, e.city].filter(Boolean).join(", "))}</td>
-            <td>${e.url ? `<a class="source-link" href="${escapeHtml(e.url)}" target="_blank" rel="noopener">Open</a>` : ""}</td>
-          </tr>
-        `);
-      }
+      const sponsors = cleanSponsors(e);
+      const sponsorsHtml = sponsors.length
+        ? `<div class="sponsor-list">${sponsors.map(s => `<span class="badge ${(s.confidence || "medium")}" title="${escapeHtml(s.role || "Sponsor / partner")}">${escapeHtml(s.name)}</span>`).join("")}</div>`
+        : `<span class="muted">—</span>`;
+      const roles = sponsors.length
+        ? [...new Set(sponsors.map(s => s.role || "Sponsor / partner"))].join(", ")
+        : "";
+      rows.push(`
+        <tr>
+          <td>${sponsorsHtml}</td>
+          <td><strong>${escapeHtml(e.title)}</strong><br><span class="small">${escapeHtml(e.organization)} · ${fmtDate(e.date)}</span></td>
+          <td>${escapeHtml(roles)}</td>
+          <td>${escapeHtml([e.venue, e.city].filter(Boolean).join(", "))}</td>
+          <td>${e.url ? `<a class="source-link" href="${escapeHtml(e.url)}" target="_blank" rel="noopener">Open</a>` : ""}</td>
+        </tr>
+      `);
     }
 
     if (!rows.length) {
-      panel.innerHTML = `<div class="empty">No sponsors or co-organisers are detected for the current filters.</div>`;
+      panel.innerHTML = `<div class="empty">No events match the current filters.</div>`;
       return;
     }
 
@@ -419,7 +475,7 @@
       <table>
         <thead>
           <tr>
-            <th>Sponsor / co-organiser</th>
+            <th>Sponsors / partners / co-organisers</th>
             <th>Event</th>
             <th>Role detected</th>
             <th>Location</th>
@@ -430,6 +486,7 @@
       </table>
     `;
   }
+
 
   function renderNotes() {
     $("notes").innerHTML = sourceNotes.length
@@ -450,8 +507,8 @@
     $("orgFilter").addEventListener("change", (e) => { state.org = e.target.value; render(); });
     $("dateFilter").addEventListener("change", (e) => { state.dateMode = e.target.value; render(); });
     $("resetBtn").addEventListener("click", () => {
-      state.q = ""; state.org = ""; state.dateMode = "future";
-      $("searchInput").value = ""; $("orgFilter").value = ""; $("dateFilter").value = "future";
+      state.q = ""; state.org = ""; state.dateMode = "all";
+      $("searchInput").value = ""; $("orgFilter").value = ""; $("dateFilter").value = "all";
       render();
     });
     document.querySelectorAll(".tab").forEach(btn => {
