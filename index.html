@@ -6,17 +6,23 @@
   <title>EU Media Events Dashboard</title>
   <style>
     :root {
-      --bg: #f6f7fb;
-      --card: #ffffff;
-      --ink: #172033;
+      --bg: #f5f7fb;
+      --surface: #ffffff;
+      --surface-2: #f8fafc;
+      --ink: #111827;
       --muted: #667085;
-      --line: #e6e8ef;
+      --line: #e5e7eb;
       --accent: #243c7a;
-      --accent-soft: #e9eefc;
-      --danger: #a33b3b;
-      --ok: #247a52;
-      --shadow: 0 10px 30px rgba(16, 24, 40, .08);
-      --radius: 18px;
+      --accent-2: #3b5bb8;
+      --accent-soft: #e8eefc;
+      --green: #17634a;
+      --green-soft: #e8f7ef;
+      --amber: #8a5a00;
+      --amber-soft: #fff4dc;
+      --red: #9f2f2f;
+      --red-soft: #fdecec;
+      --shadow: 0 18px 45px rgba(17, 24, 39, .08);
+      --radius: 22px;
     }
 
     * { box-sizing: border-box; }
@@ -24,78 +30,67 @@
     body {
       margin: 0;
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: var(--bg);
+      background:
+        radial-gradient(circle at top left, rgba(36, 60, 122, .14), transparent 36rem),
+        var(--bg);
       color: var(--ink);
     }
 
     header {
-      padding: 32px 24px 18px;
-      background: linear-gradient(135deg, #172033, #243c7a);
+      padding: 34px 24px 22px;
+      background: linear-gradient(135deg, #111827, #243c7a 72%, #3b5bb8);
       color: white;
     }
 
-    .header-inner, main {
-      max-width: 1180px;
-      margin: 0 auto;
-    }
+    .header-inner, main { max-width: 1240px; margin: 0 auto; }
 
     h1 {
       margin: 0 0 8px;
-      font-size: clamp(1.7rem, 2.4vw, 2.5rem);
-      line-height: 1.1;
-      letter-spacing: -.02em;
+      font-size: clamp(1.9rem, 3vw, 3rem);
+      line-height: 1.05;
+      letter-spacing: -.04em;
     }
 
-    .subtitle {
-      margin: 0;
-      max-width: 760px;
-      color: rgba(255,255,255,.82);
-      font-size: 1rem;
+    .subtitle { margin: 0; max-width: 820px; color: rgba(255,255,255,.82); font-size: 1.03rem; }
+    main { padding: 22px 24px 56px; }
+
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin: 0 0 18px;
     }
 
-    main { padding: 22px 24px 48px; }
+    .stat, .card, .tabs, .toolbar, table, .notes {
+      background: rgba(255,255,255,.92);
+      border: 1px solid rgba(229,231,235,.95);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+    }
+
+    .stat { border-radius: var(--radius); padding: 16px; }
+    .stat strong { display: block; font-size: 1.55rem; margin-bottom: 2px; }
+    .stat span { color: var(--muted); font-size: .88rem; }
 
     .toolbar {
       display: grid;
       grid-template-columns: 1.4fr .9fr .8fr auto;
       gap: 12px;
       align-items: center;
-      margin-bottom: 18px;
-    }
-
-    .stat-grid {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 12px;
-      margin: 18px 0;
-    }
-
-    .stat, .card, .tabs {
-      background: var(--card);
-      border: 1px solid var(--line);
+      padding: 12px;
       border-radius: var(--radius);
-      box-shadow: var(--shadow);
+      margin-bottom: 16px;
     }
-
-    .stat { padding: 16px; }
-
-    .stat strong {
-      display: block;
-      font-size: 1.55rem;
-      margin-bottom: 2px;
-    }
-
-    .stat span { color: var(--muted); font-size: .9rem; }
 
     input, select, button {
       width: 100%;
       border: 1px solid var(--line);
-      border-radius: 14px;
+      border-radius: 16px;
       padding: 12px 13px;
       background: white;
       color: var(--ink);
       font: inherit;
-      min-height: 44px;
+      min-height: 46px;
     }
 
     button {
@@ -103,167 +98,92 @@
       background: var(--accent);
       color: white;
       border-color: var(--accent);
-      font-weight: 700;
+      font-weight: 800;
       white-space: nowrap;
       width: auto;
       padding-inline: 18px;
     }
 
-    button.secondary {
-      background: white;
-      color: var(--accent);
-    }
+    button.secondary { background: white; color: var(--accent); }
 
     .tabs {
       display: flex;
       padding: 6px;
       margin: 10px 0 18px;
       gap: 6px;
+      border-radius: var(--radius);
       box-shadow: none;
     }
 
-    .tab {
-      flex: 1;
-      border: 0;
-      background: transparent;
-      color: var(--muted);
-      border-radius: 14px;
-      font-weight: 700;
-    }
-
-    .tab.active {
-      background: var(--accent-soft);
-      color: var(--accent);
-    }
+    .tab { flex: 1; border: 0; background: transparent; color: var(--muted); border-radius: 16px; font-weight: 900; }
+    .tab.active { background: var(--accent-soft); color: var(--accent); }
 
     .panel { display: none; }
     .panel.active { display: block; }
 
-    .week {
-      margin: 22px 0;
-    }
+    .week { margin: 22px 0; }
+    .week-title { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin-bottom: 11px; }
+    .week-title h2 { margin: 0; font-size: 1.18rem; letter-spacing: -.02em; }
+    .week-title span { color: var(--muted); font-size: .9rem; }
 
-    .week-title {
-      display: flex;
-      align-items: baseline;
-      justify-content: space-between;
-      gap: 16px;
-      margin-bottom: 10px;
-    }
-
-    .week-title h2 {
-      margin: 0;
-      font-size: 1.18rem;
-    }
-
-    .week-title span {
-      color: var(--muted);
-      font-size: .9rem;
-    }
-
-    .event-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 14px;
-    }
+    .event-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
 
     .card {
-      padding: 16px;
-      min-height: 190px;
+      border-radius: var(--radius);
+      padding: 17px;
+      min-height: 164px;
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 11px;
+      transition: transform .16s ease, box-shadow .16s ease;
     }
 
-    .meta {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      align-items: center;
-      color: var(--muted);
-      font-size: .88rem;
-    }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 22px 55px rgba(17, 24, 39, .11); }
+
+    .topline, .meta, .sponsor-list { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+    .topline { justify-content: space-between; gap: 10px; }
+    .meta { color: var(--muted); font-size: .9rem; }
+
+    .event-title { font-size: 1.08rem; font-weight: 900; line-height: 1.28; margin: 0; letter-spacing: -.01em; }
+    .event-title a { color: var(--ink); text-decoration: none; }
+    .event-title a:hover { color: var(--accent); text-decoration: underline; }
 
     .badge {
       display: inline-flex;
       align-items: center;
+      gap: 5px;
       border-radius: 999px;
-      padding: 4px 9px;
-      background: #f0f2f6;
-      color: #394256;
+      padding: 5px 10px;
+      background: #eef1f6;
+      color: #3b455a;
       font-size: .78rem;
-      font-weight: 700;
+      font-weight: 850;
+      line-height: 1;
     }
 
-    .org {
-      background: var(--accent-soft);
-      color: var(--accent);
-    }
+    .org { background: var(--accent-soft); color: var(--accent); }
+    .has-sponsor { background: var(--green-soft); color: var(--green); }
+    .no-sponsor { background: #f1f3f7; color: #5b6474; }
+    .manual { background: var(--amber-soft); color: var(--amber); }
+    .auto { background: var(--green-soft); color: var(--green); }
+    .low { background: var(--amber-soft); color: var(--amber); }
+    .high { background: var(--green-soft); color: var(--green); }
+    .medium { background: #edf2ff; color: var(--accent); }
 
-    .manual {
-      background: #fff3d8;
-      color: #7a4c00;
-    }
-
-    .auto {
-      background: #e8f6ef;
-      color: var(--ok);
-    }
-
-    .event-title {
-      font-size: 1.06rem;
-      font-weight: 800;
-      line-height: 1.25;
-      margin: 0;
-    }
-
-    .event-title a {
-      color: var(--ink);
-      text-decoration: none;
-    }
-
-    .event-title a:hover { text-decoration: underline; }
-
-    .description {
-      color: var(--muted);
-      font-size: .92rem;
-      line-height: 1.45;
-      margin: 0;
-    }
-
-    .sponsor-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      margin-top: auto;
-    }
+    .source-link { color: var(--accent); font-weight: 850; text-decoration: none; }
+    .source-link:hover { text-decoration: underline; }
+    .muted { color: var(--muted); }
+    .small { font-size: .84rem; color: var(--muted); }
 
     table {
       width: 100%;
       border-collapse: collapse;
-      background: white;
       border-radius: var(--radius);
       overflow: hidden;
-      box-shadow: var(--shadow);
-      border: 1px solid var(--line);
     }
 
-    th, td {
-      text-align: left;
-      padding: 12px 14px;
-      border-bottom: 1px solid var(--line);
-      vertical-align: top;
-      font-size: .93rem;
-    }
-
-    th {
-      background: #f8f9fc;
-      color: #394256;
-      font-size: .78rem;
-      text-transform: uppercase;
-      letter-spacing: .04em;
-    }
-
+    th, td { text-align: left; padding: 13px 14px; border-bottom: 1px solid var(--line); vertical-align: top; font-size: .93rem; }
+    th { background: #f8fafc; color: #475467; font-size: .76rem; text-transform: uppercase; letter-spacing: .05em; }
     tr:last-child td { border-bottom: 0; }
 
     .empty, .notes {
@@ -275,35 +195,13 @@
       line-height: 1.45;
     }
 
-    .notes {
-      margin-top: 16px;
-      font-size: .92rem;
-    }
+    .notes { margin-top: 16px; font-size: .9rem; }
+    .footerline { margin-top: 18px; color: var(--muted); font-size: .86rem; }
 
-    .footerline {
-      margin-top: 18px;
-      color: var(--muted);
-      font-size: .86rem;
-    }
-
-    .source-link {
-      color: var(--accent);
-      font-weight: 700;
-      text-decoration: none;
-    }
-
-    .source-link:hover { text-decoration: underline; }
-
-    @media (max-width: 880px) {
-      .toolbar, .stat-grid, .event-grid {
-        grid-template-columns: 1fr;
-      }
-
+    @media (max-width: 920px) {
+      .toolbar, .stat-grid, .event-grid { grid-template-columns: 1fr; }
       .tabs { flex-direction: column; }
-
-      th:nth-child(4), td:nth-child(4) {
-        display: none;
-      }
+      th:nth-child(5), td:nth-child(5) { display: none; }
     }
   </style>
 </head>
@@ -311,9 +209,7 @@
 <header>
   <div class="header-inner">
     <h1>EU Media Events Dashboard</h1>
-    <p class="subtitle">
-      Week-by-week calendar and sponsor mapping for POLITICO, Euractiv, The Parliament, Euronews and logos.
-    </p>
+    <p class="subtitle">Week-by-week official-source calendar and sponsor/co-organiser mapping for POLITICO, Euractiv, The Parliament, Euronews and logos.</p>
   </div>
 </header>
 
@@ -321,18 +217,17 @@
   <section class="stat-grid">
     <div class="stat"><strong id="totalEvents">—</strong><span>events tracked</span></div>
     <div class="stat"><strong id="futureEvents">—</strong><span>upcoming events</span></div>
-    <div class="stat"><strong id="sponsorEvents">—</strong><span>events with sponsors</span></div>
+    <div class="stat"><strong id="sponsorEvents">—</strong><span>events with sponsor/co-organiser</span></div>
     <div class="stat"><strong id="orgCount">—</strong><span>organisations</span></div>
   </section>
 
   <section class="toolbar">
-    <input id="searchInput" type="search" placeholder="Search title, category, sponsor, city…" />
-    <select id="orgFilter">
-      <option value="">All organisations</option>
-    </select>
+    <input id="searchInput" type="search" placeholder="Search title, sector, sponsor, location…" />
+    <select id="orgFilter"><option value="">All organisations</option></select>
     <select id="dateFilter">
       <option value="future">Upcoming only</option>
-      <option value="all">All events</option>
+      <option value="all">All 2026 events</option>
+      <option value="sponsored">With sponsors only</option>
       <option value="past">Past only</option>
     </select>
     <button id="resetBtn" class="secondary">Reset</button>
@@ -355,17 +250,12 @@
   let rawEvents = [];
   let sourceNotes = [];
 
-  const state = {
-    q: "",
-    org: "",
-    dateMode: "future",
-  };
-
+  const state = { q: "", org: "", dateMode: "future" };
   const $ = (id) => document.getElementById(id);
 
   function parseDate(value) {
-    const [y, m, d] = value.split("-").map(Number);
-    return new Date(y, m - 1, d);
+    const [y, m, d] = String(value || "").split("-").map(Number);
+    return new Date(y, (m || 1) - 1, d || 1);
   }
 
   function isoWeekStart(date) {
@@ -386,47 +276,40 @@
 
   function fmtDate(value, opts = {}) {
     if (!value) return "";
-    return parseDate(value).toLocaleDateString("en-GB", {
-      day: "2-digit",
-      month: "short",
-      year: "numeric",
-      ...opts
-    });
+    return parseDate(value).toLocaleDateString("en-GB", { day: "2-digit", month: "short", year: "numeric", ...opts });
   }
 
   function escapeHtml(s) {
-    return String(s || "").replace(/[&<>"']/g, m => ({
-      "&": "&amp;", "<": "&lt;", ">": "&gt;", "\"": "&quot;", "'": "&#039;"
-    }[m]));
+    return String(s || "").replace(/[&<>"']/g, m => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", "\"": "&quot;", "'": "&#039;"}[m]));
   }
 
   function eventSearchBlob(e) {
     return [
-      e.organization, e.title, e.category, e.city, e.venue, e.description,
-      ...(e.sponsors || []).map(s => s.name)
+      e.organization, e.title, e.category, e.city, e.venue,
+      ...(e.sponsors || []).map(s => `${s.name} ${s.role || ""}`)
     ].join(" ").toLowerCase();
   }
 
   function filteredEvents() {
     const today = new Date();
     today.setHours(0, 0, 0, 0);
-
     return rawEvents.filter(e => {
       const eventDate = parseDate(e.date);
+      const hasSponsors = (e.sponsors || []).length > 0;
       const matchesText = !state.q || eventSearchBlob(e).includes(state.q.toLowerCase());
       const matchesOrg = !state.org || e.organization === state.org;
       const matchesDate =
         state.dateMode === "all" ||
         (state.dateMode === "future" && eventDate >= today) ||
-        (state.dateMode === "past" && eventDate < today);
+        (state.dateMode === "past" && eventDate < today) ||
+        (state.dateMode === "sponsored" && hasSponsors);
       return matchesText && matchesOrg && matchesDate;
-    }).sort((a, b) => a.date.localeCompare(b.date) || a.organization.localeCompare(b.organization));
+    }).sort((a, b) => a.date.localeCompare(b.date) || a.organization.localeCompare(b.organization) || a.title.localeCompare(b.title));
   }
 
-  function renderStats(events) {
+  function renderStats() {
     const today = new Date();
     today.setHours(0, 0, 0, 0);
-
     $("totalEvents").textContent = rawEvents.length;
     $("futureEvents").textContent = rawEvents.filter(e => parseDate(e.date) >= today).length;
     $("sponsorEvents").textContent = rawEvents.filter(e => (e.sponsors || []).length).length;
@@ -435,41 +318,43 @@
 
   function renderOrgFilter() {
     const orgs = [...new Set(rawEvents.map(e => e.organization))].sort();
-    $("orgFilter").innerHTML = `<option value="">All organisations</option>` +
-      orgs.map(org => `<option value="${escapeHtml(org)}">${escapeHtml(org)}</option>`).join("");
+    $("orgFilter").innerHTML = `<option value="">All organisations</option>` + orgs.map(org => `<option value="${escapeHtml(org)}">${escapeHtml(org)}</option>`).join("");
   }
 
-  function sponsorBadges(e) {
-    if (!e.sponsors || !e.sponsors.length) {
-      return `<span class="badge">No sponsor detected</span>`;
-    }
-    return e.sponsors.map(s => {
-      const cls = s.extraction === "manual" ? "manual" : "auto";
-      return `<span class="badge ${cls}" title="${escapeHtml(s.role || "")}">${escapeHtml(s.name)}</span>`;
+  function sponsorBadges(e, max = 3) {
+    const sponsors = e.sponsors || [];
+    if (!sponsors.length) return `<span class="badge no-sponsor">No sponsor detected</span>`;
+    const visible = sponsors.slice(0, max).map(s => {
+      const confidence = s.confidence || "medium";
+      return `<span class="badge ${confidence}" title="${escapeHtml(s.role || "Sponsor / partner")}">${escapeHtml(s.name)}</span>`;
     }).join("");
+    const more = sponsors.length > max ? `<span class="badge">+${sponsors.length - max} more</span>` : "";
+    return visible + more;
   }
 
   function eventCard(e) {
     const source = e.url ? `<a class="source-link" href="${escapeHtml(e.url)}" target="_blank" rel="noopener">Source</a>` : "";
-    const title = e.url
-      ? `<a href="${escapeHtml(e.url)}" target="_blank" rel="noopener">${escapeHtml(e.title)}</a>`
-      : escapeHtml(e.title);
+    const title = e.url ? `<a href="${escapeHtml(e.url)}" target="_blank" rel="noopener">${escapeHtml(e.title)}</a>` : escapeHtml(e.title);
+    const location = [e.venue, e.city].filter(Boolean).join(", ");
+    const sponsorState = (e.sponsors || []).length ? `<span class="badge has-sponsor">Sponsor detected</span>` : `<span class="badge no-sponsor">No sponsor detected</span>`;
 
     return `
       <article class="card">
-        <div class="meta">
+        <div class="topline">
           <span class="badge org">${escapeHtml(e.organization)}</span>
-          <span>${fmtDate(e.date)}</span>
-          ${e.time_text ? `<span>${escapeHtml(e.time_text)}</span>` : ""}
-          ${e.city ? `<span>${escapeHtml(e.city)}</span>` : ""}
           ${source}
         </div>
         <h3 class="event-title">${title}</h3>
         <div class="meta">
-          ${e.category ? `<span class="badge">${escapeHtml(e.category)}</span>` : ""}
-          ${e.confidence ? `<span class="badge">confidence: ${escapeHtml(e.confidence)}</span>` : ""}
+          <span>${fmtDate(e.date)}</span>
+          ${e.time_text ? `<span>${escapeHtml(e.time_text)}</span>` : ""}
+          ${location ? `<span>${escapeHtml(location)}</span>` : ""}
         </div>
-        ${e.description ? `<p class="description">${escapeHtml(e.description)}</p>` : ""}
+        <div class="meta">
+          ${e.category ? `<span class="badge">${escapeHtml(e.category)}</span>` : ""}
+          ${e.confidence ? `<span class="badge ${escapeHtml(e.confidence)}">confidence: ${escapeHtml(e.confidence)}</span>` : ""}
+          ${sponsorState}
+        </div>
         <div class="sponsor-list">${sponsorBadges(e)}</div>
       </article>
     `;
@@ -495,7 +380,6 @@
       const end = new Date(start);
       end.setDate(start.getDate() + 6);
       const weekNo = isoWeekNumber(start);
-
       return `
         <section class="week">
           <div class="week-title">
@@ -510,43 +394,39 @@
 
   function renderSponsors(events) {
     const panel = $("sponsorsPanel");
-    if (!events.length) {
-      panel.innerHTML = `<div class="empty">No events match the current filters.</div>`;
-      return;
+    const rows = [];
+    for (const e of events) {
+      for (const s of (e.sponsors || [])) {
+        const confidence = s.confidence || "medium";
+        rows.push(`
+          <tr>
+            <td><strong>${escapeHtml(s.name)}</strong><br><span class="badge ${confidence}">${escapeHtml(confidence)}</span></td>
+            <td><strong>${escapeHtml(e.title)}</strong><br><span class="small">${escapeHtml(e.organization)} · ${fmtDate(e.date)}</span></td>
+            <td>${escapeHtml(s.role || "Sponsor / partner")}</td>
+            <td>${escapeHtml([e.venue, e.city].filter(Boolean).join(", "))}</td>
+            <td>${e.url ? `<a class="source-link" href="${escapeHtml(e.url)}" target="_blank" rel="noopener">Open</a>` : ""}</td>
+          </tr>
+        `);
+      }
     }
 
-    const rows = events.map(e => {
-      const sponsors = (e.sponsors || []).length
-        ? e.sponsors.map(s => `${escapeHtml(s.name)} <span class="badge ${s.extraction === "manual" ? "manual" : "auto"}">${escapeHtml(s.extraction || "auto")}</span>`).join("<br>")
-        : `<span class="badge">No sponsor detected</span>`;
-
-      const source = e.url ? `<a class="source-link" href="${escapeHtml(e.url)}" target="_blank" rel="noopener">Open</a>` : "";
-
-      return `
-        <tr>
-          <td><strong>${escapeHtml(e.title)}</strong><br><span class="muted">${escapeHtml(e.category || "")}</span></td>
-          <td>${escapeHtml(e.organization)}</td>
-          <td>${fmtDate(e.date)}${e.time_text ? `<br>${escapeHtml(e.time_text)}` : ""}</td>
-          <td>${escapeHtml(e.city || "")}</td>
-          <td>${sponsors}</td>
-          <td>${source}</td>
-        </tr>
-      `;
-    }).join("");
+    if (!rows.length) {
+      panel.innerHTML = `<div class="empty">No sponsors or co-organisers are detected for the current filters.</div>`;
+      return;
+    }
 
     panel.innerHTML = `
       <table>
         <thead>
           <tr>
+            <th>Sponsor / co-organiser</th>
             <th>Event</th>
-            <th>Organisation</th>
-            <th>Date</th>
-            <th>City</th>
-            <th>Sponsors / partners</th>
+            <th>Role detected</th>
+            <th>Location</th>
             <th>Source</th>
           </tr>
         </thead>
-        <tbody>${rows}</tbody>
+        <tbody>${rows.join("")}</tbody>
       </table>
     `;
   }
@@ -559,38 +439,21 @@
 
   function render() {
     const events = filteredEvents();
-    renderStats(events);
+    renderStats();
     renderCalendar(events);
     renderSponsors(events);
     renderNotes();
   }
 
   function bindUI() {
-    $("searchInput").addEventListener("input", (e) => {
-      state.q = e.target.value;
-      render();
-    });
-
-    $("orgFilter").addEventListener("change", (e) => {
-      state.org = e.target.value;
-      render();
-    });
-
-    $("dateFilter").addEventListener("change", (e) => {
-      state.dateMode = e.target.value;
-      render();
-    });
-
+    $("searchInput").addEventListener("input", (e) => { state.q = e.target.value; render(); });
+    $("orgFilter").addEventListener("change", (e) => { state.org = e.target.value; render(); });
+    $("dateFilter").addEventListener("change", (e) => { state.dateMode = e.target.value; render(); });
     $("resetBtn").addEventListener("click", () => {
-      state.q = "";
-      state.org = "";
-      state.dateMode = "future";
-      $("searchInput").value = "";
-      $("orgFilter").value = "";
-      $("dateFilter").value = "future";
+      state.q = ""; state.org = ""; state.dateMode = "future";
+      $("searchInput").value = ""; $("orgFilter").value = ""; $("dateFilter").value = "future";
       render();
     });
-
     document.querySelectorAll(".tab").forEach(btn => {
       btn.addEventListener("click", () => {
         document.querySelectorAll(".tab").forEach(b => b.classList.remove("active"));
@@ -609,11 +472,9 @@
     sourceNotes = data.source_notes || [];
     renderOrgFilter();
     render();
-
-    const updated = data.last_updated_utc
-      ? new Date(data.last_updated_utc).toLocaleString("en-GB", { timeZoneName: "short" })
-      : "unknown";
-    $("updatedLine").textContent = `Last data update: ${updated}. Data source: data/events.json`;
+    const updated = data.last_updated_utc ? new Date(data.last_updated_utc).toLocaleString("en-GB", { timeZoneName: "short" }) : "unknown";
+    const windowText = data.date_window ? `${data.date_window.start} to ${data.date_window.end}` : "configured window";
+    $("updatedLine").textContent = `Last data update: ${updated}. Date window: ${windowText}. Data source: data/events.json`;
   }
 
   bindUI();
