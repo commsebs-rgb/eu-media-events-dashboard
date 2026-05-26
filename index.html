@@ -1,0 +1,627 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EU Media Events Dashboard</title>
+  <style>
+    :root {
+      --bg: #f6f7fb;
+      --card: #ffffff;
+      --ink: #172033;
+      --muted: #667085;
+      --line: #e6e8ef;
+      --accent: #243c7a;
+      --accent-soft: #e9eefc;
+      --danger: #a33b3b;
+      --ok: #247a52;
+      --shadow: 0 10px 30px rgba(16, 24, 40, .08);
+      --radius: 18px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+    }
+
+    header {
+      padding: 32px 24px 18px;
+      background: linear-gradient(135deg, #172033, #243c7a);
+      color: white;
+    }
+
+    .header-inner, main {
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(1.7rem, 2.4vw, 2.5rem);
+      line-height: 1.1;
+      letter-spacing: -.02em;
+    }
+
+    .subtitle {
+      margin: 0;
+      max-width: 760px;
+      color: rgba(255,255,255,.82);
+      font-size: 1rem;
+    }
+
+    main { padding: 22px 24px 48px; }
+
+    .toolbar {
+      display: grid;
+      grid-template-columns: 1.4fr .9fr .8fr auto;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 18px;
+    }
+
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin: 18px 0;
+    }
+
+    .stat, .card, .tabs {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .stat { padding: 16px; }
+
+    .stat strong {
+      display: block;
+      font-size: 1.55rem;
+      margin-bottom: 2px;
+    }
+
+    .stat span { color: var(--muted); font-size: .9rem; }
+
+    input, select, button {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 12px 13px;
+      background: white;
+      color: var(--ink);
+      font: inherit;
+      min-height: 44px;
+    }
+
+    button {
+      cursor: pointer;
+      background: var(--accent);
+      color: white;
+      border-color: var(--accent);
+      font-weight: 700;
+      white-space: nowrap;
+      width: auto;
+      padding-inline: 18px;
+    }
+
+    button.secondary {
+      background: white;
+      color: var(--accent);
+    }
+
+    .tabs {
+      display: flex;
+      padding: 6px;
+      margin: 10px 0 18px;
+      gap: 6px;
+      box-shadow: none;
+    }
+
+    .tab {
+      flex: 1;
+      border: 0;
+      background: transparent;
+      color: var(--muted);
+      border-radius: 14px;
+      font-weight: 700;
+    }
+
+    .tab.active {
+      background: var(--accent-soft);
+      color: var(--accent);
+    }
+
+    .panel { display: none; }
+    .panel.active { display: block; }
+
+    .week {
+      margin: 22px 0;
+    }
+
+    .week-title {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 10px;
+    }
+
+    .week-title h2 {
+      margin: 0;
+      font-size: 1.18rem;
+    }
+
+    .week-title span {
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    .event-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .card {
+      padding: 16px;
+      min-height: 190px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+      color: var(--muted);
+      font-size: .88rem;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      padding: 4px 9px;
+      background: #f0f2f6;
+      color: #394256;
+      font-size: .78rem;
+      font-weight: 700;
+    }
+
+    .org {
+      background: var(--accent-soft);
+      color: var(--accent);
+    }
+
+    .manual {
+      background: #fff3d8;
+      color: #7a4c00;
+    }
+
+    .auto {
+      background: #e8f6ef;
+      color: var(--ok);
+    }
+
+    .event-title {
+      font-size: 1.06rem;
+      font-weight: 800;
+      line-height: 1.25;
+      margin: 0;
+    }
+
+    .event-title a {
+      color: var(--ink);
+      text-decoration: none;
+    }
+
+    .event-title a:hover { text-decoration: underline; }
+
+    .description {
+      color: var(--muted);
+      font-size: .92rem;
+      line-height: 1.45;
+      margin: 0;
+    }
+
+    .sponsor-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--line);
+    }
+
+    th, td {
+      text-align: left;
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+      font-size: .93rem;
+    }
+
+    th {
+      background: #f8f9fc;
+      color: #394256;
+      font-size: .78rem;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+    }
+
+    tr:last-child td { border-bottom: 0; }
+
+    .empty, .notes {
+      padding: 18px;
+      border: 1px dashed var(--line);
+      border-radius: var(--radius);
+      background: white;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+
+    .notes {
+      margin-top: 16px;
+      font-size: .92rem;
+    }
+
+    .footerline {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: .86rem;
+    }
+
+    .source-link {
+      color: var(--accent);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .source-link:hover { text-decoration: underline; }
+
+    @media (max-width: 880px) {
+      .toolbar, .stat-grid, .event-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .tabs { flex-direction: column; }
+
+      th:nth-child(4), td:nth-child(4) {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <h1>EU Media Events Dashboard</h1>
+    <p class="subtitle">
+      Week-by-week calendar and sponsor mapping for POLITICO, Euractiv, The Parliament, Euronews and logos.
+    </p>
+  </div>
+</header>
+
+<main>
+  <section class="stat-grid">
+    <div class="stat"><strong id="totalEvents">—</strong><span>events tracked</span></div>
+    <div class="stat"><strong id="futureEvents">—</strong><span>upcoming events</span></div>
+    <div class="stat"><strong id="sponsorEvents">—</strong><span>events with sponsors</span></div>
+    <div class="stat"><strong id="orgCount">—</strong><span>organisations</span></div>
+  </section>
+
+  <section class="toolbar">
+    <input id="searchInput" type="search" placeholder="Search title, category, sponsor, city…" />
+    <select id="orgFilter">
+      <option value="">All organisations</option>
+    </select>
+    <select id="dateFilter">
+      <option value="future">Upcoming only</option>
+      <option value="all">All events</option>
+      <option value="past">Past only</option>
+    </select>
+    <button id="resetBtn" class="secondary">Reset</button>
+  </section>
+
+  <nav class="tabs" aria-label="Dashboard tabs">
+    <button class="tab active" data-tab="calendarPanel">Calendar</button>
+    <button class="tab" data-tab="sponsorsPanel">Sponsors by event</button>
+  </nav>
+
+  <section id="calendarPanel" class="panel active"></section>
+  <section id="sponsorsPanel" class="panel"></section>
+
+  <div id="notes" class="notes"></div>
+  <p class="footerline" id="updatedLine">Loading data…</p>
+</main>
+
+<script>
+  const DATA_URL = "data/events.json";
+  let rawEvents = [];
+  let sourceNotes = [];
+
+  const state = {
+    q: "",
+    org: "",
+    dateMode: "future",
+  };
+
+  const $ = (id) => document.getElementById(id);
+
+  function parseDate(value) {
+    const [y, m, d] = value.split("-").map(Number);
+    return new Date(y, m - 1, d);
+  }
+
+  function isoWeekStart(date) {
+    const d = new Date(date);
+    const day = d.getDay() || 7;
+    d.setDate(d.getDate() - day + 1);
+    d.setHours(0, 0, 0, 0);
+    return d;
+  }
+
+  function isoWeekNumber(date) {
+    const d = new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()));
+    const dayNum = d.getUTCDay() || 7;
+    d.setUTCDate(d.getUTCDate() + 4 - dayNum);
+    const yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
+    return Math.ceil((((d - yearStart) / 86400000) + 1) / 7);
+  }
+
+  function fmtDate(value, opts = {}) {
+    if (!value) return "";
+    return parseDate(value).toLocaleDateString("en-GB", {
+      day: "2-digit",
+      month: "short",
+      year: "numeric",
+      ...opts
+    });
+  }
+
+  function escapeHtml(s) {
+    return String(s || "").replace(/[&<>"']/g, m => ({
+      "&": "&amp;", "<": "&lt;", ">": "&gt;", "\"": "&quot;", "'": "&#039;"
+    }[m]));
+  }
+
+  function eventSearchBlob(e) {
+    return [
+      e.organization, e.title, e.category, e.city, e.venue, e.description,
+      ...(e.sponsors || []).map(s => s.name)
+    ].join(" ").toLowerCase();
+  }
+
+  function filteredEvents() {
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+
+    return rawEvents.filter(e => {
+      const eventDate = parseDate(e.date);
+      const matchesText = !state.q || eventSearchBlob(e).includes(state.q.toLowerCase());
+      const matchesOrg = !state.org || e.organization === state.org;
+      const matchesDate =
+        state.dateMode === "all" ||
+        (state.dateMode === "future" && eventDate >= today) ||
+        (state.dateMode === "past" && eventDate < today);
+      return matchesText && matchesOrg && matchesDate;
+    }).sort((a, b) => a.date.localeCompare(b.date) || a.organization.localeCompare(b.organization));
+  }
+
+  function renderStats(events) {
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+
+    $("totalEvents").textContent = rawEvents.length;
+    $("futureEvents").textContent = rawEvents.filter(e => parseDate(e.date) >= today).length;
+    $("sponsorEvents").textContent = rawEvents.filter(e => (e.sponsors || []).length).length;
+    $("orgCount").textContent = new Set(rawEvents.map(e => e.organization)).size;
+  }
+
+  function renderOrgFilter() {
+    const orgs = [...new Set(rawEvents.map(e => e.organization))].sort();
+    $("orgFilter").innerHTML = `<option value="">All organisations</option>` +
+      orgs.map(org => `<option value="${escapeHtml(org)}">${escapeHtml(org)}</option>`).join("");
+  }
+
+  function sponsorBadges(e) {
+    if (!e.sponsors || !e.sponsors.length) {
+      return `<span class="badge">No sponsor detected</span>`;
+    }
+    return e.sponsors.map(s => {
+      const cls = s.extraction === "manual" ? "manual" : "auto";
+      return `<span class="badge ${cls}" title="${escapeHtml(s.role || "")}">${escapeHtml(s.name)}</span>`;
+    }).join("");
+  }
+
+  function eventCard(e) {
+    const source = e.url ? `<a class="source-link" href="${escapeHtml(e.url)}" target="_blank" rel="noopener">Source</a>` : "";
+    const title = e.url
+      ? `<a href="${escapeHtml(e.url)}" target="_blank" rel="noopener">${escapeHtml(e.title)}</a>`
+      : escapeHtml(e.title);
+
+    return `
+      <article class="card">
+        <div class="meta">
+          <span class="badge org">${escapeHtml(e.organization)}</span>
+          <span>${fmtDate(e.date)}</span>
+          ${e.time_text ? `<span>${escapeHtml(e.time_text)}</span>` : ""}
+          ${e.city ? `<span>${escapeHtml(e.city)}</span>` : ""}
+          ${source}
+        </div>
+        <h3 class="event-title">${title}</h3>
+        <div class="meta">
+          ${e.category ? `<span class="badge">${escapeHtml(e.category)}</span>` : ""}
+          ${e.confidence ? `<span class="badge">confidence: ${escapeHtml(e.confidence)}</span>` : ""}
+        </div>
+        ${e.description ? `<p class="description">${escapeHtml(e.description)}</p>` : ""}
+        <div class="sponsor-list">${sponsorBadges(e)}</div>
+      </article>
+    `;
+  }
+
+  function renderCalendar(events) {
+    const panel = $("calendarPanel");
+    if (!events.length) {
+      panel.innerHTML = `<div class="empty">No events match the current filters.</div>`;
+      return;
+    }
+
+    const grouped = new Map();
+    for (const e of events) {
+      const weekStart = isoWeekStart(parseDate(e.date));
+      const key = weekStart.toISOString().slice(0, 10);
+      if (!grouped.has(key)) grouped.set(key, []);
+      grouped.get(key).push(e);
+    }
+
+    panel.innerHTML = [...grouped.entries()].map(([key, group]) => {
+      const start = parseDate(key);
+      const end = new Date(start);
+      end.setDate(start.getDate() + 6);
+      const weekNo = isoWeekNumber(start);
+
+      return `
+        <section class="week">
+          <div class="week-title">
+            <h2>Week ${weekNo}: ${fmtDate(key, { day: "2-digit", month: "short" })} – ${end.toLocaleDateString("en-GB", { day: "2-digit", month: "short", year: "numeric" })}</h2>
+            <span>${group.length} event${group.length === 1 ? "" : "s"}</span>
+          </div>
+          <div class="event-grid">${group.map(eventCard).join("")}</div>
+        </section>
+      `;
+    }).join("");
+  }
+
+  function renderSponsors(events) {
+    const panel = $("sponsorsPanel");
+    if (!events.length) {
+      panel.innerHTML = `<div class="empty">No events match the current filters.</div>`;
+      return;
+    }
+
+    const rows = events.map(e => {
+      const sponsors = (e.sponsors || []).length
+        ? e.sponsors.map(s => `${escapeHtml(s.name)} <span class="badge ${s.extraction === "manual" ? "manual" : "auto"}">${escapeHtml(s.extraction || "auto")}</span>`).join("<br>")
+        : `<span class="badge">No sponsor detected</span>`;
+
+      const source = e.url ? `<a class="source-link" href="${escapeHtml(e.url)}" target="_blank" rel="noopener">Open</a>` : "";
+
+      return `
+        <tr>
+          <td><strong>${escapeHtml(e.title)}</strong><br><span class="muted">${escapeHtml(e.category || "")}</span></td>
+          <td>${escapeHtml(e.organization)}</td>
+          <td>${fmtDate(e.date)}${e.time_text ? `<br>${escapeHtml(e.time_text)}` : ""}</td>
+          <td>${escapeHtml(e.city || "")}</td>
+          <td>${sponsors}</td>
+          <td>${source}</td>
+        </tr>
+      `;
+    }).join("");
+
+    panel.innerHTML = `
+      <table>
+        <thead>
+          <tr>
+            <th>Event</th>
+            <th>Organisation</th>
+            <th>Date</th>
+            <th>City</th>
+            <th>Sponsors / partners</th>
+            <th>Source</th>
+          </tr>
+        </thead>
+        <tbody>${rows}</tbody>
+      </table>
+    `;
+  }
+
+  function renderNotes() {
+    $("notes").innerHTML = sourceNotes.length
+      ? `<strong>Notes:</strong><br>${sourceNotes.map(escapeHtml).join("<br>")}`
+      : "";
+  }
+
+  function render() {
+    const events = filteredEvents();
+    renderStats(events);
+    renderCalendar(events);
+    renderSponsors(events);
+    renderNotes();
+  }
+
+  function bindUI() {
+    $("searchInput").addEventListener("input", (e) => {
+      state.q = e.target.value;
+      render();
+    });
+
+    $("orgFilter").addEventListener("change", (e) => {
+      state.org = e.target.value;
+      render();
+    });
+
+    $("dateFilter").addEventListener("change", (e) => {
+      state.dateMode = e.target.value;
+      render();
+    });
+
+    $("resetBtn").addEventListener("click", () => {
+      state.q = "";
+      state.org = "";
+      state.dateMode = "future";
+      $("searchInput").value = "";
+      $("orgFilter").value = "";
+      $("dateFilter").value = "future";
+      render();
+    });
+
+    document.querySelectorAll(".tab").forEach(btn => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".tab").forEach(b => b.classList.remove("active"));
+        document.querySelectorAll(".panel").forEach(p => p.classList.remove("active"));
+        btn.classList.add("active");
+        $(btn.dataset.tab).classList.add("active");
+      });
+    });
+  }
+
+  async function loadData() {
+    const response = await fetch(`${DATA_URL}?cacheBust=${Date.now()}`);
+    if (!response.ok) throw new Error(`Could not load ${DATA_URL}`);
+    const data = await response.json();
+    rawEvents = (data.events || []).filter(e => e.date && e.title);
+    sourceNotes = data.source_notes || [];
+    renderOrgFilter();
+    render();
+
+    const updated = data.last_updated_utc
+      ? new Date(data.last_updated_utc).toLocaleString("en-GB", { timeZoneName: "short" })
+      : "unknown";
+    $("updatedLine").textContent = `Last data update: ${updated}. Data source: data/events.json`;
+  }
+
+  bindUI();
+  loadData().catch(err => {
+    $("calendarPanel").innerHTML = `<div class="empty">Could not load event data: ${escapeHtml(err.message)}</div>`;
+    $("updatedLine").textContent = "Data load failed.";
+    console.error(err);
+  });
+</script>
+</body>
+</html>
