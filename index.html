@@ -225,7 +225,7 @@
     <input id="searchInput" type="search" placeholder="Search title, sector, sponsor, location…" />
     <select id="orgFilter"><option value="">All organisations</option></select>
     <select id="dateFilter">
-      <option value="all">All 2026 events</option>
+      <option value="all">Current → end 2026</option>
       <option value="future">Upcoming only</option>
       <option value="sponsored">With sponsors only</option>
       <option value="past">Past only</option>
@@ -525,7 +525,14 @@
     const response = await fetch(`${DATA_URL}?cacheBust=${Date.now()}`);
     if (!response.ok) throw new Error(`Could not load ${DATA_URL}`);
     const data = await response.json();
-    rawEvents = (data.events || []).filter(e => e.date && e.title);
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    const end2026 = parseDate("2026-12-31");
+    rawEvents = (data.events || []).filter(e => {
+      if (!e.date || !e.title) return false;
+      const d = parseDate(e.date);
+      return d >= today && d <= end2026;
+    });
     sourceNotes = data.source_notes || [];
     renderOrgFilter();
     render();
