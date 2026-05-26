@@ -1,0 +1,36 @@
+name: Update event data
+
+on:
+  schedule:
+    - cron: "17 5 * * *" # every 24 hours, 05:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-events:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Scrape official event sources
+        env:
+          START_DATE: "2026-01-01"
+          END_DATE: "2026-12-31"
+        run: python scraper.py
+
+      - name: Commit updated data
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update official event data"
+          file_pattern: data/events.json
