@@ -25,7 +25,6 @@ jobs:
 
       - name: Scrape official event sources
         env:
-          START_DATE: "2026-01-01"
           END_DATE: "2026-12-31"
         run: python scraper.py
 
