@@ -2,7 +2,7 @@ name: Update event data
 
 on:
   schedule:
-    - cron: "17 5 * * *"
+    - cron: "17 5 * * *" # every 24 hours, 05:17 UTC
   workflow_dispatch:
 
 permissions:
@@ -28,6 +28,7 @@ jobs:
 
       - name: Scrape official event sources
         env:
+          START_DATE: "2026-01-01"
           END_DATE: "2026-12-31"
         run: python scraper.py
 
@@ -42,9 +43,10 @@ jobs:
               data = json.loads(p.read_text())
               events = data.get("events", [])
               print("events found:", len(events))
-              print("generated_at:", data.get("generated_at"))
-              for e in events[:5]:
-                  print("-", e.get("organization"), e.get("date"), e.get("title"))
+              print("date window:", data.get("date_window"))
+              print("last updated:", data.get("last_updated_utc"))
+              for e in events[:8]:
+                  print("-", e.get("organization"), e.get("date"), e.get("title"), "sponsors:", [s.get("name") for s in e.get("sponsors", [])[:5]])
           PY
 
       - name: Commit updated data
