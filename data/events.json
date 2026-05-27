@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-05-27T13:12:18+00:00",
+  "last_updated_utc": "2026-05-27T13:41:22+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -405,15 +405,15 @@
     },
     {
       "organization": "Euronews",
-      "title": "Euronews Health Summit",
+      "title": "Euronews Health Summit 2026",
       "date": "2026-03-17",
-      "date_text": "17 March 2026",
+      "date_text": "Tuesday, March 17, 2026",
       "end_date": "",
-      "time_text": "12:30 pm",
-      "city": "Euronews Health Summit 2026",
-      "venue": "",
-      "category": "Euronews Events",
-      "url": "https://events.euronews.com/health_summit_2026",
+      "time_text": "Doors open at 12:30 PM",
+      "city": "Brussels",
+      "venue": "Cardo Brussels",
+      "category": "Health",
+      "url": "https://events.euronews.com/health_summit_2026/sitemap.xml",
       "description": "Europe’s health landscape is evolving at speed, driven by emerging challenges, medical breakthroughs, and renewed efforts to build resilient healthcare systems across the EU. Access, preparedness, and sustainability remain central to the EU’s health priorities.",
       "sponsors": [
         {
@@ -426,7 +426,7 @@
       ],
       "confidence": "high",
       "source_official": true,
-      "id": "25781251961dc119"
+      "id": "72e2709ffde23522"
     },
     {
       "organization": "Euractiv",
