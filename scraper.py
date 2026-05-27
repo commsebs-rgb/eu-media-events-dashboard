@@ -52,7 +52,7 @@ END_DATE = date.fromisoformat(os.getenv("END_DATE", "2026-12-31"))
 
 USER_AGENT = os.getenv(
     "USER_AGENT",
-    "Mozilla/5.0 (compatible; EUEventDashboard/4.0; +https://github.com/commsebs-rgb/eu-media-events-dashboard)",
+    "Mozilla/5.0 (compatible; EUEventDashboard/4.1; +https://github.com/commsebs-rgb/eu-media-events-dashboard)",
 )
 REQUEST_DELAY_SECONDS = float(os.getenv("REQUEST_DELAY_SECONDS", "0.8"))
 TIMEOUT_SECONDS = int(os.getenv("TIMEOUT_SECONDS", "30"))
@@ -149,6 +149,20 @@ KNOWN_PRIVATE_ENTITIES = {
 # the official page every 24h for title/venue/sponsor changes, but these guards
 # prevent unrelated dates from overriding the event-level date.
 KNOWN_EVENT_FIXES = [
+    {
+        "url_contains": ["health_summit_2026", "euronews-health-summit-2026"],
+        "title_contains": ["euronews health summit", "health summit 2026"],
+        "title": "Euronews Health Summit 2026",
+        "date_text": "Tuesday, March 17, 2026",
+        "date": "2026-03-17",
+        "end_date": "",
+        "time_text": "Doors open at 12:30 PM",
+        "city": "Brussels",
+        "venue": "Cardo Brussels",
+        "category": "Health",
+        "sponsors": ["Sobi"],
+        "confidence": "high",
+    },
     {
         "url_contains": ["health-care-summit-2026", "healthcare-summit-2026"],
         "title_contains": ["health care summit", "healthcare summit"],
@@ -1779,38 +1793,91 @@ def remove_unreliable_politico_dates(events: list[Event]) -> list[Event]:
     return cleaned
 
 def discover_euronews_event_links(scraper: Scraper) -> set[str]:
+    """Discover official Euronews event microsites from the calendar page.
+
+    The Euronews events page is partly JavaScript-rendered, so links can appear as
+    normal anchors, JSON strings, or sitemap URLs. This function checks all three and
+    keeps a known-current official microsite as a safety net.
+    """
     links = {
         "https://events.euronews.com/health_summit_2026",
     }
     seeds = ["https://events.euronews.com/events", "https://events.euronews.com/"]
+    bad_paths = {"/", "/events", "/privacy", "/terms", "/privacy-policy", "/terms-and-conditions"}
+
     for seed in seeds:
-        soup = scraper.soup(seed)
-        if not soup:
+        html = scraper.get(seed)
+        if not html:
             continue
+        soup = BeautifulSoup(html, "html.parser")
+
+        # 1) Normal anchor links.
         for a in soup.find_all("a", href=True):
             href = urljoin(seed, a["href"]).split("#")[0]
             parsed = urlparse(href)
-            if parsed.netloc == "events.euronews.com" and parsed.path not in {"/", "/events"}:
+            if parsed.netloc == "events.euronews.com" and parsed.path not in bad_paths:
                 if not any(x in parsed.path for x in ["/speaker/", "/session/", "/privacy", "/terms"]):
                     links.add(href)
-    # Try sitemap if present.
+
+        # 2) JS/JSON-rendered links embedded in the HTML.
+        for raw in re.findall(r"https?://events\.euronews\.com/[A-Za-z0-9_./%-]+", html):
+            href = raw.split("#")[0].rstrip('\"\'<>),.;')
+            parsed = urlparse(href)
+            if parsed.path not in bad_paths and not any(x in parsed.path for x in ["/speaker/", "/session/", "/privacy", "/terms"]):
+                links.add(href)
+        for raw in re.findall(r"[\"'](/(?:[A-Za-z0-9]+[A-Za-z0-9_-]*(?:/[A-Za-z0-9_-]+)*))[\"']", html):
+            href = urljoin(seed, raw).split("#")[0]
+            parsed = urlparse(href)
+            if parsed.netloc == "events.euronews.com" and parsed.path not in bad_paths:
+                if not any(x in parsed.path for x in ["/speaker/", "/session/", "/privacy", "/terms", "/static", "/assets"]):
+                    links.add(href)
+
+    # 3) Try sitemap if present.
     for sm in ["https://events.euronews.com/sitemap.xml", "https://events.euronews.com/sitemap_index.xml"]:
         xml = scraper.get(sm)
         if not xml:
             continue
         for m in re.finditer(r"https://events\.euronews\.com/[^<\s]+", xml):
-            href = m.group(0).strip()
-            if not any(x in href for x in ["/speaker/", "/session/"]):
+            href = m.group(0).strip().split("#")[0]
+            parsed = urlparse(href)
+            if parsed.path not in bad_paths and not any(x in href for x in ["/speaker/", "/session/", "/privacy", "/terms"]):
                 links.add(href)
     return links
 
 
 def scrape_euronews(scraper: Scraper) -> list[Event]:
     events: list[Event] = []
+    seen_urls: set[str] = set()
     for href in sorted(discover_euronews_event_links(scraper)):
+        if href in seen_urls:
+            continue
+        seen_urls.add(href)
         ev = extract_event_from_detail(scraper, "Euronews", href, "Euronews Events")
         if ev:
             events.append(ev)
+
+    # Safety net for the current official Euronews event microsite. The page is still
+    # scraped above for live sponsor/partner changes; this prevents it disappearing if
+    # the JavaScript calendar page temporarily stops exposing the link or title/date.
+    if not any("health_summit_2026" in e.url for e in events):
+        url = "https://events.euronews.com/health_summit_2026"
+        ev = Event(
+            organization="Euronews",
+            title="Euronews Health Summit 2026",
+            date="2026-03-17",
+            date_text="Tuesday, March 17, 2026",
+            time_text="Doors open at 12:30 PM",
+            city="Brussels",
+            venue="Cardo Brussels",
+            category="Health",
+            url=url,
+            description="Official Euronews Health Summit 2026 event page.",
+            sponsors=[],
+            confidence="high",
+        )
+        ev.sponsors = extract_sponsors_from_page(scraper, url)
+        apply_known_event_fix(ev)
+        events.append(ev)
     return events
 
 
