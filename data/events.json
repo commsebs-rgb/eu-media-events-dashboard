@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-05-27T07:38:54+00:00",
+  "last_updated_utc": "2026-05-27T08:04:35+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -22,48 +22,6 @@
     "Sponsor confidence is high for manual entries, medium for labelled text/logo extraction, and low for affiliation/programme inference."
   ],
   "events": [
-    {
-      "organization": "POLITICO",
-      "title": "Davos 2026 – Party",
-      "date": "2026-01-22",
-      "date_text": "January 22, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Agriculture and Food, Technology, Politics",
-      "url": "https://www.politico.eu/event/davos-2026-party/",
-      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Bulletin Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris POLITI",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "6a9b1f248aad800e"
-    },
-    {
-      "organization": "POLITICO",
-      "title": "Back in the game? Europe’s race for digital leadership",
-      "date": "2026-01-27",
-      "date_text": "January 27, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Digital",
-      "url": "https://www.politico.eu/event/back-in-the-game-europes-race-for-digital-leadership/",
-      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Bulletin Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris POLITI",
-      "sponsors": [
-        {
-          "name": "Connect Europe",
-          "role": "Sponsor / partner",
-          "source_url": "https://www.politico.eu/event/back-in-the-game-europes-race-for-digital-leadership/",
-          "extraction": "auto-section-logo",
-          "confidence": "medium"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "c73c0e47a4301ae1"
-    },
     {
       "organization": "The Parliament",
       "title": "APA Awards 2026",
@@ -93,13 +51,6 @@
         },
         {
           "name": "Aboca",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/apa-awards/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Www",
           "role": "Partner",
           "source_url": "https://events.theparliamentmagazine.eu/event/apa-awards/",
           "extraction": "auto-section-logo",
@@ -139,35 +90,11 @@
           "source_url": "https://events.theparliamentmagazine.eu/event/apa-awards/",
           "extraction": "auto-section-logo",
           "confidence": "high"
-        },
-        {
-          "name": "Ship",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/apa-awards/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
         }
       ],
       "confidence": "high",
       "source_official": true,
       "id": "ab55d13e89564730"
-    },
-    {
-      "organization": "POLITICO",
-      "title": "Pro Roundtable – Tech",
-      "date": "2026-01-29",
-      "date_text": "January 29, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Agriculture and Food, Technology, Digital",
-      "url": "https://www.politico.eu/event/pro-roundtable-tech-2/",
-      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Bulletin Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris POLITI",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "3514d79a886ba34c"
     },
     {
       "organization": "The Parliament",
@@ -181,152 +108,10 @@
       "category": "PM+ Talks",
       "url": "https://events.theparliamentmagazine.eu/event/eu-presidency-outlook-cyprus/",
       "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Ship",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/eu-presidency-outlook-cyprus/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        }
-      ],
+      "sponsors": [],
       "confidence": "high",
       "source_official": true,
       "id": "7eb7f7972daf1a58"
-    },
-    {
-      "organization": "POLITICO",
-      "title": "R&A Workshop – Quantum",
-      "date": "2026-02-05",
-      "date_text": "February 5, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Agriculture and Food, Technology, Digital",
-      "url": "https://www.politico.eu/event/prad-workshop-quantum/",
-      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Bulletin Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris POLITI",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "a133f9a6aed2ba41"
-    },
-    {
-      "organization": "POLITICO",
-      "title": "Municipales 2026: vers un grand chamboule-tout?",
-      "date": "2026-02-10",
-      "date_text": "February 10, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Agriculture and Food, Technology, Politics",
-      "url": "https://www.politico.eu/event/municipales-2026-vers-un-grand-chamboule-tout/",
-      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Bulletin Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris POLITI",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "bc25bd6836318dbe"
-    },
-    {
-      "organization": "POLITICO",
-      "title": "Pro Roundtable – Healthcare",
-      "date": "2026-02-10",
-      "date_text": "February 10, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Agriculture and Food, Technology, Politics",
-      "url": "https://www.politico.eu/event/pro-roundtable-healthcare/",
-      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Bulletin Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris POLITI",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "5f26e7efbc395b37"
-    },
-    {
-      "organization": "POLITICO",
-      "title": "Reshaping Transatlantic Security and Defense: Insights from POLITICO’s international poll",
-      "date": "2026-02-12",
-      "date_text": "February 12, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Defense",
-      "url": "https://www.politico.eu/event/reshaping-transatlantic-security-and-defense-insights-from-politicos-international-poll/",
-      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Bulletin Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris POLITI",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "63b492a82f061039"
-    },
-    {
-      "organization": "POLITICO",
-      "title": "Let’s find common ground – Mainz",
-      "date": "2026-02-19",
-      "date_text": "February 19, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Agriculture and Food, Technology, Politics",
-      "url": "https://www.politico.eu/event/lets-find-common-ground-mainz/",
-      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Bulletin Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris POLITI",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "d4a238176e1806e6"
-    },
-    {
-      "organization": "POLITICO",
-      "title": "Pro Roundtable – Defense",
-      "date": "2026-02-19",
-      "date_text": "February 19, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Defense",
-      "url": "https://www.politico.eu/event/pro-roundtable-defense-2/",
-      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Bulletin Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris POLITI",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "71f4437b89c7dc10"
-    },
-    {
-      "organization": "POLITICO",
-      "title": "Jubiläumsparty",
-      "date": "2026-02-23",
-      "date_text": "February 23, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Agriculture and Food, Technology, Digital",
-      "url": "https://www.politico.eu/event/jubilaumsparty2026/",
-      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Bulletin Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris POLITI",
-      "sponsors": [
-        {
-          "name": "Roche",
-          "role": "Sponsor / partner",
-          "source_url": "https://www.politico.eu/event/jubilaumsparty2026/",
-          "extraction": "auto-section-logo",
-          "confidence": "medium"
-        },
-        {
-          "name": "Titanhq",
-          "role": "Sponsor / partner",
-          "source_url": "https://www.politico.eu/event/jubilaumsparty2026/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "medium"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "abaa8c860ac17dc9"
     },
     {
       "organization": "The Parliament",
@@ -368,13 +153,6 @@
           "source_url": "https://events.theparliamentmagazine.eu/event/tech-digital-and-ai-summit-2/",
           "extraction": "auto-section-logo",
           "confidence": "high"
-        },
-        {
-          "name": "Ship",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/tech-digital-and-ai-summit-2/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
         }
       ],
       "confidence": "high",
@@ -397,23 +175,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "2401752ef218c643"
-    },
-    {
-      "organization": "POLITICO",
-      "title": "Pro Roundtable – Energy and Climate UK",
-      "date": "2026-03-03",
-      "date_text": "March 3, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Energy",
-      "url": "https://www.politico.eu/event/pro-roundtable-energy-and-climate-uk/",
-      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Bulletin Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris POLITI",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "55cd39ea54e3ce31"
     },
     {
       "organization": "Euractiv",
@@ -503,21 +264,7 @@
       "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
       "sponsors": [
         {
-          "name": "Ship",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/international-womens-day-talks-2/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
           "name": "Besins Healthcare",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/international-womens-day-talks-2/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Www",
           "role": "Partner",
           "source_url": "https://events.theparliamentmagazine.eu/event/international-womens-day-talks-2/",
           "extraction": "auto-section-logo",
@@ -575,40 +322,6 @@
       "id": "fb7b88b7fa793e23"
     },
     {
-      "organization": "POLITICO",
-      "title": "Debrief: Eskalation im Nahen Osten",
-      "date": "2026-03-05",
-      "date_text": "March 5, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Agriculture and Food, Technology, Politics",
-      "url": "https://www.politico.eu/event/debrief-eskalation-im-nahen-osten/",
-      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Bulletin Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris POLITI",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "d03cc0fdf6aa88d7"
-    },
-    {
-      "organization": "POLITICO",
-      "title": "Pro Briefing – War in the Middle East: Fallout for Europe, energy prices and beyond",
-      "date": "2026-03-05",
-      "date_text": "March 5, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Energy",
-      "url": "https://www.politico.eu/event/politico-pro-briefing-war-in-the-middle-east-fallout-for-europe-energy-prices-and-beyond/",
-      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Bulletin Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris POLITI",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "42f1864fffafa7b5"
-    },
-    {
       "organization": "Euractiv",
       "title": "VOLTAGE PRO BRIEFING 2026",
       "date": "2026-03-12",
@@ -624,23 +337,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "7af7084008831f28"
-    },
-    {
-      "organization": "POLITICO",
-      "title": "POLITICO Pro – Energie et Climat France",
-      "date": "2026-03-12",
-      "date_text": "March 12, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Agriculture and Food, Technology, Politics",
-      "url": "https://www.politico.eu/event/politico-pro-petit-dejeuner-energie-et-climat-france/",
-      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Bulletin Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris POLITI",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "0e1867afe50014e9"
     },
     {
       "organization": "Euractiv",
@@ -768,40 +464,6 @@
       "id": "ea3a343064637dee"
     },
     {
-      "organization": "POLITICO",
-      "title": "Pro Gesundheit – Launch Event",
-      "date": "2026-03-19",
-      "date_text": "March 19, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Agriculture and Food, Technology, Politics",
-      "url": "https://www.politico.eu/event/pro-gesundheit-launch-event/",
-      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Bulletin Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris POLITI",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "578f94a7a5db7fd7"
-    },
-    {
-      "organization": "POLITICO",
-      "title": "Pro Roundtable – Competition and Industrial Policy",
-      "date": "2026-03-19",
-      "date_text": "March 19, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Agriculture and Food, Technology, Digital",
-      "url": "https://www.politico.eu/event/pro-roundtable-competition-industrial-policy/",
-      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Bulletin Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris POLITI",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "46e2350a70ffbbe0"
-    },
-    {
       "organization": "The Parliament",
       "title": "SMEs Forum 2026",
       "date": "2026-03-19",
@@ -830,20 +492,6 @@
         },
         {
           "name": "Shopify",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/smes-forum-2026/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Www",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/smes-forum-2026/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Ship",
           "role": "Partner",
           "source_url": "https://events.theparliamentmagazine.eu/event/smes-forum-2026/",
           "extraction": "auto-section-logo",
@@ -880,23 +528,6 @@
       "id": "7c297694fdb57d67"
     },
     {
-      "organization": "POLITICO",
-      "title": "Playbook Paris Débrief: l’analyse des résultats des élections municipales à J+3",
-      "date": "2026-03-25",
-      "date_text": "March 25, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Agriculture and Food, Technology, Politics",
-      "url": "https://www.politico.eu/event/playbook-paris-debrief-lanalyse-des-resultats-des-elections-municipales-a-j3/",
-      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Bulletin Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris POLITI",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "9263e04705a93bd3"
-    },
-    {
       "organization": "The Parliament",
       "title": "From fields to flight: Resilient farms, sustainable fuels",
       "date": "2026-03-25",
@@ -918,13 +549,6 @@
         },
         {
           "name": "Corteva",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/from-fields-to-flight-resilient-farms-sustainable-fuels/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Www",
           "role": "Partner",
           "source_url": "https://events.theparliamentmagazine.eu/event/from-fields-to-flight-resilient-farms-sustainable-fuels/",
           "extraction": "auto-section-logo",
@@ -987,40 +611,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "b03e14a6a9c9713d"
-    },
-    {
-      "organization": "POLITICO",
-      "title": "Policy Breakfast – Digitalisierung im Mittelstand",
-      "date": "2026-04-14",
-      "date_text": "April 14, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Agriculture and Food, Technology, Politics",
-      "url": "https://www.politico.eu/event/policy-breakfast-digitalisierung-im-mittelstand/",
-      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Bulletin Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris POLITI",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "0b08f6ff9b599954"
-    },
-    {
-      "organization": "POLITICO",
-      "title": "Pro Roundtable – Trade UK",
-      "date": "2026-04-14",
-      "date_text": "April 14, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Trade",
-      "url": "https://www.politico.eu/event/pro-roundtable-trade-uk/",
-      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Bulletin Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris POLITI",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "0696e9278656ad35"
     },
     {
       "organization": "Euractiv",
@@ -1090,20 +680,6 @@
           "source_url": "https://events.theparliamentmagazine.eu/event/addressing-cardio-renal-metabolic-diseases-in-europes-cardiovascular-health-plan/",
           "extraction": "auto-section-logo",
           "confidence": "high"
-        },
-        {
-          "name": "Www",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/addressing-cardio-renal-metabolic-diseases-in-europes-cardiovascular-health-plan/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Ship",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/addressing-cardio-renal-metabolic-diseases-in-europes-cardiovascular-health-plan/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
         }
       ],
       "confidence": "high",
@@ -1132,13 +708,6 @@
         },
         {
           "name": "Chiesi",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Www",
           "role": "Partner",
           "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
           "extraction": "auto-section-logo",
@@ -1202,13 +771,6 @@
         },
         {
           "name": "Ptcbio",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Ship",
           "role": "Partner",
           "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
           "extraction": "auto-section-logo",
@@ -1290,6 +852,20 @@
           "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
           "extraction": "auto-section-logo",
           "confidence": "high"
+        },
+        {
+          "name": "Christina K Picsart AiImageEnhancer 03 10 49 713975",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Christina Kyriakopoulou",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
         }
       ],
       "confidence": "high",
@@ -1328,13 +904,6 @@
       "sponsors": [
         {
           "name": "Qualcomm",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/the-future-of-ip-in-europe-navigating-innovation-and-growth/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Www",
           "role": "Partner",
           "source_url": "https://events.theparliamentmagazine.eu/event/the-future-of-ip-in-europe-navigating-innovation-and-growth/",
           "extraction": "auto-section-logo",
@@ -1451,23 +1020,6 @@
       "id": "b8fd9a52d9f0f9bc"
     },
     {
-      "organization": "POLITICO",
-      "title": "Pro Roundtable – Mobility",
-      "date": "2026-04-23",
-      "date_text": "April 23, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Mobility",
-      "url": "https://www.politico.eu/event/pro-roundtable-mobility-3/",
-      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Bulletin Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris POLITI",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "8d0c4da578978e36"
-    },
-    {
       "organization": "The Parliament",
       "title": "Advancing Technology Neutrality in the CO₂ Standards: How can the Parliament contribute?",
       "date": "2026-04-28",
@@ -1482,13 +1034,6 @@
       "sponsors": [
         {
           "name": "FuelsEurope",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/advancing-technology-neutrality-in-the-co%e2%82%82-standards-how-can-the-parliament-contribute/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Www",
           "role": "Partner",
           "source_url": "https://events.theparliamentmagazine.eu/event/advancing-technology-neutrality-in-the-co%e2%82%82-standards-how-can-the-parliament-contribute/",
           "extraction": "auto-section-logo",
@@ -1513,7 +1058,7 @@
       "description": "Events Calendar Euractiv organises policy events in Brussels and other European capitals. Find out more about Euractiv Event Partnerships",
       "sponsors": [
         {
-          "name": "Efpia",
+          "name": "EFPIA",
           "role": "Sponsor / partner",
           "source_url": "https://events.euractiv.com/event/info/health-policy-conference-2026",
           "extraction": "auto-section-link-domain",
@@ -1527,7 +1072,7 @@
           "confidence": "high"
         },
         {
-          "name": "Medtecheurope",
+          "name": "MedTech Europe",
           "role": "Sponsor / partner",
           "source_url": "https://events.euractiv.com/event/info/health-policy-conference-2026",
           "extraction": "auto-section-link-domain",
@@ -1537,23 +1082,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "d27a9309aea1ef96"
-    },
-    {
-      "organization": "POLITICO",
-      "title": "POLITICO & Bayer’s Competitive Europe Salon Dinner",
-      "date": "2026-05-05",
-      "date_text": "May 5, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Agriculture and Food, Technology, Politics",
-      "url": "https://www.politico.eu/event/politico-bayers-competitive-europe-salon-dinner/",
-      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Bulletin Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris POLITI",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "4bfbb98c293cc1ec"
     },
     {
       "organization": "The Parliament",
@@ -1602,20 +1130,6 @@
           "source_url": "https://events.theparliamentmagazine.eu/event/circular-economy-forum/",
           "extraction": "auto-section-logo",
           "confidence": "high"
-        },
-        {
-          "name": "Www",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/circular-economy-forum/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Ship",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/circular-economy-forum/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
         }
       ],
       "confidence": "high",
@@ -1640,23 +1154,6 @@
       "id": "b3876c532f5a623b"
     },
     {
-      "organization": "POLITICO",
-      "title": "POLITICO Pro Leaders Club Dinner & Discussion: How AI is reshaping Europe",
-      "date": "2026-05-06",
-      "date_text": "May 6, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Agriculture and Food, Technology, Politics",
-      "url": "https://www.politico.eu/event/politico-pro-connect-leaders-club-dinner-discussion-how-ai-is-reshaping-europe/",
-      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Bulletin Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris POLITI",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "65838b023e396027"
-    },
-    {
       "organization": "The Parliament",
       "title": "Powering Europe’s competitiveness: Scaling renewable solutions for a secure and affordable transition",
       "date": "2026-05-06",
@@ -1671,13 +1168,6 @@
       "sponsors": [
         {
           "name": "Liquid Gas Europe 11 11 45 721664",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/powering-europes-competitiveness-renewable-fuels-for-a-secure-and-affordable-transition/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Www",
           "role": "Partner",
           "source_url": "https://events.theparliamentmagazine.eu/event/powering-europes-competitiveness-renewable-fuels-for-a-secure-and-affordable-transition/",
           "extraction": "auto-section-logo",
@@ -1851,40 +1341,6 @@
       "id": "9d3ab2f8a5f70c87"
     },
     {
-      "organization": "POLITICO",
-      "title": "Pro Roundtable – Financial Services UK",
-      "date": "2026-05-12",
-      "date_text": "May 12, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Financial Services",
-      "url": "https://www.politico.eu/event/pro-roundtable-financial-services-uk/",
-      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Bulletin Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris POLITI",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "7cc7f5a106b4388f"
-    },
-    {
-      "organization": "POLITICO",
-      "title": "The King’s Speech preview: Everything policy pros need to know",
-      "date": "2026-05-12",
-      "date_text": "May 12, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Agriculture and Food, Technology, Digital",
-      "url": "https://www.politico.eu/event/the-kings-speech-preview-everything-policy-pros-need-to-know/",
-      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Bulletin Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris POLITI",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "5f2b231e387fc3d4"
-    },
-    {
       "organization": "The Parliament",
       "title": "Solarplaza Summit Poland",
       "date": "2026-05-12",
@@ -1916,13 +1372,6 @@
       "sponsors": [
         {
           "name": "Hipra",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/the-eu-biotech-act-strengthening-biomanufacturing-and-scaling-strategic-health-projects/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Ship",
           "role": "Partner",
           "source_url": "https://events.theparliamentmagazine.eu/event/the-eu-biotech-act-strengthening-biomanufacturing-and-scaling-strategic-health-projects/",
           "extraction": "auto-section-logo",
@@ -1968,23 +1417,6 @@
       "id": "ce503fda664446e4"
     },
     {
-      "organization": "POLITICO",
-      "title": "The live extension of our journalism",
-      "date": "2026-05-21",
-      "date_text": "May 21, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Agriculture and Food, Technology, Politics",
-      "url": "https://www.politico.eu/events/past-events",
-      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Bulletin Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris POLITI",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "f10e206f46f7c77e"
-    },
-    {
       "organization": "Euractiv",
       "title": "Euractiv Pro Briefing - FIRST AID edition II",
       "date": "2026-05-27",
@@ -2015,21 +1447,7 @@
       "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
       "sponsors": [
         {
-          "name": "Ship",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/cyprus-forward-shaping-eu-and-mediterranean-horizons/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
           "name": "Chevron",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/cyprus-forward-shaping-eu-and-mediterranean-horizons/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Www",
           "role": "Partner",
           "source_url": "https://events.theparliamentmagazine.eu/event/cyprus-forward-shaping-eu-and-mediterranean-horizons/",
           "extraction": "auto-section-logo",
@@ -2140,79 +1558,20 @@
     },
     {
       "organization": "POLITICO",
-      "title": "POLITICO 28 – Class of 2025 After Party",
-      "date": "2026-05-28",
-      "date_text": "May 28, 2026",
+      "title": "POLITICO’s Energy & Climate Forum",
+      "date": "2026-06-01",
+      "date_text": "June 1, 2026",
       "end_date": "",
       "time_text": "",
-      "city": "Brussels",
+      "city": "Brussels + online",
       "venue": "",
-      "category": "Agriculture and Food, Technology, Politics",
-      "url": "https://www.politico.eu/event/politico-28-class-of-2025-after-party/",
-      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Bulletin Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris POLITI",
-      "sponsors": [
-        {
-          "name": "TikTok",
-          "role": "Sponsor / partner",
-          "source_url": "https://www.politico.eu/event/politico-28-class-of-2025-after-party/",
-          "extraction": "auto-section-logo",
-          "confidence": "medium"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "3d93957933815620"
-    },
-    {
-      "organization": "POLITICO",
-      "title": "PRO Leaders Club Dinner Discussion: Europe’s energy reset: What priorities now and next?",
-      "date": "2026-05-28",
-      "date_text": "May 28, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Energy",
-      "url": "https://www.politico.eu/event/pro-leaders-club-dinner-discussion-europes-energy-reset-what-priorities-now-and-next/",
-      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Bulletin Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris POLITI",
+      "category": "Energy and Climate, Forums",
+      "url": "https://www.politico.eu/energy-climate-forum-2026/",
+      "description": "Fallback entry from official POLITICO event page target; update will be replaced if the page exposes event metadata.",
       "sponsors": [],
-      "confidence": "high",
+      "confidence": "medium",
       "source_official": true,
-      "id": "2175c7d4146db9d8"
-    },
-    {
-      "organization": "POLITICO",
-      "title": "Pro Roundtable – Sustainability",
-      "date": "2026-05-28",
-      "date_text": "May 28, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Sustainability",
-      "url": "https://www.politico.eu/event/pro-roundtable-sustainability-2/",
-      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Bulletin Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris POLITI",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "f07f9e6f2e86967c"
-    },
-    {
-      "organization": "POLITICO",
-      "title": "The live extension of our journalism",
-      "date": "2026-05-28",
-      "date_text": "May 28, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Agriculture and Food, Technology, Politics",
-      "url": "https://www.politico.eu/events/future-events/",
-      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Bulletin Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris POLITI",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "2d3eab10797f3b8b"
+      "id": "d75729ba5983b177"
     },
     {
       "organization": "Euractiv",
@@ -2279,23 +1638,6 @@
       "id": "5be1b78aa6d51ace"
     },
     {
-      "organization": "POLITICO",
-      "title": "Pro Roundtable – Tech UK",
-      "date": "2026-06-02",
-      "date_text": "June 2, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Agriculture and Food, Technology, Digital",
-      "url": "https://www.politico.eu/event/pro-roundtable-tech-uk/",
-      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Bulletin Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris POLITI",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "a11cb0956209c7ab"
-    },
-    {
       "organization": "The Parliament",
       "title": "From awareness to action: Advancing menopause policy for a competitive and equal Europe",
       "date": "2026-06-02",
@@ -2349,13 +1691,6 @@
         },
         {
           "name": "Horse Powertrain",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/made-in-europe-innovation-decarbonising-mobility-today/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Ship",
           "role": "Partner",
           "source_url": "https://events.theparliamentmagazine.eu/event/made-in-europe-innovation-decarbonising-mobility-today/",
           "extraction": "auto-section-logo",
@@ -2419,20 +1754,6 @@
           "source_url": "https://events.theparliamentmagazine.eu/event/european-conference-on-rare-diseases-and-orphan-products-ecrd-2026/",
           "extraction": "auto-section-logo",
           "confidence": "high"
-        },
-        {
-          "name": "Www",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/european-conference-on-rare-diseases-and-orphan-products-ecrd-2026/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Ship",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/european-conference-on-rare-diseases-and-orphan-products-ecrd-2026/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
         }
       ],
       "confidence": "high",
@@ -2454,13 +1775,6 @@
       "sponsors": [
         {
           "name": "FuelsEurope 23 08 59 313711",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/european-industry-forum-2026/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Www",
           "role": "Partner",
           "source_url": "https://events.theparliamentmagazine.eu/event/european-industry-forum-2026/",
           "extraction": "auto-section-logo",
@@ -2489,13 +1803,6 @@
         },
         {
           "name": "Iru",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/european-industry-forum-2026/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Ship",
           "role": "Partner",
           "source_url": "https://events.theparliamentmagazine.eu/event/european-industry-forum-2026/",
           "extraction": "auto-section-logo",
@@ -2563,23 +1870,6 @@
       "id": "cf110a5698ae2aaf"
     },
     {
-      "organization": "POLITICO",
-      "title": "Brüssel-Alumni Stammtisch – Special Edition",
-      "date": "2026-06-04",
-      "date_text": "June 4, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Agriculture and Food, Technology, Politics",
-      "url": "https://www.politico.eu/event/brussel-alumni-stammtisch/",
-      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Bulletin Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris POLITI",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "5d9025f06ec1e9a1"
-    },
-    {
       "organization": "The Parliament",
       "title": "Unlocking Europe’s growth potential: Finance, digitalisation and the future of entrepreneurship",
       "date": "2026-06-04",
@@ -2601,13 +1891,6 @@
         },
         {
           "name": "Business",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/europes-growth-engine-empowering-small-businesses-in-the-age-of-ai/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Ship",
           "role": "Partner",
           "source_url": "https://events.theparliamentmagazine.eu/event/europes-growth-engine-empowering-small-businesses-in-the-age-of-ai/",
           "extraction": "auto-section-logo",
@@ -2704,35 +1987,11 @@
           "source_url": "https://events.euractiv.com/event/info/the-eu-fertiliser-action-plan-ets-cbam-and-the-fertiliser-industry",
           "extraction": "auto-section-logo",
           "confidence": "high"
-        },
-        {
-          "name": "Www",
-          "role": "Sponsor / partner",
-          "source_url": "https://events.euractiv.com/event/info/the-eu-fertiliser-action-plan-ets-cbam-and-the-fertiliser-industry",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
         }
       ],
       "confidence": "high",
       "source_official": true,
       "id": "d6e622c7bff5a798"
-    },
-    {
-      "organization": "POLITICO",
-      "title": "Pro Petit-Déjeuner – Tech",
-      "date": "2026-06-09",
-      "date_text": "June 9, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Agriculture and Food, Technology, Politics",
-      "url": "https://www.politico.eu/event/politico-pro-tech/",
-      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Bulletin Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris POLITI",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "0bc8a4344ca18629"
     },
     {
       "organization": "The Parliament",
@@ -2749,13 +2008,6 @@
       "sponsors": [
         {
           "name": "Besins Healthcare",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/womens-health-and-menopause-turning-momentum-into-action/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Www",
           "role": "Partner",
           "source_url": "https://events.theparliamentmagazine.eu/event/womens-health-and-menopause-turning-momentum-into-action/",
           "extraction": "auto-section-logo",
@@ -2792,35 +2044,11 @@
           "source_url": "https://events.euractiv.com/event/info/hybrid-construction-as-a-solution-to-mitigate-climate-and-housing-crises",
           "extraction": "auto-section-logo",
           "confidence": "high"
-        },
-        {
-          "name": "Www",
-          "role": "Sponsor / partner",
-          "source_url": "https://events.euractiv.com/event/info/hybrid-construction-as-a-solution-to-mitigate-climate-and-housing-crises",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
         }
       ],
       "confidence": "high",
       "source_official": true,
       "id": "313f9f5b8fec660b"
-    },
-    {
-      "organization": "POLITICO",
-      "title": "Pro Roundtable – Trade",
-      "date": "2026-06-11",
-      "date_text": "June 11, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Trade",
-      "url": "https://www.politico.eu/event/pro-roundtable-trade-3/",
-      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Bulletin Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris POLITI",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "c8e1c0fe0c9bb192"
     },
     {
       "organization": "The Parliament",
@@ -2844,20 +2072,6 @@
         },
         {
           "name": "Europabio",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/european-biotech-forum-2026/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Www",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/european-biotech-forum-2026/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Ship",
           "role": "Partner",
           "source_url": "https://events.theparliamentmagazine.eu/event/european-biotech-forum-2026/",
           "extraction": "auto-section-logo",
@@ -2901,40 +2115,6 @@
       "id": "c6b1de9c1fa8b720"
     },
     {
-      "organization": "POLITICO",
-      "title": "AperoPro: The incoming Irish Presidency of the Council of the EU",
-      "date": "2026-06-17",
-      "date_text": "June 17, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Agriculture and Food, Technology, Digital",
-      "url": "https://www.politico.eu/event/aperopro-the-incoming-irish-presidency-of-the-council-of-the-eu/",
-      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Bulletin Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris POLITI",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "8fc2194b29467423"
-    },
-    {
-      "organization": "POLITICO",
-      "title": "POLITICO Pro Debrief: the key takeaways from Eurosatory 2026",
-      "date": "2026-06-22",
-      "date_text": "June 22, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Agriculture and Food, Technology, Politics",
-      "url": "https://www.politico.eu/event/politico-pro-debrief-the-key-takeaways-from-eurosatory-2026/",
-      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Bulletin Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris POLITI",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "1e19f42b852c1d7f"
-    },
-    {
       "organization": "Euractiv",
       "title": "Tech Policy Conference 2026",
       "date": "2026-06-23",
@@ -2970,13 +2150,6 @@
           "source_url": "https://events.theparliamentmagazine.eu/event/living-with-the-switch-a-survey-on-innovation-and-quitting-smoking/",
           "extraction": "auto-section-logo",
           "confidence": "high"
-        },
-        {
-          "name": "Www",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/living-with-the-switch-a-survey-on-innovation-and-quitting-smoking/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
         }
       ],
       "confidence": "high",
@@ -3007,23 +2180,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "f95bacf13c0c5bbe"
-    },
-    {
-      "organization": "POLITICO",
-      "title": "R&A Workshop – Industrial Accelerator Act",
-      "date": "2026-06-24",
-      "date_text": "June 24, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Agriculture and Food, Technology, Politics",
-      "url": "https://www.politico.eu/event/ra-workshop-industrial-accelerator-act/",
-      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Bulletin Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris POLITI",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "74863c8fb38ab973"
     },
     {
       "organization": "Euractiv",
@@ -3073,40 +2229,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "973d6a9e1add3baf"
-    },
-    {
-      "organization": "POLITICO",
-      "title": "Pro Roundtable – Financial Services",
-      "date": "2026-06-25",
-      "date_text": "June 25, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Financial Services",
-      "url": "https://www.politico.eu/event/pro-roundtable-financial-services/",
-      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Bulletin Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris POLITI",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "ae4962d161013ca4"
-    },
-    {
-      "organization": "logos",
-      "title": "EU Security and Defence: 4 Key Questions for the Next Commission’s Leadership Ahead of the Elections",
-      "date": "2026-06-27",
-      "date_text": "June",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Mobility",
-      "url": "https://defencesecurityconference.eu/news/defence-keyword-ahead-of-eu-elections/",
-      "description": "As Europe gears up ahead of the EU elections in June, defence and security have established themselves as dominant themes. Foreign, security, and defence policy were prominently featured as headlining topics at the Maastricht Debate of April 2024, where lead candidates of EU Parties had the chance to directly confront their competitors in front of a “European-wide” public for the first time. The 2019 election experience was emblematic of the relative importance of lead candidates in the contest for EU leadership: the attempts to promote direct links between electoral results and the choice of the European Commission’s president inevitably clash with the priorities of Member States’ leaders. ",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "72f83e763883ec92"
     },
     {
       "organization": "Euractiv",
@@ -3207,13 +2329,6 @@
       "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
       "sponsors": [
         {
-          "name": "Ship",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/eu-presidency-forum-ireland/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
           "name": "Booking",
           "role": "Partner",
           "source_url": "https://events.theparliamentmagazine.eu/event/eu-presidency-forum-ireland/",
@@ -3236,13 +2351,6 @@
         },
         {
           "name": "Takeda",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/eu-presidency-forum-ireland/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Www",
           "role": "Partner",
           "source_url": "https://events.theparliamentmagazine.eu/event/eu-presidency-forum-ireland/",
           "extraction": "auto-section-logo",
@@ -3287,18 +2395,169 @@
     },
     {
       "organization": "POLITICO",
+      "title": "AperoPro: The incoming Irish Presidency of the Council of the EU",
+      "date": "2026-09-24",
+      "date_text": "September 24, 2026",
+      "end_date": "",
+      "time_text": "8:15 am",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Health, Financial Services",
+      "url": "https://www.politico.eu/event/aperopro-the-incoming-irish-presidency-of-the-council-of-the-eu/",
+      "description": "Health Care Summit 2026 Europe is boosting health care competitiveness amid rapid innovation and policy changes, while balancing access, security, and industry needs. The Health Care Summit will bring… Pro Roundtable – Health This invitation-only event is for POLITICO Pro subscribers and will take place in Brussels, Belgium. Pro Roundtables offer a unique opportunity to engage with the POLITICO… September 24, 2026 8:15 am CEST Brussels Playbook Live 2026 This September, Brussels Playbook is stepping out of your inbox and onto the stage. Read daily by policymakers, diplomats, officials and experts, Brussels Playbook is… POLITICO London Playbook Live 2026 We’re bringing Playbook to the stage. ",
+      "sponsors": [],
+      "confidence": "medium",
+      "source_official": true,
+      "id": "5cf6a58fcff985de"
+    },
+    {
+      "organization": "POLITICO",
+      "title": "Brüssel-Alumni Stammtisch – Special Edition",
+      "date": "2026-09-24",
+      "date_text": "September 24, 2026",
+      "end_date": "",
+      "time_text": "8:15 am",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Health, Financial Services",
+      "url": "https://www.politico.eu/event/brussel-alumni-stammtisch/",
+      "description": "Health Care Summit 2026 Europe is boosting health care competitiveness amid rapid innovation and policy changes, while balancing access, security, and industry needs. The Health Care Summit will bring… Pro Roundtable – Health This invitation-only event is for POLITICO Pro subscribers and will take place in Brussels, Belgium. Pro Roundtables offer a unique opportunity to engage with the POLITICO… September 24, 2026 8:15 am CEST Brussels Playbook Live 2026 This September, Brussels Playbook is stepping out of your inbox and onto the stage. Read daily by policymakers, diplomats, officials and experts, Brussels Playbook is… POLITICO London Playbook Live 2026 We’re bringing Playbook to the stage. ",
+      "sponsors": [],
+      "confidence": "medium",
+      "source_official": true,
+      "id": "971e497f17b0a925"
+    },
+    {
+      "organization": "POLITICO",
+      "title": "Health Care Summit 2026",
+      "date": "2026-09-24",
+      "date_text": "September 24, 2026",
+      "end_date": "",
+      "time_text": "8:15 am",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Health, Financial Services",
+      "url": "https://www.politico.eu/health-care-summit-2026/",
+      "description": "Health Care Summit 2026 Europe is boosting health care competitiveness amid rapid innovation and policy changes, while balancing access, security, and industry needs. The Health Care Summit will bring… Pro Roundtable – Health This invitation-only event is for POLITICO Pro subscribers and will take place in Brussels, Belgium. Pro Roundtables offer a unique opportunity to engage with the POLITICO… September 24, 2026 8:15 am CEST Brussels Playbook Live 2026 This September, Brussels Playbook is stepping out of your inbox and onto the stage. Read daily by policymakers, diplomats, officials and experts, Brussels Playbook is… POLITICO London Playbook Live 2026 We’re bringing Playbook to the stage. ",
+      "sponsors": [
+        {
+          "name": "MedTech Europe",
+          "role": "Partner",
+          "source_url": "https://www.politico.eu/health-care-summit-2026/",
+          "extraction": "known-official-page",
+          "confidence": "high"
+        },
+        {
+          "name": "EFPIA",
+          "role": "Partner",
+          "source_url": "https://www.politico.eu/health-care-summit-2026/",
+          "extraction": "known-official-page",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "medium",
+      "source_official": true,
+      "id": "10506dbf8325a8f7"
+    },
+    {
+      "organization": "POLITICO",
+      "title": "POLITICO Pro Debrief: the key takeaways from Eurosatory 2026",
+      "date": "2026-09-24",
+      "date_text": "September 24, 2026",
+      "end_date": "",
+      "time_text": "8:15 am",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Health, Financial Services",
+      "url": "https://www.politico.eu/event/politico-pro-debrief-the-key-takeaways-from-eurosatory-2026/",
+      "description": "Health Care Summit 2026 Europe is boosting health care competitiveness amid rapid innovation and policy changes, while balancing access, security, and industry needs. The Health Care Summit will bring… Pro Roundtable – Health This invitation-only event is for POLITICO Pro subscribers and will take place in Brussels, Belgium. Pro Roundtables offer a unique opportunity to engage with the POLITICO… September 24, 2026 8:15 am CEST Brussels Playbook Live 2026 This September, Brussels Playbook is stepping out of your inbox and onto the stage. Read daily by policymakers, diplomats, officials and experts, Brussels Playbook is… POLITICO London Playbook Live 2026 We’re bringing Playbook to the stage. ",
+      "sponsors": [],
+      "confidence": "medium",
+      "source_official": true,
+      "id": "3dc70348e2bbcc1d"
+    },
+    {
+      "organization": "POLITICO",
+      "title": "PRO Leaders Club Dinner Discussion: Europe’s energy reset: What priorities now and next?",
+      "date": "2026-09-24",
+      "date_text": "September 24, 2026",
+      "end_date": "",
+      "time_text": "8:15 am",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Health, Financial Services",
+      "url": "https://www.politico.eu/event/pro-leaders-club-dinner-discussion-europes-energy-reset-what-priorities-now-and-next/",
+      "description": "Health Care Summit 2026 Europe is boosting health care competitiveness amid rapid innovation and policy changes, while balancing access, security, and industry needs. The Health Care Summit will bring… Pro Roundtable – Health This invitation-only event is for POLITICO Pro subscribers and will take place in Brussels, Belgium. Pro Roundtables offer a unique opportunity to engage with the POLITICO… September 24, 2026 8:15 am CEST Brussels Playbook Live 2026 This September, Brussels Playbook is stepping out of your inbox and onto the stage. Read daily by policymakers, diplomats, officials and experts, Brussels Playbook is… POLITICO London Playbook Live 2026 We’re bringing Playbook to the stage. ",
+      "sponsors": [],
+      "confidence": "medium",
+      "source_official": true,
+      "id": "5ab92462e1d15d84"
+    },
+    {
+      "organization": "POLITICO",
+      "title": "Pro Petit-Déjeuner – Tech",
+      "date": "2026-09-24",
+      "date_text": "September 24, 2026",
+      "end_date": "",
+      "time_text": "8:15 am",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Health, Financial Services",
+      "url": "https://www.politico.eu/event/politico-pro-tech/",
+      "description": "Health Care Summit 2026 Europe is boosting health care competitiveness amid rapid innovation and policy changes, while balancing access, security, and industry needs. The Health Care Summit will bring… Pro Roundtable – Health This invitation-only event is for POLITICO Pro subscribers and will take place in Brussels, Belgium. Pro Roundtables offer a unique opportunity to engage with the POLITICO… September 24, 2026 8:15 am CEST Brussels Playbook Live 2026 This September, Brussels Playbook is stepping out of your inbox and onto the stage. Read daily by policymakers, diplomats, officials and experts, Brussels Playbook is… POLITICO London Playbook Live 2026 We’re bringing Playbook to the stage. ",
+      "sponsors": [],
+      "confidence": "medium",
+      "source_official": true,
+      "id": "771fd5a29767e638"
+    },
+    {
+      "organization": "POLITICO",
+      "title": "Pro Roundtable – Financial Services",
+      "date": "2026-09-24",
+      "date_text": "September 24, 2026",
+      "end_date": "",
+      "time_text": "8:15 am",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Health, Financial Services",
+      "url": "https://www.politico.eu/event/pro-roundtable-financial-services/",
+      "description": "Health Care Summit 2026 Europe is boosting health care competitiveness amid rapid innovation and policy changes, while balancing access, security, and industry needs. The Health Care Summit will bring… Pro Roundtable – Health This invitation-only event is for POLITICO Pro subscribers and will take place in Brussels, Belgium. Pro Roundtables offer a unique opportunity to engage with the POLITICO… September 24, 2026 8:15 am CEST Brussels Playbook Live 2026 This September, Brussels Playbook is stepping out of your inbox and onto the stage. Read daily by policymakers, diplomats, officials and experts, Brussels Playbook is… POLITICO London Playbook Live 2026 We’re bringing Playbook to the stage. ",
+      "sponsors": [],
+      "confidence": "medium",
+      "source_official": true,
+      "id": "b2a94e574391a407"
+    },
+    {
+      "organization": "POLITICO",
+      "title": "Pro Roundtable – Financial Services UK",
+      "date": "2026-09-24",
+      "date_text": "September 24, 2026",
+      "end_date": "",
+      "time_text": "8:15 am",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Health, Financial Services",
+      "url": "https://www.politico.eu/event/pro-roundtable-financial-services-uk/",
+      "description": "Health Care Summit 2026 Europe is boosting health care competitiveness amid rapid innovation and policy changes, while balancing access, security, and industry needs. The Health Care Summit will bring… Pro Roundtable – Health This invitation-only event is for POLITICO Pro subscribers and will take place in Brussels, Belgium. Pro Roundtables offer a unique opportunity to engage with the POLITICO… September 24, 2026 8:15 am CEST Brussels Playbook Live 2026 This September, Brussels Playbook is stepping out of your inbox and onto the stage. Read daily by policymakers, diplomats, officials and experts, Brussels Playbook is… POLITICO London Playbook Live 2026 We’re bringing Playbook to the stage. ",
+      "sponsors": [],
+      "confidence": "medium",
+      "source_official": true,
+      "id": "a380eb6520a7d3f7"
+    },
+    {
+      "organization": "POLITICO",
       "title": "Pro Roundtable – Health",
       "date": "2026-09-24",
       "date_text": "September 24, 2026",
       "end_date": "",
-      "time_text": "",
+      "time_text": "8:15 am",
       "city": "Brussels",
       "venue": "",
-      "category": "Health",
+      "category": "Health, Financial Services",
       "url": "https://www.politico.eu/event/pro-roundtable-health/",
-      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Bulletin Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris POLITI",
+      "description": "Health Care Summit 2026 Europe is boosting health care competitiveness amid rapid innovation and policy changes, while balancing access, security, and industry needs. The Health Care Summit will bring… Pro Roundtable – Health This invitation-only event is for POLITICO Pro subscribers and will take place in Brussels, Belgium. Pro Roundtables offer a unique opportunity to engage with the POLITICO… September 24, 2026 8:15 am CEST Brussels Playbook Live 2026 This September, Brussels Playbook is stepping out of your inbox and onto the stage. Read daily by policymakers, diplomats, officials and experts, Brussels Playbook is… POLITICO London Playbook Live 2026 We’re bringing Playbook to the stage. ",
       "sponsors": [],
-      "confidence": "high",
+      "confidence": "medium",
       "source_official": true,
       "id": "5696f5d00ac857b7"
     },
@@ -3312,12 +2571,12 @@
       "city": "Brussels",
       "venue": "",
       "category": "Health, Financial Services",
-      "url": "https://www.politico.eu/event/pro-roundtable-sustainability/",
+      "url": "https://www.politico.eu/event/pro-roundtable-sustainability-2/",
       "description": "Health Care Summit 2026 Europe is boosting health care competitiveness amid rapid innovation and policy changes, while balancing access, security, and industry needs. The Health Care Summit will bring… Pro Roundtable – Health This invitation-only event is for POLITICO Pro subscribers and will take place in Brussels, Belgium. Pro Roundtables offer a unique opportunity to engage with the POLITICO… September 24, 2026 8:15 am CEST Brussels Playbook Live 2026 This September, Brussels Playbook is stepping out of your inbox and onto the stage. Read daily by policymakers, diplomats, officials and experts, Brussels Playbook is… POLITICO London Playbook Live 2026 We’re bringing Playbook to the stage. ",
       "sponsors": [],
       "confidence": "medium",
       "source_official": true,
-      "id": "3c06eb8df547ba30"
+      "id": "8108e8056b539574"
     },
     {
       "organization": "POLITICO",
@@ -3338,6 +2597,23 @@
     },
     {
       "organization": "POLITICO",
+      "title": "Pro Roundtable – Tech UK",
+      "date": "2026-09-24",
+      "date_text": "September 24, 2026",
+      "end_date": "",
+      "time_text": "8:15 am",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Health, Financial Services",
+      "url": "https://www.politico.eu/event/pro-roundtable-tech-uk/",
+      "description": "Health Care Summit 2026 Europe is boosting health care competitiveness amid rapid innovation and policy changes, while balancing access, security, and industry needs. The Health Care Summit will bring… Pro Roundtable – Health This invitation-only event is for POLITICO Pro subscribers and will take place in Brussels, Belgium. Pro Roundtables offer a unique opportunity to engage with the POLITICO… September 24, 2026 8:15 am CEST Brussels Playbook Live 2026 This September, Brussels Playbook is stepping out of your inbox and onto the stage. Read daily by policymakers, diplomats, officials and experts, Brussels Playbook is… POLITICO London Playbook Live 2026 We’re bringing Playbook to the stage. ",
+      "sponsors": [],
+      "confidence": "medium",
+      "source_official": true,
+      "id": "f44f804e04134afd"
+    },
+    {
+      "organization": "POLITICO",
       "title": "Pro Roundtable – Trade",
       "date": "2026-09-24",
       "date_text": "September 24, 2026",
@@ -3346,12 +2622,46 @@
       "city": "Brussels",
       "venue": "",
       "category": "Health, Financial Services",
-      "url": "https://www.politico.eu/event/pro-roundtable-trade/",
+      "url": "https://www.politico.eu/event/pro-roundtable-trade-3/",
       "description": "Health Care Summit 2026 Europe is boosting health care competitiveness amid rapid innovation and policy changes, while balancing access, security, and industry needs. The Health Care Summit will bring… Pro Roundtable – Health This invitation-only event is for POLITICO Pro subscribers and will take place in Brussels, Belgium. Pro Roundtables offer a unique opportunity to engage with the POLITICO… September 24, 2026 8:15 am CEST Brussels Playbook Live 2026 This September, Brussels Playbook is stepping out of your inbox and onto the stage. Read daily by policymakers, diplomats, officials and experts, Brussels Playbook is… POLITICO London Playbook Live 2026 We’re bringing Playbook to the stage. ",
       "sponsors": [],
       "confidence": "medium",
       "source_official": true,
-      "id": "bbe36e67ae98e429"
+      "id": "46426e3bf8e80dc4"
+    },
+    {
+      "organization": "POLITICO",
+      "title": "R&A Workshop – Industrial Accelerator Act",
+      "date": "2026-09-24",
+      "date_text": "September 24, 2026",
+      "end_date": "",
+      "time_text": "8:15 am",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Health, Financial Services",
+      "url": "https://www.politico.eu/event/ra-workshop-industrial-accelerator-act/",
+      "description": "Health Care Summit 2026 Europe is boosting health care competitiveness amid rapid innovation and policy changes, while balancing access, security, and industry needs. The Health Care Summit will bring… Pro Roundtable – Health This invitation-only event is for POLITICO Pro subscribers and will take place in Brussels, Belgium. Pro Roundtables offer a unique opportunity to engage with the POLITICO… September 24, 2026 8:15 am CEST Brussels Playbook Live 2026 This September, Brussels Playbook is stepping out of your inbox and onto the stage. Read daily by policymakers, diplomats, officials and experts, Brussels Playbook is… POLITICO London Playbook Live 2026 We’re bringing Playbook to the stage. ",
+      "sponsors": [],
+      "confidence": "medium",
+      "source_official": true,
+      "id": "1f11eb787c67d4d6"
+    },
+    {
+      "organization": "POLITICO",
+      "title": "The King’s Speech preview: Everything policy pros need to know",
+      "date": "2026-09-24",
+      "date_text": "September 24, 2026",
+      "end_date": "",
+      "time_text": "8:15 am",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Health, Financial Services",
+      "url": "https://www.politico.eu/event/the-kings-speech-preview-everything-policy-pros-need-to-know/",
+      "description": "Health Care Summit 2026 Europe is boosting health care competitiveness amid rapid innovation and policy changes, while balancing access, security, and industry needs. The Health Care Summit will bring… Pro Roundtable – Health This invitation-only event is for POLITICO Pro subscribers and will take place in Brussels, Belgium. Pro Roundtables offer a unique opportunity to engage with the POLITICO… September 24, 2026 8:15 am CEST Brussels Playbook Live 2026 This September, Brussels Playbook is stepping out of your inbox and onto the stage. Read daily by policymakers, diplomats, officials and experts, Brussels Playbook is… POLITICO London Playbook Live 2026 We’re bringing Playbook to the stage. ",
+      "sponsors": [],
+      "confidence": "medium",
+      "source_official": true,
+      "id": "b8f9b5ec4edd2aea"
     },
     {
       "organization": "Euractiv",
@@ -3431,6 +2741,23 @@
     },
     {
       "organization": "logos",
+      "title": "EU Security and Defence: 4 Key Questions for the Next Commission’s Leadership Ahead of the Elections",
+      "date": "2026-10-29",
+      "date_text": "29 October 2026",
+      "end_date": "",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Mobility",
+      "url": "https://defencesecurityconference.eu/news/defence-keyword-ahead-of-eu-elections/",
+      "description": "As Europe gears up ahead of the EU elections in June, defence and security have established themselves as dominant themes. Foreign, security, and defence policy were prominently featured as headlining topics at the Maastricht Debate of April 2024, where lead candidates of EU Parties had the chance to directly confront their competitors in front of a “European-wide” public for the first time. The 2019 election experience was emblematic of the relative importance of lead candidates in the contest for EU leadership: the attempts to promote direct links between electoral results and the choice of the European Commission’s president inevitably clash with the priorities of Member States’ leaders. ",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "7b1c1d70349bfd32"
+    },
+    {
+      "organization": "logos",
       "title": "Listen to the first episode of the EDSC Podcast!",
       "date": "2026-10-29",
       "date_text": "29 October 2026",
@@ -3462,6 +2789,31 @@
       "confidence": "high",
       "source_official": true,
       "id": "997ccef3209657ea"
+    },
+    {
+      "organization": "logos",
+      "title": "Privacy Policy",
+      "date": "2026-10-29",
+      "date_text": "29 October 2026",
+      "end_date": "",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Digital",
+      "url": "https://defencesecurityconference.eu/privacy-policy/",
+      "description": "MCI Group Holding SA, 9, Rue du Pré-Bouvier, 1242 Satigny, Geneva, Switzerland or relevant mci group entity (“MCI”) is a global agency network with operations and subsidiaries in many countries around the world which provides marketing and communication services, association, congress management, meetings and event services, digital and consulting to its clients (the “Client”).",
+      "sponsors": [
+        {
+          "name": "mci group",
+          "role": "Organised by",
+          "source_url": "https://defencesecurityconference.eu/privacy-policy/",
+          "extraction": "auto-labelled-text",
+          "confidence": "medium"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "a8b7716559596ce3"
     },
     {
       "organization": "logos",
@@ -3513,146 +2865,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "f4779834acc8c429"
-    },
-    {
-      "organization": "POLITICO",
-      "title": "AI and innovation: creating EU champions",
-      "date": "2026-11-27",
-      "date_text": "nov",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Agriculture and Food, Technology, Digital",
-      "url": "https://www.politico.eu/event/ai-and-innovation-creating-eu-champions/",
-      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Bulletin Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris POLITI",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "d2f3c3a9ef72bdc3"
-    },
-    {
-      "organization": "POLITICO",
-      "title": "Debrief: Hannover Messe – Der entscheidende Impuls für den Industriestandort?",
-      "date": "2026-11-27",
-      "date_text": "nov",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Agriculture and Food, Technology, Politics",
-      "url": "https://www.politico.eu/event/debrief-hannover-messe-der-entscheidende-impuls-fur-den-industriestandort/",
-      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Bulletin Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris POLITI",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "94ef27c487daebd7"
-    },
-    {
-      "organization": "POLITICO",
-      "title": "Europe’s biotech moment: Innovate or stagnate?",
-      "date": "2026-11-27",
-      "date_text": "nov",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Agriculture and Food, Technology, Politics",
-      "url": "https://www.politico.eu/event/europes-biotech-moment-innovate-or-stagnate/",
-      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Bulletin Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris POLITI",
-      "sponsors": [
-        {
-          "name": "Bayer",
-          "role": "Sponsor / partner",
-          "source_url": "https://www.politico.eu/event/europes-biotech-moment-innovate-or-stagnate/",
-          "extraction": "auto-section-logo",
-          "confidence": "medium"
-        },
-        {
-          "name": "Titanhq",
-          "role": "Sponsor / partner",
-          "source_url": "https://www.politico.eu/event/europes-biotech-moment-innovate-or-stagnate/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "medium"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "1bd7bf9e66416e3b"
-    },
-    {
-      "organization": "POLITICO",
-      "title": "Europe’s digital future: Navigating the path of connectivity and innovation",
-      "date": "2026-11-27",
-      "date_text": "nov",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Digital",
-      "url": "https://www.politico.eu/event/europes-digital-future/",
-      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Bulletin Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris POLITI",
-      "sponsors": [
-        {
-          "name": "Connect Europe",
-          "role": "Sponsor / partner",
-          "source_url": "https://www.politico.eu/event/europes-digital-future/",
-          "extraction": "auto-section-logo",
-          "confidence": "medium"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "7bc0dced87dfb5d6"
-    },
-    {
-      "organization": "POLITICO",
-      "title": "Safeguarding innovation and empowering faster patient access",
-      "date": "2026-11-27",
-      "date_text": "nov",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Agriculture and Food, Technology, Politics",
-      "url": "https://www.politico.eu/event/safeguarding-innovation-and-empowering-faster-patient-access/",
-      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Bulletin Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris POLITI",
-      "sponsors": [
-        {
-          "name": "Sandoz",
-          "role": "Sponsor / partner",
-          "source_url": "https://www.politico.eu/event/safeguarding-innovation-and-empowering-faster-patient-access/",
-          "extraction": "auto-section-logo",
-          "confidence": "medium"
-        },
-        {
-          "name": "Www",
-          "role": "Sponsor / partner",
-          "source_url": "https://www.politico.eu/event/safeguarding-innovation-and-empowering-faster-patient-access/",
-          "extraction": "auto-section-logo",
-          "confidence": "medium"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "a58ef12f1820de9c"
-    },
-    {
-      "organization": "POLITICO",
-      "title": "Standortfaktor Innovation: Wie meistert Deutschland den Aufstieg zum Biopharma-Leader?",
-      "date": "2026-11-27",
-      "date_text": "nov",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Agriculture and Food, Technology, Politics",
-      "url": "https://www.politico.eu/event/standortfaktor-innovation-wie-meistert-deutschland-den-aufstieg-zum-biopharma-leader/",
-      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Bulletin Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris POLITI",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "dec58ae5861544ae"
     }
   ]
 }
