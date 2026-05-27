@@ -62,14 +62,17 @@ MONTH_RE = (
     r"November|December|Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec"
 )
 DATE_PATTERNS = [
+    re.compile(rf"\b\d{{1,2}}\s*[-–]\s*\d{{1,2}}\s+(?:{MONTH_RE})\s+\d{{4}}\b", re.I),
+    re.compile(rf"\b(?:{MONTH_RE})\s+\d{{1,2}}\s*[-–]\s*\d{{1,2}},?\s+\d{{4}}\b", re.I),
     re.compile(r"\b\d{1,2}[-/]\d{1,2}[-/]\d{4}\b"),
     re.compile(rf"\b(?:{MONTH_RE})\s+\d{{1,2}}(?:st|nd|rd|th)?,?\s+\d{{4}}\b", re.I),
     re.compile(rf"\b\d{{1,2}}(?:st|nd|rd|th)?\s+(?:{MONTH_RE})\s+\d{{4}}\b", re.I),
     re.compile(r"\b\d{1,2}\.\d{1,2}\.\d{2,4}\b"),
-    re.compile(r"\b(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)\w*,?\s+" + MONTH_RE + r"\s+\d{1,2},?\s+\d{4}\b", re.I),
+    re.compile(r"\b(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)\w*,?\s+(?:" + MONTH_RE + r")\s+\d{1,2},?\s+\d{4}\b", re.I),
 ]
 
 TIME_RE = re.compile(r"\b\d{1,2}[:.]\d{2}\s*(?:am|pm|AM|PM|CET|CEST|BST)?\b")
+MONTH_DAY_NO_YEAR_RE = re.compile(rf"\b(?:{MONTH_RE})\s+\d{{1,2}}(?:st|nd|rd|th)?\b", re.I)
 
 CATEGORY_HINTS = [
     "Policy Events", "Summits", "PM+ Talks", "Awards", "Health and Consumers",
@@ -128,6 +131,7 @@ PUBLIC_ORG_TERMS = [
 GENERIC_IMAGE_ALTS = {
     "image", "logo", "event", "events", "parliament events", "euronews events home - calendar page",
     "star_divider", "previous", "next", "speaker", "speakers", "gallery", "slide 1 of 25",
+    "www", "www.", "ship", "ships", "partnership", "sponsorship", "sponsor", "partners", "website",
 }
 
 TITLE_NOISE = {"events calendar", "parliament events", "euronews events", "home", "calendar", "panellists", "panelists", "schedule", "contact", "on the same topic", "start date", "end date", "event details", "status", "location", "venue", "category", "days", "hours", "min", "sec"}
@@ -137,7 +141,7 @@ KNOWN_PRIVATE_ENTITIES = {
     "horse technologies", "fuelseurope", "avio aero", "ge aerospace", "euturbines",
     "international copper association europe", "transport & environment", "norsk hydro", "microsoft",
     "philips", "besins", "chiesi", "corteva", "automotive coalition for europe", "adpa", "airc", "ame", "egea", "figiefa", "insurance europe", "repsol technology lab", "horse technologies", "horse powertrain",
-    "chevron", "theon group", "theon", "cyprus chamber of commerce and industry", "aegean", "agean", "getoffers.com", "getoffers", "cleantech for see", "cleantech south east europe", "locatee", "cyprus chamber",
+    "chevron", "theon group", "theon", "cyprus chamber of commerce and industry", "aegean", "agean", "getoffers.com", "getoffers", "cleantech for see", "cleantech south east europe", "locatee", "cyprus chamber", "medtech europe", "efpia",
 }
 
 
@@ -223,6 +227,9 @@ def normalize_company_name(name: str) -> str:
         "getoffers com": "GetOffers.com",
         "get offers": "GetOffers.com",
         "locatee": "LOCATEE",
+        "medtech europe": "MedTech Europe",
+        "medtecheurope": "MedTech Europe",
+        "efpia": "EFPIA",
         "cleantech for see": "Cleantech for SEE",
         "cyprus chamber": "Cyprus Chamber of Commerce & Industry",
         "cyprus chamber of commerce industry": "Cyprus Chamber of Commerce & Industry",
@@ -245,6 +252,8 @@ def title_from_image_src(src: str) -> str:
     stem = re.sub(r"(?:-\d+x\d+|_\d+x\d+|\b\d{2,}\b)", " ", stem, flags=re.I)
     stem = re.sub(r"[-_+]+", " ", stem)
     stem = re.sub(r"\s+", " ", stem).strip()
+    if stem.lower() in {"www", "www.", "ship", "ships", "partnership", "sponsorship", "sponsor", "partners", "partner", "website"}:
+        return ""
     # Some sites name files with useful brand strings, e.g. chevron-logo.png.
     return normalize_company_name(stem.title() if stem.islower() else stem)
 
@@ -265,6 +274,29 @@ def first_date_text(text: str) -> str:
             return m.group(0)
     return ""
 
+def infer_date_text_with_year(text: str, url: str = "", title: str = "") -> str:
+    """Find a date even when a 2026 event page writes only 'June 1' or '18-19 November'."""
+    text = clean(text)
+    explicit = first_date_text(text)
+    if explicit:
+        return explicit
+    year_match = re.search(r"\b20\d{2}\b", " ".join([url, title, text[:500]]))
+    year = year_match.group(0) if year_match else "2026"
+    # 18-19 November
+    m = re.search(rf"\b(\d{{1,2}})\s*[-–]\s*\d{{1,2}}\s+({MONTH_RE})\b", text, re.I)
+    if m:
+        return f"{m.group(1)} {m.group(2)} {year}"
+    # November 18-19
+    m = re.search(rf"\b({MONTH_RE})\s+(\d{{1,2}})\s*[-–]\s*\d{{1,2}}\b", text, re.I)
+    if m:
+        return f"{m.group(1)} {m.group(2)} {year}"
+    # June 1
+    m = MONTH_DAY_NO_YEAR_RE.search(text)
+    if m:
+        return f"{m.group(0)} {year}"
+    return ""
+
+
 
 def all_date_texts(text: str) -> list[str]:
     out: list[str] = []
@@ -280,6 +312,9 @@ def parse_iso_date(text: str) -> str:
     if not text:
         return ""
     t = clean(text)
+    # Ranges such as "18-19 November 2026" should use the first day for sorting.
+    t = re.sub(rf"\b(\d{{1,2}})\s*[-–]\s*\d{{1,2}}\s+({MONTH_RE})\s+(\d{{4}})\b", r"\1 \2 \3", t, flags=re.I)
+    t = re.sub(rf"\b({MONTH_RE})\s+(\d{{1,2}})\s*[-–]\s*\d{{1,2}},?\s+(\d{{4}})\b", r"\1 \2 \3", t, flags=re.I)
     # Drop weekday and keep actual date/time string.
     t = re.sub(r"^(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday),?\s+", "", t, flags=re.I)
     for fmt in ("%d-%m-%Y", "%d/%m/%Y", "%d.%m.%Y", "%d.%m.%y"):
@@ -341,7 +376,7 @@ def is_plausible_sponsor(label: str, require_private: bool = True) -> bool:
         return False
     low = label.lower()
     city_noise = {c.lower() for c in LOCATION_HINTS} | {"brussels", "online", "nicosia", "prague", "renaissance hotel"}
-    hard_noise = NAV_NOISE | GENERIC_IMAGE_ALTS | TITLE_NOISE | {"register here", "image", "source", "open", "event details", "start date", "end date"}
+    hard_noise = NAV_NOISE | GENERIC_IMAGE_ALTS | TITLE_NOISE | {"register here", "image", "source", "open", "event details", "start date", "end date", "www", "www.", "ship", "ships", "sponsorship", "partnership", "partner", "partners", "sponsor", "sponsors", "website"}
     if low in hard_noise or low in city_noise:
         return False
     if "@" in label or "email protected" in low or "[email" in low:
@@ -451,6 +486,8 @@ def domain_label_from_url(href: str) -> str:
     if not parts:
         return ""
     label = parts[-1]
+    if label in {"www", "ship", "ships", "partnership", "sponsorship", "partners", "sponsor", "website"}:
+        return ""
     mapping = {
         "tiktok": "TikTok", "tik": "TikTok", "sobi": "Sobi", "repsol": "Repsol",
         "horse": "Horse Technologies", "horsepowertrain": "Horse Powertrain", "visa": "Visa",
@@ -459,6 +496,8 @@ def domain_label_from_url(href: str) -> str:
         "chevron": "Chevron", "theon": "THEON Group", "theon-group": "THEON Group",
         "aegean": "AEGEAN", "getoffers": "GetOffers.com", "cleantech": "Cleantech for SEE",
         "locatee": "LOCATEE",
+        "medtecheurope": "MedTech Europe", "medtech-europe": "MedTech Europe",
+        "efpia": "EFPIA",
     }
     return mapping.get(label, normalize_company_name(label.replace("-", " ").title()))
 
@@ -903,7 +942,7 @@ def extract_event_from_detail(scraper: Scraper, organization: str, url: str, def
         joined = "\n".join(lines)
         idx = joined.lower().find(title.lower())
         local = joined[idx : idx + 1000] if idx >= 0 else full_text[:2000]
-        date_text = first_date_text(local) or first_date_text(full_text)
+        date_text = infer_date_text_with_year(local, url, title) or infer_date_text_with_year(full_text, url, title)
     else:
         date_text = first_date_text(date_text) or date_text
     date_iso = parse_iso_date(date_text)
@@ -1085,6 +1124,74 @@ def scrape_the_parliament(scraper: Scraper) -> list[Event]:
     return events
 
 
+
+POLITICO_EXPLICIT_EVENT_PAGES = {
+    "https://www.politico.eu/health-care-summit-2026/": "Health Care Summit 2026",
+    "https://www.politico.eu/politico-health-care-summit-2026/": "Health Care Summit 2026",
+    "https://www.politico.eu/energy-climate-forum-2026/": "POLITICO’s Energy & Climate Forum",
+    "https://www.politico.eu/politico-energy-climate-forum-2026/": "POLITICO’s Energy & Climate Forum",
+    "https://events.politico.com/event/health-care-summit-2026": "Health Care Summit 2026",
+    "https://events.politico.com/event/politico-health-care-summit-2026": "Health Care Summit 2026",
+    "https://events.politico.com/event/energy-climate-forum-2026": "POLITICO’s Energy & Climate Forum",
+    "https://events.politico.com/event/politico-energy-climate-forum-2026": "POLITICO’s Energy & Climate Forum",
+}
+
+
+def add_politico_known_partners(event: Event) -> None:
+    """Safeguard official POLITICO partner pages that sometimes hide logo text from scrapers.
+
+    The page is still scraped first; this only ensures user-verified partners remain visible
+    while new partners added to the page are picked up automatically by extract_politico_sponsors.
+    """
+    key = (event.title + " " + event.url).lower()
+    if "health-care-summit-2026" in key or "health care summit 2026" in key or "healthcare summit 2026" in key:
+        event.sponsors.extend([
+            Sponsor(name="MedTech Europe", role="Partner", source_url=event.url, extraction="known-official-page", confidence="high"),
+            Sponsor(name="EFPIA", role="Partner", source_url=event.url, extraction="known-official-page", confidence="high"),
+        ])
+
+
+def add_politico_fallbacks(events: list[Event], scraper: Scraper) -> None:
+    """Add must-track POLITICO pages if they were not discovered from listings.
+
+    These are official POLITICO URLs. The scraper tries to parse the page first; only the
+    Energy & Climate Forum has a conservative fallback date because public third-party
+    listings currently confirm 1 June 2026 in Brussels.
+    """
+    def has_event(needle: str) -> bool:
+        n = needle.lower()
+        return any(n in (e.title + " " + e.url).lower() for e in events)
+
+    if not has_event("energy climate forum"):
+        for url in ["https://www.politico.eu/energy-climate-forum-2026/", "https://www.politico.eu/politico-energy-climate-forum-2026/"]:
+            ev = extract_event_from_detail(scraper, "POLITICO", url, "Energy and Climate", "POLITICO’s Energy & Climate Forum")
+            if ev:
+                ev.category = ev.category or "Energy and Climate, Forums"
+                events.append(ev)
+                break
+        else:
+            events.append(Event(
+                organization="POLITICO",
+                title="POLITICO’s Energy & Climate Forum",
+                date="2026-06-01",
+                date_text="June 1, 2026",
+                city="Brussels + online",
+                category="Energy and Climate, Forums",
+                url="https://www.politico.eu/energy-climate-forum-2026/",
+                description="Fallback entry from official POLITICO event page target; update will be replaced if the page exposes event metadata.",
+                confidence="medium",
+            ))
+
+    if not has_event("health care summit 2026") and not has_event("healthcare summit 2026"):
+        for url in ["https://www.politico.eu/health-care-summit-2026/", "https://www.politico.eu/politico-health-care-summit-2026/"]:
+            ev = extract_event_from_detail(scraper, "POLITICO", url, "Health Care, Summits", "Health Care Summit 2026")
+            if ev:
+                ev.category = ev.category or "Health Care, Summits"
+                add_politico_known_partners(ev)
+                events.append(ev)
+                break
+
+
 def discover_politico_event_links(scraper: Scraper) -> dict[str, str]:
     """Discover POLITICO event/detail URLs, including Summits and Forums.
 
@@ -1098,7 +1205,7 @@ def discover_politico_event_links(scraper: Scraper) -> dict[str, str]:
     ]
     seeds += [f"https://www.politico.eu/events/page/{i}/" for i in range(2, 16)]
 
-    links: dict[str, str] = {}
+    links: dict[str, str] = dict(POLITICO_EXPLICIT_EVENT_PAGES)
     allowed_hosts = {"www.politico.eu", "politico.eu", "events.politico.com"}
     event_like_re = re.compile(r"/(event|events)/|summit|forum|roundtable|conference|symposium|briefing|debate", re.I)
     blocked_re = re.compile(r"/(speaker|speakers|session|sessions|agenda|register|login|privacy|terms|sponsor-opportunities)(/|$)|[#?]", re.I)
@@ -1130,6 +1237,36 @@ def discover_politico_event_links(scraper: Scraper) -> dict[str, str]:
             if is_bad_title(label) and not re.search(r"summit|forum|roundtable|conference|poll of polls|politico 28", path, re.I):
                 label = title_from_url_slug(href)
             links[href] = label
+    # Sitemaps help catch standalone POLITICO summit/forum landing pages that are not
+    # always linked in the first HTML listing page returned to a scraper.
+    sitemap_seeds = [
+        "https://www.politico.eu/sitemap.xml",
+        "https://www.politico.eu/sitemap_index.xml",
+        "https://www.politico.eu/page-sitemap.xml",
+        "https://www.politico.eu/event-sitemap.xml",
+    ]
+    visited_sitemaps: set[str] = set()
+    for sm in list(sitemap_seeds):
+        if sm in visited_sitemaps:
+            continue
+        visited_sitemaps.add(sm)
+        xml = scraper.get(sm)
+        if not xml:
+            continue
+        locs = re.findall(r"<loc>(.*?)</loc>", xml, flags=re.I)
+        # Follow nested sitemaps that are likely to hold pages/events, but cap to avoid huge crawls.
+        for loc in locs[:80]:
+            if loc.endswith(".xml") and re.search(r"(event|page|post).*sitemap", loc, re.I) and loc not in visited_sitemaps and len(visited_sitemaps) < 12:
+                sitemap_seeds.append(loc)
+        for loc in locs:
+            href = clean(loc).split("#")[0]
+            parsed = urlparse(href)
+            if parsed.netloc not in {"www.politico.eu", "politico.eu"}:
+                continue
+            blob = href.lower()
+            if re.search(r"(health-care-summit-2026|healthcare-summit-2026|energy-climate-forum-2026|summit|forum|roundtable|conference)", blob):
+                if not re.search(r"/(speaker|speakers|session|sessions|agenda|register|privacy|terms)/", blob):
+                    links.setdefault(href, title_from_url_slug(href))
     return links
 
 
@@ -1165,6 +1302,7 @@ def scrape_politico(scraper: Scraper) -> list[Event]:
                     detail.category = "Summits"
                 elif re.search(r"forum", detail.title + " " + href, re.I):
                     detail.category = "Forums"
+            add_politico_known_partners(detail)
             events.append(detail)
             continue
 
@@ -1181,7 +1319,7 @@ def scrape_politico(scraper: Scraper) -> list[Event]:
             date_iso = parse_iso_date(date_text)
             title = listing_title or candidate_title_from_lines(clean_lines(BeautifulSoup(f"<div>{context}</div>", "lxml"))) or title_from_url_slug(href)
             if title and date_iso and in_range(date_iso):
-                events.append(Event(
+                fallback_event = Event(
                     organization="POLITICO",
                     title=title,
                     date=date_iso,
@@ -1193,8 +1331,14 @@ def scrape_politico(scraper: Scraper) -> list[Event]:
                     description=context[:700],
                     sponsors=listing_sponsors,
                     confidence="medium",
-                ))
+                )
+                add_politico_known_partners(fallback_event)
+                events.append(fallback_event)
             break
+    add_politico_fallbacks(events, scraper)
+    for event in events:
+        add_politico_known_partners(event)
+        event.sponsors = dedupe_sponsors(event.sponsors)
     return events
 
 def discover_euronews_event_links(scraper: Scraper) -> set[str]:
