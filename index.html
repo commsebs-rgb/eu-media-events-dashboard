@@ -225,10 +225,10 @@
     <input id="searchInput" type="search" placeholder="Search title, sector, sponsor, location…" />
     <select id="orgFilter"><option value="">All organisations</option></select>
     <select id="dateFilter">
-      <option value="all">Current → end 2026</option>
-      <option value="future">Upcoming only</option>
+      <option value="upcoming">Upcoming events</option>
+      <option value="all">All 2026 events — upcoming first</option>
       <option value="sponsored">With sponsors only</option>
-      <option value="past">Past only</option>
+      <option value="past">Past events</option>
     </select>
     <button id="resetBtn" class="secondary">Reset</button>
   </section>
@@ -250,7 +250,7 @@
   let rawEvents = [];
   let sourceNotes = [];
 
-  const state = { q: "", org: "", dateMode: "all" };
+  const state = { q: "", org: "", dateMode: "upcoming" };
   const $ = (id) => document.getElementById(id);
 
   function parseDate(value) {
@@ -341,9 +341,25 @@
     ].join(" ").toLowerCase();
   }
 
-  function filteredEvents() {
+  function startOfToday() {
     const today = new Date();
     today.setHours(0, 0, 0, 0);
+    return today;
+  }
+
+  function isPastEvent(e) {
+    return parseDate(e.date) < startOfToday();
+  }
+
+  function compareEvents(a, b, direction = "asc") {
+    const multiplier = direction === "desc" ? -1 : 1;
+    return multiplier * a.date.localeCompare(b.date) ||
+      a.organization.localeCompare(b.organization) ||
+      a.title.localeCompare(b.title);
+  }
+
+  function filteredEvents() {
+    const today = startOfToday();
     return rawEvents.filter(e => {
       const eventDate = parseDate(e.date);
       const hasSponsors = cleanSponsors(e).length > 0;
@@ -351,16 +367,21 @@
       const matchesOrg = !state.org || e.organization === state.org;
       const matchesDate =
         state.dateMode === "all" ||
-        (state.dateMode === "future" && eventDate >= today) ||
+        (state.dateMode === "upcoming" && eventDate >= today) ||
         (state.dateMode === "past" && eventDate < today) ||
         (state.dateMode === "sponsored" && hasSponsors);
       return matchesText && matchesOrg && matchesDate;
-    }).sort((a, b) => a.date.localeCompare(b.date) || a.organization.localeCompare(b.organization) || a.title.localeCompare(b.title));
+    }).sort((a, b) => {
+      // Automatic time-aware sorting: upcoming events first, past events last.
+      const ap = isPastEvent(a);
+      const bp = isPastEvent(b);
+      if (ap !== bp) return ap ? 1 : -1;
+      return compareEvents(a, b, ap ? "desc" : "asc");
+    });
   }
 
   function renderStats() {
-    const today = new Date();
-    today.setHours(0, 0, 0, 0);
+    const today = startOfToday();
     $("totalEvents").textContent = rawEvents.length;
     $("futureEvents").textContent = rawEvents.filter(e => parseDate(e.date) >= today).length;
     $("sponsorEvents").textContent = rawEvents.filter(e => cleanSponsors(e).length).length;
@@ -411,13 +432,7 @@
     `;
   }
 
-  function renderCalendar(events) {
-    const panel = $("calendarPanel");
-    if (!events.length) {
-      panel.innerHTML = `<div class="empty">No events match the current filters.</div>`;
-      return;
-    }
-
+  function renderWeekSections(events, label) {
     const grouped = new Map();
     for (const e of events) {
       const weekStart = isoWeekStart(parseDate(e.date));
@@ -426,7 +441,7 @@
       grouped.get(key).push(e);
     }
 
-    panel.innerHTML = [...grouped.entries()].map(([key, group]) => {
+    return [...grouped.entries()].map(([key, group]) => {
       const start = parseDate(key);
       const end = new Date(start);
       end.setDate(start.getDate() + 6);
@@ -434,13 +449,34 @@
       return `
         <section class="week">
           <div class="week-title">
-            <h2>Week ${weekNo}: ${fmtDate(key, { day: "2-digit", month: "short" })} – ${end.toLocaleDateString("en-GB", { day: "2-digit", month: "short", year: "numeric" })}</h2>
+            <h2>${label ? escapeHtml(label) + " · " : ""}Week ${weekNo}: ${fmtDate(key, { day: "2-digit", month: "short" })} – ${end.toLocaleDateString("en-GB", { day: "2-digit", month: "short", year: "numeric" })}</h2>
             <span>${group.length} event${group.length === 1 ? "" : "s"}</span>
           </div>
           <div class="event-grid">${group.map(eventCard).join("")}</div>
         </section>
       `;
     }).join("");
+  }
+
+  function renderCalendar(events) {
+    const panel = $("calendarPanel");
+    if (!events.length) {
+      panel.innerHTML = `<div class="empty">No events match the current filters.</div>`;
+      return;
+    }
+
+    const upcoming = events.filter(e => !isPastEvent(e)).sort(compareEvents);
+    const past = events.filter(isPastEvent).sort((a, b) => compareEvents(a, b, "desc"));
+
+    if (state.dateMode === "all") {
+      panel.innerHTML = [
+        upcoming.length ? renderWeekSections(upcoming, "Upcoming") : "",
+        past.length ? `<div class="empty"><strong>Past events</strong><br>These events have moved here automatically because their date is before today.</div>` + renderWeekSections(past, "Past") : ""
+      ].join("");
+      return;
+    }
+
+    panel.innerHTML = renderWeekSections(events, state.dateMode === "past" ? "Past" : "");
   }
 
   function renderSponsors(events) {
@@ -507,8 +543,8 @@
     $("orgFilter").addEventListener("change", (e) => { state.org = e.target.value; render(); });
     $("dateFilter").addEventListener("change", (e) => { state.dateMode = e.target.value; render(); });
     $("resetBtn").addEventListener("click", () => {
-      state.q = ""; state.org = ""; state.dateMode = "all";
-      $("searchInput").value = ""; $("orgFilter").value = ""; $("dateFilter").value = "all";
+      state.q = ""; state.org = ""; state.dateMode = "upcoming";
+      $("searchInput").value = ""; $("orgFilter").value = ""; $("dateFilter").value = "upcoming";
       render();
     });
     document.querySelectorAll(".tab").forEach(btn => {
@@ -525,20 +561,19 @@
     const response = await fetch(`${DATA_URL}?cacheBust=${Date.now()}`);
     if (!response.ok) throw new Error(`Could not load ${DATA_URL}`);
     const data = await response.json();
-    const today = new Date();
-    today.setHours(0, 0, 0, 0);
+    const start2026 = parseDate("2026-01-01");
     const end2026 = parseDate("2026-12-31");
     rawEvents = (data.events || []).filter(e => {
       if (!e.date || !e.title) return false;
       const d = parseDate(e.date);
-      return d >= today && d <= end2026;
+      return d >= start2026 && d <= end2026;
     });
     sourceNotes = data.source_notes || [];
     renderOrgFilter();
     render();
     const updated = data.last_updated_utc ? new Date(data.last_updated_utc).toLocaleString("en-GB", { timeZoneName: "short" }) : "unknown";
     const windowText = data.date_window ? `${data.date_window.start} to ${data.date_window.end}` : "configured window";
-    $("updatedLine").textContent = `Last data update: ${updated}. Date window: ${windowText}. Data source: data/events.json`;
+    $("updatedLine").textContent = `Last data update: ${updated}. Data window: ${windowText}. The dashboard automatically separates upcoming and past events using today's date.`;
   }
 
   bindUI();

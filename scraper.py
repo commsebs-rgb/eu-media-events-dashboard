@@ -13,7 +13,7 @@ Output:
   data/events.json
 
 Default date window:
-  Today through 2026-12-31.
+  Full 2026 calendar year. The dashboard then shows upcoming events first and past events separately.
   Change with START_DATE and END_DATE environment variables in GitHub Actions.
 
 Important:
@@ -47,12 +47,12 @@ DATA_DIR = ROOT / "data"
 OUTPUT_FILE = DATA_DIR / "events.json"
 MANUAL_SPONSORS_FILE = DATA_DIR / "manual_sponsors.csv"
 
-START_DATE = date.fromisoformat(os.getenv("START_DATE", date.today().isoformat()))
+START_DATE = date.fromisoformat(os.getenv("START_DATE", "2026-01-01"))
 END_DATE = date.fromisoformat(os.getenv("END_DATE", "2026-12-31"))
 
 USER_AGENT = os.getenv(
     "USER_AGENT",
-    "Mozilla/5.0 (compatible; EUEventDashboard/3.0; +https://github.com/commsebs-rgb/eu-media-events-dashboard)",
+    "Mozilla/5.0 (compatible; EUEventDashboard/4.0; +https://github.com/commsebs-rgb/eu-media-events-dashboard)",
 )
 REQUEST_DELAY_SECONDS = float(os.getenv("REQUEST_DELAY_SECONDS", "0.8"))
 TIMEOUT_SECONDS = int(os.getenv("TIMEOUT_SECONDS", "30"))
@@ -776,7 +776,7 @@ def extract_sponsors_from_soup(soup: BeautifulSoup, source_url: str) -> list[Spo
         return extract_euractiv_sponsors(soup, source_url)
     if "theparliamentmagazine.eu" in host:
         return extract_parliament_sponsors(soup, source_url)
-    if "politico.eu" in host:
+    if "politico.eu" in host or "politico.com" in host:
         return extract_politico_sponsors(soup, source_url)
     if "euronews.com" in host:
         return extract_partner_section_sponsors(soup, source_url)
@@ -1085,56 +1085,117 @@ def scrape_the_parliament(scraper: Scraper) -> list[Event]:
     return events
 
 
-def scrape_politico(scraper: Scraper) -> list[Event]:
-    events: list[Event] = []
-    urls = ["https://www.politico.eu/events/"] + [f"https://www.politico.eu/events/page/{i}/" for i in range(2, 12)]
-    seen_detail: set[str] = set()
+def discover_politico_event_links(scraper: Scraper) -> dict[str, str]:
+    """Discover POLITICO event/detail URLs, including Summits and Forums.
 
-    for page_url in urls:
-        soup = scraper.soup(page_url)
+    POLITICO uses both www.politico.eu/event/... and the events.politico.com event
+    platform. We keep only event-like URLs and then let the detail-page parser verify
+    the title/date window.
+    """
+    seeds = [
+        "https://www.politico.eu/events/",
+        "https://events.politico.com/",
+    ]
+    seeds += [f"https://www.politico.eu/events/page/{i}/" for i in range(2, 16)]
+
+    links: dict[str, str] = {}
+    allowed_hosts = {"www.politico.eu", "politico.eu", "events.politico.com"}
+    event_like_re = re.compile(r"/(event|events)/|summit|forum|roundtable|conference|symposium|briefing|debate", re.I)
+    blocked_re = re.compile(r"/(speaker|speakers|session|sessions|agenda|register|login|privacy|terms|sponsor-opportunities)(/|$)|[#?]", re.I)
+
+    for seed in seeds:
+        soup = scraper.soup(seed)
         if not soup:
             continue
         for a in soup.find_all("a", href=True):
-            href = urljoin(page_url, a["href"]).split("#")[0]
+            href = urljoin(seed, a["href"]).split("#")[0]
             parsed = urlparse(href)
-            if parsed.netloc not in {"www.politico.eu", "politico.eu"}:
+            if parsed.netloc not in allowed_hosts:
                 continue
-            if "/event/" not in parsed.path:
+            path = parsed.path.rstrip("/") + "/"
+            label = clean(a.get_text(" ", strip=True))
+            context = surrounding_text(a)
+            if blocked_re.search(path):
                 continue
-            title = clean(a.get_text(" ", strip=True))
-            if is_bad_title(title):
-                continue
-            if href in seen_detail:
-                continue
-            seen_detail.add(href)
+            # POLITICO article pages can mention summits/forums; keep only event-platform
+            # URLs or www.politico.eu event-detail URLs.
+            if parsed.netloc in {"www.politico.eu", "politico.eu"}:
+                if "/event/" not in path and not re.search(r"/events/[^/]+/", path):
+                    continue
+                if path.rstrip("/").endswith("/events") or "/events/page/" in path:
+                    continue
+            elif parsed.netloc == "events.politico.com":
+                if not event_like_re.search(path + " " + label + " " + context):
+                    continue
+            if is_bad_title(label) and not re.search(r"summit|forum|roundtable|conference|poll of polls|politico 28", path, re.I):
+                label = title_from_url_slug(href)
+            links[href] = label
+    return links
 
+
+def scrape_politico(scraper: Scraper) -> list[Event]:
+    events: list[Event] = []
+    links = discover_politico_event_links(scraper)
+
+    for href, listing_title in sorted(links.items()):
+        # Listing context is still useful for "Presented By" / partner labels on cards.
+        listing_sponsors: list[Sponsor] = []
+        for seed in ["https://www.politico.eu/events/", "https://events.politico.com/"]:
+            soup = scraper.soup(seed)
+            if not soup:
+                continue
+            a = soup.find("a", href=lambda x: x and href.rstrip("/") in urljoin(seed, x).rstrip("/"))
+            if a:
+                context = surrounding_text(a)
+                listing_sponsors.extend(extract_sponsors_from_soup(BeautifulSoup(f"<div>{context}</div>", "lxml"), href))
+                break
+
+        detail = extract_event_from_detail(
+            scraper,
+            "POLITICO",
+            href,
+            category_from_text(listing_title),
+            default_title=listing_title,
+        )
+        if detail:
+            detail.sponsors.extend(listing_sponsors)
+            # Label summits and forums clearly if the page/category contains those words.
+            if not detail.category:
+                if re.search(r"summit", detail.title + " " + href, re.I):
+                    detail.category = "Summits"
+                elif re.search(r"forum", detail.title + " " + href, re.I):
+                    detail.category = "Forums"
+            events.append(detail)
+            continue
+
+        # Fallback for accessible listing cards where the detail platform hides metadata.
+        for seed in ["https://www.politico.eu/events/", "https://events.politico.com/"]:
+            soup = scraper.soup(seed)
+            if not soup:
+                continue
+            a = soup.find("a", href=lambda x: x and href.rstrip("/") in urljoin(seed, x).rstrip("/"))
+            if not a:
+                continue
             context = surrounding_text(a)
             date_text = first_date_text(context)
-            sponsor_candidates = extract_sponsors_from_soup(BeautifulSoup(f"<div>{context}</div>", "lxml"), href)
-            # Fetch detail page for exact date/sponsor block; if blocked or no details, use listing.
-            detail = extract_event_from_detail(scraper, "POLITICO", href, category_from_text(context), default_title=title)
-            if detail:
-                # Add listing-level "Presented By" if detail page did not expose a sponsor block.
-                detail.sponsors.extend(sponsor_candidates)
-                events.append(detail)
-            else:
-                date_iso = parse_iso_date(date_text)
-                if date_iso and in_range(date_iso):
-                    events.append(Event(
-                        organization="POLITICO",
-                        title=title,
-                        date=date_iso,
-                        date_text=date_text,
-                        time_text=(TIME_RE.search(context).group(0) if TIME_RE.search(context) else ""),
-                        city=city_from_text(context),
-                        category=category_from_text(context),
-                        url=href,
-                        description=context[:700],
-                        sponsors=sponsor_candidates,
-                        confidence="medium",
-                    ))
+            date_iso = parse_iso_date(date_text)
+            title = listing_title or candidate_title_from_lines(clean_lines(BeautifulSoup(f"<div>{context}</div>", "lxml"))) or title_from_url_slug(href)
+            if title and date_iso and in_range(date_iso):
+                events.append(Event(
+                    organization="POLITICO",
+                    title=title,
+                    date=date_iso,
+                    date_text=date_text,
+                    time_text=(TIME_RE.search(context).group(0) if TIME_RE.search(context) else ""),
+                    city=city_from_text(context),
+                    category=category_from_text(context) or ("Summits" if "summit" in (title + href).lower() else "Forums" if "forum" in (title + href).lower() else ""),
+                    url=href,
+                    description=context[:700],
+                    sponsors=listing_sponsors,
+                    confidence="medium",
+                ))
+            break
     return events
-
 
 def discover_euronews_event_links(scraper: Scraper) -> set[str]:
     links = {
@@ -1334,6 +1395,7 @@ def build_payload(events: list[Event]) -> dict:
         "date_window": {"start": START_DATE.isoformat(), "end": END_DATE.isoformat()},
         "official_sources": [
             "https://www.politico.eu/events/",
+            "https://events.politico.com/",
             "https://events.euractiv.com/",
             "https://events.euronews.com/events",
             "https://events.theparliamentmagazine.eu/",
@@ -1343,7 +1405,7 @@ def build_payload(events: list[Event]) -> dict:
         ],
         "source_notes": [
             "Only public official source pages and their linked event detail pages are scraped.",
-            "Events are filtered from the current day through 31 December 2026 by default.",
+            "Events are scraped for the full 2026 year by default; the dashboard automatically shows upcoming events first and moves past events into the Past view.",
             "Sponsors mean private companies, trade associations, coalitions or other entities that sponsor, present, support, partner with, host or co-organise the event with the tracked media organisation.",
             "Sponsor extraction is best-effort. The scraper reads labelled text, logo alt/title/src names and explicit organiser/partner statements; fully image-only logos may still need validation in data/manual_sponsors.csv.",
             "Sponsor confidence is high for manual entries, medium for labelled text/logo extraction, and low for affiliation/programme inference.",
