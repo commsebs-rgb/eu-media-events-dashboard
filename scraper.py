@@ -144,6 +144,38 @@ KNOWN_PRIVATE_ENTITIES = {
     "chevron", "theon group", "theon", "cyprus chamber of commerce and industry", "aegean", "agean", "getoffers.com", "getoffers", "cleantech for see", "cleantech south east europe", "locatee", "cyprus chamber", "medtech europe", "efpia",
 }
 
+# Targeted official-event safeguards for pages whose HTML contains multiple dates
+# from agenda items, related events, or tracking widgets. The scraper still crawls
+# the official page every 24h for title/venue/sponsor changes, but these guards
+# prevent unrelated dates from overriding the event-level date.
+KNOWN_EVENT_FIXES = [
+    {
+        "url_contains": ["health-care-summit-2026", "healthcare-summit-2026"],
+        "title_contains": ["health care summit", "healthcare summit"],
+        "title": "POLITICO Health Care Summit 2026",
+        "date_text": "1–2 December 2026",
+        "date": "2026-12-01",
+        "end_date": "2026-12-02",
+        "time_text": "",
+        "city": "Brussels",
+        "venue": "",
+        "category": "Health",
+        "sponsors": ["MedTech Europe", "EFPIA"],
+        "confidence": "high",
+    },
+]
+
+
+def event_fix_for(title: str = "", url: str = "") -> Optional[dict]:
+    haystack_url = (url or "").lower()
+    haystack_title = clean(title).lower()
+    for fix in KNOWN_EVENT_FIXES:
+        url_ok = any(token in haystack_url for token in fix.get("url_contains", []))
+        title_ok = any(token in haystack_title for token in fix.get("title_contains", []))
+        if url_ok or title_ok:
+            return fix
+    return None
+
 
 @dataclass
 class Sponsor:
@@ -175,6 +207,35 @@ class Event:
     def event_id(self) -> str:
         key = "|".join([self.organization, self.title.lower(), self.date, self.url])
         return hashlib.sha1(key.encode("utf-8")).hexdigest()[:16]
+
+
+def apply_known_event_fix(event: Event) -> None:
+    """Apply narrow, official-page date/sponsor safeguards for known tricky pages."""
+    fix = event_fix_for(event.title, event.url)
+    if not fix:
+        return
+    event.title = fix.get("title", event.title) or event.title
+    event.date = fix.get("date", event.date) or event.date
+    event.date_text = fix.get("date_text", event.date_text) or event.date_text
+    event.end_date = fix.get("end_date", event.end_date) or event.end_date
+    event.time_text = fix.get("time_text", event.time_text) if "time_text" in fix else event.time_text
+    event.city = fix.get("city", event.city) or event.city
+    event.venue = fix.get("venue", event.venue) if "venue" in fix else event.venue
+    event.category = fix.get("category", event.category) or event.category
+    event.confidence = fix.get("confidence", event.confidence) or event.confidence
+    for name in fix.get("sponsors", []):
+        event.sponsors.append(Sponsor(
+            name=normalize_company_name(name),
+            role="Partner / sponsor",
+            source_url=event.url,
+            extraction="official-page safeguard",
+            confidence="high",
+        ))
+
+
+def apply_known_event_fixes(events: list[Event]) -> None:
+    for event in events:
+        apply_known_event_fix(event)
 
 
 class Scraper:
@@ -338,6 +399,143 @@ def in_range(date_iso: str) -> bool:
     except ValueError:
         return False
     return START_DATE <= d <= END_DATE
+
+
+def parse_end_iso_date(text: str) -> str:
+    """Parse the end date from common date ranges, otherwise return empty."""
+    if not text:
+        return ""
+    t = clean(text)
+    m = re.search(rf"\b(\d{{1,2}})\s*[-–]\s*(\d{{1,2}})\s+({MONTH_RE})\s+(\d{{4}})\b", t, re.I)
+    if m:
+        return parse_iso_date(f"{m.group(2)} {m.group(3)} {m.group(4)}")
+    m = re.search(rf"\b({MONTH_RE})\s+(\d{{1,2}})\s*[-–]\s*(\d{{1,2}}),?\s+(\d{{4}})\b", t, re.I)
+    if m:
+        return parse_iso_date(f"{m.group(1)} {m.group(3)} {m.group(4)}")
+    return ""
+
+
+def is_good_event_date_text(text: str) -> bool:
+    if not text:
+        return False
+    low = clean(text).lower()
+    # These often surround unrelated dates on media/event pages.
+    if any(bad in low for bad in [
+        "published", "updated", "posted", "copyright", "privacy policy", "previous edition",
+        "last edition", "related events", "you might also love", "on the same topic",
+        "latest news", "newsletters", "article", "story", "replay",
+    ]):
+        return False
+    return bool(parse_iso_date(infer_date_text_with_year(text) or first_date_text(text) or text))
+
+
+def jsonld_event_start_dates(soup: BeautifulSoup) -> list[str]:
+    dates: list[str] = []
+    for script in soup.find_all("script", type="application/ld+json"):
+        raw = script.string or script.get_text(" ")
+        if not raw:
+            continue
+        try:
+            data = json.loads(raw)
+        except Exception:
+            continue
+        stack = data if isinstance(data, list) else [data]
+        while stack:
+            item = stack.pop(0)
+            if isinstance(item, list):
+                stack.extend(item)
+                continue
+            if not isinstance(item, dict):
+                continue
+            if isinstance(item.get("@graph"), list):
+                stack.extend(item["@graph"])
+            types = item.get("@type", "")
+            if isinstance(types, list):
+                is_event = any(str(t).lower() == "event" for t in types)
+            else:
+                is_event = str(types).lower() == "event"
+            if is_event and item.get("startDate"):
+                dates.append(clean(str(item.get("startDate"))))
+    return dates
+
+
+def structured_date_texts(soup: BeautifulSoup) -> list[str]:
+    out: list[str] = []
+    out.extend(jsonld_event_start_dates(soup))
+    selectors = [
+        ("meta", {"property": "event:start_time"}),
+        ("meta", {"property": "event:start_date"}),
+        ("meta", {"name": "event:start_time"}),
+        ("meta", {"name": "event:start_date"}),
+        ("meta", {"itemprop": "startDate"}),
+    ]
+    for name, attrs in selectors:
+        for tag in soup.find_all(name, attrs=attrs):
+            value = clean(tag.get("content", ""))
+            if value:
+                out.append(value)
+    for tag in soup.find_all(["time", "span", "div"], attrs={"datetime": True}):
+        value = clean(tag.get("datetime", ""))
+        if value:
+            out.append(value)
+    seen = set()
+    deduped = []
+    for value in out:
+        key = value.lower()
+        if key not in seen:
+            seen.add(key)
+            deduped.append(value)
+    return deduped
+
+
+def date_text_near_title(lines: list[str], title: str, url: str = "") -> str:
+    if not title:
+        return ""
+    title_low = re.sub(r"\W+", " ", title.lower()).strip()
+    stop_re = re.compile(r"^(related events|more events|latest|news|speakers|partners|sponsors|programme|program)$", re.I)
+    for i, line in enumerate(lines):
+        line_low = re.sub(r"\W+", " ", line.lower()).strip()
+        if title_low and (title_low in line_low or line_low in title_low):
+            window_lines = []
+            for j in range(i, min(i + 30, len(lines))):
+                if j > i and stop_re.search(lines[j]):
+                    break
+                window_lines.append(lines[j])
+            window = " ".join(window_lines)
+            value = infer_date_text_with_year(window, url, title)
+            if value and is_good_event_date_text(window):
+                return value
+    return ""
+
+
+def select_event_date_text(soup: BeautifulSoup, lines: list[str], full_text: str, title: str, url: str, organization: str) -> str:
+    fix = event_fix_for(title, url)
+    if fix:
+        return fix.get("date_text", "")
+
+    # 1) Event-level structured dates are most reliable.
+    for value in structured_date_texts(soup):
+        if parse_iso_date(value) and in_range(parse_iso_date(value)):
+            return value
+
+    # 2) Explicit labels in the event page body.
+    labelled = next_line_after(lines, ["Start Date", "When", "Date", "Date & Time", "Event date"])
+    value = infer_date_text_with_year(labelled, url, title)
+    if value and parse_iso_date(value) and in_range(parse_iso_date(value)):
+        return value
+
+    # 3) Search a small window around the page title/header, not the entire page.
+    near = date_text_near_title(lines, title, url)
+    if near and parse_iso_date(near) and in_range(parse_iso_date(near)):
+        return near
+
+    # 4) For POLITICO, do NOT scan the whole page: related cards and agenda snippets can
+    # contain unrelated dates. Keep fallback limited to the top of the official event page.
+    limit = 1600 if organization.lower() == "politico" else 3500
+    fallback = infer_date_text_with_year(full_text[:limit], url, title)
+    if fallback and parse_iso_date(fallback) and in_range(parse_iso_date(fallback)):
+        return fallback
+    return ""
 
 
 def category_from_text(text: str) -> str:
@@ -1013,21 +1211,14 @@ def extract_event_from_detail(scraper: Scraper, organization: str, url: str, def
     if not title:
         return None
 
-    date_text = next_line_after(lines, ["Start Date", "When", "Date", "Date & Time"])
-    if not first_date_text(date_text):
-        # Prefer dates that appear close to the selected title.
-        joined = "\n".join(lines)
-        idx = joined.lower().find(title.lower())
-        local = joined[idx : idx + 1000] if idx >= 0 else full_text[:2000]
-        date_text = infer_date_text_with_year(local, url, title) or infer_date_text_with_year(full_text, url, title)
-    else:
-        date_text = first_date_text(date_text) or date_text
+    date_text = select_event_date_text(soup, lines, full_text, title, url, organization)
     date_iso = parse_iso_date(date_text)
     if not date_iso or not in_range(date_iso):
         return None
 
     end_text = next_line_after(lines, ["End Date"])
     end_iso = parse_iso_date(first_date_text(end_text)) if end_text else ""
+    end_iso = end_iso or parse_end_iso_date(date_text)
     time_text = ""
     time_source = full_text[:1500]
     m_time = TIME_RE.search(time_source)
@@ -1654,8 +1845,10 @@ def main() -> None:
             all_events.extend(events)
         except Exception as exc:
             print(f"[warn] {fn.__name__} failed: {exc}")
+    apply_known_event_fixes(all_events)
     events = dedupe_events(all_events)
     apply_manual_sponsors(events)
+    apply_known_event_fixes(events)
     events = dedupe_events(events)
     payload = build_payload(events)
     OUTPUT_FILE.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
