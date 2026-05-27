@@ -7,7 +7,7 @@ Official sources covered:
 - Euractiv Events: https://events.euractiv.com/
 - Euronews Events: https://events.euronews.com/events plus discovered event microsites
 - The Parliament Magazine Events: https://events.theparliamentmagazine.eu/
-- logos / BBE conference properties and logos pages
+- Logos / European Defence & Security Conference: https://defencesecurityconference.eu/
 
 Output:
   data/events.json
@@ -794,6 +794,83 @@ def extract_partner_section_sponsors(soup: BeautifulSoup, source_url: str) -> li
     return dedupe_sponsors(candidates)
 
 
+
+
+def is_previous_edition_context(text: str) -> bool:
+    """Return True when a sponsor/partner block is clearly about a past edition."""
+    low = clean(text).lower()
+    previous_markers = [
+        "5th edition", "5 th edition", "fifth edition", "last edition", "previous edition",
+        "2025 edition", "2024 edition", "2023 edition", "2022 edition", "2021 edition",
+        "partners for the 5", "partners for 5", "organised in cooperation with", "organized in cooperation with",
+        "under the patronage", "5^{th}", "5 th",
+    ]
+    if any(m in low for m in previous_markers):
+        # Do not suppress a future current-edition block if the same container also says 6th/2026.
+        if not re.search(r"\b(6th|sixth|2026)\b", low):
+            return True
+    return False
+
+
+def extract_defsec_current_sponsors(soup: BeautifulSoup, source_url: str) -> list[Sponsor]:
+    """Extract current-edition EDSC partners only.
+
+    The official site currently shows partner logos from the 5th edition. Those are historical
+    and should not be displayed for the 2026 / 6th edition. This function only accepts partner
+    sections that are explicitly current or not marked as a past edition. When the 2026 partners
+    are published under a current heading such as 'Partners', 'Sponsors', or 'Partners for the
+    6th Edition', they will be picked up automatically.
+    """
+    candidates: list[Sponsor] = []
+    heading_re = re.compile(
+        r"\b(partners?|sponsors?|supporters?|with the support of|in cooperation with|in partnership with|"
+        r"organised in cooperation with|organized in cooperation with)\b",
+        re.I,
+    )
+    stop_re = re.compile(
+        r"\b(programme|program|speakers|media|news|videos|last edition|about us|concept and ambitions|"
+        r"key topics|news and podcast|sign up|help & support|follow us|legal)\b",
+        re.I,
+    )
+
+    heading_tags = ["h1", "h2", "h3", "h4", "h5", "strong", "b", "div", "p", "span"]
+    for tag in soup.find_all(heading_tags):
+        label = clean(tag.get_text(" ", strip=True))
+        if not label or len(label) > 140 or not heading_re.search(label):
+            continue
+        if is_previous_edition_context(label):
+            continue
+        # Ignore navigation/menu labels that contain no sponsor logos nearby.
+        blocks: list[Tag] = []
+        parent = tag.find_parent(["section", "article", "main", "div"])
+        if parent and not is_previous_edition_context(clean(parent.get_text(" ", strip=True))[:500]):
+            blocks.append(parent)
+        sib = tag.next_sibling
+        scanned = 0
+        while sib is not None and scanned < 18:
+            if isinstance(sib, Tag):
+                text = clean(sib.get_text(" ", strip=True))
+                if stop_re.search(text[:120]) or is_previous_edition_context(text[:700]):
+                    break
+                blocks.append(sib)
+                scanned += 1
+            sib = sib.next_sibling
+        for block in blocks:
+            candidates.extend(collect_logo_and_link_names(block, source_url, "Partner / sponsor", "high"))
+
+    # If a dedicated current partners page appears later, extract from it unless it is explicitly past-edition content.
+    for a in soup.find_all("a", href=True):
+        href = urljoin(source_url, a.get("href", "")).split("#")[0]
+        label = clean(a.get_text(" ", strip=True))
+        if "defencesecurityconference.eu" not in urlparse(href).netloc.lower():
+            continue
+        if not re.search(r"partners?|sponsors?", href + " " + label, re.I):
+            continue
+        if is_previous_edition_context(href + " " + label):
+            continue
+        # Do not fetch here to avoid recursion; the caller will merge partner pages if needed.
+    return dedupe_sponsors(candidates)
+
 def extract_sponsors_from_page(scraper: Scraper, url: str) -> list[Sponsor]:
     if not url:
         return []
@@ -819,8 +896,8 @@ def extract_sponsors_from_soup(soup: BeautifulSoup, source_url: str) -> list[Spo
         return extract_politico_sponsors(soup, source_url)
     if "euronews.com" in host:
         return extract_partner_section_sponsors(soup, source_url)
-    if any(x in host for x in ["logos-pa.com", "defencesecurityconference.eu", "spaceconference.eu"]):
-        return extract_partner_section_sponsors(soup, source_url)
+    if "defencesecurityconference.eu" in host:
+        return extract_defsec_current_sponsors(soup, source_url)
     return extract_partner_section_sponsors(soup, source_url)
 
 
@@ -1401,61 +1478,69 @@ def merge_partner_page_sponsors(scraper: Scraper, event: Event, candidate_urls: 
         event.sponsors.extend(extract_sponsors_from_soup(soup, href))
 
 
+
 def scrape_logos(scraper: Scraper) -> list[Event]:
-    # logos does not publish one clean public event calendar. To avoid non-event "insights" pages,
-    # this scraper only accepts verified conference/event microsites and event-like pages.
-    seeds = [
-        "https://defencesecurityconference.eu/",
-        "https://defencesecurityconference.eu/about-us/",
-        "https://spaceconference.eu/",
-    ]
-    events: list[Event] = []
-    seen = set()
-    for url in seeds:
-        soup = scraper.soup(url)
-        if not soup:
+    """Only track the European Defence & Security Conference 2026 for Logos.
+
+    The general logos site mixes events with insights/news pages, and other conference microsites
+    have previously created false positives. Per dashboard scope, keep this source limited to the
+    official EDSC site. At the moment, the EDSC page shows historical partner logos from the 5th
+    edition, so those are intentionally ignored. Future 2026 partners/sponsors published on the
+    same official site will be collected by extract_defsec_current_sponsors().
+    """
+    url = "https://defencesecurityconference.eu/"
+    soup = scraper.soup(url)
+    if not soup:
+        return []
+
+    lines = clean_lines(soup)
+    full_text = clean(" ".join(lines))
+    date_text = infer_date_text_with_year(full_text, url, "European Defence & Security Conference 2026") or "29 October 2026"
+    date_iso = parse_iso_date(date_text)
+    if not date_iso or not in_range(date_iso):
+        return []
+
+    venue = "Egmont Palace"
+    city = "Brussels"
+    if "Egmont Palace" not in full_text:
+        venue = ""
+    if "Brussels" not in full_text:
+        city = city_from_text(full_text)
+
+    sponsors = extract_defsec_current_sponsors(soup, url)
+
+    # Scan a future/current partners page if the site adds one, but ignore anything labelled as a past edition.
+    partner_links: set[str] = set()
+    for a in soup.find_all("a", href=True):
+        href = urljoin(url, a.get("href", "")).split("#")[0]
+        label = clean(a.get_text(" ", strip=True))
+        if "defencesecurityconference.eu" not in urlparse(href).netloc.lower():
             continue
-        partner_links: set[str] = set()
-        for a in soup.find_all("a", href=True):
-            href = urljoin(url, a["href"]).split("#")[0]
-            if re.search(r"partners?|sponsors?", href, re.I) or re.search(r"partners?|sponsors?", clean(a.get_text(" ", strip=True)), re.I):
-                partner_links.add(href)
+        if re.search(r"partners?|sponsors?", href + " " + label, re.I) and not is_previous_edition_context(href + " " + label):
+            partner_links.add(href)
+    for href in sorted(partner_links):
+        partner_soup = scraper.soup(href)
+        if not partner_soup:
+            continue
+        partner_text = clean(partner_soup.get_text(" ", strip=True))[:2000]
+        if is_previous_edition_context(partner_text):
+            continue
+        sponsors.extend(extract_defsec_current_sponsors(partner_soup, href))
 
-        # JSON-LD event records are safest.
-        for ev in extract_events_from_jsonld(soup, "logos", url):
-            if not is_actual_event(ev):
-                continue
-            ev.sponsors = extract_sponsors_from_soup(soup, url)
-            merge_partner_page_sponsors(scraper, ev, partner_links)
-            if ev.event_id not in seen:
-                events.append(ev)
-                seen.add(ev.event_id)
+    return [Event(
+        organization="Logos",
+        title="European Defence & Security Conference 2026",
+        date=date_iso,
+        date_text=date_text,
+        city=city,
+        venue=venue,
+        category="Defence & Security",
+        url=url,
+        description=extract_description_from_soup(soup, "European Defence & Security Conference 2026"),
+        sponsors=dedupe_sponsors(sponsors),
+        confidence="high",
+    )]
 
-        # Some conference sites do not expose JSON-LD but have an event-like title/date page.
-        ev = extract_event_from_detail(scraper, "logos", url)
-        if ev and is_actual_event(ev) and ev.event_id not in seen:
-            merge_partner_page_sponsors(scraper, ev, partner_links)
-            events.append(ev)
-            seen.add(ev.event_id)
-
-        # Crawl only internal links that themselves look like conference/event pages, not news or insights.
-        for a in soup.find_all("a", href=True):
-            href = urljoin(url, a["href"]).split("#")[0]
-            if href in seen:
-                continue
-            parsed = urlparse(href)
-            if parsed.netloc not in {"defencesecurityconference.eu", "spaceconference.eu", "www.spaceconference.eu"}:
-                continue
-            label = clean(a.get_text(" ", strip=True))
-            if not re.search(r"conference|summit|forum|event|agenda|programme|partners?|sponsors?", label + " " + href, re.I):
-                continue
-            ev2 = extract_event_from_detail(scraper, "logos", href)
-            if ev2 and is_actual_event(ev2):
-                ev2.sponsors.extend(extract_sponsors_from_soup(soup, url))
-                merge_partner_page_sponsors(scraper, ev2, partner_links | {href})
-                events.append(ev2)
-                seen.add(href)
-    return events
 
 def apply_manual_sponsors(events: list[Event]) -> None:
     if not MANUAL_SPONSORS_FILE.exists():
@@ -1543,12 +1628,11 @@ def build_payload(events: list[Event]) -> dict:
             "https://events.euractiv.com/",
             "https://events.euronews.com/events",
             "https://events.theparliamentmagazine.eu/",
-            "https://logos-pa.com/",
             "https://defencesecurityconference.eu/",
-            "https://spaceconference.eu/",
         ],
         "source_notes": [
             "Only public official source pages and their linked event detail pages are scraped.",
+            "Logos is intentionally limited to the official European Defence & Security Conference 2026 site to avoid mixing in Logos insights/news pages or unrelated conference microsites.",
             "Events are scraped for the full 2026 year by default; the dashboard automatically shows upcoming events first and moves past events into the Past view.",
             "Sponsors mean private companies, trade associations, coalitions or other entities that sponsor, present, support, partner with, host or co-organise the event with the tracked media organisation.",
             "Sponsor extraction is best-effort. The scraper reads labelled text, logo alt/title/src names and explicit organiser/partner statements; fully image-only logos may still need validation in data/manual_sponsors.csv.",
