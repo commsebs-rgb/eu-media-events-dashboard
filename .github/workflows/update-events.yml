@@ -37,16 +37,21 @@ jobs:
           python - <<'PY'
           import json
           from pathlib import Path
+
           p = Path("data/events.json")
           print("events.json exists:", p.exists())
+
           if p.exists():
               data = json.loads(p.read_text())
               events = data.get("events", [])
               print("events found:", len(events))
               print("date window:", data.get("date_window"))
               print("last updated:", data.get("last_updated_utc"))
-              for e in events[:8]:
-                  print("-", e.get("organization"), e.get("date"), e.get("title"), "sponsors:", [s.get("name") for s in e.get("sponsors", [])[:5]])
+
+              print("\nFirst 10 events:")
+              for e in events[:10]:
+                  sponsors = [s.get("name") for s in e.get("sponsors", [])[:8]]
+                  print("-", e.get("organization"), "|", e.get("date"), "|", e.get("title"), "| sponsors:", sponsors)
           PY
 
       - name: Commit updated data
