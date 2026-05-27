@@ -163,6 +163,20 @@ KNOWN_EVENT_FIXES = [
         "sponsors": ["MedTech Europe", "EFPIA"],
         "confidence": "high",
     },
+    {
+        "url_contains": ["energy-climate-forum-2026"],
+        "title_contains": ["energy climate forum", "energy & climate forum"],
+        "title": "POLITICO’s Energy & Climate Forum",
+        "date_text": "1 June 2026",
+        "date": "2026-06-01",
+        "end_date": "",
+        "time_text": "",
+        "city": "Brussels + online",
+        "venue": "",
+        "category": "Energy and Climate, Forums",
+        "sponsors": [],
+        "confidence": "medium",
+    },
 ]
 
 
@@ -335,14 +349,29 @@ def first_date_text(text: str) -> str:
             return m.group(0)
     return ""
 
-def infer_date_text_with_year(text: str, url: str = "", title: str = "") -> str:
-    """Find a date even when a 2026 event page writes only 'June 1' or '18-19 November'."""
+def infer_date_text_with_year(text: str, url: str = "", title: str = "", *, allow_url_title_year: bool = True) -> str:
+    """Find a date even when a page writes only 'June 1' or '18-19 November'.
+
+    Important safeguard: some event pages contain unrelated cards/agenda items with
+    month/day dates and the event title or URL contains a year such as 2026. In those
+    cases we must not blindly attach the title year to an unrelated date. For strict
+    extraction paths, pass allow_url_title_year=False so a year must appear in the
+    same text snippet as the date.
+    """
     text = clean(text)
     explicit = first_date_text(text)
     if explicit:
         return explicit
-    year_match = re.search(r"\b20\d{2}\b", " ".join([url, title, text[:500]]))
-    year = year_match.group(0) if year_match else "2026"
+
+    local_year = re.search(r"\b20\d{2}\b", text[:700])
+    if local_year:
+        year = local_year.group(0)
+    elif allow_url_title_year:
+        context_year = re.search(r"\b20\d{2}\b", " ".join([url, title]))
+        year = context_year.group(0) if context_year else "2026"
+    else:
+        return ""
+
     # 18-19 November
     m = re.search(rf"\b(\d{{1,2}})\s*[-–]\s*\d{{1,2}}\s+({MONTH_RE})\b", text, re.I)
     if m:
@@ -488,21 +517,147 @@ def structured_date_texts(soup: BeautifulSoup) -> list[str]:
     return deduped
 
 
-def date_text_near_title(lines: list[str], title: str, url: str = "") -> str:
+
+def _norm_title_tokens(text: str) -> set[str]:
+    text = clean(text).lower()
+    text = re.sub(r"\b(20\d{2}|politico|euractiv|euronews|parliament|magazine|events?|summit|forum|conference|roundtable|the|and|with|from|under|live|europe|eu)\b", " ", text)
+    return {w for w in re.findall(r"[a-z0-9]{4,}", text) if w not in {"register", "interest", "official", "page"}}
+
+
+def _title_matches_event(candidate: str, title: str, url: str = "") -> bool:
+    """Return True when a structured Event/name or time block appears to be the current page event."""
+    c = clean(candidate)
+    t = clean(title)
+    if not c or not t:
+        return False
+    ck = re.sub(r"\W+", "", c.lower())
+    tk = re.sub(r"\W+", "", t.lower())
+    if len(ck) >= 10 and len(tk) >= 10 and (ck in tk or tk in ck):
+        return True
+    ct = _norm_title_tokens(c)
+    tt = _norm_title_tokens(t)
+    if ct and tt and len(ct & tt) >= max(1, min(3, int(0.55 * min(len(ct), len(tt))))):
+        return True
+    slug = title_from_url_slug(url)
+    if slug and c and _title_matches_event(c, slug, ""):
+        return True
+    return False
+
+
+def jsonld_event_start_dates_matching(soup: BeautifulSoup, title: str, url: str = "") -> list[str]:
+    """JSON-LD dates, but only for Event objects that match the current detail page."""
+    dates: list[str] = []
+    all_event_items: list[dict] = []
+    for script in soup.find_all("script", type="application/ld+json"):
+        raw = script.string or script.get_text(" ")
+        if not raw:
+            continue
+        try:
+            data = json.loads(raw)
+        except Exception:
+            continue
+        stack = data if isinstance(data, list) else [data]
+        while stack:
+            item = stack.pop(0)
+            if isinstance(item, list):
+                stack.extend(item)
+                continue
+            if not isinstance(item, dict):
+                continue
+            if isinstance(item.get("@graph"), list):
+                stack.extend(item["@graph"])
+            types = item.get("@type", "")
+            is_event = any(str(t).lower() == "event" for t in types) if isinstance(types, list) else str(types).lower() == "event"
+            if is_event:
+                all_event_items.append(item)
+
+    for item in all_event_items:
+        start = clean(str(item.get("startDate", "")))
+        if not start:
+            continue
+        name = clean(str(item.get("name", "")))
+        item_url = clean(str(item.get("url", "")))
+        same_url = bool(item_url and url and item_url.rstrip("/") == url.rstrip("/"))
+        same_title = bool(name and _title_matches_event(name, title, url))
+        # If there is only one Event object, accept it; otherwise require title or URL match.
+        if same_url or same_title or len(all_event_items) == 1:
+            dates.append(start)
+    return dates
+
+
+def structured_date_texts_for_event(soup: BeautifulSoup, title: str, url: str, organization: str) -> list[str]:
+    """Return event-level date candidates, avoiding dates from related cards/lists."""
+    out: list[str] = []
+    org_low = organization.lower()
+
+    out.extend(jsonld_event_start_dates_matching(soup, title, url))
+
+    # These metadata fields are normally page-level, not related-card level.
+    selectors = [
+        ("meta", {"property": "event:start_time"}),
+        ("meta", {"property": "event:start_date"}),
+        ("meta", {"name": "event:start_time"}),
+        ("meta", {"name": "event:start_date"}),
+        ("meta", {"itemprop": "startDate"}),
+    ]
+    for name, attrs in selectors:
+        for tag in soup.find_all(name, attrs=attrs):
+            value = clean(tag.get("content", ""))
+            if value:
+                out.append(value)
+
+    # Generic <time datetime> tags are dangerous on POLITICO because related cards and
+    # agenda snippets may contain their own dates. Only accept them if their immediate
+    # block contains the current event title and does not look like a related-events block.
+    for tag in soup.find_all(["time", "span", "div"], attrs={"datetime": True}):
+        value = clean(tag.get("datetime", ""))
+        if not value:
+            continue
+        parent_text = ""
+        parent = tag
+        for _ in range(4):
+            parent = parent.find_parent() if isinstance(parent, Tag) else None
+            if not parent:
+                break
+            parent_text = clean(parent.get_text(" ", strip=True))
+            if len(parent_text) > 20:
+                break
+        parent_low = parent_text.lower()
+        if any(bad in parent_low for bad in ["related events", "more events", "past events", "upcoming events", "on the same topic", "latest news"]):
+            continue
+        if org_low == "politico":
+            if _title_matches_event(parent_text, title, url):
+                out.append(value)
+        else:
+            out.append(value)
+
+    seen = set()
+    deduped = []
+    for value in out:
+        key = value.lower()
+        if key not in seen:
+            seen.add(key)
+            deduped.append(value)
+    return deduped
+
+
+def date_text_near_title(lines: list[str], title: str, url: str = "", *, allow_url_title_year: bool = True) -> str:
     if not title:
         return ""
     title_low = re.sub(r"\W+", " ", title.lower()).strip()
-    stop_re = re.compile(r"^(related events|more events|latest|news|speakers|partners|sponsors|programme|program)$", re.I)
+    stop_re = re.compile(r"^(related events|more events|latest|news|speakers|partners|sponsors|programme|program|on the same topic|advertisement)$", re.I)
     for i, line in enumerate(lines):
         line_low = re.sub(r"\W+", " ", line.lower()).strip()
         if title_low and (title_low in line_low or line_low in title_low):
             window_lines = []
-            for j in range(i, min(i + 30, len(lines))):
+            for j in range(i, min(i + 22, len(lines))):
                 if j > i and stop_re.search(lines[j]):
                     break
                 window_lines.append(lines[j])
             window = " ".join(window_lines)
-            value = infer_date_text_with_year(window, url, title)
+            if any(bad in window.lower() for bad in ["related events", "more events", "on the same topic", "latest news"]):
+                continue
+            value = infer_date_text_with_year(window, url, title, allow_url_title_year=allow_url_title_year)
             if value and is_good_event_date_text(window):
                 return value
     return ""
@@ -513,26 +668,34 @@ def select_event_date_text(soup: BeautifulSoup, lines: list[str], full_text: str
     if fix:
         return fix.get("date_text", "")
 
-    # 1) Event-level structured dates are most reliable.
-    for value in structured_date_texts(soup):
-        if parse_iso_date(value) and in_range(parse_iso_date(value)):
+    org_low = organization.lower()
+
+    # 1) Event-level structured dates are most reliable, but they must belong to this
+    # event page. This avoids pulling dates from related cards or agenda snippets.
+    for value in structured_date_texts_for_event(soup, title, url, organization):
+        iso = parse_iso_date(value)
+        if iso and in_range(iso):
             return value
 
-    # 2) Explicit labels in the event page body.
+    # 2) Explicit labels in the event page body. For POLITICO, only accept labels where
+    # the year appears in the same snippet, unless a known-event safeguard applies.
     labelled = next_line_after(lines, ["Start Date", "When", "Date", "Date & Time", "Event date"])
-    value = infer_date_text_with_year(labelled, url, title)
+    value = infer_date_text_with_year(labelled, url, title, allow_url_title_year=(org_low != "politico"))
     if value and parse_iso_date(value) and in_range(parse_iso_date(value)):
         return value
 
     # 3) Search a small window around the page title/header, not the entire page.
-    near = date_text_near_title(lines, title, url)
+    near = date_text_near_title(lines, title, url, allow_url_title_year=(org_low != "politico"))
     if near and parse_iso_date(near) and in_range(parse_iso_date(near)):
         return near
 
-    # 4) For POLITICO, do NOT scan the whole page: related cards and agenda snippets can
-    # contain unrelated dates. Keep fallback limited to the top of the official event page.
-    limit = 1600 if organization.lower() == "politico" else 3500
-    fallback = infer_date_text_with_year(full_text[:limit], url, title)
+    # 4) Final fallback. For POLITICO, deliberately do not infer dates from page-wide
+    # text. POLITICO pages frequently include other event cards; a page title containing
+    # “2026” can otherwise turn unrelated September 24 / 8:15 snippets into fake 2026 dates.
+    if org_low == "politico":
+        return ""
+
+    fallback = infer_date_text_with_year(full_text[:3500], url, title)
     if fallback and parse_iso_date(fallback) and in_range(parse_iso_date(fallback)):
         return fallback
     return ""
