@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-05-27T09:07:29+00:00",
+  "last_updated_utc": "2026-05-27T10:26:08+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -2428,38 +2428,6 @@
     },
     {
       "organization": "POLITICO",
-      "title": "Health Care Summit 2026",
-      "date": "2026-09-24",
-      "date_text": "September 24, 2026",
-      "end_date": "",
-      "time_text": "8:15 am",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Health, Financial Services",
-      "url": "https://www.politico.eu/health-care-summit-2026/",
-      "description": "Health Care Summit 2026 Europe is boosting health care competitiveness amid rapid innovation and policy changes, while balancing access, security, and industry needs. The Health Care Summit will bring… Pro Roundtable – Health This invitation-only event is for POLITICO Pro subscribers and will take place in Brussels, Belgium. Pro Roundtables offer a unique opportunity to engage with the POLITICO… September 24, 2026 8:15 am CEST Brussels Playbook Live 2026 This September, Brussels Playbook is stepping out of your inbox and onto the stage. Read daily by policymakers, diplomats, officials and experts, Brussels Playbook is… POLITICO London Playbook Live 2026 We’re bringing Playbook to the stage. ",
-      "sponsors": [
-        {
-          "name": "MedTech Europe",
-          "role": "Partner",
-          "source_url": "https://www.politico.eu/health-care-summit-2026/",
-          "extraction": "known-official-page",
-          "confidence": "high"
-        },
-        {
-          "name": "EFPIA",
-          "role": "Partner",
-          "source_url": "https://www.politico.eu/health-care-summit-2026/",
-          "extraction": "known-official-page",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "medium",
-      "source_official": true,
-      "id": "10506dbf8325a8f7"
-    },
-    {
-      "organization": "POLITICO",
       "title": "POLITICO Pro Debrief: the key takeaways from Eurosatory 2026",
       "date": "2026-09-24",
       "date_text": "September 24, 2026",
@@ -2703,6 +2671,38 @@
       "confidence": "high",
       "source_official": true,
       "id": "ce612768d591b2ba"
+    },
+    {
+      "organization": "POLITICO",
+      "title": "POLITICO Health Care Summit 2026",
+      "date": "2026-12-01",
+      "date_text": "1–2 December 2026",
+      "end_date": "2026-12-02",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Health",
+      "url": "https://events.politico.com/event/politico-health-care-summit-2026",
+      "description": "Health Care Summit 2026 Europe is boosting health care competitiveness amid rapid innovation and policy changes, while balancing access, security, and industry needs. The Health Care Summit will bring… Pro Roundtable – Health This invitation-only event is for POLITICO Pro subscribers and will take place in Brussels, Belgium. Pro Roundtables offer a unique opportunity to engage with the POLITICO… September 24, 2026 8:15 am CEST Brussels Playbook Live 2026 This September, Brussels Playbook is stepping out of your inbox and onto the stage. Read daily by policymakers, diplomats, officials and experts, Brussels Playbook is… POLITICO London Playbook Live 2026 We’re bringing Playbook to the stage. ",
+      "sponsors": [
+        {
+          "name": "MedTech Europe",
+          "role": "Partner",
+          "source_url": "https://events.politico.com/event/health-care-summit-2026",
+          "extraction": "known-official-page",
+          "confidence": "high"
+        },
+        {
+          "name": "EFPIA",
+          "role": "Partner",
+          "source_url": "https://events.politico.com/event/health-care-summit-2026",
+          "extraction": "known-official-page",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "1e750dc4e38e3fc7"
     }
   ]
 }
