@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-05-27T10:26:08+00:00",
+  "last_updated_utc": "2026-05-27T12:53:50+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -1438,7 +1438,7 @@
       "date": "2026-05-27",
       "date_text": "May 27, 2026",
       "end_date": "2026-05-27",
-      "time_text": "",
+      "time_text": "9:00 am",
       "city": "Nicosia",
       "venue": "European Parliament Liaison Office",
       "category": "PM+ Talks",
@@ -1559,18 +1559,18 @@
       "organization": "POLITICO",
       "title": "POLITICO’s Energy & Climate Forum",
       "date": "2026-06-01",
-      "date_text": "June 1, 2026",
+      "date_text": "1 June 2026",
       "end_date": "",
       "time_text": "",
       "city": "Brussels + online",
       "venue": "",
       "category": "Energy and Climate, Forums",
-      "url": "https://www.politico.eu/energy-climate-forum-2026/",
-      "description": "Fallback entry from official POLITICO event page target; update will be replaced if the page exposes event metadata.",
+      "url": "https://events.politico.com/event/politico-energy-climate-forum-2026",
+      "description": "Log in See all the content and easy-to-use features by logging in or registering! Log in Continue as a guest Log in Log in See all the content and easy-to-use features by logging in or registering! Log in Language Resource center Contact app support Legal",
       "sponsors": [],
       "confidence": "medium",
       "source_official": true,
-      "id": "d75729ba5983b177"
+      "id": "caa90ab2ae140d2f"
     },
     {
       "organization": "Euractiv",
