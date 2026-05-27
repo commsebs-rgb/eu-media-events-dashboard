@@ -1737,40 +1737,46 @@ def scrape_politico(scraper: Scraper) -> list[Event]:
             events.append(detail)
             continue
 
-        # Fallback for accessible listing cards where the detail platform hides metadata.
-        for seed in ["https://www.politico.eu/events/", "https://events.politico.com/"]:
-            soup = scraper.soup(seed)
-            if not soup:
-                continue
-            a = soup.find("a", href=lambda x: x and href.rstrip("/") in urljoin(seed, x).rstrip("/"))
-            if not a:
-                continue
-            context = surrounding_text(a)
-            date_text = first_date_text(context)
-            date_iso = parse_iso_date(date_text)
-            title = listing_title or candidate_title_from_lines(clean_lines(BeautifulSoup(f"<div>{context}</div>", "lxml"))) or title_from_url_slug(href)
-            if title and date_iso and in_range(date_iso):
-                fallback_event = Event(
-                    organization="POLITICO",
-                    title=title,
-                    date=date_iso,
-                    date_text=date_text,
-                    time_text=(TIME_RE.search(context).group(0) if TIME_RE.search(context) else ""),
-                    city=city_from_text(context),
-                    category=category_from_text(context) or ("Summits" if "summit" in (title + href).lower() else "Forums" if "forum" in (title + href).lower() else ""),
-                    url=href,
-                    description=context[:700],
-                    sponsors=listing_sponsors,
-                    confidence="medium",
-                )
-                add_politico_known_partners(fallback_event)
-                events.append(fallback_event)
-            break
+        # IMPORTANT: do not create POLITICO events from broad listing-card fallback dates.
+        # POLITICO pages often include repeated agenda/related-event snippets, and those
+        # snippets caused multiple unrelated events to be incorrectly dated 24 September
+        # 2026 / 8:15 am. If the detail page does not expose a reliable event-level date,
+        # we skip it here and rely only on explicit official safeguards below.
+        continue
     add_politico_fallbacks(events, scraper)
     for event in events:
         add_politico_known_partners(event)
         event.sponsors = dedupe_sponsors(event.sponsors)
     return events
+
+
+
+def remove_unreliable_politico_dates(events: list[Event]) -> list[Event]:
+    """Drop POLITICO events whose date looks like a reused agenda/listing date.
+
+    The dashboard should never keep a POLITICO event when the scraper only found a
+    generic 24 September 2026 / 8:15 am date from unrelated modules. Known official
+    event pages, such as Health Care Summit 2026 and Energy & Climate Forum, are
+    protected by KNOWN_EVENT_FIXES before this guard runs.
+    """
+    cleaned: list[Event] = []
+    for event in events:
+        if event.organization.lower() == "politico":
+            fix = event_fix_for(event.title, event.url)
+            if fix:
+                cleaned.append(event)
+                continue
+            blob = " ".join([event.date or "", event.date_text or "", event.time_text or "", event.description or ""]).lower()
+            # This is the recurring false date observed on POLITICO pages.
+            if event.date == "2026-09-24" and ("8:15" in blob or "24 sep" in blob or "september 24" in blob):
+                print(f"[drop] POLITICO unreliable reused date: {event.title} | {event.url}")
+                continue
+            # If the title itself is generic, skip rather than polluting the dashboard.
+            if is_bad_title(event.title):
+                print(f"[drop] POLITICO bad title: {event.title} | {event.url}")
+                continue
+        cleaned.append(event)
+    return cleaned
 
 def discover_euronews_event_links(scraper: Scraper) -> set[str]:
     links = {
@@ -1987,7 +1993,7 @@ def build_payload(events: list[Event]) -> dict:
         "source_notes": [
             "Only public official source pages and their linked event detail pages are scraped.",
             "Logos is intentionally limited to the official European Defence & Security Conference 2026 site to avoid mixing in Logos insights/news pages or unrelated conference microsites.",
-            "Events are scraped for the full 2026 year by default; the dashboard automatically shows upcoming events first and moves past events into the Past view.",
+            "Events are scraped for the full 2026 year by default; the dashboard automatically shows upcoming events first and moves past events into the Past view. POLITICO dates are accepted only from event-level metadata, explicit official safeguards, or reliable detail-page labels to prevent repeated listing/agenda dates from being reused.",
             "Sponsors mean private companies, trade associations, coalitions or other entities that sponsor, present, support, partner with, host or co-organise the event with the tracked media organisation.",
             "Sponsor extraction is best-effort. The scraper reads labelled text, logo alt/title/src names and explicit organiser/partner statements; fully image-only logos may still need validation in data/manual_sponsors.csv.",
             "Sponsor confidence is high for manual entries, medium for labelled text/logo extraction, and low for affiliation/programme inference.",
@@ -2009,9 +2015,11 @@ def main() -> None:
         except Exception as exc:
             print(f"[warn] {fn.__name__} failed: {exc}")
     apply_known_event_fixes(all_events)
+    all_events = remove_unreliable_politico_dates(all_events)
     events = dedupe_events(all_events)
     apply_manual_sponsors(events)
     apply_known_event_fixes(events)
+    events = remove_unreliable_politico_dates(events)
     events = dedupe_events(events)
     payload = build_payload(events)
     OUTPUT_FILE.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
