@@ -14,6 +14,7 @@ env:
 jobs:
   update-events:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -51,7 +52,16 @@ jobs:
               print("\nFirst 10 events:")
               for e in events[:10]:
                   sponsors = [s.get("name") for s in e.get("sponsors", [])[:8]]
-                  print("-", e.get("organization"), "|", e.get("date"), "|", e.get("title"), "| sponsors:", sponsors)
+                  print(
+                      "-",
+                      e.get("organization"),
+                      "|",
+                      e.get("date"),
+                      "|",
+                      e.get("title"),
+                      "| sponsors:",
+                      sponsors,
+                  )
           PY
 
       - name: Commit updated data
