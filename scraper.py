@@ -142,6 +142,7 @@ KNOWN_PRIVATE_ENTITIES = {
     "international copper association europe", "transport & environment", "norsk hydro", "microsoft",
     "philips", "besins", "chiesi", "corteva", "automotive coalition for europe", "adpa", "airc", "ame", "egea", "figiefa", "insurance europe", "repsol technology lab", "horse technologies", "horse powertrain",
     "chevron", "theon group", "theon", "cyprus chamber of commerce and industry", "aegean", "agean", "getoffers.com", "getoffers", "cleantech for see", "cleantech south east europe", "locatee", "cyprus chamber", "medtech europe", "efpia",
+    "accenture", "broadcom", "google", "google cloud",
 }
 
 # Targeted official-event safeguards for pages whose HTML contains multiple dates
@@ -175,6 +176,20 @@ KNOWN_EVENT_FIXES = [
         "venue": "",
         "category": "Health",
         "sponsors": ["MedTech Europe", "EFPIA"],
+        "confidence": "high",
+    },
+    {
+        "url_contains": ["ai-tech-week-2026", "politico-ai-tech-week-2026"],
+        "title_contains": ["ai & tech week", "ai tech week"],
+        "title": "POLITICO AI & Tech Week 2026",
+        "date_text": "5–7 May 2026",
+        "date": "2026-05-05",
+        "end_date": "2026-05-07",
+        "time_text": "",
+        "city": "Brussels",
+        "venue": "",
+        "category": "AI, Technology",
+        "sponsors": ["Accenture", "Broadcom", "Uber", "Visa", "Google"],
         "confidence": "high",
     },
     {
@@ -1571,6 +1586,10 @@ def scrape_the_parliament(scraper: Scraper) -> list[Event]:
 
 
 POLITICO_EXPLICIT_EVENT_PAGES = {
+    "https://www.politico.eu/ai-tech-week-2026/": "POLITICO AI & Tech Week 2026",
+    "https://www.politico.eu/politico-ai-tech-week-2026/": "POLITICO AI & Tech Week 2026",
+    "https://events.politico.com/event/ai-tech-week-2026": "POLITICO AI & Tech Week 2026",
+    "https://events.politico.com/event/politico-ai-tech-week-2026": "POLITICO AI & Tech Week 2026",
     "https://www.politico.eu/health-care-summit-2026/": "Health Care Summit 2026",
     "https://www.politico.eu/politico-health-care-summit-2026/": "Health Care Summit 2026",
     "https://www.politico.eu/energy-climate-forum-2026/": "POLITICO’s Energy & Climate Forum",
@@ -1594,6 +1613,14 @@ def add_politico_known_partners(event: Event) -> None:
             Sponsor(name="MedTech Europe", role="Partner", source_url=event.url, extraction="known-official-page", confidence="high"),
             Sponsor(name="EFPIA", role="Partner", source_url=event.url, extraction="known-official-page", confidence="high"),
         ])
+    if "ai-tech-week-2026" in key or "ai & tech week 2026" in key or "ai tech week 2026" in key:
+        event.sponsors.extend([
+            Sponsor(name="Accenture", role="Partner", source_url=event.url, extraction="known-official-page", confidence="high"),
+            Sponsor(name="Broadcom", role="Partner", source_url=event.url, extraction="known-official-page", confidence="high"),
+            Sponsor(name="Uber", role="Partner", source_url=event.url, extraction="known-official-page", confidence="high"),
+            Sponsor(name="Visa", role="Partner", source_url=event.url, extraction="known-official-page", confidence="high"),
+            Sponsor(name="Google", role="Partner", source_url=event.url, extraction="known-official-page", confidence="high"),
+        ])
 
 
 def add_politico_fallbacks(events: list[Event], scraper: Scraper) -> None:
@@ -1606,6 +1633,35 @@ def add_politico_fallbacks(events: list[Event], scraper: Scraper) -> None:
     def has_event(needle: str) -> bool:
         n = needle.lower()
         return any(n in (e.title + " " + e.url).lower() for e in events)
+
+    if not has_event("ai tech week") and not has_event("ai & tech week"):
+        for url in ["https://www.politico.eu/ai-tech-week-2026/", "https://www.politico.eu/politico-ai-tech-week-2026/"]:
+            ev = extract_event_from_detail(scraper, "POLITICO", url, "AI, Technology", "POLITICO AI & Tech Week 2026")
+            if ev:
+                ev.category = ev.category or "AI, Technology"
+                add_politico_known_partners(ev)
+                events.append(ev)
+                break
+        else:
+            events.append(Event(
+                organization="POLITICO",
+                title="POLITICO AI & Tech Week 2026",
+                date="2026-05-05",
+                end_date="2026-05-07",
+                date_text="5–7 May 2026",
+                city="Brussels",
+                category="AI, Technology",
+                url="https://www.politico.eu/ai-tech-week-2026/",
+                description="Fallback entry from official POLITICO event page target; update will be replaced if the page exposes event metadata.",
+                confidence="high",
+                sponsors=[
+                    Sponsor(name="Accenture", role="Partner", source_url="https://www.politico.eu/ai-tech-week-2026/", extraction="known-official-page", confidence="high"),
+                    Sponsor(name="Broadcom", role="Partner", source_url="https://www.politico.eu/ai-tech-week-2026/", extraction="known-official-page", confidence="high"),
+                    Sponsor(name="Uber", role="Partner", source_url="https://www.politico.eu/ai-tech-week-2026/", extraction="known-official-page", confidence="high"),
+                    Sponsor(name="Visa", role="Partner", source_url="https://www.politico.eu/ai-tech-week-2026/", extraction="known-official-page", confidence="high"),
+                    Sponsor(name="Google", role="Partner", source_url="https://www.politico.eu/ai-tech-week-2026/", extraction="known-official-page", confidence="high"),
+                ],
+            ))
 
     if not has_event("energy climate forum"):
         for url in ["https://www.politico.eu/energy-climate-forum-2026/", "https://www.politico.eu/politico-energy-climate-forum-2026/"]:
@@ -1709,7 +1765,7 @@ def discover_politico_event_links(scraper: Scraper) -> dict[str, str]:
             if parsed.netloc not in {"www.politico.eu", "politico.eu"}:
                 continue
             blob = href.lower()
-            if re.search(r"(health-care-summit-2026|healthcare-summit-2026|energy-climate-forum-2026|summit|forum|roundtable|conference)", blob):
+            if re.search(r"(ai-tech-week-2026|health-care-summit-2026|healthcare-summit-2026|energy-climate-forum-2026|summit|forum|roundtable|conference)", blob):
                 if not re.search(r"/(speaker|speakers|session|sessions|agenda|register|privacy|terms)/", blob):
                     links.setdefault(href, title_from_url_slug(href))
     return links
@@ -2060,7 +2116,7 @@ def build_payload(events: list[Event]) -> dict:
         "source_notes": [
             "Only public official source pages and their linked event detail pages are scraped.",
             "Logos is intentionally limited to the official European Defence & Security Conference 2026 site to avoid mixing in Logos insights/news pages or unrelated conference microsites.",
-            "Events are scraped for the full 2026 year by default; the dashboard automatically shows upcoming events first and moves past events into the Past view. POLITICO dates are accepted only from event-level metadata, explicit official safeguards, or reliable detail-page labels to prevent repeated listing/agenda dates from being reused.",
+            "Events are scraped for the full 2026 year by default; the dashboard automatically shows upcoming events first and moves past events into the Past view. POLITICO dates are accepted only from event-level metadata, explicit official safeguards, or reliable detail-page labels to prevent repeated listing/agenda dates from being reused. POLITICO AI & Tech Week 2026 is tracked as an official must-have page with partner safeguards and will still be re-scanned daily for new/changed partners.",
             "Sponsors mean private companies, trade associations, coalitions or other entities that sponsor, present, support, partner with, host or co-organise the event with the tracked media organisation.",
             "Sponsor extraction is best-effort. The scraper reads labelled text, logo alt/title/src names and explicit organiser/partner statements; fully image-only logos may still need validation in data/manual_sponsors.csv.",
             "Sponsor confidence is high for manual entries, medium for labelled text/logo extraction, and low for affiliation/programme inference.",
