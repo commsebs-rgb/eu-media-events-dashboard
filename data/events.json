@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-06-03T19:17:54+00:00",
+  "last_updated_utc": "2026-06-04T16:41:23+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -199,23 +199,6 @@
     },
     {
       "organization": "Euractiv",
-      "title": "VOLTAGE PRO BRIEFING 2026",
-      "date": "2026-03-12",
-      "date_text": "12-03-2026",
-      "end_date": "",
-      "time_text": "12:30",
-      "city": "Online",
-      "venue": "",
-      "category": "Policy Events, Awards, Energy and Environment",
-      "url": "https://events.euractiv.com/event/info/eet-pro-briefing-2026",
-      "description": "Events Calendar Euractiv organises policy events in Brussels and other European capitals. Find out more about Euractiv Event Partnerships",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "7af7084008831f28"
-    },
-    {
-      "organization": "Euractiv",
       "title": "Agrifood Policy Conference",
       "date": "2026-03-17",
       "date_text": "17-03-2026",
@@ -230,38 +213,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "2c20774c96215f98"
-    },
-    {
-      "organization": "Euractiv",
-      "title": "Improving Europe’s water quality - How can the revised UWWTD be implemented fairly and effectively?",
-      "date": "2026-03-17",
-      "date_text": "17-03-2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "Hybrid",
-      "category": "Policy Events, Health and Consumers, Digital",
-      "url": "https://events.euractiv.com/event/info/improving-europes-water-quality-how-can-the-revised-urban-wastewater-treatment-directive-be-implemented-fairly-and-effectivel",
-      "description": "Events Calendar Euractiv organises policy events in Brussels and other European capitals. Find out more about Euractiv Event Partnerships",
-      "sponsors": [
-        {
-          "name": "EFPIA",
-          "role": "Sponsor / partner",
-          "source_url": "https://events.euractiv.com/event/info/improving-europes-water-quality-how-can-the-revised-urban-wastewater-treatment-directive-be-implemented-fairly-and-effectivel",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Europa",
-          "role": "Sponsor / partner",
-          "source_url": "https://events.euractiv.com/event/info/improving-europes-water-quality-how-can-the-revised-urban-wastewater-treatment-directive-be-implemented-fairly-and-effectivel",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "a9470f7968add0e9"
     },
     {
       "organization": "Euractiv",
@@ -486,31 +437,6 @@
     },
     {
       "organization": "The Parliament",
-      "title": "Addressing Cardio-Renal-Metabolic diseases in Europe’s Safe Hearts Plan",
-      "date": "2026-04-15",
-      "date_text": "April 15, 2026",
-      "end_date": "2026-04-15",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/addressing-cardio-renal-metabolic-diseases-in-europes-cardiovascular-health-plan/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Boehringer Ingelheim",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/addressing-cardio-renal-metabolic-diseases-in-europes-cardiovascular-health-plan/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "0d3505d40bc94690"
-    },
-    {
-      "organization": "The Parliament",
       "title": "Rare Diseases Forum 2026",
       "date": "2026-04-21",
       "date_text": "April 21, 2026",
@@ -711,136 +637,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "11f550aae13c4725"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "The future of IP in Europe: Navigating innovation and growth",
-      "date": "2026-04-22",
-      "date_text": "April 22, 2026",
-      "end_date": "2026-04-22",
-      "time_text": "8:30 am",
-      "city": "Brussels",
-      "venue": "TownHall Europe",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/the-future-of-ip-in-europe-navigating-innovation-and-growth/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Qualcomm",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/the-future-of-ip-in-europe-navigating-innovation-and-growth/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Carolina Lorenzon EU Media Policy and Regulatory Affairs Director MFE-MediaForEurope",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/the-future-of-ip-in-europe-navigating-innovation-and-growth/",
-          "extraction": "auto-section-logo-link-text",
-          "confidence": "high"
-        },
-        {
-          "name": "Nathalie Berger",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/the-future-of-ip-in-europe-navigating-innovation-and-growth/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Ania Helseth",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/the-future-of-ip-in-europe-navigating-innovation-and-growth/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Alain Strowel",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/the-future-of-ip-in-europe-navigating-innovation-and-growth/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Emilie Anthonis",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/the-future-of-ip-in-europe-navigating-innovation-and-growth/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Niklas Lagergren 09 12 57 665997",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/the-future-of-ip-in-europe-navigating-innovation-and-growth/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Patrice Pellegrino",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/the-future-of-ip-in-europe-navigating-innovation-and-growth/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Mario Siragusa 20 11 53 196758",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/the-future-of-ip-in-europe-navigating-innovation-and-growth/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Horacio Gutierrez",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/the-future-of-ip-in-europe-navigating-innovation-and-growth/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Ann Chaplin",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/the-future-of-ip-in-europe-navigating-innovation-and-growth/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Axel Ferrazzini",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/the-future-of-ip-in-europe-navigating-innovation-and-growth/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Francesca Ferrari",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/the-future-of-ip-in-europe-navigating-innovation-and-growth/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Christina Petersson",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/the-future-of-ip-in-europe-navigating-innovation-and-growth/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Website Speakers",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/the-future-of-ip-in-europe-navigating-innovation-and-growth/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Enrico Letta",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/the-future-of-ip-in-europe-navigating-innovation-and-growth/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "b8fd9a52d9f0f9bc"
     },
     {
       "organization": "The Parliament",
@@ -1151,31 +947,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "4144baef02ebef40"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "The future of golden visas in Europe — balancing investment, security and integrity",
-      "date": "2026-05-06",
-      "date_text": "May 6, 2026",
-      "end_date": "2026-05-06",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/the-future-of-golden-visas-in-europe-balancing-investment-security-and-integrity/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Christinageorgaki",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/the-future-of-golden-visas-in-europe-balancing-investment-security-and-integrity/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "925061046194871f"
     },
     {
       "organization": "Euractiv",
@@ -1539,6 +1310,45 @@
       "id": "2020507b7e978062"
     },
     {
+      "organization": "The Parliament",
+      "title": "Made in Europe Innovation: Decarbonising mobility today",
+      "date": "2026-06-02",
+      "date_text": "June 2, 2026",
+      "end_date": "2026-06-04",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "European Parliament, Brussels",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/made-in-europe-innovation-decarbonising-mobility-today/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Repsol",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/made-in-europe-innovation-decarbonising-mobility-today/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Index",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/made-in-europe-innovation-decarbonising-mobility-today/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Horse Powertrain",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/made-in-europe-innovation-decarbonising-mobility-today/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "23532768c9d1b7f8"
+    },
+    {
       "organization": "Euractiv",
       "title": "Euractiv Pro Briefing - VOLTAGE edition II",
       "date": "2026-06-03",
@@ -1831,31 +1641,6 @@
       "id": "d6e622c7bff5a798"
     },
     {
-      "organization": "The Parliament",
-      "title": "Women’s health and menopause: Turning momentum into action",
-      "date": "2026-06-09",
-      "date_text": "June 9, 2026",
-      "end_date": "2026-06-09",
-      "time_text": "8:30 am",
-      "city": "Brussels",
-      "venue": "Blankspace Brussels",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/womens-health-and-menopause-turning-momentum-into-action/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Besins Healthcare",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/womens-health-and-menopause-turning-momentum-into-action/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "2fec6ca193c93b39"
-    },
-    {
       "organization": "Euractiv",
       "title": "Hybrid construction as a solution to mitigate climate and housing crises",
       "date": "2026-06-11",
@@ -1918,6 +1703,38 @@
       "confidence": "high",
       "source_official": true,
       "id": "db31efcd44690c58"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "Open Innovation Dialogue: Closing Europe’s AI language gap",
+      "date": "2026-06-15",
+      "date_text": "June 15, 2026",
+      "end_date": "2026-06-15",
+      "time_text": "",
+      "city": "Strasbourg",
+      "venue": "European Parliament, Strasbourg",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/open-innovation-dialogue-closing-europes-ai-language-gap/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Microsoft",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/open-innovation-dialogue-closing-europes-ai-language-gap/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Lingua Expanding Europes Voices In Ai",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/open-innovation-dialogue-closing-europes-ai-language-gap/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "c6b1de9c1fa8b720"
     },
     {
       "organization": "Euractiv",
@@ -2062,6 +1879,98 @@
     },
     {
       "organization": "The Parliament",
+      "title": "MEP Awards 2026",
+      "date": "2026-06-30",
+      "date_text": "June 30, 2026",
+      "end_date": "2026-06-30",
+      "time_text": "7:00 pm",
+      "city": "Brussels",
+      "venue": "Albert Hall",
+      "category": "Awards",
+      "url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "MSD",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Microsoft",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Eupolicy",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Coca Cola Europe",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Our Business In Europe",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Booking",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Camparigroup",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "44efd8422555acfc"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "From ambition to action: Can Europe end HIV by 2030?",
+      "date": "2026-07-01",
+      "date_text": "July 1, 2026",
+      "end_date": "2026-07-01",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "European Parliament, Brussels",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/from-ambition-to-action-can-europe-end-hiv-by-2030/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Lilly",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/from-ambition-to-action-can-europe-end-hiv-by-2030/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "f76765639724c598"
+    },
+    {
+      "organization": "The Parliament",
       "title": "EU Presidency Forum: Ireland",
       "date": "2026-07-02",
       "date_text": "July 2, 2026",
@@ -2107,36 +2016,21 @@
       "id": "231d12a9c18ca3f1"
     },
     {
-      "organization": "The Parliament",
-      "title": "Unlocking demand for clean ammonia in Europe",
-      "date": "2026-07-02",
-      "date_text": "July 2, 2026",
-      "end_date": "2026-07-02",
-      "time_text": "10:00 am",
+      "organization": "Euractiv",
+      "title": "Legal certainty and competitiveness - Is greater tax alignment needed in the EU?",
+      "date": "2026-09-08",
+      "date_text": "08-09-2026",
+      "end_date": "",
+      "time_text": "",
       "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/unlocking-demand-for-clean-ammonia-in-europe/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Ammonia Europe 12 12 55 110964",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/unlocking-demand-for-clean-ammonia-in-europe/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Ammoniaenergy",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/unlocking-demand-for-clean-ammonia-in-europe/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        }
-      ],
+      "venue": "Euractiv Media Office",
+      "category": "Policy Events, Economy and Jobs, Technology",
+      "url": "https://events.euractiv.com/event/info/legal-certainty-and-competitiveness-is-greater-tax-alignment-needed-in-the-eu",
+      "description": "Events Calendar Euractiv organises policy events in Brussels and other European capitals. Find out more about Euractiv Event Partnerships",
+      "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "ae9f3658da46cf61"
+      "id": "0e7b041a75df7bb1"
     },
     {
       "organization": "The Parliament",
