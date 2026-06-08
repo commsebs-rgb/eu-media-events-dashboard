@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-06-07T11:38:34+00:00",
+  "last_updated_utc": "2026-06-08T17:40:43+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -2733,6 +2733,23 @@
       "id": "ce612768d591b2ba"
     },
     {
+      "organization": "The Parliament",
+      "title": "EU-Mercosur Forum 2026",
+      "date": "2026-10-14",
+      "date_text": "October 14, 2026",
+      "end_date": "2026-10-14",
+      "time_text": "8:30 am",
+      "city": "Brussels",
+      "venue": "European Parliament, Brussels",
+      "category": "Summits",
+      "url": "https://events.theparliamentmagazine.eu/event/eu-mercosur-forum-2026/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "eedf26dbf1ad8b63"
+    },
+    {
       "organization": "POLITICO",
       "title": "Pro Roundtable – Trade",
       "date": "2026-11-06",
@@ -2748,6 +2765,31 @@
       "confidence": "high",
       "source_official": true,
       "id": "fed6b33f580778d9"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "Should journalists be afraid of content creators?",
+      "date": "2026-11-23",
+      "date_text": "November 23, 2026",
+      "end_date": "2026-11-23",
+      "time_text": "5:45 pm",
+      "city": "Brussels",
+      "venue": "The Merode",
+      "category": "PM+ Talks",
+      "url": "https://events.theparliamentmagazine.eu/event/pmtalks-should-journalists-be-afraid-of-content-creators/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Themerode",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/pmtalks-should-journalists-be-afraid-of-content-creators/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "72704044c6764099"
     },
     {
       "organization": "POLITICO",
