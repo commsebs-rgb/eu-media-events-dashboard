@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-06-17T16:55:29+00:00",
+  "last_updated_utc": "2026-06-18T16:54:32+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -637,7 +637,7 @@
       "venue": "",
       "category": "AI, Technology",
       "url": "https://events.politico.com/event/politico-ai-tech-week-2026",
-      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Bulletin Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris POLITI",
+      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris Sunday Crunch Podcasts",
       "sponsors": [
         {
           "name": "Accenture",
@@ -1605,6 +1605,23 @@
     },
     {
       "organization": "Euractiv",
+      "title": "Euractiv Pro Briefing - FIREPOWER edition I",
+      "date": "2026-06-29",
+      "date_text": "29-06-2026",
+      "end_date": "",
+      "time_text": "12:30",
+      "city": "Online",
+      "venue": "",
+      "category": "Policy Events, Sustainability, Trade",
+      "url": "https://events.euractiv.com/event/info/euractiv-pro-briefing-firepower-edition-i",
+      "description": "Events Calendar Euractiv organises policy events in Brussels and other European capitals. Find out more about Euractiv Event Partnerships",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "9164fd71275f1f37"
+    },
+    {
+      "organization": "Euractiv",
       "title": "Energy poverty in Europe – How can EU social, housing and climate policies deliver a fair transition?",
       "date": "2026-06-30",
       "date_text": "30-06-2026",
@@ -1775,38 +1792,6 @@
     },
     {
       "organization": "The Parliament",
-      "title": "Unlocking demand for clean ammonia in Europe",
-      "date": "2026-07-02",
-      "date_text": "July 2, 2026",
-      "end_date": "2026-07-02",
-      "time_text": "10:00 am",
-      "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/unlocking-demand-for-clean-ammonia-in-europe/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Ammonia Europe 12 12 55 110964",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/unlocking-demand-for-clean-ammonia-in-europe/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Ammoniaenergy",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/unlocking-demand-for-clean-ammonia-in-europe/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "ae9f3658da46cf61"
-    },
-    {
-      "organization": "The Parliament",
       "title": "Europe’s automotive transformation: Building a competitive and sustainable future",
       "date": "2026-07-07",
       "date_text": "July 7, 2026",
@@ -1829,6 +1814,23 @@
       "confidence": "high",
       "source_official": true,
       "id": "6477e8bf992f6cac"
+    },
+    {
+      "organization": "Euractiv",
+      "title": "Euractiv Pro Briefing - BUDGET edition I",
+      "date": "2026-07-09",
+      "date_text": "09-07-2026",
+      "end_date": "",
+      "time_text": "12:30",
+      "city": "Online",
+      "venue": "",
+      "category": "Policy Events, Technology, Economy",
+      "url": "https://events.euractiv.com/event/info/euractiv-pro-briefing-budget-edition-i",
+      "description": "Events Calendar Euractiv organises policy events in Brussels and other European capitals. Find out more about Euractiv Event Partnerships",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "bac8a27b49b10ccc"
     },
     {
       "organization": "Euractiv",
@@ -1952,6 +1954,31 @@
       "confidence": "high",
       "source_official": true,
       "id": "ce612768d591b2ba"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "AFSIC – Investing in Africa",
+      "date": "2026-10-13",
+      "date_text": "October 13, 2026",
+      "end_date": "2026-10-14",
+      "time_text": "9:00 am",
+      "city": "London",
+      "venue": "Park Plaza Westminster Bridge",
+      "category": "Media Partner",
+      "url": "https://events.theparliamentmagazine.eu/event/afsic-investing-in-africa/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Afsic",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/afsic-investing-in-africa/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "5008ed9669576d55"
     },
     {
       "organization": "The Parliament",
