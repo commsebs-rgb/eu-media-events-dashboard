@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-06-19T16:27:38+00:00",
+  "last_updated_utc": "2026-06-20T12:22:44+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -321,6 +321,52 @@
       "confidence": "high",
       "source_official": true,
       "id": "abaa8c860ac17dc9"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "Tech, Digital and AI Summit 2026",
+      "date": "2026-02-26",
+      "date_text": "February 26, 2026",
+      "end_date": "2026-02-26",
+      "time_text": "8:30 am",
+      "city": "Brussels",
+      "venue": "Renaissance Brussels Hotel",
+      "category": "Summits",
+      "url": "https://events.theparliamentmagazine.eu/event/tech-digital-and-ai-summit-2/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Wero Wallet",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/tech-digital-and-ai-summit-2/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Booking",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/tech-digital-and-ai-summit-2/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Medium",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/tech-digital-and-ai-summit-2/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Bookingpublicaffairs",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/tech-digital-and-ai-summit-2/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "979d156867c7ae54"
     },
     {
       "organization": "POLITICO",
@@ -1191,6 +1237,23 @@
       "id": "5f2b231e387fc3d4"
     },
     {
+      "organization": "The Parliament",
+      "title": "Solarplaza Summit Poland",
+      "date": "2026-05-12",
+      "date_text": "May 12, 2026",
+      "end_date": "2026-05-12",
+      "time_text": "8:30 am",
+      "city": "Warsaw",
+      "venue": "",
+      "category": "Media Partner",
+      "url": "https://events.theparliamentmagazine.eu/event/solarplaza-summit-poland/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "edf4998a37bdfefb"
+    },
+    {
       "organization": "Euractiv",
       "title": "Euractiv Pro Briefing - THE HACK edition II",
       "date": "2026-05-13",
@@ -1851,6 +1914,31 @@
       "confidence": "high",
       "source_official": true,
       "id": "d6e622c7bff5a798"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "Women’s health and menopause: Turning momentum into action",
+      "date": "2026-06-09",
+      "date_text": "June 9, 2026",
+      "end_date": "2026-06-09",
+      "time_text": "8:30 am",
+      "city": "Brussels",
+      "venue": "Blankspace Brussels",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/womens-health-and-menopause-turning-momentum-into-action/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Besins Healthcare",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/womens-health-and-menopause-turning-momentum-into-action/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "2fec6ca193c93b39"
     },
     {
       "organization": "Euractiv",
@@ -2584,6 +2672,31 @@
       "confidence": "high",
       "source_official": true,
       "id": "c2b638115e277376"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "Renewable ethanol: Europe’s home-grown solution for de-fossilising road transport",
+      "date": "2026-09-15",
+      "date_text": "September 15, 2026",
+      "end_date": "2026-09-15",
+      "time_text": "",
+      "city": "Strasbourg",
+      "venue": "European Parliament, Strasbourg",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/renewable-ethanol-europes-home-grown-solution-for-de-fossilising-road-transport/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Epure",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/renewable-ethanol-europes-home-grown-solution-for-de-fossilising-road-transport/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "096f78d0f8d44aa1"
     },
     {
       "organization": "The Parliament",
