@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-06-22T19:04:57+00:00",
+  "last_updated_utc": "2026-06-23T14:20:10+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -482,6 +482,31 @@
       "confidence": "high",
       "source_official": true,
       "id": "72e2709ffde23522"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "Euronews Health Summit 2026",
+      "date": "2026-03-17",
+      "date_text": "Tuesday, March 17, 2026",
+      "end_date": "2026-11-03",
+      "time_text": "Doors open at 12:30 PM",
+      "city": "Brussels",
+      "venue": "Cardo Brussels",
+      "category": "Health",
+      "url": "https://events.theparliamentmagazine.eu/event/health-summit-2026/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Sobi",
+          "role": "Partner / sponsor",
+          "source_url": "https://events.theparliamentmagazine.eu/event/health-summit-2026/",
+          "extraction": "official-page safeguard",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "830a4866a0915289"
     },
     {
       "organization": "POLITICO",
