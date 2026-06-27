@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-06-26T08:42:25+00:00",
+  "last_updated_utc": "2026-06-27T08:13:54+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -174,23 +174,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "979d156867c7ae54"
-    },
-    {
-      "organization": "POLITICO",
-      "title": "Pro Roundtable – Energy and Climate UK",
-      "date": "2026-03-03",
-      "date_text": "2026-03-03T16:45:00+00:00",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Energy",
-      "url": "https://www.politico.eu/event/pro-roundtable-energy-and-climate-uk/",
-      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris Sunday Crunch Podcasts",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "55cd39ea54e3ce31"
     },
     {
       "organization": "The Parliament",
@@ -1229,23 +1212,6 @@
       "id": "cf110a5698ae2aaf"
     },
     {
-      "organization": "POLITICO",
-      "title": "Brüssel-Alumni Stammtisch – Special Edition",
-      "date": "2026-06-04",
-      "date_text": "June 4, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Agriculture and Food, Technology, Politics",
-      "url": "https://www.politico.eu/event/brussel-alumni-stammtisch/",
-      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris Sunday Crunch Podcasts",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "5d9025f06ec1e9a1"
-    },
-    {
       "organization": "The Parliament",
       "title": "Unlocking Europe’s growth potential: Finance, digitalisation and the future of entrepreneurship",
       "date": "2026-06-04",
@@ -1827,7 +1793,7 @@
     },
     {
       "organization": "Euractiv",
-      "title": "Euractiv Pro Briefing - BUDGET BRIEF edition I",
+      "title": "Euractiv Pro Briefing - BUDGET edition I",
       "date": "2026-07-09",
       "date_text": "09-07-2026",
       "end_date": "",
@@ -1840,7 +1806,7 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "3a7de71011b32fbd"
+      "id": "bac8a27b49b10ccc"
     },
     {
       "organization": "Euractiv",
