@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-06-29T10:06:40+00:00",
+  "last_updated_utc": "2026-06-30T08:45:34+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -488,23 +488,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "eceb7b16d7b8502c"
-    },
-    {
-      "organization": "Euractiv",
-      "title": "HARVEST Pro Briefing edition II 2026",
-      "date": "2026-04-22",
-      "date_text": "22-04-2026",
-      "end_date": "",
-      "time_text": "12:30",
-      "city": "Online",
-      "venue": "",
-      "category": "Policy Events, Agriculture and Food, Technology",
-      "url": "https://events.euractiv.com/event/info/agrifood-pro-briefing-2nd-edition-2026",
-      "description": "Events Calendar Euractiv organises policy events in Brussels and other European capitals. Find out more about Euractiv Event Partnerships",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "11f550aae13c4725"
     },
     {
       "organization": "Euractiv",
@@ -1932,6 +1915,31 @@
       "id": "b368301b67b86c14"
     },
     {
+      "organization": "Euractiv",
+      "title": "EU Code Week 2026 Launch Event: Building Resilience, Connecting & Empowering Communities in the Age of AI",
+      "date": "2026-10-12",
+      "date_text": "12-10-2026",
+      "end_date": "",
+      "time_text": "14:00 ",
+      "city": "Online",
+      "venue": "",
+      "category": "Policy Events, Technology, Digital",
+      "url": "https://events.euractiv.com/event/info/eu-code-week-2026-launch-event-building-resilience-connecting-empowering-communities-in-the-age-of-ai",
+      "description": "Events Calendar Euractiv organises policy events in Brussels and other European capitals. Find out more about Euractiv Event Partnerships",
+      "sponsors": [
+        {
+          "name": "Code Week Eu Flag1",
+          "role": "Sponsor / partner",
+          "source_url": "https://events.euractiv.com/event/info/eu-code-week-2026-launch-event-building-resilience-connecting-empowering-communities-in-the-age-of-ai",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "d2b41bd6fc3cac58"
+    },
+    {
       "organization": "The Parliament",
       "title": "Brussels Climate Week 2026",
       "date": "2026-10-12",
@@ -2034,8 +2042,65 @@
       "venue": "Egmont Palace",
       "category": "Defence & Security",
       "url": "https://defencesecurityconference.eu/",
-      "description": "6th European Defence & Security Conference 29 October 2026 | Egmont Palace, Brussels Add to Calendar The 5th Edition was organised in cooperation with The 5th Edition was organised under the patronage of the European Parliament",
-      "sponsors": [],
+      "description": "6th European Defence & Security Conference 29 October 2026 | Egmont Palace, Brussels REGISTER NOW",
+      "sponsors": [
+        {
+          "name": "MBDA",
+          "role": "Partner / sponsor",
+          "source_url": "https://defencesecurityconference.eu/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Beretta",
+          "role": "Partner / sponsor",
+          "source_url": "https://defencesecurityconference.eu/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "KNDS",
+          "role": "Partner / sponsor",
+          "source_url": "https://defencesecurityconference.eu/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "GEOSAT mix",
+          "role": "Partner / sponsor",
+          "source_url": "https://defencesecurityconference.eu/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "AIRBUS",
+          "role": "Partner / sponsor",
+          "source_url": "https://defencesecurityconference.eu/partners/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Defencesecurityconference",
+          "role": "Partner / sponsor",
+          "source_url": "https://defencesecurityconference.eu/partners/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Screenshot",
+          "role": "Partner / sponsor",
+          "source_url": "https://defencesecurityconference.eu/partners/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Conf",
+          "role": "Partner / sponsor",
+          "source_url": "https://defencesecurityconference.eu/partners/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        }
+      ],
       "confidence": "high",
       "source_official": true,
       "id": "7467790a7973ccd8"
