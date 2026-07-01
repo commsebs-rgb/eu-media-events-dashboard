@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-06-30T08:45:34+00:00",
+  "last_updated_utc": "2026-07-01T09:03:35+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -488,45 +488,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "eceb7b16d7b8502c"
-    },
-    {
-      "organization": "Euractiv",
-      "title": "Health Policy Conference",
-      "date": "2026-05-05",
-      "date_text": "05-05-2026",
-      "end_date": "",
-      "time_text": "09:30",
-      "city": "Brussels",
-      "venue": "Provided upon registration",
-      "category": "Policy Events, Health and Consumers, Digital",
-      "url": "https://events.euractiv.com/event/info/health-policy-conference-2026",
-      "description": "Events Calendar Euractiv organises policy events in Brussels and other European capitals. Find out more about Euractiv Event Partnerships",
-      "sponsors": [
-        {
-          "name": "EFPIA",
-          "role": "Sponsor / partner",
-          "source_url": "https://events.euractiv.com/event/info/health-policy-conference-2026",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        },
-        {
-          "name": "Chiesi",
-          "role": "Sponsor / partner",
-          "source_url": "https://events.euractiv.com/event/info/health-policy-conference-2026",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        },
-        {
-          "name": "MedTech Europe",
-          "role": "Sponsor / partner",
-          "source_url": "https://events.euractiv.com/event/info/health-policy-conference-2026",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "d27a9309aea1ef96"
     },
     {
       "organization": "POLITICO",
@@ -1719,38 +1680,6 @@
     },
     {
       "organization": "The Parliament",
-      "title": "Unlocking demand for clean ammonia in Europe",
-      "date": "2026-07-02",
-      "date_text": "July 2, 2026",
-      "end_date": "2026-07-02",
-      "time_text": "10:00 am",
-      "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/unlocking-demand-for-clean-ammonia-in-europe/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Ammonia Europe 12 12 55 110964",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/unlocking-demand-for-clean-ammonia-in-europe/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Ammoniaenergy",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/unlocking-demand-for-clean-ammonia-in-europe/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "ae9f3658da46cf61"
-    },
-    {
-      "organization": "The Parliament",
       "title": "Europe’s automotive transformation: Building a competitive and sustainable future",
       "date": "2026-07-07",
       "date_text": "July 7, 2026",
@@ -1824,6 +1753,38 @@
       "confidence": "high",
       "source_official": true,
       "id": "e57522a8a8f54f7a"
+    },
+    {
+      "organization": "Euractiv",
+      "title": "Ending HIV in Europe - Are we moving fast enough to achieve the 2030 targets?",
+      "date": "2026-09-10",
+      "date_text": "10-09-2026",
+      "end_date": "",
+      "time_text": "",
+      "city": "Online",
+      "venue": "",
+      "category": "Policy Events, Health and Consumers, Digital",
+      "url": "https://events.euractiv.com/event/info/ending-hiv-in-europe-are-we-moving-fast-enough-to-achieve-the-2030-targets",
+      "description": "Events Calendar Euractiv organises policy events in Brussels and other European capitals. Find out more about Euractiv Event Partnerships",
+      "sponsors": [
+        {
+          "name": "Gilead",
+          "role": "Sponsor / partner",
+          "source_url": "https://events.euractiv.com/event/info/ending-hiv-in-europe-are-we-moving-fast-enough-to-achieve-the-2030-targets",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Gilead Sciences",
+          "role": "Sponsor / partner",
+          "source_url": "https://events.euractiv.com/event/info/ending-hiv-in-europe-are-we-moving-fast-enough-to-achieve-the-2030-targets",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "6e3a226cea6b77bd"
     },
     {
       "organization": "Euractiv",
@@ -1913,6 +1874,45 @@
       "confidence": "high",
       "source_official": true,
       "id": "b368301b67b86c14"
+    },
+    {
+      "organization": "Euractiv",
+      "title": "Preparing for RED IV – How can renewable energy deliver for heating, industry and rural communities?",
+      "date": "2026-09-29",
+      "date_text": "29-09-2026",
+      "end_date": "",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "Hybrid",
+      "category": "Policy Events, Awards, Energy and Environment",
+      "url": "https://events.euractiv.com/event/info/preparing-for-red-iv-how-can-renewable-energy-deliver-for-heating-industry-and-rural-communities",
+      "description": "Events Calendar Euractiv organises policy events in Brussels and other European capitals. Find out more about Euractiv Event Partnerships",
+      "sponsors": [
+        {
+          "name": "Liquid Gas Europe",
+          "role": "Sponsor / partner",
+          "source_url": "https://events.euractiv.com/event/info/preparing-for-red-iv-how-can-renewable-energy-deliver-for-heating-industry-and-rural-communities",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Europa",
+          "role": "Sponsor / partner",
+          "source_url": "https://events.euractiv.com/event/info/preparing-for-red-iv-how-can-renewable-energy-deliver-for-heating-industry-and-rural-communities",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Organisation Detail En",
+          "role": "Sponsor / partner",
+          "source_url": "https://events.euractiv.com/event/info/preparing-for-red-iv-how-can-renewable-energy-deliver-for-heating-industry-and-rural-communities",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "fe3324a639116901"
     },
     {
       "organization": "Euractiv",
@@ -2171,7 +2171,7 @@
       "time_text": "",
       "city": "Brussels",
       "venue": "European Parliament, Brussels",
-      "category": "Policy Events",
+      "category": "Media Partner",
       "url": "https://events.theparliamentmagazine.eu/event/insects-for-europe-a-blueprint-for-eu-leadership-in-a-circular-bioeconomy/",
       "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
       "sponsors": [
