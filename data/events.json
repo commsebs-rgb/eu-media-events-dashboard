@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-07-06T09:20:44+00:00",
+  "last_updated_utc": "2026-07-07T08:54:22+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -281,6 +281,23 @@
       "confidence": "high",
       "source_official": true,
       "id": "55cd39ea54e3ce31"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "International Women’s Day Talks 2026",
+      "date": "2026-03-04",
+      "date_text": "March 4, 2026",
+      "end_date": "2026-03-04",
+      "time_text": "9:00 am",
+      "city": "Brussels",
+      "venue": "TownHall Europe",
+      "category": "PM+ Talks",
+      "url": "https://events.theparliamentmagazine.eu/event/international-womens-day-talks-2/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "e3df981a963a0215"
     },
     {
       "organization": "POLITICO",
@@ -1175,6 +1192,23 @@
       "id": "2020507b7e978062"
     },
     {
+      "organization": "The Parliament",
+      "title": "Made in Europe Innovation: Decarbonising mobility today",
+      "date": "2026-06-02",
+      "date_text": "June 2, 2026",
+      "end_date": "2026-06-04",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "European Parliament, Brussels",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/made-in-europe-innovation-decarbonising-mobility-today/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "23532768c9d1b7f8"
+    },
+    {
       "organization": "Euractiv",
       "title": "Euractiv Pro Briefing - VOLTAGE edition II",
       "date": "2026-06-03",
@@ -1508,6 +1542,23 @@
       "id": "db31efcd44690c58"
     },
     {
+      "organization": "The Parliament",
+      "title": "Open Innovation Dialogue: Closing Europe’s AI language gap",
+      "date": "2026-06-15",
+      "date_text": "June 15, 2026",
+      "end_date": "2026-06-15",
+      "time_text": "",
+      "city": "Strasbourg",
+      "venue": "European Parliament, Strasbourg",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/open-innovation-dialogue-closing-europes-ai-language-gap/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "c6b1de9c1fa8b720"
+    },
+    {
       "organization": "POLITICO",
       "title": "AperoPro: The incoming Irish Presidency of the Council of the EU",
       "date": "2026-06-17",
@@ -1785,6 +1836,23 @@
       "id": "eb956c29c3881c51"
     },
     {
+      "organization": "The Parliament",
+      "title": "MEP Awards 2026",
+      "date": "2026-06-30",
+      "date_text": "June 30, 2026",
+      "end_date": "2026-06-30",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "Albert Hall",
+      "category": "Awards",
+      "url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "44efd8422555acfc"
+    },
+    {
       "organization": "POLITICO",
       "title": "Europe at a crossroads: Exclusive insights from Public First’s new pan-European polling",
       "date": "2026-07-01",
@@ -2004,6 +2072,23 @@
       "confidence": "high",
       "source_official": true,
       "id": "e8001747eefb68fe"
+    },
+    {
+      "organization": "Euractiv",
+      "title": "Media Partnership - PKEE Energy Day 2026 - How to Restore EU Competitiveness and Strengthen Economic Resilience?",
+      "date": "2026-09-09",
+      "date_text": "09-09-2026",
+      "end_date": "",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "Solvay Library",
+      "category": "Policy Events, Awards, Energy and Environment",
+      "url": "https://events.euractiv.com/event/info/media-partnership-pkee-energy-day-2026-how-to-restore-eu-competitiveness-and-strengthen-economic-resilience",
+      "description": "Events Calendar Euractiv organises policy events in Brussels and other European capitals. Find out more about Euractiv Event Partnerships",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "e6393225cbbf36e9"
     },
     {
       "organization": "Euractiv",
@@ -2336,13 +2421,6 @@
           "confidence": "high"
         },
         {
-          "name": "KNDS",
-          "role": "Partner / sponsor",
-          "source_url": "https://defencesecurityconference.eu/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
           "name": "ELTGroup Block Wordmark def MONO",
           "role": "Partner / sponsor",
           "source_url": "https://defencesecurityconference.eu/",
@@ -2350,7 +2428,7 @@
           "confidence": "high"
         },
         {
-          "name": "Arsenal Bulgaria",
+          "name": "Banners",
           "role": "Partner / sponsor",
           "source_url": "https://defencesecurityconference.eu/",
           "extraction": "auto-section-logo",
@@ -2364,13 +2442,6 @@
           "confidence": "high"
         },
         {
-          "name": "AIRBUS",
-          "role": "Partner / sponsor",
-          "source_url": "https://defencesecurityconference.eu/partners/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
           "name": "Defencesecurityconference",
           "role": "Partner / sponsor",
           "source_url": "https://defencesecurityconference.eu/partners/",
@@ -2378,7 +2449,7 @@
           "confidence": "high"
         },
         {
-          "name": "ELTGroup Block Wordmark def Grande",
+          "name": "Arsenal Bulgaria",
           "role": "Partner / sponsor",
           "source_url": "https://defencesecurityconference.eu/partners/",
           "extraction": "auto-section-logo",
@@ -2421,6 +2492,23 @@
       "id": "fed6b33f580778d9"
     },
     {
+      "organization": "The Parliament",
+      "title": "Should journalists be afraid of content creators?",
+      "date": "2026-11-23",
+      "date_text": "November 23, 2026",
+      "end_date": "2026-11-23",
+      "time_text": "6:30 pm",
+      "city": "Brussels",
+      "venue": "The Merode",
+      "category": "PM+ Talks",
+      "url": "https://events.theparliamentmagazine.eu/event/pmtalks-should-journalists-be-afraid-of-content-creators/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "72704044c6764099"
+    },
+    {
       "organization": "POLITICO",
       "title": "POLITICO Health Care Summit 2026",
       "date": "2026-12-01",
@@ -2451,6 +2539,23 @@
       "confidence": "high",
       "source_official": true,
       "id": "1e750dc4e38e3fc7"
+    },
+    {
+      "organization": "Euractiv",
+      "title": "Energy & Environment Policy Conference 2026",
+      "date": "2026-12-03",
+      "date_text": "03-12-2026",
+      "end_date": "",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "Provided upon registration",
+      "category": "Policy Events, Awards, Energy and Environment",
+      "url": "https://events.euractiv.com/event/info/energy-environment-policy-conference-2026",
+      "description": "Events Calendar Euractiv organises policy events in Brussels and other European capitals. Find out more about Euractiv Event Partnerships",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "2983c1c4a80436d5"
     },
     {
       "organization": "POLITICO",
