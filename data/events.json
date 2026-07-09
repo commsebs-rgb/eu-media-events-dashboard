@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-07-08T07:48:56+00:00",
+  "last_updated_utc": "2026-07-09T08:53:08+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -33,7 +33,50 @@
       "category": "Awards",
       "url": "https://events.theparliamentmagazine.eu/event/apa-awards/",
       "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [],
+      "sponsors": [
+        {
+          "name": "EFFAS",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/apa-awards/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Aboica",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/apa-awards/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Herbalife",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/apa-awards/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Aboca",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/apa-awards/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Steelforpackagingeurope",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/apa-awards/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Dods Training",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/apa-awards/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
       "confidence": "high",
       "source_official": true,
       "id": "ab55d13e89564730"
@@ -84,7 +127,22 @@
       "category": "PM+ Talks",
       "url": "https://events.theparliamentmagazine.eu/event/international-womens-day-talks-2/",
       "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [],
+      "sponsors": [
+        {
+          "name": "Besins Healthcare",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/international-womens-day-talks-2/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Abbvie",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/international-womens-day-talks-2/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
       "confidence": "high",
       "source_official": true,
       "id": "e3df981a963a0215"
@@ -151,7 +209,29 @@
       "category": "Summits",
       "url": "https://events.theparliamentmagazine.eu/event/smes-forum-2026/",
       "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [],
+      "sponsors": [
+        {
+          "name": "Screenshot",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/smes-forum-2026/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Sage",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/smes-forum-2026/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Shopify",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/smes-forum-2026/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
       "confidence": "high",
       "source_official": true,
       "id": "a2b009321b4da14f"
@@ -174,6 +254,76 @@
           "role": "Partner",
           "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
           "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Eucope",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Sanofi 22 14 02 883384",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Ultragenyx Rare Diseases",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Chiesi",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Alexion",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Eurordis",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Amgen",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Biogen",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Sanofi",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Ptcbio",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
+          "extraction": "auto-section-link-domain",
           "confidence": "high"
         },
         {
@@ -266,76 +416,6 @@
           "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
           "extraction": "auto-section-logo",
           "confidence": "high"
-        },
-        {
-          "name": "Simon Bennett",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Flaminia Macchia",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Alexander Natz secretary General European Confederation of Pharmaceutical Entrepreneurs (EUCOPE)",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
-          "extraction": "auto-section-logo-link-text",
-          "confidence": "high"
-        },
-        {
-          "name": "Rare Diseases Forum",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Daria Julkowska",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Magdalena Daccord 03 10 08 627436",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "elena nicod Picsart AiImageEnhancer 20 15 59 086222",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Rosa Castro 1",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Tobias Hagedorn 20 14 36 422902",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "MODERATOR: Sarah-Taïssir Bencharif MD & Independent Journalist",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
-          "extraction": "auto-section-logo-link-text",
-          "confidence": "high"
         }
       ],
       "confidence": "high",
@@ -407,7 +487,36 @@
       "category": "Summits",
       "url": "https://events.theparliamentmagazine.eu/event/circular-economy-forum/",
       "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [],
+      "sponsors": [
+        {
+          "name": "Screenshot",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/circular-economy-forum/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Metalpackagingeurope",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/circular-economy-forum/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Suez",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/circular-economy-forum/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Unesda",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/circular-economy-forum/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
       "confidence": "high",
       "source_official": true,
       "id": "9c50cad627bec8e0"
@@ -519,14 +628,28 @@
           "name": "Chevron",
           "role": "Partner",
           "source_url": "https://events.theparliamentmagazine.eu/event/cyprus-forward-shaping-eu-and-mediterranean-horizons/",
-          "extraction": "auto-known-official-page",
+          "extraction": "auto-section-link-domain",
           "confidence": "high"
         },
         {
           "name": "THEON Group",
           "role": "Partner",
           "source_url": "https://events.theparliamentmagazine.eu/event/cyprus-forward-shaping-eu-and-mediterranean-horizons/",
-          "extraction": "auto-known-official-page",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Aegeanair",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/cyprus-forward-shaping-eu-and-mediterranean-horizons/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        },
+        {
+          "name": "GetOffers.com",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/cyprus-forward-shaping-eu-and-mediterranean-horizons/",
+          "extraction": "auto-section-link-domain",
           "confidence": "high"
         },
         {
@@ -538,13 +661,6 @@
         },
         {
           "name": "AEGEAN",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/cyprus-forward-shaping-eu-and-mediterranean-horizons/",
-          "extraction": "auto-known-official-page",
-          "confidence": "high"
-        },
-        {
-          "name": "GetOffers.com",
           "role": "Partner",
           "source_url": "https://events.theparliamentmagazine.eu/event/cyprus-forward-shaping-eu-and-mediterranean-horizons/",
           "extraction": "auto-known-official-page",
@@ -704,7 +820,22 @@
       "category": "Policy Events",
       "url": "https://events.theparliamentmagazine.eu/event/made-in-europe-innovation-decarbonising-mobility-today/",
       "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [],
+      "sponsors": [
+        {
+          "name": "Repsol",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/made-in-europe-innovation-decarbonising-mobility-today/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Horse Powertrain",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/made-in-europe-innovation-decarbonising-mobility-today/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
       "confidence": "high",
       "source_official": true,
       "id": "23532768c9d1b7f8"
@@ -755,7 +886,15 @@
       "category": "Media Partner",
       "url": "https://events.theparliamentmagazine.eu/event/european-conference-on-rare-diseases-and-orphan-products-ecrd-2026/",
       "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [],
+      "sponsors": [
+        {
+          "name": "Eurordis",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/european-conference-on-rare-diseases-and-orphan-products-ecrd-2026/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
       "confidence": "high",
       "source_official": true,
       "id": "5f450eeb2579b6ad"
@@ -772,7 +911,36 @@
       "category": "Summits",
       "url": "https://events.theparliamentmagazine.eu/event/european-industry-forum-2026/",
       "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [],
+      "sponsors": [
+        {
+          "name": "Fuelseurope 23 13 52 559780",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/european-industry-forum-2026/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "GE Aerospace 25 11 38 277993",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/european-industry-forum-2026/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Iru",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/european-industry-forum-2026/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Internationalcopper",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/european-industry-forum-2026/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
       "confidence": "high",
       "source_official": true,
       "id": "4b99cf6c49ca8221"
@@ -845,7 +1013,15 @@
       "category": "Policy Events",
       "url": "https://events.theparliamentmagazine.eu/event/europes-growth-engine-empowering-small-businesses-in-the-age-of-ai/",
       "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [],
+      "sponsors": [
+        {
+          "name": "Visa",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/europes-growth-engine-empowering-small-businesses-in-the-age-of-ai/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
       "confidence": "high",
       "source_official": true,
       "id": "03d9b7082fe6b579"
@@ -954,7 +1130,15 @@
       "category": "Policy Events",
       "url": "https://events.theparliamentmagazine.eu/event/womens-health-and-menopause-turning-momentum-into-action/",
       "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [],
+      "sponsors": [
+        {
+          "name": "Besins Healthcare",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/womens-health-and-menopause-turning-momentum-into-action/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
       "confidence": "high",
       "source_official": true,
       "id": "2fec6ca193c93b39"
@@ -1003,7 +1187,22 @@
       "category": "Summits",
       "url": "https://events.theparliamentmagazine.eu/event/european-biotech-forum-2026/",
       "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [],
+      "sponsors": [
+        {
+          "name": "Amgen",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/european-biotech-forum-2026/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Europabio",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/european-biotech-forum-2026/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
       "confidence": "high",
       "source_official": true,
       "id": "db31efcd44690c58"
@@ -1020,7 +1219,15 @@
       "category": "Policy Events",
       "url": "https://events.theparliamentmagazine.eu/event/open-innovation-dialogue-closing-europes-ai-language-gap/",
       "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [],
+      "sponsors": [
+        {
+          "name": "Microsoft",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/open-innovation-dialogue-closing-europes-ai-language-gap/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
       "confidence": "high",
       "source_official": true,
       "id": "c6b1de9c1fa8b720"
@@ -1170,7 +1377,43 @@
       "category": "Awards",
       "url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
       "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [],
+      "sponsors": [
+        {
+          "name": "MSD",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Coca Cola Europe",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Booking",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Microsoft",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Camparigroup",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
       "confidence": "high",
       "source_official": true,
       "id": "44efd8422555acfc"
@@ -1187,7 +1430,15 @@
       "category": "Policy Events",
       "url": "https://events.theparliamentmagazine.eu/event/from-ambition-to-action-can-europe-end-hiv-by-2030/",
       "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [],
+      "sponsors": [
+        {
+          "name": "Gilead",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/from-ambition-to-action-can-europe-end-hiv-by-2030/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
       "confidence": "high",
       "source_official": true,
       "id": "f76765639724c598"
@@ -1204,7 +1455,29 @@
       "category": "PM+ Talks",
       "url": "https://events.theparliamentmagazine.eu/event/eu-presidency-forum-ireland/",
       "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [],
+      "sponsors": [
+        {
+          "name": "Booking",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/eu-presidency-forum-ireland/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Takeda",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/eu-presidency-forum-ireland/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Europeanmovement",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/eu-presidency-forum-ireland/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
       "confidence": "high",
       "source_official": true,
       "id": "231d12a9c18ca3f1"
@@ -1221,7 +1494,22 @@
       "category": "Policy Events",
       "url": "https://events.theparliamentmagazine.eu/event/unlocking-demand-for-clean-ammonia-in-europe/",
       "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [],
+      "sponsors": [
+        {
+          "name": "Ammonia Europe 12 12 55 110964",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/unlocking-demand-for-clean-ammonia-in-europe/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Ammoniaenergy",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/unlocking-demand-for-clean-ammonia-in-europe/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
       "confidence": "high",
       "source_official": true,
       "id": "ae9f3658da46cf61"
@@ -1238,7 +1526,15 @@
       "category": "Policy Events",
       "url": "https://events.theparliamentmagazine.eu/event/europes-automotive-transformation-building-a-competitive-and-sustainable-future/",
       "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [],
+      "sponsors": [
+        {
+          "name": "Auto",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/europes-automotive-transformation-building-a-competitive-and-sustainable-future/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
       "confidence": "high",
       "source_official": true,
       "id": "6477e8bf992f6cac"
@@ -1411,7 +1707,15 @@
       "category": "Policy Events",
       "url": "https://events.theparliamentmagazine.eu/event/renewable-ethanol-europes-home-grown-solution-for-de-fossilising-road-transport/",
       "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [],
+      "sponsors": [
+        {
+          "name": "Epure",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/renewable-ethanol-europes-home-grown-solution-for-de-fossilising-road-transport/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
       "confidence": "high",
       "source_official": true,
       "id": "096f78d0f8d44aa1"
@@ -1516,7 +1820,22 @@
       "category": "PM+ Talks",
       "url": "https://events.theparliamentmagazine.eu/event/back-to-school-apa-reception/",
       "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [],
+      "sponsors": [
+        {
+          "name": "Fuelseurope 23 13 52 559780",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/back-to-school-apa-reception/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Herbalife",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/back-to-school-apa-reception/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        }
+      ],
       "confidence": "high",
       "source_official": true,
       "id": "0f9a1966db1bf466"
@@ -1592,7 +1911,15 @@
       "category": "Summits",
       "url": "https://events.theparliamentmagazine.eu/event/brussels-climate-week/",
       "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [],
+      "sponsors": [
+        {
+          "name": "Brusselsclimateweek",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/brussels-climate-week/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
       "confidence": "high",
       "source_official": true,
       "id": "ce612768d591b2ba"
@@ -1609,7 +1936,15 @@
       "category": "Media Partner",
       "url": "https://events.theparliamentmagazine.eu/event/afsic-investing-in-africa/",
       "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [],
+      "sponsors": [
+        {
+          "name": "Afsic",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/afsic-investing-in-africa/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
       "confidence": "high",
       "source_official": true,
       "id": "5008ed9669576d55"
@@ -1626,7 +1961,15 @@
       "category": "Policy Events",
       "url": "https://events.theparliamentmagazine.eu/event/how-bold-can-europe-be-delivering-on-the-biotech-act-for-clinical-trials/",
       "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [],
+      "sponsors": [
+        {
+          "name": "Lilly",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/how-bold-can-europe-be-delivering-on-the-biotech-act-for-clinical-trials/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
       "confidence": "high",
       "source_official": true,
       "id": "b8ba053783fe4a10"
@@ -1741,7 +2084,15 @@
       "category": "PM+ Talks",
       "url": "https://events.theparliamentmagazine.eu/event/pmtalks-should-journalists-be-afraid-of-content-creators/",
       "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [],
+      "sponsors": [
+        {
+          "name": "Themerode",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/pmtalks-should-journalists-be-afraid-of-content-creators/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
       "confidence": "high",
       "source_official": true,
       "id": "72704044c6764099"
@@ -1807,7 +2158,15 @@
       "category": "Media Partner",
       "url": "https://events.theparliamentmagazine.eu/event/insects-for-europe-a-blueprint-for-eu-leadership-in-a-circular-bioeconomy/",
       "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [],
+      "sponsors": [
+        {
+          "name": "Ipiff",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/insects-for-europe-a-blueprint-for-eu-leadership-in-a-circular-bioeconomy/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
       "confidence": "high",
       "source_official": true,
       "id": "3953c20d36959c04"
