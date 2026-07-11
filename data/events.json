@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-07-10T08:52:29+00:00",
+  "last_updated_utc": "2026-07-11T07:29:50+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -2293,7 +2293,7 @@
       "time_text": "",
       "city": "Brussels",
       "venue": "",
-      "category": "Agriculture and Food, Technology, Politics",
+      "category": "Awards, Agriculture and Food, Technology",
       "url": "https://www.politico.eu/event/mansion-house-preview-what-to-expect-from-rachel-reeves-defining-speech/",
       "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris Sunday Crunch Podcasts",
       "sponsors": [],
@@ -2941,6 +2941,31 @@
       "confidence": "high",
       "source_official": true,
       "id": "fed6b33f580778d9"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "Hotel Europe: The future of travel & technology",
+      "date": "2026-11-16",
+      "date_text": "November 16, 2026",
+      "end_date": "2026-11-20",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "Bump Policy Experience Space",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/hotel-europe-the-future-of-travel-technology/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Booking",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/hotel-europe-the-future-of-travel-technology/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "a3ca6aafe3d02987"
     },
     {
       "organization": "The Parliament",
