@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-07-12T07:47:27+00:00",
+  "last_updated_utc": "2026-07-13T08:37:49+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -341,38 +341,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "55cd39ea54e3ce31"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "International Women’s Day Talks 2026",
-      "date": "2026-03-04",
-      "date_text": "March 4, 2026",
-      "end_date": "2026-03-04",
-      "time_text": "9:00 am",
-      "city": "Brussels",
-      "venue": "TownHall Europe",
-      "category": "PM+ Talks",
-      "url": "https://events.theparliamentmagazine.eu/event/international-womens-day-talks-2/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Besins Healthcare",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/international-womens-day-talks-2/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        },
-        {
-          "name": "Abbvie",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/international-womens-day-talks-2/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "e3df981a963a0215"
     },
     {
       "organization": "POLITICO",
@@ -1291,38 +1259,6 @@
       "id": "5be1b78aa6d51ace"
     },
     {
-      "organization": "The Parliament",
-      "title": "Made in Europe Innovation: Decarbonising mobility today",
-      "date": "2026-06-02",
-      "date_text": "June 2, 2026",
-      "end_date": "2026-06-04",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/made-in-europe-innovation-decarbonising-mobility-today/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Repsol",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/made-in-europe-innovation-decarbonising-mobility-today/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        },
-        {
-          "name": "Horse Powertrain",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/made-in-europe-innovation-decarbonising-mobility-today/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "23532768c9d1b7f8"
-    },
-    {
       "organization": "Euractiv",
       "title": "Euractiv Pro Briefing - VOLTAGE edition II",
       "date": "2026-06-03",
@@ -2024,59 +1960,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "eb956c29c3881c51"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "MEP Awards 2026",
-      "date": "2026-06-30",
-      "date_text": "June 30, 2026",
-      "end_date": "2026-06-30",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "Albert Hall",
-      "category": "Awards",
-      "url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "MSD",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Coca Cola Europe",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Booking",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Microsoft",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        },
-        {
-          "name": "Camparigroup",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "44efd8422555acfc"
     },
     {
       "organization": "POLITICO",
@@ -3057,31 +2940,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "5e2f46ac33bcea9b"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "Insects for Europe: A blueprint for EU leadership in a circular bioeconomy",
-      "date": "2026-12-08",
-      "date_text": "December 8, 2026",
-      "end_date": "2026-12-08",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "Media Partner",
-      "url": "https://events.theparliamentmagazine.eu/event/insects-for-europe-a-blueprint-for-eu-leadership-in-a-circular-bioeconomy/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Ipiff",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/insects-for-europe-a-blueprint-for-eu-leadership-in-a-circular-bioeconomy/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "3953c20d36959c04"
     }
   ]
 }
