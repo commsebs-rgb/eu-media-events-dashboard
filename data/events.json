@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-07-15T07:34:12+00:00",
+  "last_updated_utc": "2026-07-16T07:42:11+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -2336,6 +2336,23 @@
       "id": "0e7b041a75df7bb1"
     },
     {
+      "organization": "POLITICO",
+      "title": "Pro Roundtable – Tech",
+      "date": "2026-09-08",
+      "date_text": "September 8, 2026",
+      "end_date": "",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Agriculture and Food, Technology, Politics",
+      "url": "https://www.politico.eu/event/pro-roundtable-tech-3/",
+      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris Sunday Crunch Podcasts",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "0ba3bd42c274a116"
+    },
+    {
       "organization": "The Parliament",
       "title": "2nd Crop Protection Regulatory Conference",
       "date": "2026-09-08",
@@ -2475,6 +2492,23 @@
       "id": "c2b638115e277376"
     },
     {
+      "organization": "POLITICO",
+      "title": "Pro Roundtable – Energy & Climate",
+      "date": "2026-09-10",
+      "date_text": "September 10, 2026",
+      "end_date": "",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Energy",
+      "url": "https://www.politico.eu/event/pro-roundtable-energy-climate/",
+      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris Sunday Crunch Podcasts",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "aeea6c2f5784dc96"
+    },
+    {
       "organization": "The Parliament",
       "title": "Renewable ethanol: Europe’s home-grown solution for de-fossilising road transport",
       "date": "2026-09-15",
@@ -2498,38 +2532,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "096f78d0f8d44aa1"
-    },
-    {
-      "organization": "Euractiv",
-      "title": "Critical finished products and societal benefits",
-      "date": "2026-09-22",
-      "date_text": "22-09-2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "Euractiv Media Office",
-      "category": "Policy Events, Awards, Energy and Environment",
-      "url": "https://events.euractiv.com/event/info/critical-finished-products-and-societal-benefits",
-      "description": "Events Calendar Euractiv organises policy events in Brussels and other European capitals. Find out more about Euractiv Event Partnerships",
-      "sponsors": [
-        {
-          "name": "Tyres Europe updated",
-          "role": "Sponsor / partner",
-          "source_url": "https://events.euractiv.com/event/info/critical-finished-products-and-societal-benefits",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Europa",
-          "role": "Sponsor / partner",
-          "source_url": "https://events.euractiv.com/event/info/critical-finished-products-and-societal-benefits",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "b368301b67b86c14"
     },
     {
       "organization": "The Parliament",
@@ -2594,6 +2596,38 @@
       "confidence": "high",
       "source_official": true,
       "id": "fe3324a639116901"
+    },
+    {
+      "organization": "Euractiv",
+      "title": "Critical finished products and societal benefits",
+      "date": "2026-09-30",
+      "date_text": "30-09-2026",
+      "end_date": "",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "Euractiv Media Office",
+      "category": "Policy Events, Awards, Energy and Environment",
+      "url": "https://events.euractiv.com/event/info/critical-finished-products-and-societal-benefits",
+      "description": "Events Calendar Euractiv organises policy events in Brussels and other European capitals. Find out more about Euractiv Event Partnerships",
+      "sponsors": [
+        {
+          "name": "Tyres Europe updated",
+          "role": "Sponsor / partner",
+          "source_url": "https://events.euractiv.com/event/info/critical-finished-products-and-societal-benefits",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Europa",
+          "role": "Sponsor / partner",
+          "source_url": "https://events.euractiv.com/event/info/critical-finished-products-and-societal-benefits",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "cd3f24ff53028540"
     },
     {
       "organization": "The Parliament",
@@ -2759,6 +2793,45 @@
       "confidence": "high",
       "source_official": true,
       "id": "ce612768d591b2ba"
+    },
+    {
+      "organization": "Euractiv",
+      "title": "From pilot to scale: How can Europe create the right conditions for regenerative agriculture?",
+      "date": "2026-10-13",
+      "date_text": "13-10-2026",
+      "end_date": "",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "Euractiv Media Office",
+      "category": "Policy Events, Agriculture and Food, Technology",
+      "url": "https://events.euractiv.com/event/info/from-pilot-to-scale-how-can-europe-create-the-right-conditions-for-regenerative-agriculture",
+      "description": "Events Calendar Euractiv organises policy events in Brussels and other European capitals. Find out more about Euractiv Event Partnerships",
+      "sponsors": [
+        {
+          "name": "Barilla",
+          "role": "Sponsor / partner",
+          "source_url": "https://events.euractiv.com/event/info/from-pilot-to-scale-how-can-europe-create-the-right-conditions-for-regenerative-agriculture",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Images (1)",
+          "role": "Sponsor / partner",
+          "source_url": "https://events.euractiv.com/event/info/from-pilot-to-scale-how-can-europe-create-the-right-conditions-for-regenerative-agriculture",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Europa",
+          "role": "Sponsor / partner",
+          "source_url": "https://events.euractiv.com/event/info/from-pilot-to-scale-how-can-europe-create-the-right-conditions-for-regenerative-agriculture",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "7563f6cb652329f5"
     },
     {
       "organization": "The Parliament",
