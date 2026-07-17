@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-07-16T07:42:11+00:00",
+  "last_updated_utc": "2026-07-17T07:39:35+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -2177,38 +2177,6 @@
       "id": "231d12a9c18ca3f1"
     },
     {
-      "organization": "The Parliament",
-      "title": "Unlocking demand for clean ammonia in Europe",
-      "date": "2026-07-02",
-      "date_text": "July 2, 2026",
-      "end_date": "2026-07-02",
-      "time_text": "10:00 am",
-      "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/unlocking-demand-for-clean-ammonia-in-europe/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Ammonia Europe 12 12 55 110964",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/unlocking-demand-for-clean-ammonia-in-europe/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Ammoniaenergy",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/unlocking-demand-for-clean-ammonia-in-europe/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "ae9f3658da46cf61"
-    },
-    {
       "organization": "POLITICO",
       "title": "POLITICO Summer Party 2026",
       "date": "2026-07-07",
@@ -2368,23 +2336,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "9fadf605680b3555"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "The 35th Economic Forum “Architecture of the New Order – Stability in Times of Change”",
-      "date": "2026-09-08",
-      "date_text": "September 8, 2026",
-      "end_date": "2026-09-10",
-      "time_text": "",
-      "city": "Karpacz",
-      "venue": "Gołębiewski Hotel",
-      "category": "Media Partner",
-      "url": "https://events.theparliamentmagazine.eu/event/the-35th-economic-forum-architecture-of-the-new-order-stability-in-times-of-change/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "e57522a8a8f54f7a"
     },
     {
       "organization": "Euractiv",
