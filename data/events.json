@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-07-17T07:39:35+00:00",
+  "last_updated_utc": "2026-07-18T07:19:50+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -1291,38 +1291,6 @@
       "id": "5be1b78aa6d51ace"
     },
     {
-      "organization": "The Parliament",
-      "title": "Made in Europe Innovation: Decarbonising mobility today",
-      "date": "2026-06-02",
-      "date_text": "June 2, 2026",
-      "end_date": "2026-06-04",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/made-in-europe-innovation-decarbonising-mobility-today/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Repsol",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/made-in-europe-innovation-decarbonising-mobility-today/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        },
-        {
-          "name": "Horse Powertrain",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/made-in-europe-innovation-decarbonising-mobility-today/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "23532768c9d1b7f8"
-    },
-    {
       "organization": "Euractiv",
       "title": "Euractiv Pro Briefing - VOLTAGE edition II",
       "date": "2026-06-03",
@@ -1724,31 +1692,6 @@
       "id": "db31efcd44690c58"
     },
     {
-      "organization": "The Parliament",
-      "title": "Open Innovation Dialogue: Closing Europe’s AI language gap",
-      "date": "2026-06-15",
-      "date_text": "June 15, 2026",
-      "end_date": "2026-06-15",
-      "time_text": "",
-      "city": "Strasbourg",
-      "venue": "European Parliament, Strasbourg",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/open-innovation-dialogue-closing-europes-ai-language-gap/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Microsoft",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/open-innovation-dialogue-closing-europes-ai-language-gap/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "c6b1de9c1fa8b720"
-    },
-    {
       "organization": "POLITICO",
       "title": "AperoPro: The incoming Irish Presidency of the Council of the EU",
       "date": "2026-06-17",
@@ -2026,59 +1969,6 @@
       "id": "eb956c29c3881c51"
     },
     {
-      "organization": "The Parliament",
-      "title": "MEP Awards 2026",
-      "date": "2026-06-30",
-      "date_text": "June 30, 2026",
-      "end_date": "2026-06-30",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "Albert Hall",
-      "category": "Awards",
-      "url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "MSD",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Coca Cola Europe",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Booking",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Microsoft",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        },
-        {
-          "name": "Camparigroup",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "44efd8422555acfc"
-    },
-    {
       "organization": "POLITICO",
       "title": "Europe at a crossroads: Exclusive insights from Public First’s new pan-European polling",
       "date": "2026-07-01",
@@ -2175,6 +2065,38 @@
       "confidence": "high",
       "source_official": true,
       "id": "231d12a9c18ca3f1"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "Unlocking demand for clean ammonia in Europe",
+      "date": "2026-07-02",
+      "date_text": "July 2, 2026",
+      "end_date": "2026-07-02",
+      "time_text": "10:00 am",
+      "city": "Brussels",
+      "venue": "European Parliament, Brussels",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/unlocking-demand-for-clean-ammonia-in-europe/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Ammonia Europe 12 12 55 110964",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/unlocking-demand-for-clean-ammonia-in-europe/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Ammoniaenergy",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/unlocking-demand-for-clean-ammonia-in-europe/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "ae9f3658da46cf61"
     },
     {
       "organization": "POLITICO",
@@ -2336,6 +2258,23 @@
       "confidence": "high",
       "source_official": true,
       "id": "9fadf605680b3555"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "The 35th Economic Forum “Architecture of the New Order – Stability in Times of Change”",
+      "date": "2026-09-08",
+      "date_text": "September 8, 2026",
+      "end_date": "2026-09-10",
+      "time_text": "",
+      "city": "Karpacz",
+      "venue": "Gołębiewski Hotel",
+      "category": "Media Partner",
+      "url": "https://events.theparliamentmagazine.eu/event/the-35th-economic-forum-architecture-of-the-new-order-stability-in-times-of-change/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "e57522a8a8f54f7a"
     },
     {
       "organization": "Euractiv",
@@ -2951,6 +2890,23 @@
     },
     {
       "organization": "POLITICO",
+      "title": "Pro Roundtable – Agriculture",
+      "date": "2026-10-29",
+      "date_text": "October 29, 2026",
+      "end_date": "",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Agriculture and Food, Technology, Politics",
+      "url": "https://www.politico.eu/event/pro-roundtable-agriculture-2/",
+      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris Sunday Crunch Podcasts",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "c83b0f107ea5549e"
+    },
+    {
+      "organization": "POLITICO",
       "title": "Pro Roundtable – Trade",
       "date": "2026-11-06",
       "date_text": "2026-06-11T08:30:00+00:00",
@@ -2965,6 +2921,23 @@
       "confidence": "high",
       "source_official": true,
       "id": "fed6b33f580778d9"
+    },
+    {
+      "organization": "POLITICO",
+      "title": "Pro Roundtable – Mobility",
+      "date": "2026-11-12",
+      "date_text": "November 12, 2026",
+      "end_date": "",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "This invitation-only event is for POLITICO Pro subscribers and will take place in Brussels, Belgium.",
+      "category": "Mobility",
+      "url": "https://www.politico.eu/event/pro-roundtable-mobility-4/",
+      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris Sunday Crunch Podcasts",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "57efd434184c3756"
     },
     {
       "organization": "The Parliament",
@@ -2992,29 +2965,21 @@
       "id": "a3ca6aafe3d02987"
     },
     {
-      "organization": "The Parliament",
-      "title": "Should journalists be afraid of content creators?",
-      "date": "2026-11-23",
-      "date_text": "November 23, 2026",
-      "end_date": "2026-11-23",
-      "time_text": "6:30 pm",
+      "organization": "POLITICO",
+      "title": "Pro Roundtable – Cyber",
+      "date": "2026-11-19",
+      "date_text": "November 19, 2026",
+      "end_date": "",
+      "time_text": "",
       "city": "Brussels",
-      "venue": "The Merode",
-      "category": "PM+ Talks",
-      "url": "https://events.theparliamentmagazine.eu/event/pmtalks-should-journalists-be-afraid-of-content-creators/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Themerode",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/pmtalks-should-journalists-be-afraid-of-content-creators/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
+      "venue": "",
+      "category": "Agriculture and Food, Technology, Politics",
+      "url": "https://www.politico.eu/event/pro-roundtable-cyber/",
+      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris Sunday Crunch Podcasts",
+      "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "72704044c6764099"
+      "id": "c3b18f59fe4ecd4a"
     },
     {
       "organization": "POLITICO",
@@ -3047,6 +3012,38 @@
       "confidence": "high",
       "source_official": true,
       "id": "1e750dc4e38e3fc7"
+    },
+    {
+      "organization": "Euractiv",
+      "title": "Europe’s refining and fuel manufacturing sector – Competitiveness, decarbonisation and strategic resilience",
+      "date": "2026-12-02",
+      "date_text": "02-12-2026",
+      "end_date": "",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "Hybrid",
+      "category": "Policy Events, Awards, Energy and Environment",
+      "url": "https://events.euractiv.com/event/info/europes-refining-and-fuel-manufacturing-sector-competitiveness-decarbonisation-and-strategic-resilience",
+      "description": "Events Calendar Euractiv organises policy events in Brussels and other European capitals. Find out more about Euractiv Event Partnerships",
+      "sponsors": [
+        {
+          "name": "FuelsEurope",
+          "role": "Sponsor / partner",
+          "source_url": "https://events.euractiv.com/event/info/europes-refining-and-fuel-manufacturing-sector-competitiveness-decarbonisation-and-strategic-resilience",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Europa",
+          "role": "Sponsor / partner",
+          "source_url": "https://events.euractiv.com/event/info/europes-refining-and-fuel-manufacturing-sector-competitiveness-decarbonisation-and-strategic-resilience",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "1c13ff3bf602aaff"
     },
     {
       "organization": "Euractiv",
