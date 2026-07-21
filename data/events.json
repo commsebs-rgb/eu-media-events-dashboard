@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-07-20T08:28:14+00:00",
+  "last_updated_utc": "2026-07-21T07:53:23+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -1044,20 +1044,20 @@
     },
     {
       "organization": "Euractiv",
-      "title": "Euractiv Pro Briefing - FIRST AID edition II",
+      "title": "Euractiv Pro Briefing - FIRST AID edition III",
       "date": "2026-05-27",
       "date_text": "27-05-2026",
       "end_date": "",
-      "time_text": "12:30",
-      "city": "Online",
-      "venue": "",
+      "time_text": "8:30",
+      "city": "Brussels",
+      "venue": "Euractiv Media Office",
       "category": "Policy Events, Health and Consumers, Digital",
-      "url": "https://events.euractiv.com/event/info/euractiv-pro-briefing-first-aid-edition-ii",
+      "url": "https://events.euractiv.com/event/info/euractiv-pro-briefing-first-aid-edition-iii",
       "description": "Events Calendar Euractiv organises policy events in Brussels and other European capitals. Find out more about Euractiv Event Partnerships",
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "8f762b46cfea9f29"
+      "id": "2dba9f7da165559d"
     },
     {
       "organization": "The Parliament",
@@ -1324,20 +1324,20 @@
     },
     {
       "organization": "Euractiv",
-      "title": "Euractiv Pro Briefing - VOLTAGE edition II",
+      "title": "Euractiv Pro Briefing - VOLTAGE edition III",
       "date": "2026-06-03",
       "date_text": "03-06-2026",
       "end_date": "",
-      "time_text": "12:30",
-      "city": "Online",
-      "venue": "",
+      "time_text": "8:30",
+      "city": "Brussels",
+      "venue": "Euractiv Media Office",
       "category": "Policy Events, Awards, Energy and Environment",
-      "url": "https://events.euractiv.com/event/info/euractiv-pro-briefing-voltage-edition-ii",
+      "url": "https://events.euractiv.com/event/info/euractiv-pro-briefing-voltage-edition-iii",
       "description": "Events Calendar Euractiv organises policy events in Brussels and other European capitals. Find out more about Euractiv Event Partnerships",
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "16bd977cf489fceb"
+      "id": "056775be990a2a9d"
     },
     {
       "organization": "Euractiv",
@@ -2303,6 +2303,23 @@
     },
     {
       "organization": "POLITICO",
+      "title": "The Burnham government: What policy professionals need to know",
+      "date": "2026-07-22",
+      "date_text": "July 22, 2026",
+      "end_date": "",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Agriculture and Food, Technology, Digital",
+      "url": "https://www.politico.eu/event/the-burnham-government-what-policy-professionals-need-to-know/",
+      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris Sunday Crunch Podcasts",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "ed490025320b4535"
+    },
+    {
+      "organization": "POLITICO",
       "title": "Pro Petit-Déjeuner – Tech",
       "date": "2026-09-06",
       "date_text": "2026-06-09T08:15:00+00:00",
@@ -2532,6 +2549,40 @@
       "confidence": "high",
       "source_official": true,
       "id": "096f78d0f8d44aa1"
+    },
+    {
+      "organization": "Euractiv",
+      "title": "Euractiv Pro Briefing - FIRST AID edition II",
+      "date": "2026-09-22",
+      "date_text": "22-09-2026",
+      "end_date": "",
+      "time_text": "12:30",
+      "city": "Online",
+      "venue": "",
+      "category": "Policy Events, Health and Consumers, Digital",
+      "url": "https://events.euractiv.com/event/info/euractiv-pro-briefing-first-aid-edition-ii",
+      "description": "Events Calendar Euractiv organises policy events in Brussels and other European capitals. Find out more about Euractiv Event Partnerships",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "dc9ebbe0da87bd57"
+    },
+    {
+      "organization": "Euractiv",
+      "title": "Euractiv Pro Briefing - VOLTAGE edition II",
+      "date": "2026-09-24",
+      "date_text": "24-09-2026",
+      "end_date": "",
+      "time_text": "12:30",
+      "city": "Online",
+      "venue": "",
+      "category": "Policy Events, Awards, Energy and Environment",
+      "url": "https://events.euractiv.com/event/info/euractiv-pro-briefing-voltage-edition-ii",
+      "description": "Events Calendar Euractiv organises policy events in Brussels and other European capitals. Find out more about Euractiv Event Partnerships",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "1c6cbc11f4ba2210"
     },
     {
       "organization": "The Parliament",
