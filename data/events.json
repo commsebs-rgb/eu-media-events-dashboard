@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-07-22T07:53:19+00:00",
+  "last_updated_utc": "2026-07-23T07:54:44+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -2096,6 +2096,31 @@
       "id": "893754691cfc0b65"
     },
     {
+      "organization": "The Parliament",
+      "title": "From ambition to action: Can Europe end HIV by 2030?",
+      "date": "2026-07-01",
+      "date_text": "July 1, 2026",
+      "end_date": "2026-07-01",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "European Parliament, Brussels",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/from-ambition-to-action-can-europe-end-hiv-by-2030/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Gilead",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/from-ambition-to-action-can-europe-end-hiv-by-2030/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "f76765639724c598"
+    },
+    {
       "organization": "POLITICO",
       "title": "POLITICO Spotlight – Révélation du classement “POWER 40”",
       "date": "2026-07-02",
@@ -2278,20 +2303,20 @@
     },
     {
       "organization": "POLITICO",
-      "title": "The Burnham government: What policy professionals need to know",
-      "date": "2026-07-22",
-      "date_text": "July 22, 2026",
+      "title": "Pro Roundtable – Tech",
+      "date": "2026-08-09",
+      "date_text": "2026-09-08T08:30:00+00:00",
       "end_date": "",
       "time_text": "",
       "city": "Brussels",
       "venue": "",
       "category": "Agriculture and Food, Technology, Digital",
-      "url": "https://www.politico.eu/event/the-burnham-government-what-policy-professionals-need-to-know/",
+      "url": "https://www.politico.eu/event/pro-roundtable-tech-3/",
       "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris Sunday Crunch Podcasts",
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "ed490025320b4535"
+      "id": "a9f31a268c2ccc37"
     },
     {
       "organization": "POLITICO",
@@ -2326,23 +2351,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "0e7b041a75df7bb1"
-    },
-    {
-      "organization": "POLITICO",
-      "title": "Pro Roundtable – Tech",
-      "date": "2026-09-08",
-      "date_text": "September 8, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Agriculture and Food, Technology, Politics",
-      "url": "https://www.politico.eu/event/pro-roundtable-tech-3/",
-      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris Sunday Crunch Podcasts",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "0ba3bd42c274a116"
     },
     {
       "organization": "The Parliament",
@@ -2885,6 +2893,38 @@
       "id": "7563f6cb652329f5"
     },
     {
+      "organization": "Euractiv",
+      "title": "On the Road to 2040 - Is transport fit for a 90% GHG reduction?",
+      "date": "2026-10-13",
+      "date_text": "13-10-2026",
+      "end_date": "",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "Euractiv Media Office",
+      "category": "Policy Events, Awards, Energy and Environment",
+      "url": "https://events.euractiv.com/event/info/on-the-road-to-2040-is-transport-fit-for-a-90-ghg-reduction",
+      "description": "Events Calendar Euractiv organises policy events in Brussels and other European capitals. Find out more about Euractiv Event Partnerships",
+      "sponsors": [
+        {
+          "name": "Neste",
+          "role": "Sponsor / partner",
+          "source_url": "https://events.euractiv.com/event/info/on-the-road-to-2040-is-transport-fit-for-a-90-ghg-reduction",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Europa",
+          "role": "Sponsor / partner",
+          "source_url": "https://events.euractiv.com/event/info/on-the-road-to-2040-is-transport-fit-for-a-90-ghg-reduction",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "6239e18fd90911e1"
+    },
+    {
       "organization": "The Parliament",
       "title": "AFSIC – Investing in Africa",
       "date": "2026-10-13",
@@ -3082,6 +3122,31 @@
       "confidence": "high",
       "source_official": true,
       "id": "fed6b33f580778d9"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "Refining and fuel manufacturing: A strategic asset Europe cannot afford to lose",
+      "date": "2026-11-10",
+      "date_text": "November 10, 2026",
+      "end_date": "2026-11-10",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "European Parliament, Brussels",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/refining-and-fuel-manufacturing-a-strategic-asset-europe-cannot-afford-to-lose/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Fuelseurope 23 13 52 559780",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/refining-and-fuel-manufacturing-a-strategic-asset-europe-cannot-afford-to-lose/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "649b817c13853e45"
     },
     {
       "organization": "POLITICO",
