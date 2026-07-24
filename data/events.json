@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-07-23T07:54:44+00:00",
+  "last_updated_utc": "2026-07-24T07:52:37+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -2177,38 +2177,6 @@
       "id": "231d12a9c18ca3f1"
     },
     {
-      "organization": "The Parliament",
-      "title": "Unlocking demand for clean ammonia in Europe",
-      "date": "2026-07-02",
-      "date_text": "July 2, 2026",
-      "end_date": "2026-07-02",
-      "time_text": "10:00 am",
-      "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/unlocking-demand-for-clean-ammonia-in-europe/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Ammonia Europe 12 12 55 110964",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/unlocking-demand-for-clean-ammonia-in-europe/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Ammoniaenergy",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/unlocking-demand-for-clean-ammonia-in-europe/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "ae9f3658da46cf61"
-    },
-    {
       "organization": "POLITICO",
       "title": "POLITICO Summer Party 2026",
       "date": "2026-07-07",
@@ -2509,6 +2477,23 @@
       "id": "aeea6c2f5784dc96"
     },
     {
+      "organization": "POLITICO",
+      "title": "Pro Roundtable – Energy & Climate UK",
+      "date": "2026-09-15",
+      "date_text": "September 15, 2026",
+      "end_date": "",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Energy",
+      "url": "https://www.politico.eu/event/pro-roundtable-energy-uk/",
+      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris Sunday Crunch Podcasts",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "2f15c6fe532a299e"
+    },
+    {
       "organization": "The Parliament",
       "title": "Renewable ethanol: Europe’s home-grown solution for de-fossilising road transport",
       "date": "2026-09-15",
@@ -2534,6 +2519,23 @@
       "id": "096f78d0f8d44aa1"
     },
     {
+      "organization": "POLITICO",
+      "title": "Pro Roundtable – Tech UK",
+      "date": "2026-09-17",
+      "date_text": "September 17, 2026",
+      "end_date": "",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Agriculture and Food, Technology, Politics",
+      "url": "https://www.politico.eu/event/pro-roundtable-tech-uk-2/",
+      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris Sunday Crunch Podcasts",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "5c9f5ba9e09e8566"
+    },
+    {
       "organization": "Euractiv",
       "title": "Euractiv Pro Briefing - FIRST AID edition II",
       "date": "2026-09-22",
@@ -2549,6 +2551,23 @@
       "confidence": "high",
       "source_official": true,
       "id": "dc9ebbe0da87bd57"
+    },
+    {
+      "organization": "POLITICO",
+      "title": "Pro Roundtable – Financial Services UK",
+      "date": "2026-09-22",
+      "date_text": "September 22, 2026",
+      "end_date": "",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Financial Services",
+      "url": "https://www.politico.eu/event/pro-roundtable-financial-services-uk-2/",
+      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris Sunday Crunch Podcasts",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "034903e3912a720e"
     },
     {
       "organization": "Euractiv",
@@ -2778,6 +2797,23 @@
       "confidence": "high",
       "source_official": true,
       "id": "ab82de072e2e9a45"
+    },
+    {
+      "organization": "POLITICO",
+      "title": "Virtual Event from TEVA",
+      "date": "2026-10-07",
+      "date_text": "October 7, 2026",
+      "end_date": "",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Agriculture and Food, Technology, Politics",
+      "url": "https://www.politico.eu/event/from-crisis-management-to-inclusion-driving-national-policy-change-in-schizophrenia/",
+      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris Sunday Crunch Podcasts",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "5cda752fa2c05c2e"
     },
     {
       "organization": "POLITICO",
@@ -3105,6 +3141,23 @@
       "confidence": "high",
       "source_official": true,
       "id": "c83b0f107ea5549e"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "Public Affairs Summit",
+      "date": "2026-11-04",
+      "date_text": "November 4, 2026",
+      "end_date": "2026-11-05",
+      "time_text": "9:00 am",
+      "city": "Brussels",
+      "venue": "Square Brussels",
+      "category": "Media Partner",
+      "url": "https://events.theparliamentmagazine.eu/event/public-affairs-summit-2/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "2e352265150d6fbc"
     },
     {
       "organization": "POLITICO",
