@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-07-24T07:52:37+00:00",
+  "last_updated_utc": "2026-07-25T07:38:39+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -2177,6 +2177,38 @@
       "id": "231d12a9c18ca3f1"
     },
     {
+      "organization": "The Parliament",
+      "title": "Unlocking demand for clean ammonia in Europe",
+      "date": "2026-07-02",
+      "date_text": "July 2, 2026",
+      "end_date": "2026-07-02",
+      "time_text": "10:00 am",
+      "city": "Brussels",
+      "venue": "European Parliament, Brussels",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/unlocking-demand-for-clean-ammonia-in-europe/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Ammonia Europe 12 12 55 110964",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/unlocking-demand-for-clean-ammonia-in-europe/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Ammoniaenergy",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/unlocking-demand-for-clean-ammonia-in-europe/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "ae9f3658da46cf61"
+    },
+    {
       "organization": "POLITICO",
       "title": "POLITICO Summer Party 2026",
       "date": "2026-07-07",
@@ -2302,6 +2334,23 @@
       "confidence": "high",
       "source_official": true,
       "id": "410d8c0b8885ae59"
+    },
+    {
+      "organization": "Euractiv",
+      "title": "Media Partnership - Making Europe the New Silicon Valley of the World",
+      "date": "2026-09-07",
+      "date_text": "07-09-2026",
+      "end_date": "",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "The Merode",
+      "category": "Policy Events, Technology, Digital",
+      "url": "https://events.euractiv.com/event/info/media-partnership-making-europe-the-new-silicon-valley-of-the-world",
+      "description": "Events Calendar Euractiv organises policy events in Brussels and other European capitals. Find out more about Euractiv Event Partnerships",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "e3274b36bfcf3b55"
     },
     {
       "organization": "Euractiv",
