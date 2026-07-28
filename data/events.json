@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-07-27T08:58:45+00:00",
+  "last_updated_utc": "2026-07-28T07:57:24+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -2177,38 +2177,6 @@
       "id": "231d12a9c18ca3f1"
     },
     {
-      "organization": "The Parliament",
-      "title": "Unlocking demand for clean ammonia in Europe",
-      "date": "2026-07-02",
-      "date_text": "July 2, 2026",
-      "end_date": "2026-07-02",
-      "time_text": "10:00 am",
-      "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/unlocking-demand-for-clean-ammonia-in-europe/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Ammonia Europe 12 12 55 110964",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/unlocking-demand-for-clean-ammonia-in-europe/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Ammoniaenergy",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/unlocking-demand-for-clean-ammonia-in-europe/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "ae9f3658da46cf61"
-    },
-    {
       "organization": "POLITICO",
       "title": "POLITICO Summer Party 2026",
       "date": "2026-07-07",
@@ -2527,6 +2495,23 @@
     },
     {
       "organization": "POLITICO",
+      "title": "POLITICO Pro Petit déjeuner – Sénatoriales: petits et grands changements en perspective!",
+      "date": "2026-09-15",
+      "date_text": "September 15, 2026",
+      "end_date": "",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Agriculture and Food, Technology, Politics",
+      "url": "https://www.politico.eu/event/politico-pro-petit-dejeuner-senatoriales-petits-et-grands-changements-en-perspective/",
+      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris Sunday Crunch Podcasts",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "c7c30d008be1a752"
+    },
+    {
+      "organization": "POLITICO",
       "title": "Pro Roundtable – Energy & Climate UK",
       "date": "2026-09-15",
       "date_text": "September 15, 2026",
@@ -2566,6 +2551,23 @@
       "confidence": "high",
       "source_official": true,
       "id": "096f78d0f8d44aa1"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "Japan and Europe: Partners in Automotive Competitiveness and Clean Mobility",
+      "date": "2026-09-16",
+      "date_text": "September 16, 2026",
+      "end_date": "2026-09-16",
+      "time_text": "6:30 pm",
+      "city": "Strasbourg",
+      "venue": "European Parliament, Strasbourg",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/japan-and-europe-partners-in-automotive-competitiveness-and-clean-mobility/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "1fafbba1a714a224"
     },
     {
       "organization": "POLITICO",
@@ -3033,31 +3035,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "5008ed9669576d55"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "How bold can Europe be? Delivering on the Biotech Act for clinical trials",
-      "date": "2026-10-13",
-      "date_text": "October 13, 2026",
-      "end_date": "2026-10-13",
-      "time_text": "12:00 pm",
-      "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/how-bold-can-europe-be-delivering-on-the-biotech-act-for-clinical-trials/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Lilly",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/how-bold-can-europe-be-delivering-on-the-biotech-act-for-clinical-trials/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "b8ba053783fe4a10"
     },
     {
       "organization": "The Parliament",
