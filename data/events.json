@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-07-28T07:57:24+00:00",
+  "last_updated_utc": "2026-07-29T08:10:21+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -1660,6 +1660,23 @@
       "id": "2fec6ca193c93b39"
     },
     {
+      "organization": "POLITICO",
+      "title": "POLITICO Pro Petit-Déjeuner – Budget 2027 : est-ce que ça va (vraiment) mal finir ?",
+      "date": "2026-06-10",
+      "date_text": "2026-10-06T08:15:00+00:00",
+      "end_date": "",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Agriculture and Food, Technology, Politics",
+      "url": "https://www.politico.eu/event/budget-2027-est-ce-que-ca-va-vraiment-mal-finir/",
+      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris Sunday Crunch Podcasts",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "8eaade38dbfae217"
+    },
+    {
       "organization": "Euractiv",
       "title": "Hybrid construction as a solution to mitigate climate and housing crises",
       "date": "2026-06-11",
@@ -2177,6 +2194,38 @@
       "id": "231d12a9c18ca3f1"
     },
     {
+      "organization": "The Parliament",
+      "title": "Unlocking demand for clean ammonia in Europe",
+      "date": "2026-07-02",
+      "date_text": "July 2, 2026",
+      "end_date": "2026-07-02",
+      "time_text": "10:00 am",
+      "city": "Brussels",
+      "venue": "European Parliament, Brussels",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/unlocking-demand-for-clean-ammonia-in-europe/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Ammonia Europe 12 12 55 110964",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/unlocking-demand-for-clean-ammonia-in-europe/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Ammoniaenergy",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/unlocking-demand-for-clean-ammonia-in-europe/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "ae9f3658da46cf61"
+    },
+    {
       "organization": "POLITICO",
       "title": "POLITICO Summer Party 2026",
       "date": "2026-07-07",
@@ -2285,6 +2334,23 @@
       "confidence": "high",
       "source_official": true,
       "id": "a9f31a268c2ccc37"
+    },
+    {
+      "organization": "Euractiv",
+      "title": "Baltic Energy Initiative – cooperation among energy companies from the Baltic Sea region",
+      "date": "2026-09-03",
+      "date_text": "03-09-2026",
+      "end_date": "",
+      "time_text": "",
+      "city": "Warsaw",
+      "venue": "",
+      "category": "Policy Events, Awards, Energy and Environment",
+      "url": "https://events.euractiv.com/event/info/baltic-energy-initiative-cooperation-among-energy-companies-from-the-baltic-sea-region",
+      "description": "Events Calendar Euractiv organises policy events in Brussels and other European capitals. Find out more about Euractiv Event Partnerships",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "a798f496d5e1c0bb"
     },
     {
       "organization": "POLITICO",
@@ -2478,24 +2544,7 @@
     },
     {
       "organization": "POLITICO",
-      "title": "Pro Roundtable – Energy & Climate",
-      "date": "2026-09-10",
-      "date_text": "September 10, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Energy",
-      "url": "https://www.politico.eu/event/pro-roundtable-energy-climate/",
-      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris Sunday Crunch Podcasts",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "aeea6c2f5784dc96"
-    },
-    {
-      "organization": "POLITICO",
-      "title": "POLITICO Pro Petit déjeuner – Sénatoriales: petits et grands changements en perspective!",
+      "title": "POLITICO Pro Petit-Déjeuner – Sénatoriales : petits et grands changements en perspective !",
       "date": "2026-09-15",
       "date_text": "September 15, 2026",
       "end_date": "",
@@ -2508,7 +2557,7 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "c7c30d008be1a752"
+      "id": "a3047c3bf1fc206d"
     },
     {
       "organization": "POLITICO",
@@ -2882,6 +2931,23 @@
       "confidence": "high",
       "source_official": true,
       "id": "6ba32f2c099cb010"
+    },
+    {
+      "organization": "POLITICO",
+      "title": "Pro Roundtable – Energy & Climate",
+      "date": "2026-10-09",
+      "date_text": "2026-09-10T08:30:00+00:00",
+      "end_date": "",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Energy",
+      "url": "https://www.politico.eu/event/pro-roundtable-energy-climate/",
+      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris Sunday Crunch Podcasts",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "28dfeb8df7c0c933"
     },
     {
       "organization": "Euractiv",
