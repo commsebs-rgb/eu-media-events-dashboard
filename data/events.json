@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-07-29T08:10:21+00:00",
+  "last_updated_utc": "2026-07-30T07:52:16+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -491,45 +491,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "46e2350a70ffbbe0"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "SMEs Forum 2026",
-      "date": "2026-03-19",
-      "date_text": "March 19, 2026",
-      "end_date": "2026-03-19",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "TownHall Europe",
-      "category": "Summits",
-      "url": "https://events.theparliamentmagazine.eu/event/smes-forum-2026/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Screenshot",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/smes-forum-2026/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Sage",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/smes-forum-2026/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        },
-        {
-          "name": "Shopify",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/smes-forum-2026/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "a2b009321b4da14f"
     },
     {
       "organization": "POLITICO",
@@ -1635,31 +1596,6 @@
       "id": "d6e622c7bff5a798"
     },
     {
-      "organization": "The Parliament",
-      "title": "Women’s health and menopause: Turning momentum into action",
-      "date": "2026-06-09",
-      "date_text": "June 9, 2026",
-      "end_date": "2026-06-09",
-      "time_text": "8:30 am",
-      "city": "Brussels",
-      "venue": "Blankspace Brussels",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/womens-health-and-menopause-turning-momentum-into-action/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Besins Healthcare",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/womens-health-and-menopause-turning-momentum-into-action/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "2fec6ca193c93b39"
-    },
-    {
       "organization": "POLITICO",
       "title": "POLITICO Pro Petit-Déjeuner – Budget 2027 : est-ce que ça va (vraiment) mal finir ?",
       "date": "2026-06-10",
@@ -2337,7 +2273,7 @@
     },
     {
       "organization": "Euractiv",
-      "title": "Baltic Energy Initiative – cooperation among energy companies from the Baltic Sea region",
+      "title": "Media Partnership - Baltic Energy Initiative – cooperation among energy companies from the Baltic Sea region",
       "date": "2026-09-03",
       "date_text": "03-09-2026",
       "end_date": "",
@@ -2350,7 +2286,7 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "a798f496d5e1c0bb"
+      "id": "e9b048fe20452e9b"
     },
     {
       "organization": "POLITICO",
