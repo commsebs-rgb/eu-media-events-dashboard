@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-08-02T07:51:19+00:00",
+  "last_updated_utc": "2026-08-03T08:53:20+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -2111,6 +2111,31 @@
       "confidence": "high",
       "source_official": true,
       "id": "893754691cfc0b65"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "From ambition to action: Can Europe end HIV by 2030?",
+      "date": "2026-07-01",
+      "date_text": "July 1, 2026",
+      "end_date": "2026-07-01",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "European Parliament, Brussels",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/from-ambition-to-action-can-europe-end-hiv-by-2030/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Gilead",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/from-ambition-to-action-can-europe-end-hiv-by-2030/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "f76765639724c598"
     },
     {
       "organization": "POLITICO",
