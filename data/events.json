@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-08-04T07:57:53+00:00",
+  "last_updated_utc": "2026-08-05T07:59:17+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -343,6 +343,38 @@
       "id": "55cd39ea54e3ce31"
     },
     {
+      "organization": "The Parliament",
+      "title": "International Women’s Day Talks 2026",
+      "date": "2026-03-04",
+      "date_text": "March 4, 2026",
+      "end_date": "2026-03-04",
+      "time_text": "9:00 am",
+      "city": "Brussels",
+      "venue": "TownHall Europe",
+      "category": "PM+ Talks",
+      "url": "https://events.theparliamentmagazine.eu/event/international-womens-day-talks-2/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Besins Healthcare",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/international-womens-day-talks-2/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Abbvie",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/international-womens-day-talks-2/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "e3df981a963a0215"
+    },
+    {
       "organization": "POLITICO",
       "title": "Debrief: Eskalation im Nahen Osten",
       "date": "2026-03-05",
@@ -386,20 +418,45 @@
       "city": "Brussels",
       "venue": "Cardo Brussels",
       "category": "Health",
-      "url": "https://events.euronews.com/health_summit_2026",
-      "description": "Official Euronews Health Summit 2026 event page.",
+      "url": "https://events.euronews.com/health_summit_2026/sitemap.xml",
+      "description": "Europe’s health landscape is evolving at speed, driven by emerging challenges, medical breakthroughs, and renewed efforts to build resilient healthcare systems across the EU. Access, preparedness, and sustainability remain central to the EU’s health priorities.",
+      "sponsors": [
+        {
+          "name": "Sobi",
+          "role": "Supported by",
+          "source_url": "https://events.euronews.com/health_summit_2026",
+          "extraction": "auto-labelled-text",
+          "confidence": "medium"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "72e2709ffde23522"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "Euronews Health Summit 2026",
+      "date": "2026-03-17",
+      "date_text": "Tuesday, March 17, 2026",
+      "end_date": "2026-11-03",
+      "time_text": "Doors open at 12:30 PM",
+      "city": "Brussels",
+      "venue": "Cardo Brussels",
+      "category": "Health",
+      "url": "https://events.theparliamentmagazine.eu/event/health-summit-2026/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
       "sponsors": [
         {
           "name": "Sobi",
           "role": "Partner / sponsor",
-          "source_url": "https://events.euronews.com/health_summit_2026",
+          "source_url": "https://events.theparliamentmagazine.eu/event/health-summit-2026/",
           "extraction": "official-page safeguard",
           "confidence": "high"
         }
       ],
       "confidence": "high",
       "source_official": true,
-      "id": "25632b50f3008b56"
+      "id": "830a4866a0915289"
     },
     {
       "organization": "POLITICO",
@@ -1234,6 +1291,38 @@
       "id": "5be1b78aa6d51ace"
     },
     {
+      "organization": "The Parliament",
+      "title": "Made in Europe Innovation: Decarbonising mobility today",
+      "date": "2026-06-02",
+      "date_text": "June 2, 2026",
+      "end_date": "2026-06-04",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "European Parliament, Brussels",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/made-in-europe-innovation-decarbonising-mobility-today/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Repsol",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/made-in-europe-innovation-decarbonising-mobility-today/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Horse Powertrain",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/made-in-europe-innovation-decarbonising-mobility-today/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "23532768c9d1b7f8"
+    },
+    {
       "organization": "Euractiv",
       "title": "Euractiv Pro Briefing - VOLTAGE edition III",
       "date": "2026-06-03",
@@ -2024,6 +2113,31 @@
       "id": "893754691cfc0b65"
     },
     {
+      "organization": "The Parliament",
+      "title": "From ambition to action: Can Europe end HIV by 2030?",
+      "date": "2026-07-01",
+      "date_text": "July 1, 2026",
+      "end_date": "2026-07-01",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "European Parliament, Brussels",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/from-ambition-to-action-can-europe-end-hiv-by-2030/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Gilead",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/from-ambition-to-action-can-europe-end-hiv-by-2030/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "f76765639724c598"
+    },
+    {
       "organization": "POLITICO",
       "title": "POLITICO Spotlight – Révélation du classement “POWER 40”",
       "date": "2026-07-02",
@@ -2291,6 +2405,23 @@
     },
     {
       "organization": "The Parliament",
+      "title": "2nd Crop Protection Regulatory Conference",
+      "date": "2026-09-08",
+      "date_text": "September 8, 2026",
+      "end_date": "2026-09-09",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "Sheraton Brussels Airport Hotel",
+      "category": "Media Partner",
+      "url": "https://events.theparliamentmagazine.eu/event/ii-crop-protection-regulatory-conference/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "9fadf605680b3555"
+    },
+    {
+      "organization": "The Parliament",
       "title": "The 35th Economic Forum “Architecture of the New Order – Stability in Times of Change”",
       "date": "2026-09-08",
       "date_text": "September 8, 2026",
@@ -2469,6 +2600,23 @@
       "confidence": "high",
       "source_official": true,
       "id": "096f78d0f8d44aa1"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "Japan and Europe: Partners in Automotive Competitiveness and Clean Mobility",
+      "date": "2026-09-16",
+      "date_text": "September 16, 2026",
+      "end_date": "2026-09-16",
+      "time_text": "6:30 pm",
+      "city": "Strasbourg",
+      "venue": "European Parliament, Strasbourg",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/japan-and-europe-partners-in-automotive-competitiveness-and-clean-mobility/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "1fafbba1a714a224"
     },
     {
       "organization": "POLITICO",
@@ -3105,6 +3253,23 @@
     },
     {
       "organization": "POLITICO",
+      "title": "Pro Roundtable – Competition and Industrial Policy",
+      "date": "2026-11-05",
+      "date_text": "November 5 - 6, 2026",
+      "end_date": "2026-11-06",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Agriculture and Food, Technology, Politics",
+      "url": "https://www.politico.eu/event/pro-roundtable-competition-and-industrial-policy/",
+      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris Sunday Crunch Podcasts",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "3b7451272c621db4"
+    },
+    {
+      "organization": "POLITICO",
       "title": "Pro Roundtable – Trade",
       "date": "2026-11-06",
       "date_text": "2026-06-11T08:30:00+00:00",
@@ -3153,7 +3318,7 @@
       "end_date": "",
       "time_text": "",
       "city": "Brussels",
-      "venue": "This invitation-only event is for POLITICO Pro subscribers and will take place in Brussels, Belgium.",
+      "venue": "",
       "category": "Mobility",
       "url": "https://www.politico.eu/event/pro-roundtable-mobility-4/",
       "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris Sunday Crunch Podcasts",
@@ -3161,6 +3326,31 @@
       "confidence": "high",
       "source_official": true,
       "id": "57efd434184c3756"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "Hotel Europe: The future of travel & technology",
+      "date": "2026-11-16",
+      "date_text": "November 16, 2026",
+      "end_date": "2026-11-20",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "Bump Policy Experience Space",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/hotel-europe-the-future-of-travel-technology/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Booking",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/hotel-europe-the-future-of-travel-technology/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "a3ca6aafe3d02987"
     },
     {
       "organization": "POLITICO",
@@ -3301,6 +3491,31 @@
       "confidence": "high",
       "source_official": true,
       "id": "5e2f46ac33bcea9b"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "Insects for Europe: A blueprint for EU leadership in a circular bioeconomy",
+      "date": "2026-12-08",
+      "date_text": "December 8, 2026",
+      "end_date": "2026-12-08",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "European Parliament, Brussels",
+      "category": "Media Partner",
+      "url": "https://events.theparliamentmagazine.eu/event/insects-for-europe-a-blueprint-for-eu-leadership-in-a-circular-bioeconomy/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Ipiff",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/insects-for-europe-a-blueprint-for-eu-leadership-in-a-circular-bioeconomy/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "3953c20d36959c04"
     }
   ]
 }
