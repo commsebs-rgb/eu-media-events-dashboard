@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-08-05T07:59:17+00:00",
+  "last_updated_utc": "2026-08-06T07:58:37+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -2801,31 +2801,6 @@
     },
     {
       "organization": "The Parliament",
-      "title": "Alzheimer’s in Europe: Turning innovation into patient access",
-      "date": "2026-09-30",
-      "date_text": "September 30, 2026",
-      "end_date": "2026-09-30",
-      "time_text": "8:00 am",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/alzheimers-in-europe-turning-innovation-into-patient-access/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "EFPIA",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/alzheimers-in-europe-turning-innovation-into-patient-access/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "6ef64aa77d5b1630"
-    },
-    {
-      "organization": "The Parliament",
       "title": "Back to School APA Reception",
       "date": "2026-09-30",
       "date_text": "September 30, 2026",
@@ -2897,6 +2872,31 @@
       "confidence": "high",
       "source_official": true,
       "id": "9e2aac8a8f26602e"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "Alzheimer’s in Europe: Turning innovation into patient access",
+      "date": "2026-10-01",
+      "date_text": "October 1, 2026",
+      "end_date": "2026-10-01",
+      "time_text": "8:00 am",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/alzheimers-in-europe-turning-innovation-into-patient-access/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "EFPIA",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/alzheimers-in-europe-turning-innovation-into-patient-access/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "9d3a68ff559ee2b6"
     },
     {
       "organization": "POLITICO",
