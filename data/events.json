@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-08-06T07:58:37+00:00",
+  "last_updated_utc": "2026-08-07T06:45:23+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -3076,6 +3076,23 @@
       "confidence": "high",
       "source_official": true,
       "id": "6239e18fd90911e1"
+    },
+    {
+      "organization": "POLITICO",
+      "title": "Pro Roundtable – Defense UK",
+      "date": "2026-10-13",
+      "date_text": "October 13, 2026",
+      "end_date": "",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Defense",
+      "url": "https://www.politico.eu/event/pro-roundtable-defense-uk/",
+      "description": "Menu Search for: Submit Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris Sunday Crunch Podcasts",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "34afec79276602c6"
     },
     {
       "organization": "The Parliament",
