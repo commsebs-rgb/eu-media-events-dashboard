@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-08-12T06:53:55+00:00",
+  "last_updated_utc": "2026-08-13T06:56:57+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -1291,38 +1291,6 @@
       "id": "5be1b78aa6d51ace"
     },
     {
-      "organization": "The Parliament",
-      "title": "Made in Europe Innovation: Decarbonising mobility today",
-      "date": "2026-06-02",
-      "date_text": "June 2, 2026",
-      "end_date": "2026-06-04",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/made-in-europe-innovation-decarbonising-mobility-today/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Repsol",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/made-in-europe-innovation-decarbonising-mobility-today/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        },
-        {
-          "name": "Horse Powertrain",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/made-in-europe-innovation-decarbonising-mobility-today/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "23532768c9d1b7f8"
-    },
-    {
       "organization": "Euractiv",
       "title": "Euractiv Pro Briefing - VOLTAGE edition III",
       "date": "2026-06-03",
@@ -2043,59 +2011,6 @@
       "id": "eb956c29c3881c51"
     },
     {
-      "organization": "The Parliament",
-      "title": "MEP Awards 2026",
-      "date": "2026-06-30",
-      "date_text": "June 30, 2026",
-      "end_date": "2026-06-30",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "Albert Hall",
-      "category": "Awards",
-      "url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "MSD",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Coca Cola Europe",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Booking",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Microsoft",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        },
-        {
-          "name": "Camparigroup",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "44efd8422555acfc"
-    },
-    {
       "organization": "POLITICO",
       "title": "Europe at a crossroads: Exclusive insights from Public First’s new pan-European polling",
       "date": "2026-07-01",
@@ -2801,6 +2716,31 @@
     },
     {
       "organization": "The Parliament",
+      "title": "Alzheimer’s in Europe: Turning innovation into patient access",
+      "date": "2026-09-30",
+      "date_text": "September 30, 2026",
+      "end_date": "2026-09-30",
+      "time_text": "8:00 am",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/alzheimers-in-europe-turning-innovation-into-patient-access/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "EFPIA",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/alzheimers-in-europe-turning-innovation-into-patient-access/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "6ef64aa77d5b1630"
+    },
+    {
+      "organization": "The Parliament",
       "title": "Back to School APA Reception",
       "date": "2026-09-30",
       "date_text": "September 30, 2026",
@@ -2872,31 +2812,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "9e2aac8a8f26602e"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "Alzheimer’s in Europe: Turning innovation into patient access",
-      "date": "2026-10-01",
-      "date_text": "October 1, 2026",
-      "end_date": "2026-10-01",
-      "time_text": "8:00 am",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/alzheimers-in-europe-turning-innovation-into-patient-access/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "EFPIA",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/alzheimers-in-europe-turning-innovation-into-patient-access/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "9d3a68ff559ee2b6"
     },
     {
       "organization": "POLITICO",
@@ -3253,6 +3168,23 @@
     },
     {
       "organization": "The Parliament",
+      "title": "European Defence and Security Conference",
+      "date": "2026-10-29",
+      "date_text": "October 29, 2026",
+      "end_date": "2026-10-29",
+      "time_text": "9:00 am",
+      "city": "Brussels",
+      "venue": "Egmont Palace",
+      "category": "Policy Events, Summits, PM+ Talks",
+      "url": "https://events.theparliamentmagazine.eu/event/european-defence-and-security-conference/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "0ae3d42a712a05a9"
+    },
+    {
+      "organization": "The Parliament",
       "title": "Public Affairs Summit",
       "date": "2026-11-04",
       "date_text": "November 4, 2026",
@@ -3261,12 +3193,12 @@
       "city": "Brussels",
       "venue": "Square Brussels",
       "category": "Media Partner",
-      "url": "https://events.theparliamentmagazine.eu/event/public-affairs-summit-2/",
+      "url": "https://events.theparliamentmagazine.eu/event/public-affairs-summit-3/",
       "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "2e352265150d6fbc"
+      "id": "a79218710d72fbb0"
     },
     {
       "organization": "POLITICO",
