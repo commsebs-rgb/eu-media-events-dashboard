@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-08-17T06:01:55+00:00",
+  "last_updated_utc": "2026-08-18T05:55:40+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -2850,36 +2850,18 @@
           "source_url": "https://events.theparliamentmagazine.eu/event/back-to-school-apa-reception/",
           "extraction": "auto-section-logo",
           "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "0f9a1966db1bf466"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "The future of medical technology in Europe: Innovation, access and trust",
-      "date": "2026-09-30",
-      "date_text": "September 30, 2026",
-      "end_date": "2026-09-30",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/the-future-of-medical-technology-in-europe-innovation-access-and-trust/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
+        },
         {
-          "name": "MedTech Europe",
+          "name": "Indoramaventures",
           "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/the-future-of-medical-technology-in-europe-innovation-access-and-trust/",
+          "source_url": "https://events.theparliamentmagazine.eu/event/back-to-school-apa-reception/",
           "extraction": "auto-section-link-domain",
           "confidence": "high"
         }
       ],
       "confidence": "high",
       "source_official": true,
-      "id": "5664a94ae9532826"
+      "id": "0f9a1966db1bf466"
     },
     {
       "organization": "Euractiv",
