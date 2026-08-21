@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-08-20T05:57:59+00:00",
+  "last_updated_utc": "2026-08-21T05:59:02+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -343,38 +343,6 @@
       "id": "55cd39ea54e3ce31"
     },
     {
-      "organization": "The Parliament",
-      "title": "International Women’s Day Talks 2026",
-      "date": "2026-03-04",
-      "date_text": "March 4, 2026",
-      "end_date": "2026-03-04",
-      "time_text": "9:00 am",
-      "city": "Brussels",
-      "venue": "TownHall Europe",
-      "category": "PM+ Talks",
-      "url": "https://events.theparliamentmagazine.eu/event/international-womens-day-talks-2/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Besins Healthcare",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/international-womens-day-talks-2/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        },
-        {
-          "name": "Abbvie",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/international-womens-day-talks-2/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "e3df981a963a0215"
-    },
-    {
       "organization": "POLITICO",
       "title": "Debrief: Eskalation im Nahen Osten",
       "date": "2026-03-05",
@@ -491,45 +459,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "46e2350a70ffbbe0"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "SMEs Forum 2026",
-      "date": "2026-03-19",
-      "date_text": "March 19, 2026",
-      "end_date": "2026-03-19",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "TownHall Europe",
-      "category": "Summits",
-      "url": "https://events.theparliamentmagazine.eu/event/smes-forum-2026/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Screenshot",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/smes-forum-2026/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Sage",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/smes-forum-2026/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        },
-        {
-          "name": "Shopify",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/smes-forum-2026/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "a2b009321b4da14f"
     },
     {
       "organization": "POLITICO",
@@ -1289,38 +1218,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "5be1b78aa6d51ace"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "Made in Europe Innovation: Decarbonising mobility today",
-      "date": "2026-06-02",
-      "date_text": "June 2, 2026",
-      "end_date": "2026-06-04",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/made-in-europe-innovation-decarbonising-mobility-today/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Repsol",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/made-in-europe-innovation-decarbonising-mobility-today/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        },
-        {
-          "name": "Horse Powertrain",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/made-in-europe-innovation-decarbonising-mobility-today/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "23532768c9d1b7f8"
     },
     {
       "organization": "Euractiv",
@@ -2422,23 +2319,6 @@
     },
     {
       "organization": "The Parliament",
-      "title": "2nd Crop Protection Regulatory Conference",
-      "date": "2026-09-08",
-      "date_text": "September 8, 2026",
-      "end_date": "2026-09-09",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "Sheraton Brussels Airport Hotel",
-      "category": "Media Partner",
-      "url": "https://events.theparliamentmagazine.eu/event/ii-crop-protection-regulatory-conference/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "9fadf605680b3555"
-    },
-    {
-      "organization": "The Parliament",
       "title": "The 35th Economic Forum “Architecture of the New Order – Stability in Times of Change”",
       "date": "2026-09-08",
       "date_text": "September 8, 2026",
@@ -2617,23 +2497,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "096f78d0f8d44aa1"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "Japan and Europe: Partners in Automotive Competitiveness and Clean Mobility",
-      "date": "2026-09-16",
-      "date_text": "September 16, 2026",
-      "end_date": "2026-09-16",
-      "time_text": "6:30 pm",
-      "city": "Strasbourg",
-      "venue": "European Parliament, Strasbourg",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/japan-and-europe-partners-in-automotive-competitiveness-and-clean-mobility/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "1fafbba1a714a224"
     },
     {
       "organization": "POLITICO",
@@ -3615,31 +3478,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "51cd1c29e4671185"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "Insects for Europe: A blueprint for EU leadership in a circular bioeconomy",
-      "date": "2026-12-08",
-      "date_text": "December 8, 2026",
-      "end_date": "2026-12-08",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "Media Partner",
-      "url": "https://events.theparliamentmagazine.eu/event/insects-for-europe-a-blueprint-for-eu-leadership-in-a-circular-bioeconomy/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Ipiff",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/insects-for-europe-a-blueprint-for-eu-leadership-in-a-circular-bioeconomy/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "3953c20d36959c04"
     }
   ]
 }
