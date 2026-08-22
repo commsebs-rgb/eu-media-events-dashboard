@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-08-21T05:59:02+00:00",
+  "last_updated_utc": "2026-08-22T05:53:40+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -343,6 +343,38 @@
       "id": "55cd39ea54e3ce31"
     },
     {
+      "organization": "The Parliament",
+      "title": "International Women’s Day Talks 2026",
+      "date": "2026-03-04",
+      "date_text": "March 4, 2026",
+      "end_date": "2026-03-04",
+      "time_text": "9:00 am",
+      "city": "Brussels",
+      "venue": "TownHall Europe",
+      "category": "PM+ Talks",
+      "url": "https://events.theparliamentmagazine.eu/event/international-womens-day-talks-2/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Besins Healthcare",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/international-womens-day-talks-2/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Abbvie",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/international-womens-day-talks-2/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "e3df981a963a0215"
+    },
+    {
       "organization": "POLITICO",
       "title": "Debrief: Eskalation im Nahen Osten",
       "date": "2026-03-05",
@@ -527,192 +559,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "0696e9278656ad35"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "Rare Diseases Forum 2026",
-      "date": "2026-04-21",
-      "date_text": "April 21, 2026",
-      "end_date": "2026-04-21",
-      "time_text": "9:00 am",
-      "city": "Brussels",
-      "venue": "TownHall Europe",
-      "category": "Summits",
-      "url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Moderator Julia Sabine Wahl",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Eucope",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Sanofi 22 14 02 883384",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Ultragenyx Rare Diseases",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Chiesi",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        },
-        {
-          "name": "Alexion",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        },
-        {
-          "name": "Eurordis",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        },
-        {
-          "name": "Amgen",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        },
-        {
-          "name": "Biogen",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        },
-        {
-          "name": "Sanofi",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        },
-        {
-          "name": "Ptcbio",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        },
-        {
-          "name": "Jane Cooper",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Maurizio Scarpa",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Andriukaitis",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Pierrick Rollet",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Francois Houyez",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Maya Matthews",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Anne Willemsen Co-chair JCA Subgroup Zorginstituut Nederland",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
-          "extraction": "auto-section-logo-link-text",
-          "confidence": "high"
-        },
-        {
-          "name": "Moderator Sarah Taissir",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Daniel Theisen",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "TIll Voi Picsart AiImageEnhancer 03 10 15 859822",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Vinciane Pirard 20 14 17 338549",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Christina K Picsart AiImageEnhancer 03 10 49 713975",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Christina Kyriakopoulou",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "eceb7b16d7b8502c"
     },
     {
       "organization": "POLITICO",
@@ -1532,31 +1378,6 @@
       "id": "d6e622c7bff5a798"
     },
     {
-      "organization": "The Parliament",
-      "title": "Women’s health and menopause: Turning momentum into action",
-      "date": "2026-06-09",
-      "date_text": "June 9, 2026",
-      "end_date": "2026-06-09",
-      "time_text": "8:30 am",
-      "city": "Brussels",
-      "venue": "Blankspace Brussels",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/womens-health-and-menopause-turning-momentum-into-action/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Besins Healthcare",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/womens-health-and-menopause-turning-momentum-into-action/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "2fec6ca193c93b39"
-    },
-    {
       "organization": "POLITICO",
       "title": "POLITICO Pro Petit-Déjeuner – Budget 2027 : est-ce que ça va (vraiment) mal finir ?",
       "date": "2026-06-10",
@@ -1636,31 +1457,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "db31efcd44690c58"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "Open Innovation Dialogue: Closing Europe’s AI language gap",
-      "date": "2026-06-15",
-      "date_text": "June 15, 2026",
-      "end_date": "2026-06-15",
-      "time_text": "",
-      "city": "Strasbourg",
-      "venue": "European Parliament, Strasbourg",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/open-innovation-dialogue-closing-europes-ai-language-gap/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Microsoft",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/open-innovation-dialogue-closing-europes-ai-language-gap/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "c6b1de9c1fa8b720"
     },
     {
       "organization": "POLITICO",
@@ -1938,59 +1734,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "eb956c29c3881c51"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "MEP Awards 2026",
-      "date": "2026-06-30",
-      "date_text": "June 30, 2026",
-      "end_date": "2026-06-30",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "Albert Hall",
-      "category": "Awards",
-      "url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "MSD",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Coca Cola Europe",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Booking",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Microsoft",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        },
-        {
-          "name": "Camparigroup",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "44efd8422555acfc"
     },
     {
       "organization": "POLITICO",
@@ -2319,20 +2062,20 @@
     },
     {
       "organization": "The Parliament",
-      "title": "The 35th Economic Forum “Architecture of the New Order – Stability in Times of Change”",
+      "title": "2nd Crop Protection Regulatory Conference",
       "date": "2026-09-08",
       "date_text": "September 8, 2026",
-      "end_date": "2026-09-10",
+      "end_date": "2026-09-09",
       "time_text": "",
-      "city": "Karpacz",
-      "venue": "Gołębiewski Hotel",
+      "city": "Brussels",
+      "venue": "Sheraton Brussels Airport Hotel",
       "category": "Media Partner",
-      "url": "https://events.theparliamentmagazine.eu/event/the-35th-economic-forum-architecture-of-the-new-order-stability-in-times-of-change/",
+      "url": "https://events.theparliamentmagazine.eu/event/ii-crop-protection-regulatory-conference/",
       "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "e57522a8a8f54f7a"
+      "id": "9fadf605680b3555"
     },
     {
       "organization": "Euractiv",
@@ -2475,28 +2218,20 @@
     },
     {
       "organization": "The Parliament",
-      "title": "Renewable ethanol: Europe’s home-grown solution for de-fossilising road transport",
-      "date": "2026-09-15",
-      "date_text": "September 15, 2026",
-      "end_date": "2026-09-15",
-      "time_text": "",
+      "title": "Japan and Europe: Partners in Automotive Competitiveness and Clean Mobility",
+      "date": "2026-09-16",
+      "date_text": "September 16, 2026",
+      "end_date": "2026-09-16",
+      "time_text": "6:30 pm",
       "city": "Strasbourg",
       "venue": "European Parliament, Strasbourg",
       "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/renewable-ethanol-europes-home-grown-solution-for-de-fossilising-road-transport/",
+      "url": "https://events.theparliamentmagazine.eu/event/japan-and-europe-partners-in-automotive-competitiveness-and-clean-mobility/",
       "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Epure",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/renewable-ethanol-europes-home-grown-solution-for-de-fossilising-road-transport/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
+      "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "096f78d0f8d44aa1"
+      "id": "1fafbba1a714a224"
     },
     {
       "organization": "POLITICO",
@@ -3190,31 +2925,6 @@
       "id": "fed6b33f580778d9"
     },
     {
-      "organization": "The Parliament",
-      "title": "Refining and fuel manufacturing: A strategic asset Europe cannot afford to lose",
-      "date": "2026-11-10",
-      "date_text": "November 10, 2026",
-      "end_date": "2026-11-10",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/refining-and-fuel-manufacturing-a-strategic-asset-europe-cannot-afford-to-lose/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Fuelseurope 23 13 52 559780",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/refining-and-fuel-manufacturing-a-strategic-asset-europe-cannot-afford-to-lose/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "649b817c13853e45"
-    },
-    {
       "organization": "POLITICO",
       "title": "Pro Roundtable – Mobility",
       "date": "2026-11-12",
@@ -3304,31 +3014,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "c3b18f59fe4ecd4a"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "Should journalists be afraid of content creators?",
-      "date": "2026-11-23",
-      "date_text": "November 23, 2026",
-      "end_date": "2026-11-23",
-      "time_text": "6:30 pm",
-      "city": "Brussels",
-      "venue": "The Merode",
-      "category": "PM+ Talks",
-      "url": "https://events.theparliamentmagazine.eu/event/pmtalks-should-journalists-be-afraid-of-content-creators/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Themerode",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/pmtalks-should-journalists-be-afraid-of-content-creators/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "72704044c6764099"
     },
     {
       "organization": "POLITICO",
@@ -3478,6 +3163,31 @@
       "confidence": "high",
       "source_official": true,
       "id": "51cd1c29e4671185"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "Insects for Europe: A blueprint for EU leadership in a circular bioeconomy",
+      "date": "2026-12-08",
+      "date_text": "December 8, 2026",
+      "end_date": "2026-12-08",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "European Parliament, Brussels",
+      "category": "Media Partner",
+      "url": "https://events.theparliamentmagazine.eu/event/insects-for-europe-a-blueprint-for-eu-leadership-in-a-circular-bioeconomy/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Ipiff",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/insects-for-europe-a-blueprint-for-eu-leadership-in-a-circular-bioeconomy/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "3953c20d36959c04"
     }
   ]
 }
