@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-08-26T06:01:42+00:00",
+  "last_updated_utc": "2026-08-27T16:42:34+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -498,6 +498,45 @@
       "confidence": "high",
       "source_official": true,
       "id": "46e2350a70ffbbe0"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "SMEs Forum 2026",
+      "date": "2026-03-19",
+      "date_text": "March 19, 2026",
+      "end_date": "2026-03-19",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "TownHall Europe",
+      "category": "Summits",
+      "url": "https://events.theparliamentmagazine.eu/event/smes-forum-2026/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Screenshot",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/smes-forum-2026/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Sage",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/smes-forum-2026/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Shopify",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/smes-forum-2026/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "a2b009321b4da14f"
     },
     {
       "organization": "POLITICO",
@@ -2406,6 +2445,23 @@
       "id": "9fadf605680b3555"
     },
     {
+      "organization": "The Parliament",
+      "title": "The 35th Economic Forum “Architecture of the New Order – Stability in Times of Change”",
+      "date": "2026-09-08",
+      "date_text": "September 8, 2026",
+      "end_date": "2026-09-10",
+      "time_text": "",
+      "city": "Karpacz",
+      "venue": "Gołębiewski Hotel",
+      "category": "Media Partner",
+      "url": "https://events.theparliamentmagazine.eu/event/the-35th-economic-forum-architecture-of-the-new-order-stability-in-times-of-change/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "e57522a8a8f54f7a"
+    },
+    {
       "organization": "Euractiv",
       "title": "Euractiv Pro Briefing - HARVEST edition III",
       "date": "2026-09-09",
@@ -2849,31 +2905,6 @@
       "id": "0f9a1966db1bf466"
     },
     {
-      "organization": "The Parliament",
-      "title": "The future of medical technology in Europe: Innovation, access and trust",
-      "date": "2026-09-30",
-      "date_text": "September 30, 2026",
-      "end_date": "2026-09-30",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/the-future-of-medical-technology-in-europe-innovation-access-and-trust/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "MedTech Europe",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/the-future-of-medical-technology-in-europe-innovation-access-and-trust/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "5664a94ae9532826"
-    },
-    {
       "organization": "Euractiv",
       "title": "Energy efficiency – How can it shape Europe’s post-2030 energy and climate framework?",
       "date": "2026-10-01",
@@ -3112,6 +3143,31 @@
       "id": "5008ed9669576d55"
     },
     {
+      "organization": "The Parliament",
+      "title": "How bold can Europe be? Delivering on the Biotech Act for clinical trials",
+      "date": "2026-10-13",
+      "date_text": "October 13, 2026",
+      "end_date": "2026-10-13",
+      "time_text": "12:00 pm",
+      "city": "Brussels",
+      "venue": "European Parliament, Brussels",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/how-bold-can-europe-be-delivering-on-the-biotech-act-for-clinical-trials/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Lilly",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/how-bold-can-europe-be-delivering-on-the-biotech-act-for-clinical-trials/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "b8ba053783fe4a10"
+    },
+    {
       "organization": "POLITICO",
       "title": "Pro Roundtable – Trade",
       "date": "2026-10-15",
@@ -3293,6 +3349,31 @@
       "confidence": "high",
       "source_official": true,
       "id": "fed6b33f580778d9"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "Refining and fuel manufacturing: A strategic asset Europe cannot afford to lose",
+      "date": "2026-11-10",
+      "date_text": "November 10, 2026",
+      "end_date": "2026-11-10",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "European Parliament, Brussels",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/refining-and-fuel-manufacturing-a-strategic-asset-europe-cannot-afford-to-lose/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Fuelseurope 23 13 52 559780",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/refining-and-fuel-manufacturing-a-strategic-asset-europe-cannot-afford-to-lose/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "649b817c13853e45"
     },
     {
       "organization": "POLITICO",
@@ -3583,6 +3664,40 @@
       "confidence": "high",
       "source_official": true,
       "id": "3953c20d36959c04"
+    },
+    {
+      "organization": "POLITICO",
+      "title": "Pro Roundtable – Health Care",
+      "date": "2026-12-15",
+      "date_text": "December 15, 2026",
+      "end_date": "",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Health",
+      "url": "https://www.politico.eu/event/pro-roundtable-health-care/",
+      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris Sunday Crunch Podcasts",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "466de8193522f764"
+    },
+    {
+      "organization": "POLITICO",
+      "title": "Pro Roundtable – Financial Services",
+      "date": "2026-12-17",
+      "date_text": "December 17, 2026",
+      "end_date": "",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Financial Services",
+      "url": "https://www.politico.eu/event/pro-roundtable-financial-services-3/",
+      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris Sunday Crunch Podcasts",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "40bcad9aac09d50d"
     }
   ]
 }
