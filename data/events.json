@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-08-27T16:42:34+00:00",
+  "last_updated_utc": "2026-08-28T17:37:23+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -1401,13 +1401,6 @@
       "url": "https://events.theparliamentmagazine.eu/event/european-industry-forum-2026/",
       "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
       "sponsors": [
-        {
-          "name": "Fuelseurope 23 13 52 559780",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/european-industry-forum-2026/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
         {
           "name": "GE Aerospace 25 11 38 277993",
           "role": "Partner",
@@ -2879,17 +2872,17 @@
       "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
       "sponsors": [
         {
-          "name": "Fuelseurope 23 13 52 559780",
+          "name": "Herbalife",
           "role": "Partner",
           "source_url": "https://events.theparliamentmagazine.eu/event/back-to-school-apa-reception/",
           "extraction": "auto-section-logo",
           "confidence": "high"
         },
         {
-          "name": "Herbalife",
+          "name": "Camparigroup",
           "role": "Partner",
           "source_url": "https://events.theparliamentmagazine.eu/event/back-to-school-apa-reception/",
-          "extraction": "auto-section-logo",
+          "extraction": "auto-section-link-domain",
           "confidence": "high"
         },
         {
@@ -3362,18 +3355,42 @@
       "category": "Policy Events",
       "url": "https://events.theparliamentmagazine.eu/event/refining-and-fuel-manufacturing-a-strategic-asset-europe-cannot-afford-to-lose/",
       "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "649b817c13853e45"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "The Science Behind Recreational Nicotine Products: Examining the Evidence for the Next Generation of European Health Policy",
+      "date": "2026-11-10",
+      "date_text": "November 10, 2026",
+      "end_date": "2026-11-10",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "European Parliament, Brussels",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/the-science-of-nicotine-evidence-for-the-next-generation-of-european-health-policy/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
       "sponsors": [
         {
-          "name": "Fuelseurope 23 13 52 559780",
+          "name": "Network",
           "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/refining-and-fuel-manufacturing-a-strategic-asset-europe-cannot-afford-to-lose/",
-          "extraction": "auto-section-logo",
+          "source_url": "https://events.theparliamentmagazine.eu/event/the-science-of-nicotine-evidence-for-the-next-generation-of-european-health-policy/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Kenvue",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/the-science-of-nicotine-evidence-for-the-next-generation-of-european-health-policy/",
+          "extraction": "auto-section-link-domain",
           "confidence": "high"
         }
       ],
       "confidence": "high",
       "source_official": true,
-      "id": "649b817c13853e45"
+      "id": "32e9d1c605836c07"
     },
     {
       "organization": "POLITICO",
