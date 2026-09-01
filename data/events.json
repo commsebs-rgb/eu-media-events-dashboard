@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-08-31T11:47:28+00:00",
+  "last_updated_utc": "2026-09-01T10:20:01+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -156,23 +156,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "3514d79a886ba34c"
-    },
-    {
-      "organization": "Euractiv",
-      "title": "Transport Policy Conference 2026",
-      "date": "2026-02-03",
-      "date_text": "03-02-2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "Provided upon registration",
-      "category": "Policy Events, Technology, Digital",
-      "url": "https://events.euractiv.com/event/info/transport-policy-conference-2026",
-      "description": "Events Calendar Euractiv organises policy events in Brussels and other European capitals. Find out more about Euractiv Event Partnerships",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "c873a68000f1a672"
     },
     {
       "organization": "The Parliament",
@@ -3159,6 +3142,23 @@
       "confidence": "high",
       "source_official": true,
       "id": "b8ba053783fe4a10"
+    },
+    {
+      "organization": "Euractiv",
+      "title": "Transport Policy Conference 2026",
+      "date": "2026-10-15",
+      "date_text": "15-10-2026",
+      "end_date": "",
+      "time_text": "09:30",
+      "city": "Brussels",
+      "venue": "Provided upon registration",
+      "category": "Policy Events, Technology, Digital",
+      "url": "https://events.euractiv.com/event/info/transport-policy-conference-2026",
+      "description": "Events Calendar Euractiv organises policy events in Brussels and other European capitals. Find out more about Euractiv Event Partnerships",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "e112c45b1063fecb"
     },
     {
       "organization": "POLITICO",
