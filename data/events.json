@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-09-01T10:20:01+00:00",
+  "last_updated_utc": "2026-09-02T09:50:12+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -2999,6 +2999,13 @@
           "source_url": "https://events.theparliamentmagazine.eu/event/brussels-climate-week/",
           "extraction": "auto-section-link-domain",
           "confidence": "high"
+        },
+        {
+          "name": "Ecmwf",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/brussels-climate-week/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
         }
       ],
       "confidence": "high",
@@ -3043,6 +3050,23 @@
       "confidence": "high",
       "source_official": true,
       "id": "7563f6cb652329f5"
+    },
+    {
+      "organization": "Euractiv",
+      "title": "Media Partnership - Global Dialogues 2026. Rethinking Cancer Care, Together: A Person-Centred Approach",
+      "date": "2026-10-13",
+      "date_text": "13-10-2026",
+      "end_date": "",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "Press Club",
+      "category": "Policy Events, Health and Consumers, Digital",
+      "url": "https://events.euractiv.com/event/info/global-dialogues-2026-rethinking-cancer-care-together-a-person-centred-approach",
+      "description": "Events Calendar Euractiv organises policy events in Brussels and other European capitals. Find out more about Euractiv Event Partnerships",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "03d1de6516eaaeff"
     },
     {
       "organization": "Euractiv",
@@ -3291,6 +3315,23 @@
       "confidence": "high",
       "source_official": true,
       "id": "0ae3d42a712a05a9"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "Central and Eastern Europe Forum",
+      "date": "2026-11-04",
+      "date_text": "November 4, 2026",
+      "end_date": "2026-11-04",
+      "time_text": "9:00 am",
+      "city": "Brussels",
+      "venue": "European Parliament, Brussels",
+      "category": "Summits",
+      "url": "https://events.theparliamentmagazine.eu/event/central-and-eastern-europe-forum/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "836cff4147e0d947"
     },
     {
       "organization": "The Parliament",
