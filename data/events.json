@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-09-03T10:03:29+00:00",
+  "last_updated_utc": "2026-09-04T09:51:51+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -958,45 +958,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "65838b023e396027"
-    },
-    {
-      "organization": "Euractiv",
-      "title": "Designing Europe’s next EU budget - How can the 2028-2034 MFF support competitiveness and resilience?",
-      "date": "2026-05-12",
-      "date_text": "12-05-2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "Hybrid",
-      "category": "Policy Events, Technology, Economy",
-      "url": "https://events.euractiv.com/event/info/designing-europes-next-eu-budget-how-can-the-2028-2034-mff-support-competitiveness-and-resilience",
-      "description": "Events Calendar Euractiv organises policy events in Brussels and other European capitals. Find out more about Euractiv Event Partnerships",
-      "sponsors": [
-        {
-          "name": "EPICENTER - European Policy Information Center",
-          "role": "Sponsor / partner",
-          "source_url": "https://events.euractiv.com/event/info/designing-europes-next-eu-budget-how-can-the-2028-2034-mff-support-competitiveness-and-resilience",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Epi",
-          "role": "Sponsor / partner",
-          "source_url": "https://events.euractiv.com/event/info/designing-europes-next-eu-budget-how-can-the-2028-2034-mff-support-competitiveness-and-resilience",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Europa",
-          "role": "Sponsor / partner",
-          "source_url": "https://events.euractiv.com/event/info/designing-europes-next-eu-budget-how-can-the-2028-2034-mff-support-competitiveness-and-resilience",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "9d3ab2f8a5f70c87"
     },
     {
       "organization": "POLITICO",
@@ -3265,13 +3226,6 @@
         },
         {
           "name": "Screenshot",
-          "role": "Partner / sponsor",
-          "source_url": "https://defencesecurityconference.eu/partners/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Conf",
           "role": "Partner / sponsor",
           "source_url": "https://defencesecurityconference.eu/partners/",
           "extraction": "auto-section-logo",
