@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-09-04T09:51:51+00:00",
+  "last_updated_utc": "2026-09-05T09:16:39+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -3354,38 +3354,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "649b817c13853e45"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "The Science behind Recreational Nicotine Products: Examining the Evidence for the Next Generation of European Health Policy",
-      "date": "2026-11-10",
-      "date_text": "November 10, 2026",
-      "end_date": "2026-11-10",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/the-science-of-nicotine-evidence-for-the-next-generation-of-european-health-policy/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Network",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/the-science-of-nicotine-evidence-for-the-next-generation-of-european-health-policy/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        },
-        {
-          "name": "Kenvue",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/the-science-of-nicotine-evidence-for-the-next-generation-of-european-health-policy/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "32e9d1c605836c07"
     },
     {
       "organization": "POLITICO",
