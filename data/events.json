@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-09-07T10:32:01+00:00",
+  "last_updated_utc": "2026-09-08T09:53:50+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -975,23 +975,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "5f2b231e387fc3d4"
-    },
-    {
-      "organization": "Euractiv",
-      "title": "Euractiv Pro Briefing - THE HACK edition II",
-      "date": "2026-05-13",
-      "date_text": "13-05-2026",
-      "end_date": "",
-      "time_text": "12:30",
-      "city": "Online",
-      "venue": "",
-      "category": "Policy Events, Awards, Digital",
-      "url": "https://events.euractiv.com/event/info/pro-briefing-the-hack-edition-ii",
-      "description": "Events Calendar Euractiv organises policy events in Brussels and other European capitals. Find out more about Euractiv Event Partnerships",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "a3c511eec4a74ac7"
     },
     {
       "organization": "Euractiv",
@@ -2842,6 +2825,31 @@
       "id": "0f9a1966db1bf466"
     },
     {
+      "organization": "The Parliament",
+      "title": "Delivering on Safe Hearts: Strengthening cardiovascular risk detection and prevention",
+      "date": "2026-09-30",
+      "date_text": "September 30, 2026",
+      "end_date": "2026-09-30",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/delivering-on-safe-hearts-strengthening-cardiovascular-risk-detection-and-prevention/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Boehringer Ingelheim",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/delivering-on-safe-hearts-strengthening-cardiovascular-risk-detection-and-prevention/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "8f557faf65b08342"
+    },
+    {
       "organization": "Euractiv",
       "title": "Energy efficiency – How can it shape Europe’s post-2030 energy and climate framework?",
       "date": "2026-10-01",
@@ -3087,31 +3095,6 @@
       "id": "5008ed9669576d55"
     },
     {
-      "organization": "The Parliament",
-      "title": "How bold can Europe be? Delivering on the Biotech Act for clinical trials",
-      "date": "2026-10-13",
-      "date_text": "October 13, 2026",
-      "end_date": "2026-10-13",
-      "time_text": "12:00 pm",
-      "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/how-bold-can-europe-be-delivering-on-the-biotech-act-for-clinical-trials/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Lilly",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/how-bold-can-europe-be-delivering-on-the-biotech-act-for-clinical-trials/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "b8ba053783fe4a10"
-    },
-    {
       "organization": "Euractiv",
       "title": "Transport Policy Conference 2026",
       "date": "2026-10-15",
@@ -3323,6 +3306,23 @@
     },
     {
       "organization": "POLITICO",
+      "title": "Shaping the Next Phase of the SIU",
+      "date": "2026-11-05",
+      "date_text": "November 5, 2026",
+      "end_date": "",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Agriculture and Food, Technology, Politics",
+      "url": "https://www.politico.eu/event/shaping-the-next-phase-of-the-siu/",
+      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris Sunday Crunch Podcasts",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "4f0c32d9a91e2bb8"
+    },
+    {
+      "organization": "POLITICO",
       "title": "Pro Roundtable – Trade",
       "date": "2026-11-06",
       "date_text": "2026-06-11T08:30:00+00:00",
@@ -3428,6 +3428,38 @@
       "confidence": "high",
       "source_official": true,
       "id": "a159824b066b34cb"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "The Science behind Recreational Nicotine Products: Examining the Evidence for the Next Generation of European Health Policy",
+      "date": "2026-11-17",
+      "date_text": "November 17, 2026",
+      "end_date": "2026-11-10",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "European Parliament, Brussels",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/the-science-of-nicotine-evidence-for-the-next-generation-of-european-health-policy/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Network",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/the-science-of-nicotine-evidence-for-the-next-generation-of-european-health-policy/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Kenvue",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/the-science-of-nicotine-evidence-for-the-next-generation-of-european-health-policy/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "de5e4522a02ef706"
     },
     {
       "organization": "POLITICO",
