@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-09-08T09:53:50+00:00",
+  "last_updated_utc": "2026-09-09T09:59:17+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -694,13 +694,6 @@
           "confidence": "high"
         },
         {
-          "name": "Andriukaitis",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
           "name": "Pierrick Rollet",
           "role": "Partner",
           "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
@@ -765,6 +758,13 @@
         },
         {
           "name": "Christina Kyriakopoulou",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Simon Bennett",
           "role": "Partner",
           "source_url": "https://events.theparliamentmagazine.eu/event/rare-diseases-forum/",
           "extraction": "auto-section-logo",
@@ -2580,23 +2580,6 @@
       "id": "5c9f5ba9e09e8566"
     },
     {
-      "organization": "Euractiv",
-      "title": "Euractiv Pro Briefing - FIRST AID edition II",
-      "date": "2026-09-22",
-      "date_text": "22-09-2026",
-      "end_date": "",
-      "time_text": "12:30",
-      "city": "Online",
-      "venue": "",
-      "category": "Policy Events, Health and Consumers, Digital",
-      "url": "https://events.euractiv.com/event/info/euractiv-pro-briefing-first-aid-edition-ii",
-      "description": "Events Calendar Euractiv organises policy events in Brussels and other European capitals. Find out more about Euractiv Event Partnerships",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "dc9ebbe0da87bd57"
-    },
-    {
       "organization": "POLITICO",
       "title": "Pro Roundtable – Financial Services UK",
       "date": "2026-09-22",
@@ -3286,6 +3269,31 @@
       "confidence": "high",
       "source_official": true,
       "id": "a79218710d72fbb0"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "Science that competes: Preparing Europe’s Biotech Ecosystem for Global Leadership",
+      "date": "2026-11-04",
+      "date_text": "November 4, 2026",
+      "end_date": "2026-11-04",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "European Parliament, Brussels",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/science-that-competes-preparing-europes-biotech-ecosystem-for-global-leadership/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Bayer",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/science-that-competes-preparing-europes-biotech-ecosystem-for-global-leadership/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "2a40ded44781a88b"
     },
     {
       "organization": "POLITICO",
