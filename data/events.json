@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-09-09T09:59:17+00:00",
+  "last_updated_utc": "2026-09-10T09:56:51+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -1061,55 +1061,6 @@
       "id": "8133962c24aa6796"
     },
     {
-      "organization": "Euractiv",
-      "title": "Energy poverty and housing in Europe – Does the EU’s evolving policy framework address current needs?",
-      "date": "2026-05-28",
-      "date_text": "28-05-2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Online",
-      "venue": "",
-      "category": "Policy Events, Awards, Energy and Environment",
-      "url": "https://events.euractiv.com/event/info/energy-poverty-and-housing-in-europe-does-the-eus-evolving-policy-framework-address-current-needs",
-      "description": "Events Calendar Euractiv organises policy events in Brussels and other European capitals. Find out more about Euractiv Event Partnerships",
-      "sponsors": [
-        {
-          "name": "LOCATEE",
-          "role": "Sponsor / partner",
-          "source_url": "https://events.euractiv.com/event/info/energy-poverty-and-housing-in-europe-does-the-eus-evolving-policy-framework-address-current-needs",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "LOCATEE LIFE flag1",
-          "role": "Sponsor / partner",
-          "source_url": "https://events.euractiv.com/event/info/energy-poverty-and-housing-in-europe-does-the-eus-evolving-policy-framework-address-current-needs",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "a6160e22b077d16c"
-    },
-    {
-      "organization": "Euractiv",
-      "title": "Match & Connect: Euractiv Jobs Event",
-      "date": "2026-05-28",
-      "date_text": "28-05-2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "Euractiv Media Office",
-      "category": "Policy Events, Economy and Jobs, Technology",
-      "url": "https://events.euractiv.com/event/info/match-connect-euractiv-jobs-event",
-      "description": "Events Calendar Euractiv organises policy events in Brussels and other European capitals. Find out more about Euractiv Event Partnerships",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "be447628741a408c"
-    },
-    {
       "organization": "POLITICO",
       "title": "Pro Roundtable – Sustainability",
       "date": "2026-05-28",
@@ -1223,38 +1174,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "5be1b78aa6d51ace"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "Made in Europe Innovation: Decarbonising mobility today",
-      "date": "2026-06-02",
-      "date_text": "June 2, 2026",
-      "end_date": "2026-06-04",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/made-in-europe-innovation-decarbonising-mobility-today/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Repsol",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/made-in-europe-innovation-decarbonising-mobility-today/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        },
-        {
-          "name": "Horse Powertrain",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/made-in-europe-innovation-decarbonising-mobility-today/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "23532768c9d1b7f8"
     },
     {
       "organization": "Euractiv",
@@ -3078,6 +2997,31 @@
       "id": "5008ed9669576d55"
     },
     {
+      "organization": "The Parliament",
+      "title": "How bold can Europe be? Delivering on the Biotech Act for clinical trials",
+      "date": "2026-10-13",
+      "date_text": "October 13, 2026",
+      "end_date": "2026-10-13",
+      "time_text": "12:00 pm",
+      "city": "Brussels",
+      "venue": "European Parliament, Brussels",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/how-bold-can-europe-be-delivering-on-the-biotech-act-for-clinical-trials/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Lilly",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/how-bold-can-europe-be-delivering-on-the-biotech-act-for-clinical-trials/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "b8ba053783fe4a10"
+    },
+    {
       "organization": "Euractiv",
       "title": "Transport Policy Conference 2026",
       "date": "2026-10-15",
@@ -3238,7 +3182,7 @@
     },
     {
       "organization": "The Parliament",
-      "title": "Central and Eastern Europe Forum",
+      "title": "Central and Eastern Europe Forum 2026",
       "date": "2026-11-04",
       "date_text": "November 4, 2026",
       "end_date": "2026-11-04",
@@ -3251,7 +3195,7 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "836cff4147e0d947"
+      "id": "435f45dcb4c791bf"
     },
     {
       "organization": "The Parliament",
@@ -3684,6 +3628,23 @@
       "confidence": "high",
       "source_official": true,
       "id": "3953c20d36959c04"
+    },
+    {
+      "organization": "Euractiv",
+      "title": "Media Partnership: Sovereignty Through Partnership: Trusted Technology in an Interconnected World",
+      "date": "2026-12-09",
+      "date_text": "09-12-2026",
+      "end_date": "",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "Hybrid",
+      "category": "Policy Events, Technology, Digital",
+      "url": "https://events.euractiv.com/event/info/media-partnership-sovereignty-through-partnership-trusted-technology-in-an-interconnected-world",
+      "description": "Events Calendar Euractiv organises policy events in Brussels and other European capitals. Find out more about Euractiv Event Partnerships",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "eb2a58543768594e"
     },
     {
       "organization": "POLITICO",
