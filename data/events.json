@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-09-10T09:56:51+00:00",
+  "last_updated_utc": "2026-09-11T09:55:31+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -1113,70 +1113,6 @@
     },
     {
       "organization": "Euractiv",
-      "title": "Smart Energy, Stronger Europe - How can smart energy management unlock the potential of the built environment",
-      "date": "2026-06-02",
-      "date_text": "02-06-2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "Euractiv Media Office",
-      "category": "Policy Events, Awards, Energy and Environment",
-      "url": "https://events.euractiv.com/event/info/the-future-of-smart-energy-management-in-europe",
-      "description": "Events Calendar Euractiv organises policy events in Brussels and other European capitals. Find out more about Euractiv Event Partnerships",
-      "sponsors": [
-        {
-          "name": "KNX",
-          "role": "Sponsor / partner",
-          "source_url": "https://events.euractiv.com/event/info/the-future-of-smart-energy-management-in-europe",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Europa",
-          "role": "Sponsor / partner",
-          "source_url": "https://events.euractiv.com/event/info/the-future-of-smart-energy-management-in-europe",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "0f75061f8cd08390"
-    },
-    {
-      "organization": "Euractiv",
-      "title": "The future of Europe’s machinery manufacturing industry – How can it remain globally competitive?",
-      "date": "2026-06-02",
-      "date_text": "02-06-2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Online",
-      "venue": "",
-      "category": "Policy Events, Economy and Jobs, Technology",
-      "url": "https://events.euractiv.com/event/info/the-future-of-europes-machinery-manufacturing-industry-how-can-it-remain-globally-competitive",
-      "description": "Events Calendar Euractiv organises policy events in Brussels and other European capitals. Find out more about Euractiv Event Partnerships",
-      "sponsors": [
-        {
-          "name": "VDMA - Mechanical Engineering Industry Association",
-          "role": "Sponsor / partner",
-          "source_url": "https://events.euractiv.com/event/info/the-future-of-europes-machinery-manufacturing-industry-how-can-it-remain-globally-competitive",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Europa",
-          "role": "Sponsor / partner",
-          "source_url": "https://events.euractiv.com/event/info/the-future-of-europes-machinery-manufacturing-industry-how-can-it-remain-globally-competitive",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "5be1b78aa6d51ace"
-    },
-    {
-      "organization": "Euractiv",
       "title": "Euractiv Pro Briefing - VOLTAGE edition III",
       "date": "2026-06-03",
       "date_text": "03-06-2026",
@@ -1208,31 +1144,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "47ff6cf4e85fa0e2"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "European Conference on Rare Diseases and Orphan Products (ECRD) 2026",
-      "date": "2026-06-03",
-      "date_text": "June 3, 2026",
-      "end_date": "2026-06-04",
-      "time_text": "9:00 am",
-      "city": "Prague",
-      "venue": "O2 universum Congress Center",
-      "category": "Media Partner",
-      "url": "https://events.theparliamentmagazine.eu/event/european-conference-on-rare-diseases-and-orphan-products-ecrd-2026/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Eurordis",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/european-conference-on-rare-diseases-and-orphan-products-ecrd-2026/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "5f450eeb2579b6ad"
     },
     {
       "organization": "The Parliament",
@@ -3022,6 +2933,23 @@
       "id": "b8ba053783fe4a10"
     },
     {
+      "organization": "The Parliament",
+      "title": "Public Sector Cyber Security Republic of Ireland 2026",
+      "date": "2026-10-14",
+      "date_text": "October 14, 2026",
+      "end_date": "2026-10-14",
+      "time_text": "",
+      "city": "Dublin",
+      "venue": "Clayton Hotel Cardiff Lane",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/public-sector-cyber-security-republic-of-ireland-2026/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "f89b1c524456e71a"
+    },
+    {
       "organization": "Euractiv",
       "title": "Transport Policy Conference 2026",
       "date": "2026-10-15",
@@ -3306,6 +3234,31 @@
       "confidence": "high",
       "source_official": true,
       "id": "649b817c13853e45"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "The future of medical technology in Europe: Innovation, access and trust",
+      "date": "2026-11-10",
+      "date_text": "November 10, 2026",
+      "end_date": "2026-11-10",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "European Parliament, Brussels",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/the-future-of-medical-technology-in-europe-innovation-access-and-trust/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "MedTech Europe",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/the-future-of-medical-technology-in-europe-innovation-access-and-trust/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "74c7fa814922c065"
     },
     {
       "organization": "POLITICO",
