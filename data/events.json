@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-09-13T10:28:48+00:00",
+  "last_updated_utc": "2026-09-14T10:52:35+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -2788,6 +2788,13 @@
           "source_url": "https://events.theparliamentmagazine.eu/event/brussels-climate-week/",
           "extraction": "auto-section-link-domain",
           "confidence": "high"
+        },
+        {
+          "name": "Fabasoft",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/brussels-climate-week/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
         }
       ],
       "confidence": "high",
@@ -3120,7 +3127,22 @@
       "category": "Summits",
       "url": "https://events.theparliamentmagazine.eu/event/central-and-eastern-europe-forum/",
       "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [],
+      "sponsors": [
+        {
+          "name": "Molgroup A4 14 08 55 996280",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/central-and-eastern-europe-forum/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Info",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/central-and-eastern-europe-forum/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
       "confidence": "high",
       "source_official": true,
       "id": "435f45dcb4c791bf"
