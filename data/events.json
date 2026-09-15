@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-09-14T10:52:35+00:00",
+  "last_updated_utc": "2026-09-15T10:16:36+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -2842,6 +2842,38 @@
     },
     {
       "organization": "Euractiv",
+      "title": "Integrated welfare payments – How can Europe build more connected and efficient systems?",
+      "date": "2026-10-13",
+      "date_text": "13-10-2026",
+      "end_date": "",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "Euractiv Media Office",
+      "category": "Policy Events, Economy and Jobs, Technology",
+      "url": "https://events.euractiv.com/event/info/integrated-welfare-payments-how-can-europe-build-more-connected-and-efficient-systems",
+      "description": "Events Calendar Euractiv organises policy events in Brussels and other European capitals. Find out more about Euractiv Event Partnerships",
+      "sponsors": [
+        {
+          "name": "Fast Forward Foundation",
+          "role": "Sponsor / partner",
+          "source_url": "https://events.euractiv.com/event/info/integrated-welfare-payments-how-can-europe-build-more-connected-and-efficient-systems",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Europa",
+          "role": "Sponsor / partner",
+          "source_url": "https://events.euractiv.com/event/info/integrated-welfare-payments-how-can-europe-build-more-connected-and-efficient-systems",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "25f631749350666b"
+    },
+    {
+      "organization": "Euractiv",
       "title": "Media Partnership - Global Dialogues 2026. Rethinking Cancer Care, Together: A Person-Centred Approach",
       "date": "2026-10-13",
       "date_text": "13-10-2026",
@@ -2856,6 +2888,23 @@
       "confidence": "high",
       "source_official": true,
       "id": "03d1de6516eaaeff"
+    },
+    {
+      "organization": "Euractiv",
+      "title": "Media Partnership - Reality Check: Delivering Europe’s Industrial Transition",
+      "date": "2026-10-13",
+      "date_text": "13-10-2026",
+      "end_date": "",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "Residence Palace",
+      "category": "Policy Events, Agriculture and Food, Technology",
+      "url": "https://events.euractiv.com/event/info/media-partnership-reality-check-delivering-europes-industrial-transition",
+      "description": "Events Calendar Euractiv organises policy events in Brussels and other European capitals. Find out more about Euractiv Event Partnerships",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "88bab083b134549e"
     },
     {
       "organization": "Euractiv",
@@ -3114,6 +3163,31 @@
       "confidence": "high",
       "source_official": true,
       "id": "0ae3d42a712a05a9"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "A stronger single market: Local investment, market realities and consumer value",
+      "date": "2026-11-04",
+      "date_text": "November 4, 2026",
+      "end_date": "2026-11-04",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/a-stronger-single-market-local-investment-market-realities-and-consumer-value/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Cocacolaep",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/a-stronger-single-market-local-investment-market-realities-and-consumer-value/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "25ef301de52943c7"
     },
     {
       "organization": "The Parliament",
