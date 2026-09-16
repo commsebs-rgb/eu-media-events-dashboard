@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-09-15T10:16:36+00:00",
+  "last_updated_utc": "2026-09-16T10:09:14+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -2669,8 +2669,8 @@
       "date_text": "01-10-2026",
       "end_date": "",
       "time_text": "",
-      "city": "Brussels",
-      "venue": "Hybrid",
+      "city": "Online",
+      "venue": "",
       "category": "Policy Events, Awards, Energy and Environment",
       "url": "https://events.euractiv.com/event/info/energy-efficiency-how-can-it-shape-europes-post-2030-energy-and-climate-framework",
       "description": "Events Calendar Euractiv organises policy events in Brussels and other European capitals. Find out more about Euractiv Event Partnerships",
@@ -3055,6 +3055,31 @@
       "confidence": "high",
       "source_official": true,
       "id": "2c1a0cd8a9bcb742"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "Driving Europe’s sovereignty: Autonomous vehicles, chips, and the race for competitiveness",
+      "date": "2026-10-20",
+      "date_text": "October 20, 2026",
+      "end_date": "2026-10-20",
+      "time_text": "",
+      "city": "Strasbourg",
+      "venue": "European Parliament, Strasbourg",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/driving-europes-sovereignty-autonomous-vehicles-chips-and-the-race-for-competitiveness/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Fair Standards",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/driving-europes-sovereignty-autonomous-vehicles-chips-and-the-race-for-competitiveness/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "9655c86d9bd3242b"
     },
     {
       "organization": "Logos",
