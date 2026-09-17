@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-09-16T10:09:14+00:00",
+  "last_updated_utc": "2026-09-17T10:11:49+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -1256,31 +1256,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "5d9025f06ec1e9a1"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "Unlocking Europe’s growth potential: Finance, digitalisation and the future of entrepreneurship",
-      "date": "2026-06-04",
-      "date_text": "June 4, 2026",
-      "end_date": "2026-06-04",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/europes-growth-engine-empowering-small-businesses-in-the-age-of-ai/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Visa",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/europes-growth-engine-empowering-small-businesses-in-the-age-of-ai/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "03d9b7082fe6b579"
     },
     {
       "organization": "POLITICO",
@@ -2638,31 +2613,6 @@
       "id": "0f9a1966db1bf466"
     },
     {
-      "organization": "The Parliament",
-      "title": "Delivering on Safe Hearts: Strengthening cardiovascular risk detection and prevention",
-      "date": "2026-09-30",
-      "date_text": "September 30, 2026",
-      "end_date": "2026-09-30",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/delivering-on-safe-hearts-strengthening-cardiovascular-risk-detection-and-prevention/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Boehringer Ingelheim",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/delivering-on-safe-hearts-strengthening-cardiovascular-risk-detection-and-prevention/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "8f557faf65b08342"
-    },
-    {
       "organization": "Euractiv",
       "title": "Energy efficiency – How can it shape Europe’s post-2030 energy and climate framework?",
       "date": "2026-10-01",
@@ -3082,6 +3032,31 @@
       "id": "9655c86d9bd3242b"
     },
     {
+      "organization": "The Parliament",
+      "title": "How can Europe lead in cloud and AI? Building policy, power and trust",
+      "date": "2026-10-20",
+      "date_text": "October 20, 2026",
+      "end_date": "2026-10-20",
+      "time_text": "",
+      "city": "Strasbourg",
+      "venue": "European Parliament, Strasbourg",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/how-can-europe-lead-in-cloud-and-ai-building-policy-power-and-trust/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Microsoft",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/how-can-europe-lead-in-cloud-and-ai-building-policy-power-and-trust/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "64edabfcca2f1a11"
+    },
+    {
       "organization": "Logos",
       "title": "European Defence & Security Conference 2026",
       "date": "2026-10-29",
@@ -3116,6 +3091,13 @@
           "confidence": "high"
         },
         {
+          "name": "Fincantieri 3",
+          "role": "Partner / sponsor",
+          "source_url": "https://defencesecurityconference.eu/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
           "name": "Naval Group",
           "role": "Partner / sponsor",
           "source_url": "https://defencesecurityconference.eu/",
@@ -3138,6 +3120,13 @@
         },
         {
           "name": "Arsenal Bulgaria",
+          "role": "Partner / sponsor",
+          "source_url": "https://defencesecurityconference.eu/partners/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Fincantieri 2",
           "role": "Partner / sponsor",
           "source_url": "https://defencesecurityconference.eu/partners/",
           "extraction": "auto-section-logo",
@@ -3188,6 +3177,48 @@
       "confidence": "high",
       "source_official": true,
       "id": "0ae3d42a712a05a9"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "ADIPEC 2026",
+      "date": "2026-11-02",
+      "date_text": "November 2, 2026",
+      "end_date": "2026-11-05",
+      "time_text": "",
+      "city": "Abu Dhabi",
+      "venue": "ADNEC Centre Abu Dhabi",
+      "category": "Media Partner",
+      "url": "https://events.theparliamentmagazine.eu/event/adipec-2026/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "943801ed802d4431"
+    },
+    {
+      "organization": "Euractiv",
+      "title": "How can the revised EU Standardisation Regulation strengthen Europe’s future competitiveness?",
+      "date": "2026-11-03",
+      "date_text": "03-11-2026",
+      "end_date": "",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "Euractiv Media Office",
+      "category": "Policy Events, Economy and Jobs, Technology",
+      "url": "https://events.euractiv.com/event/info/how-can-the-revised-eu-standardisation-regulation-strengthen-europes-future-competitiveness",
+      "description": "Events Calendar Euractiv organises policy events in Brussels and other European capitals. Find out more about Euractiv Event Partnerships",
+      "sponsors": [
+        {
+          "name": "CEN-CENELEC",
+          "role": "Sponsor / partner",
+          "source_url": "https://events.euractiv.com/event/info/how-can-the-revised-eu-standardisation-regulation-strengthen-europes-future-competitiveness",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "0b20d2a172ec598b"
     },
     {
       "organization": "The Parliament",
@@ -3338,6 +3369,23 @@
       "confidence": "high",
       "source_official": true,
       "id": "fed6b33f580778d9"
+    },
+    {
+      "organization": "Euractiv",
+      "title": "Media Partnership: Effective, Proportionate, Dissuasive - Keeping Europe’s IP Framework in Balance",
+      "date": "2026-11-10",
+      "date_text": "10-11-2026",
+      "end_date": "",
+      "time_text": "13:00",
+      "city": "Brussels",
+      "venue": "Hybrid",
+      "category": "Policy Events, Technology, Digital",
+      "url": "https://events.euractiv.com/event/info/media-partnership-effective-proportionate-dissuasive-keeping-europes-ip-framework-in-balance",
+      "description": "Events Calendar Euractiv organises policy events in Brussels and other European capitals. Find out more about Euractiv Event Partnerships",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "08bd4b4e7b2756c6"
     },
     {
       "organization": "The Parliament",
