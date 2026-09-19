@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-09-18T09:56:32+00:00",
+  "last_updated_utc": "2026-09-19T09:41:17+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -1132,6 +1132,31 @@
       "id": "9164fd71275f1f37"
     },
     {
+      "organization": "POLITICO",
+      "title": "AI and future of work: Is the EU prepared for the transition?",
+      "date": "2026-06-29",
+      "date_text": "June 29, 2026",
+      "end_date": "",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Agriculture and Food, Technology, Digital",
+      "url": "https://www.politico.eu/event/ai-and-future-of-work/",
+      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany US Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Playbook Playbook Paris Sunday Crunch Podcasts",
+      "sponsors": [
+        {
+          "name": "OpenAI",
+          "role": "Sponsor / partner",
+          "source_url": "https://www.politico.eu/event/ai-and-future-of-work/",
+          "extraction": "auto-section-logo",
+          "confidence": "medium"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "714fd6ff0b503607"
+    },
+    {
       "organization": "Euractiv",
       "title": "Energy poverty in Europe – How can EU social, housing and climate policies deliver a fair transition?",
       "date": "2026-06-30",
@@ -1543,7 +1568,7 @@
       "date": "2026-09-15",
       "date_text": "September 15, 2026",
       "end_date": "2026-09-15",
-      "time_text": "",
+      "time_text": "6:30 pm",
       "city": "Strasbourg",
       "venue": "European Parliament, Strasbourg",
       "category": "Policy Events",
@@ -2160,13 +2185,6 @@
           "confidence": "high"
         },
         {
-          "name": "Banners",
-          "role": "Partner / sponsor",
-          "source_url": "https://defencesecurityconference.eu/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
           "name": "Fincantieri 3",
           "role": "Partner / sponsor",
           "source_url": "https://defencesecurityconference.eu/",
@@ -2175,6 +2193,13 @@
         },
         {
           "name": "Naval Group",
+          "role": "Partner / sponsor",
+          "source_url": "https://defencesecurityconference.eu/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Banners",
           "role": "Partner / sponsor",
           "source_url": "https://defencesecurityconference.eu/",
           "extraction": "auto-section-logo",
@@ -2202,14 +2227,14 @@
           "confidence": "high"
         },
         {
-          "name": "Arsenal Bulgaria",
+          "name": "Fincantieri 2",
           "role": "Partner / sponsor",
           "source_url": "https://defencesecurityconference.eu/partners/",
           "extraction": "auto-section-logo",
           "confidence": "high"
         },
         {
-          "name": "Fincantieri 2",
+          "name": "Arsenal Bulgaria",
           "role": "Partner / sponsor",
           "source_url": "https://defencesecurityconference.eu/partners/",
           "extraction": "auto-section-logo",
@@ -2386,6 +2411,23 @@
       "id": "2a40ded44781a88b"
     },
     {
+      "organization": "The Parliament",
+      "title": "EU-Mercosur Forum 2026",
+      "date": "2026-11-05",
+      "date_text": "November 5, 2026",
+      "end_date": "2026-11-05",
+      "time_text": "12:30 pm",
+      "city": "Brussels",
+      "venue": "European Parliament, Brussels",
+      "category": "Summits",
+      "url": "https://events.theparliamentmagazine.eu/event/eu-mercosur-forum-2026/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "8effb3468157fc8b"
+    },
+    {
       "organization": "Euractiv",
       "title": "Media Partnership: Effective, Proportionate, Dissuasive - Keeping Europe’s IP Framework in Balance",
       "date": "2026-11-10",
@@ -2506,7 +2548,7 @@
       "title": "The Science behind Recreational Nicotine Products: Examining the Evidence for the Next Generation of European Health Policy",
       "date": "2026-11-17",
       "date_text": "November 17, 2026",
-      "end_date": "2026-11-10",
+      "end_date": "2026-11-17",
       "time_text": "",
       "city": "Brussels",
       "venue": "European Parliament, Brussels",
@@ -2680,6 +2722,38 @@
       "confidence": "high",
       "source_official": true,
       "id": "eb2a58543768594e"
+    },
+    {
+      "organization": "Euractiv",
+      "title": "Delivering clean ammonia - Making EU climate and energy policy fit-for-purpose",
+      "date": "2026-12-10",
+      "date_text": "10-12-2026",
+      "end_date": "",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "Hybrid",
+      "category": "Policy Events, Awards, Energy and Environment",
+      "url": "https://events.euractiv.com/event/info/delivering-clean-ammonia-making-eu-climate-and-energy-policy-fit-for-purpose",
+      "description": "Events Calendar Euractiv organises policy events in Brussels and other European capitals. Find out more about Euractiv Event Partnerships",
+      "sponsors": [
+        {
+          "name": "Ammonia Europe",
+          "role": "Sponsor / partner",
+          "source_url": "https://events.euractiv.com/event/info/delivering-clean-ammonia-making-eu-climate-and-energy-policy-fit-for-purpose",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Europa",
+          "role": "Sponsor / partner",
+          "source_url": "https://events.euractiv.com/event/info/delivering-clean-ammonia-making-eu-climate-and-energy-policy-fit-for-purpose",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "640bcbfed9f3587d"
     }
   ]
 }
