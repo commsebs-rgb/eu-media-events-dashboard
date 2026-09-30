@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-09-30T11:18:30+00:00",
+  "last_updated_utc": "2026-09-30T14:23:46+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -1024,6 +1024,31 @@
     },
     {
       "organization": "The Parliament",
+      "title": "From ambition to action: Can Europe end HIV by 2030?",
+      "date": "2026-07-01",
+      "date_text": "July 1, 2026",
+      "end_date": "2026-07-01",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "European Parliament, Brussels",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/from-ambition-to-action-can-europe-end-hiv-by-2030/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Gilead",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/from-ambition-to-action-can-europe-end-hiv-by-2030/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "f76765639724c598"
+    },
+    {
+      "organization": "The Parliament",
       "title": "EU Presidency Forum: Ireland",
       "date": "2026-07-02",
       "date_text": "July 2, 2026",
@@ -1455,6 +1480,23 @@
     },
     {
       "organization": "Euractiv",
+      "title": "Political Communication Summit 2026",
+      "date": "2026-10-07",
+      "date_text": "07-10-2026",
+      "end_date": "",
+      "time_text": "18:00",
+      "city": "Brussels",
+      "venue": "Vienna City Hall (Wiener Rathaus)",
+      "category": "Policy Events, Awards, Digital",
+      "url": "https://events.rapporteur.com/event/info/political-communication-summit-2026",
+      "description": "Events Calendar Rapporteur organises policy events in Brussels and other European capitals. Find out more about Rapporteur Event Partnerships",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "ccf89a091e5e0d81"
+    },
+    {
+      "organization": "Euractiv",
       "title": "EU Code Week 2026 Launch Event: Building Resilience, Connecting & Empowering Communities in the Age of AI",
       "date": "2026-10-12",
       "date_text": "12-10-2026",
@@ -1675,6 +1717,23 @@
       "confidence": "high",
       "source_official": true,
       "id": "b8ba053783fe4a10"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "Public Sector Cyber Security Republic of Ireland 2026",
+      "date": "2026-10-14",
+      "date_text": "October 14, 2026",
+      "end_date": "2026-10-14",
+      "time_text": "",
+      "city": "Dublin",
+      "venue": "Clayton Hotel Cardiff Lane",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/public-sector-cyber-security-republic-of-ireland-2026/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "f89b1c524456e71a"
     },
     {
       "organization": "Euractiv",
@@ -1947,38 +2006,6 @@
     },
     {
       "organization": "The Parliament",
-      "title": "Central and Eastern Europe Forum 2026",
-      "date": "2026-11-04",
-      "date_text": "November 4, 2026",
-      "end_date": "2026-11-04",
-      "time_text": "9:00 am",
-      "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "Summits",
-      "url": "https://events.theparliamentmagazine.eu/event/central-and-eastern-europe-forum/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Molgroup A4 14 08 55 996280",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/central-and-eastern-europe-forum/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Info",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/central-and-eastern-europe-forum/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "435f45dcb4c791bf"
-    },
-    {
-      "organization": "The Parliament",
       "title": "Public Affairs Summit",
       "date": "2026-11-04",
       "date_text": "November 4, 2026",
@@ -2052,6 +2079,23 @@
       "confidence": "high",
       "source_official": true,
       "id": "45a5aeb476d8f011"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "Refining and fuel manufacturing: A strategic asset Europe cannot afford to lose",
+      "date": "2026-11-10",
+      "date_text": "November 10, 2026",
+      "end_date": "2026-11-10",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "European Parliament, Brussels",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/refining-and-fuel-manufacturing-a-strategic-asset-europe-cannot-afford-to-lose/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "649b817c13853e45"
     },
     {
       "organization": "The Parliament",
@@ -2351,6 +2395,23 @@
       "confidence": "high",
       "source_official": true,
       "id": "8315e2a5e643c236"
+    },
+    {
+      "organization": "Euractiv",
+      "title": "EU-China relations - Rebalancing trade while keeping Europe competitive",
+      "date": "2026-12-10",
+      "date_text": "10-12-2026",
+      "end_date": "",
+      "time_text": "",
+      "city": "Online",
+      "venue": "",
+      "category": "Policy Events, Digital, Politics",
+      "url": "https://events.rapporteur.com/event/info/eu-china-relations-rebalancing-trade-while-keeping-europe-competitive",
+      "description": "Events Calendar Rapporteur organises policy events in Brussels and other European capitals. Find out more about Rapporteur Event Partnerships",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "da176c6b0e3020c7"
     }
   ]
 }
