@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EU Media Events Dashboard</title>
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --surface: #ffffff;
+      --surface-2: #f8fafc;
+      --ink: #111827;
+      --muted: #667085;
+      --line: #e5e7eb;
+      --accent: #243c7a;
+      --accent-2: #3b5bb8;
+      --accent-soft: #e8eefc;
+      --green: #17634a;
+      --green-soft: #e8f7ef;
+      --amber: #8a5a00;
+      --amber-soft: #fff4dc;
+      --red: #9f2f2f;
+      --red-soft: #fdecec;
+      --shadow: 0 18px 45px rgba(17, 24, 39, .08);
+      --radius: 22px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(36, 60, 122, .14), transparent 36rem),
+        var(--bg);
+      color: var(--ink);
+    }
+
+    header {
+      padding: 34px 24px 22px;
+      background: linear-gradient(135deg, #111827, #243c7a 72%, #3b5bb8);
+      color: white;
+    }
+
+    .header-inner, main { max-width: 1240px; margin: 0 auto; }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(1.9rem, 3vw, 3rem);
+      line-height: 1.05;
+      letter-spacing: -.04em;
+    }
+
+    .subtitle { margin: 0; max-width: 820px; color: rgba(255,255,255,.82); font-size: 1.03rem; }
+    main { padding: 22px 24px 56px; }
+
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin: 0 0 18px;
+    }
+
+    .stat, .card, .tabs, .toolbar, table, .notes {
+      background: rgba(255,255,255,.92);
+      border: 1px solid rgba(229,231,235,.95);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+    }
+
+    .stat { border-radius: var(--radius); padding: 16px; }
+    .stat strong { display: block; font-size: 1.55rem; margin-bottom: 2px; }
+    .stat span { color: var(--muted); font-size: .88rem; }
+
+    .toolbar {
+      display: grid;
+      grid-template-columns: 1.4fr .9fr .8fr auto;
+      gap: 12px;
+      align-items: center;
+      padding: 12px;
+      border-radius: var(--radius);
+      margin-bottom: 16px;
+    }
+
+    input, select, button {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 12px 13px;
+      background: white;
+      color: var(--ink);
+      font: inherit;
+      min-height: 46px;
+    }
+
+    button {
+      cursor: pointer;
+      background: var(--accent);
+      color: white;
+      border-color: var(--accent);
+      font-weight: 800;
+      white-space: nowrap;
+      width: auto;
+      padding-inline: 18px;
+    }
+
+    button.secondary { background: white; color: var(--accent); }
+
+    .tabs {
+      display: flex;
+      padding: 6px;
+      margin: 10px 0 18px;
+      gap: 6px;
+      border-radius: var(--radius);
+      box-shadow: none;
+    }
+
+    .tab { flex: 1; border: 0; background: transparent; color: var(--muted); border-radius: 16px; font-weight: 900; }
+    .tab.active { background: var(--accent-soft); color: var(--accent); }
+
+    .panel { display: none; }
+    .panel.active { display: block; }
+
+    .week { margin: 22px 0; }
+    .week-title { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin-bottom: 11px; }
+    .week-title h2 { margin: 0; font-size: 1.18rem; letter-spacing: -.02em; }
+    .week-title span { color: var(--muted); font-size: .9rem; }
+
+    .event-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+
+    .card {
+      border-radius: var(--radius);
+      padding: 17px;
+      min-height: 164px;
+      display: flex;
+      flex-direction: column;
+      gap: 11px;
+      transition: transform .16s ease, box-shadow .16s ease;
+    }
+
+    .card:hover { transform: translateY(-2px); box-shadow: 0 22px 55px rgba(17, 24, 39, .11); }
+
+    .topline, .meta, .sponsor-list { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+    .topline { justify-content: space-between; gap: 10px; }
+    .meta { color: var(--muted); font-size: .9rem; }
+
+    .event-title { font-size: 1.08rem; font-weight: 900; line-height: 1.28; margin: 0; letter-spacing: -.01em; }
+    .event-title a { color: var(--ink); text-decoration: none; }
+    .event-title a:hover { color: var(--accent); text-decoration: underline; }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      border-radius: 999px;
+      padding: 5px 10px;
+      background: #eef1f6;
+      color: #3b455a;
+      font-size: .78rem;
+      font-weight: 850;
+      line-height: 1;
+    }
+
+    .org { background: var(--accent-soft); color: var(--accent); }
+    .has-sponsor { background: var(--green-soft); color: var(--green); }
+    .no-sponsor { background: #f1f3f7; color: #5b6474; }
+    .manual { background: var(--amber-soft); color: var(--amber); }
+    .auto { background: var(--green-soft); color: var(--green); }
+    .low { background: var(--amber-soft); color: var(--amber); }
+    .high { background: var(--green-soft); color: var(--green); }
+    .medium { background: #edf2ff; color: var(--accent); }
+
+    .source-link { color: var(--accent); font-weight: 850; text-decoration: none; }
+    .source-link:hover { text-decoration: underline; }
+    .muted { color: var(--muted); }
+    .small { font-size: .84rem; color: var(--muted); }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+
+    th, td { text-align: left; padding: 13px 14px; border-bottom: 1px solid var(--line); vertical-align: top; font-size: .93rem; }
+    th { background: #f8fafc; color: #475467; font-size: .76rem; text-transform: uppercase; letter-spacing: .05em; }
+    tr:last-child td { border-bottom: 0; }
+
+    .empty, .notes {
+      padding: 18px;
+      border: 1px dashed var(--line);
+      border-radius: var(--radius);
+      background: white;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+
+    .notes { margin-top: 16px; font-size: .9rem; }
+    .footerline { margin-top: 18px; color: var(--muted); font-size: .86rem; }
+
+    @media (max-width: 920px) {
+      .toolbar, .stat-grid, .event-grid { grid-template-columns: 1fr; }
+      .tabs { flex-direction: column; }
+      th:nth-child(5), td:nth-child(5) { display: none; }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <h1>EU Media Events Dashboard</h1>
+    <p class="subtitle">Week-by-week official-source calendar and sponsor/co-organiser mapping for POLITICO, Euractiv, The Parliament, Euronews and logos.</p>
+  </div>
+</header>
+
+<main>
+  <section class="stat-grid">
+    <div class="stat"><strong id="totalEvents">—</strong><span>events tracked</span></div>
+    <div class="stat"><strong id="futureEvents">—</strong><span>upcoming events</span></div>
+    <div class="stat"><strong id="sponsorEvents">—</strong><span>events with sponsor/partner</span></div>
+    <div class="stat"><strong id="orgCount">—</strong><span>organisations</span></div>
+  </section>
+
+  <section class="toolbar">
+    <input id="searchInput" type="search" placeholder="Search title, sector, sponsor, location…" />
+    <select id="orgFilter"><option value="">All organisations</option></select>
+    <select id="dateFilter">
+      <option value="upcoming">Upcoming events</option>
+      <option value="all">All 2026 events — upcoming first</option>
+      <option value="sponsored">With sponsors only</option>
+      <option value="past">Past events</option>
+    </select>
+    <button id="resetBtn" class="secondary">Reset</button>
+  </section>
+
+  <nav class="tabs" aria-label="Dashboard tabs">
+    <button class="tab active" data-tab="calendarPanel">Calendar</button>
+    <button class="tab" data-tab="sponsorsPanel">Sponsors by event</button>
+  </nav>
+
+  <section id="calendarPanel" class="panel active"></section>
+  <section id="sponsorsPanel" class="panel"></section>
+
+  <div id="notes" class="notes"></div>
+  <p class="footerline" id="updatedLine">Loading data…</p>
+</main>
+
+<script>
+  const DATA_URL = "data/events.json";
+  let rawEvents = [];
+  let sourceNotes = [];
+
+  const state = { q: "", org: "", dateMode: "upcoming" };
+  const $ = (id) => document.getElementById(id);
+
+  function parseDate(value) {
+    const [y, m, d] = String(value || "").split("-").map(Number);
+    return new Date(y, (m || 1) - 1, d || 1);
+  }
+
+  function isoWeekStart(date) {
+    const d = new Date(date);
+    const day = d.getDay() || 7;
+    d.setDate(d.getDate() - day + 1);
+    d.setHours(0, 0, 0, 0);
+    return d;
+  }
+
+  function isoWeekNumber(date) {
+    const d = new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()));
+    const dayNum = d.getUTCDay() || 7;
+    d.setUTCDate(d.getUTCDate() + 4 - dayNum);
+    const yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
+    return Math.ceil((((d - yearStart) / 86400000) + 1) / 7);
+  }
+
+  function fmtDate(value, opts = {}) {
+    if (!value) return "";
+    return parseDate(value).toLocaleDateString("en-GB", { day: "2-digit", month: "short", year: "numeric", ...opts });
+  }
+
+  function escapeHtml(s) {
+    return String(s || "").replace(/[&<>"']/g, m => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", "\"": "&quot;", "'": "&#039;"}[m]));
+  }
+
+  const sponsorNoise = new Set([
+    "brussels", "online", "register here", "source", "open", "events calendar", "event", "events",
+    "email protected", "[email protected]", "image", "logo", "want to partner with us", "click to find out more",
+    "european parliament", "euractiv", "politico", "the parliament", "euronews", "logos",
+    "add to calendar", "contact", "category", "start date", "end date", "location", "venue"
+  ]);
+
+  function normaliseSponsorName(name) {
+    let n = String(name || "").replace(/\s+/g, " ").trim();
+    n = n.replace(/\s+logo$/i, "").replace(/^logo\s+/i, "").trim();
+    const key = n.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+    const canon = {
+      "tik tok": "TikTok",
+      "tiktok": "TikTok",
+      "theon": "THEON Group",
+      "theon group": "THEON Group",
+      "aegean": "AEGEAN",
+      "agean": "AEGEAN",
+      "getoffers": "GetOffers.com",
+      "getoffers com": "GetOffers.com",
+      "get offers com": "GetOffers.com",
+      "locatee": "LOCATEE",
+      "cleantech for see": "Cleantech for SEE",
+      "cyprus chamber": "Cyprus Chamber of Commerce & Industry",
+      "cyprus chamber of commerce industry": "Cyprus Chamber of Commerce & Industry"
+    };
+    return canon[key] || n;
+  }
+
+  function isUsefulSponsorName(name) {
+    const n = normaliseSponsorName(name);
+    const low = n.toLowerCase();
+    if (!n || n.length < 2 || n.length > 100) return false;
+    if (sponsorNoise.has(low)) return false;
+    if (low.includes("@") || low.includes("email protected")) return false;
+    if (/\b(cookie|privacy|terms|copyright|register|livestream|interested in this event|same topic|schedule|programme|program|panellists|speakers|contact us|google maps|add to calendar)\b/i.test(n)) return false;
+    if (/\b(will|should|would|explore|address|discuss|appears|appear here)\b/i.test(n)) return false;
+    if (n.split(/\s+/).length > 12) return false;
+    return true;
+  }
+
+  function cleanSponsors(e) {
+    const seen = new Set();
+    return (e.sponsors || []).map(s => ({...s, name: normaliseSponsorName(s.name)})).filter(s => {
+      const key = s.name.toLowerCase().replace(/\W+/g, "");
+      if (!isUsefulSponsorName(s.name) || seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+  }
+
+  function eventSearchBlob(e) {
+    return [
+      e.organization, e.title, e.category, e.city, e.venue,
+      ...cleanSponsors(e).map(s => `${s.name} ${s.role || ""}`)
+    ].join(" ").toLowerCase();
+  }
+
+  function startOfToday() {
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    return today;
+  }
+
+  function isPastEvent(e) {
+    return parseDate(e.date) < startOfToday();
+  }
+
+  function compareEvents(a, b, direction = "asc") {
+    const multiplier = direction === "desc" ? -1 : 1;
+    return multiplier * a.date.localeCompare(b.date) ||
+      a.organization.localeCompare(b.organization) ||
+      a.title.localeCompare(b.title);
+  }
+
+  function filteredEvents() {
+    const today = startOfToday();
+    return rawEvents.filter(e => {
+      const eventDate = parseDate(e.date);
+      const hasSponsors = cleanSponsors(e).length > 0;
+      const matchesText = !state.q || eventSearchBlob(e).includes(state.q.toLowerCase());
+      const matchesOrg = !state.org || e.organization === state.org;
+      const matchesDate =
+        state.dateMode === "all" ||
+        (state.dateMode === "upcoming" && eventDate >= today) ||
+        (state.dateMode === "past" && eventDate < today) ||
+        (state.dateMode === "sponsored" && hasSponsors);
+      return matchesText && matchesOrg && matchesDate;
+    }).sort((a, b) => {
+      // Automatic time-aware sorting: upcoming events first, past events last.
+      const ap = isPastEvent(a);
+      const bp = isPastEvent(b);
+      if (ap !== bp) return ap ? 1 : -1;
+      return compareEvents(a, b, ap ? "desc" : "asc");
+    });
+  }
+
+  function renderStats() {
+    const today = startOfToday();
+    $("totalEvents").textContent = rawEvents.length;
+    $("futureEvents").textContent = rawEvents.filter(e => parseDate(e.date) >= today).length;
+    $("sponsorEvents").textContent = rawEvents.filter(e => cleanSponsors(e).length).length;
+    $("orgCount").textContent = new Set(rawEvents.map(e => e.organization)).size;
+  }
+
+  function renderOrgFilter() {
+    const orgs = [...new Set(rawEvents.map(e => e.organization))].sort();
+    $("orgFilter").innerHTML = `<option value="">All organisations</option>` + orgs.map(org => `<option value="${escapeHtml(org)}">${escapeHtml(org)}</option>`).join("");
+  }
+
+  function sponsorBadges(e, max = 3) {
+    const sponsors = cleanSponsors(e);
+    if (!sponsors.length) return `<span class="badge no-sponsor">No sponsor detected</span>`;
+    const visible = sponsors.slice(0, max).map(s => {
+      const confidence = s.confidence || "medium";
+      return `<span class="badge ${confidence}" title="${escapeHtml(s.role || "Sponsor / partner")}">${escapeHtml(s.name)}</span>`;
+    }).join("");
+    const more = sponsors.length > max ? `<span class="badge">+${sponsors.length - max} more</span>` : "";
+    return visible + more;
+  }
+
+  function eventCard(e) {
+    const source = e.url ? `<a class="source-link" href="${escapeHtml(e.url)}" target="_blank" rel="noopener">Source</a>` : "";
+    const title = e.url ? `<a href="${escapeHtml(e.url)}" target="_blank" rel="noopener">${escapeHtml(e.title)}</a>` : escapeHtml(e.title);
+    const location = [e.venue, e.city].filter(Boolean).join(", ");
+    const sponsorState = cleanSponsors(e).length ? `<span class="badge has-sponsor">Sponsor / partner listed</span>` : `<span class="badge no-sponsor">No sponsor / partner listed</span>`;
+
+    return `
+      <article class="card">
+        <div class="topline">
+          <span class="badge org">${escapeHtml(e.organization)}</span>
+          ${source}
+        </div>
+        <h3 class="event-title">${title}</h3>
+        <div class="meta">
+          <span>${fmtDate(e.date)}</span>
+          ${e.time_text ? `<span>${escapeHtml(e.time_text)}</span>` : ""}
+          ${location ? `<span>${escapeHtml(location)}</span>` : ""}
+        </div>
+        <div class="meta">
+          ${e.category ? `<span class="badge">${escapeHtml(e.category)}</span>` : ""}
+          ${e.confidence ? `<span class="badge ${escapeHtml(e.confidence)}">confidence: ${escapeHtml(e.confidence)}</span>` : ""}
+          ${sponsorState}
+        </div>
+        <div class="sponsor-list">${sponsorBadges(e)}</div>
+      </article>
+    `;
+  }
+
+  function renderWeekSections(events, label) {
+    const grouped = new Map();
+    for (const e of events) {
+      const weekStart = isoWeekStart(parseDate(e.date));
+      const key = weekStart.toISOString().slice(0, 10);
+      if (!grouped.has(key)) grouped.set(key, []);
+      grouped.get(key).push(e);
+    }
+
+    return [...grouped.entries()].map(([key, group]) => {
+      const start = parseDate(key);
+      const end = new Date(start);
+      end.setDate(start.getDate() + 6);
+      const weekNo = isoWeekNumber(start);
+      return `
+        <section class="week">
+          <div class="week-title">
+            <h2>${label ? escapeHtml(label) + " · " : ""}Week ${weekNo}: ${fmtDate(key, { day: "2-digit", month: "short" })} – ${end.toLocaleDateString("en-GB", { day: "2-digit", month: "short", year: "numeric" })}</h2>
+            <span>${group.length} event${group.length === 1 ? "" : "s"}</span>
+          </div>
+          <div class="event-grid">${group.map(eventCard).join("")}</div>
+        </section>
+      `;
+    }).join("");
+  }
+
+  function renderCalendar(events) {
+    const panel = $("calendarPanel");
+    if (!events.length) {
+      panel.innerHTML = `<div class="empty">No events match the current filters.</div>`;
+      return;
+    }
+
+    const upcoming = events.filter(e => !isPastEvent(e)).sort(compareEvents);
+    const past = events.filter(isPastEvent).sort((a, b) => compareEvents(a, b, "desc"));
+
+    if (state.dateMode === "all") {
+      panel.innerHTML = [
+        upcoming.length ? renderWeekSections(upcoming, "Upcoming") : "",
+        past.length ? `<div class="empty"><strong>Past events</strong><br>These events have moved here automatically because their date is before today.</div>` + renderWeekSections(past, "Past") : ""
+      ].join("");
+      return;
+    }
+
+    panel.innerHTML = renderWeekSections(events, state.dateMode === "past" ? "Past" : "");
+  }
+
+  function renderSponsors(events) {
+    const panel = $("sponsorsPanel");
+    const rows = [];
+
+    for (const e of events) {
+      const sponsors = cleanSponsors(e);
+      const sponsorsHtml = sponsors.length
+        ? `<div class="sponsor-list">${sponsors.map(s => `<span class="badge ${(s.confidence || "medium")}" title="${escapeHtml(s.role || "Sponsor / partner")}">${escapeHtml(s.name)}</span>`).join("")}</div>`
+        : `<span class="muted">—</span>`;
+      const roles = sponsors.length
+        ? [...new Set(sponsors.map(s => s.role || "Sponsor / partner"))].join(", ")
+        : "";
+      rows.push(`
+        <tr>
+          <td>${sponsorsHtml}</td>
+          <td><strong>${escapeHtml(e.title)}</strong><br><span class="small">${escapeHtml(e.organization)} · ${fmtDate(e.date)}</span></td>
+          <td>${escapeHtml(roles)}</td>
+          <td>${escapeHtml([e.venue, e.city].filter(Boolean).join(", "))}</td>
+          <td>${e.url ? `<a class="source-link" href="${escapeHtml(e.url)}" target="_blank" rel="noopener">Open</a>` : ""}</td>
+        </tr>
+      `);
+    }
+
+    if (!rows.length) {
+      panel.innerHTML = `<div class="empty">No events match the current filters.</div>`;
+      return;
+    }
+
+    panel.innerHTML = `
+      <table>
+        <thead>
+          <tr>
+            <th>Sponsors / partners / co-organisers</th>
+            <th>Event</th>
+            <th>Role detected</th>
+            <th>Location</th>
+            <th>Source</th>
+          </tr>
+        </thead>
+        <tbody>${rows.join("")}</tbody>
+      </table>
+    `;
+  }
+
+
+  function renderNotes() {
+    $("notes").innerHTML = sourceNotes.length
+      ? `<strong>Notes:</strong><br>${sourceNotes.map(escapeHtml).join("<br>")}`
+      : "";
+  }
+
+  function render() {
+    const events = filteredEvents();
+    renderStats();
+    renderCalendar(events);
+    renderSponsors(events);
+    renderNotes();
+  }
+
+  function bindUI() {
+    $("searchInput").addEventListener("input", (e) => { state.q = e.target.value; render(); });
+    $("orgFilter").addEventListener("change", (e) => { state.org = e.target.value; render(); });
+    $("dateFilter").addEventListener("change", (e) => { state.dateMode = e.target.value; render(); });
+    $("resetBtn").addEventListener("click", () => {
+      state.q = ""; state.org = ""; state.dateMode = "upcoming";
+      $("searchInput").value = ""; $("orgFilter").value = ""; $("dateFilter").value = "upcoming";
+      render();
+    });
+    document.querySelectorAll(".tab").forEach(btn => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".tab").forEach(b => b.classList.remove("active"));
+        document.querySelectorAll(".panel").forEach(p => p.classList.remove("active"));
+        btn.classList.add("active");
+        $(btn.dataset.tab).classList.add("active");
+      });
+    });
+  }
+
+  async function loadData() {
+    const response = await fetch(`${DATA_URL}?cacheBust=${Date.now()}`);
+    if (!response.ok) throw new Error(`Could not load ${DATA_URL}`);
+    const data = await response.json();
+    const start2026 = parseDate("2026-01-01");
+    const end2026 = parseDate("2026-12-31");
+    rawEvents = (data.events || []).filter(e => {
+      if (!e.date || !e.title) return false;
+      const d = parseDate(e.date);
+      return d >= start2026 && d <= end2026;
+    });
+    sourceNotes = data.source_notes || [];
+    renderOrgFilter();
+    render();
+    const updated = data.last_updated_utc ? new Date(data.last_updated_utc).toLocaleString("en-GB", { timeZoneName: "short" }) : "unknown";
+    const windowText = data.date_window ? `${data.date_window.start} to ${data.date_window.end}` : "configured window";
+    $("updatedLine").textContent = `Last data update: ${updated}. Data window: ${windowText}. The dashboard automatically separates upcoming and past events using today's date.`;
+  }
+
+  bindUI();
+  loadData().catch(err => {
+    $("calendarPanel").innerHTML = `<div class="empty">Could not load event data: ${escapeHtml(err.message)}</div>`;
+    $("updatedLine").textContent = "Data load failed.";
+    console.error(err);
+  });
+</script>
+</body>
+</html>

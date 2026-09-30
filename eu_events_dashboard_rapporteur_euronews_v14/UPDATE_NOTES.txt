@@ -1,0 +1,13 @@
+EU Events Mapping update
+
+This package contains the dashboard update files.
+
+Replace:
+- index.html
+- scraper.py
+- requirements.txt
+
+Then run:
+GitHub Actions -> Update event data -> Run workflow
+
+The dashboard should continue using the existing 24-hour update workflow.
