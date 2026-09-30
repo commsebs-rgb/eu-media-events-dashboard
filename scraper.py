@@ -206,6 +206,35 @@ KNOWN_EVENT_FIXES = [
         "sponsors": [],
         "confidence": "medium",
     },
+
+    {
+        "url_contains": ["defence-space-summit-2026"],
+        "title_contains": ["defence & space summit", "defence space summit"],
+        "title": "Euronews Defence & Space Summit 2026",
+        "date_text": "30 September 2026",
+        "date": "2026-09-30",
+        "end_date": "",
+        "time_text": "9:00 AM CEST",
+        "city": "Brussels",
+        "venue": "Albert Hall",
+        "category": "Defence & Security",
+        "sponsors": [],
+        "confidence": "high",
+    },
+    {
+        "url_contains": ["eu-enlargement-summit-2026"],
+        "title_contains": ["eu enlargement summit", "enlargement summit"],
+        "title": "Euronews EU Enlargement Summit 2026",
+        "date_text": "4 November 2026",
+        "date": "2026-11-04",
+        "end_date": "",
+        "time_text": "",
+        "city": "Brussels",
+        "venue": "",
+        "category": "Politics, Enlargement",
+        "sponsors": [],
+        "confidence": "high",
+    },
 ]
 
 
@@ -1822,11 +1851,15 @@ def scrape_politico(scraper: Scraper) -> list[Event]:
 
 
 def remove_wrong_euronews_duplicates(events: list[Event]) -> list[Event]:
-    """Remove events incorrectly attributed to other organisations when sourced from Euronews microsites."""
+    """Normalise Euronews attribution and remove false The Parliament duplicates."""
     cleaned = []
     for event in events:
-        if "events.euronews.com" in event.url.lower() and event.organization.lower() != "euronews":
+        url_low = (event.url or "").lower()
+        title_low = (event.title or "").lower()
+        if "events.euronews.com" in url_low:
             event.organization = "Euronews"
+        if event.organization.lower() == "the parliament" and "euronews" in title_low:
+            continue
         cleaned.append(event)
     return cleaned
 
@@ -1948,6 +1981,42 @@ def scrape_euronews(scraper: Scraper) -> list[Event]:
         ev.sponsors = extract_sponsors_from_page(scraper, url)
         apply_known_event_fix(ev)
         events.append(ev)
+
+    # Safety fallbacks for official Euronews microsites where HTML extraction changes.
+    euronews_fallbacks = [
+        {
+            "url": "https://events.euronews.com/defence-space-summit-2026",
+            "title": "Euronews Defence & Space Summit 2026",
+            "date": "2026-09-30",
+            "date_text": "30 September 2026",
+            "city": "Brussels",
+            "venue": "Albert Hall",
+            "category": "Defence & Security",
+        },
+        {
+            "url": "https://events.euronews.com/eu-enlargement-summit-2026",
+            "title": "Euronews EU Enlargement Summit 2026",
+            "date": "2026-11-04",
+            "date_text": "4 November 2026",
+            "city": "Brussels",
+            "venue": "",
+            "category": "Politics, Enlargement",
+        },
+    ]
+    for item in euronews_fallbacks:
+        if not any(item["url"] in e.url for e in events):
+            events.append(Event(
+                organization="Euronews",
+                title=item["title"],
+                date=item["date"],
+                date_text=item["date_text"],
+                city=item["city"],
+                venue=item["venue"],
+                category=item["category"],
+                url=item["url"],
+                confidence="high",
+            ))
+
     return events
 
 
