@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-09-29T11:30:56+00:00",
+  "last_updated_utc": "2026-09-30T11:18:30+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -21,6 +21,31 @@
     "Sponsor confidence is high for manual entries, medium for labelled text/logo extraction, and low for affiliation/programme inference."
   ],
   "events": [
+    {
+      "organization": "POLITICO",
+      "title": "Back in the game? Europe’s race for digital leadership",
+      "date": "2026-01-27",
+      "date_text": "January 27, 2026",
+      "end_date": "",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Digital",
+      "url": "https://www.politico.eu/event/back-in-the-game-europes-race-for-digital-leadership/",
+      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany Spain US Australia Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Brussels Playbook Capitals Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Pla",
+      "sponsors": [
+        {
+          "name": "Connect Europe",
+          "role": "Sponsor / partner",
+          "source_url": "https://www.politico.eu/event/back-in-the-game-europes-race-for-digital-leadership/",
+          "extraction": "auto-section-logo",
+          "confidence": "medium"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "c73c0e47a4301ae1"
+    },
     {
       "organization": "The Parliament",
       "title": "APA Awards 2026",
@@ -693,21 +718,21 @@
       "id": "91b1d99f837e50f5"
     },
     {
-      "organization": "Euractiv",
-      "title": "Green molecules – How can they strengthen Europe’s energy security and industrial competitiveness?",
+      "organization": "POLITICO",
+      "title": "Brüssel-Alumni Stammtisch – Special Edition",
       "date": "2026-06-04",
-      "date_text": "04-06-2026",
+      "date_text": "June 4, 2026",
       "end_date": "",
       "time_text": "",
       "city": "Brussels",
-      "venue": "Hybrid",
-      "category": "Policy Events, Awards, Energy and Environment",
-      "url": "https://events.rapporteur.com/event/info/green-molecules-how-can-they-strengthen-europes-energy-security-and-industrial-competitiveness",
-      "description": "Events Calendar Rapporteur organises policy events in Brussels and other European capitals. Find out more about Rapporteur Event Partnerships",
+      "venue": "",
+      "category": "Agriculture and Food, Technology, Politics",
+      "url": "https://www.politico.eu/event/brussel-alumni-stammtisch/",
+      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany Spain US Australia Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Brussels Playbook Capitals Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Pla",
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "52fa93efd90dab8f"
+      "id": "5d9025f06ec1e9a1"
     },
     {
       "organization": "Euractiv",
@@ -750,6 +775,23 @@
       "confidence": "high",
       "source_official": true,
       "id": "7ccb26ef77f2c2a4"
+    },
+    {
+      "organization": "POLITICO",
+      "title": "POLITICO Pro Petit-Déjeuner – Budget 2027 : est-ce que ça va (vraiment) mal finir ?",
+      "date": "2026-06-10",
+      "date_text": "2026-10-06T08:15:00+00:00",
+      "end_date": "",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Agriculture and Food, Technology, Politics",
+      "url": "https://www.politico.eu/event/budget-2027-est-ce-que-ca-va-vraiment-mal-finir/",
+      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany Spain US Australia Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Brussels Playbook Capitals Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Pla",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "8eaade38dbfae217"
     },
     {
       "organization": "Euractiv",
@@ -801,29 +843,21 @@
       "id": "db31efcd44690c58"
     },
     {
-      "organization": "The Parliament",
-      "title": "Open Innovation Dialogue: Closing Europe’s AI language gap",
-      "date": "2026-06-15",
-      "date_text": "June 15, 2026",
-      "end_date": "2026-06-15",
+      "organization": "POLITICO",
+      "title": "AperoPro: The incoming Irish Presidency of the Council of the EU",
+      "date": "2026-06-17",
+      "date_text": "June 17, 2026",
+      "end_date": "",
       "time_text": "",
-      "city": "Strasbourg",
-      "venue": "European Parliament, Strasbourg",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/open-innovation-dialogue-closing-europes-ai-language-gap/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Microsoft",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/open-innovation-dialogue-closing-europes-ai-language-gap/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
+      "city": "Brussels",
+      "venue": "",
+      "category": "Agriculture and Food, Technology, Digital",
+      "url": "https://www.politico.eu/event/aperopro-the-incoming-irish-presidency-of-the-council-of-the-eu/",
+      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany Spain US Australia Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Brussels Playbook Capitals Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Pla",
+      "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "c6b1de9c1fa8b720"
+      "id": "8fc2194b29467423"
     },
     {
       "organization": "Euractiv",
@@ -919,31 +953,6 @@
       "id": "465a5c21a111dd42"
     },
     {
-      "organization": "POLITICO",
-      "title": "AI and future of work: Is the EU prepared for the transition?",
-      "date": "2026-06-29",
-      "date_text": "June 29, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Agriculture and Food, Technology, Digital",
-      "url": "https://www.politico.eu/event/ai-and-future-of-work/",
-      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany Spain US Australia Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Brussels Playbook Capitals Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Pla",
-      "sponsors": [
-        {
-          "name": "OpenAI",
-          "role": "Sponsor / partner",
-          "source_url": "https://www.politico.eu/event/ai-and-future-of-work/",
-          "extraction": "auto-section-logo",
-          "confidence": "medium"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "714fd6ff0b503607"
-    },
-    {
       "organization": "Euractiv",
       "title": "Energy poverty in Europe – How can EU social, housing and climate policies deliver a fair transition?",
       "date": "2026-06-30",
@@ -1012,31 +1021,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "44efd8422555acfc"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "From ambition to action: Can Europe end HIV by 2030?",
-      "date": "2026-07-01",
-      "date_text": "July 1, 2026",
-      "end_date": "2026-07-01",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/from-ambition-to-action-can-europe-end-hiv-by-2030/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Gilead",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/from-ambition-to-action-can-europe-end-hiv-by-2030/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "f76765639724c598"
     },
     {
       "organization": "The Parliament",
@@ -1693,23 +1677,6 @@
       "id": "b8ba053783fe4a10"
     },
     {
-      "organization": "The Parliament",
-      "title": "Public Sector Cyber Security Republic of Ireland 2026",
-      "date": "2026-10-14",
-      "date_text": "October 14, 2026",
-      "end_date": "2026-10-14",
-      "time_text": "",
-      "city": "Dublin",
-      "venue": "Clayton Hotel Cardiff Lane",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/public-sector-cyber-security-republic-of-ireland-2026/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "f89b1c524456e71a"
-    },
-    {
       "organization": "Euractiv",
       "title": "Transport Policy Conference 2026",
       "date": "2026-10-15",
@@ -1889,6 +1856,13 @@
           "source_url": "https://defencesecurityconference.eu/partners/",
           "extraction": "auto-section-logo",
           "confidence": "high"
+        },
+        {
+          "name": "Resilient Blaa",
+          "role": "Partner / sponsor",
+          "source_url": "https://defencesecurityconference.eu/partners/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
         }
       ],
       "confidence": "high",
@@ -1911,6 +1885,23 @@
       "confidence": "high",
       "source_official": true,
       "id": "0ae3d42a712a05a9"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "ADIPEC 2026",
+      "date": "2026-11-02",
+      "date_text": "November 2, 2026",
+      "end_date": "2026-11-05",
+      "time_text": "",
+      "city": "Abu Dhabi",
+      "venue": "ADNEC Centre Abu Dhabi",
+      "category": "Media Partner",
+      "url": "https://events.theparliamentmagazine.eu/event/adipec-2026/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "943801ed802d4431"
     },
     {
       "organization": "Euractiv",
@@ -2051,7 +2042,7 @@
       "date": "2026-11-10",
       "date_text": "10-11-2026",
       "end_date": "",
-      "time_text": "13:00",
+      "time_text": "",
       "city": "Brussels",
       "venue": "Hybrid",
       "category": "Policy Events, Technology, Digital",
@@ -2061,23 +2052,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "45a5aeb476d8f011"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "Refining and fuel manufacturing: A strategic asset Europe cannot afford to lose",
-      "date": "2026-11-10",
-      "date_text": "November 10, 2026",
-      "end_date": "2026-11-10",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/refining-and-fuel-manufacturing-a-strategic-asset-europe-cannot-afford-to-lose/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "649b817c13853e45"
     },
     {
       "organization": "The Parliament",
