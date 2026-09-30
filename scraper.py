@@ -1956,7 +1956,16 @@ def scrape_euronews(scraper: Scraper) -> list[Event]:
         ev = extract_event_from_detail(scraper, "Euronews", href, "Euronews Events")
         if ev:
             # Any official Euronews microsite must remain attributed to Euronews.
+            # Force official titles for known Euronews summit microsites to avoid
+            # generic metadata titles such as "Events" or URL slugs.
             ev.organization = "Euronews"
+            url_low = href.lower()
+            if "defence-space-summit-2026" in url_low:
+                ev.title = "Euronews Defence & Space Summit 2026"
+            elif "eu-enlargement-summit-2026" in url_low:
+                ev.title = "Euronews EU Enlargement Summit 2026"
+            elif "health_summit_2026" in url_low:
+                ev.title = "Euronews Health Summit 2026"
             events.append(ev)
 
     # Safety net for the current official Euronews event microsite. The page is still
