@@ -4,7 +4,7 @@ EU media events dashboard scraper.
 
 Official sources covered:
 - POLITICO Europe events: https://www.politico.eu/events/
-- Euractiv Events: https://events.euractiv.com/
+- Rapporteur Events (formerly Euractiv): https://events.euractiv.com/
 - Euronews Events: https://events.euronews.com/events plus discovered event microsites
 - The Parliament Magazine Events: https://events.theparliamentmagazine.eu/
 - Logos / European Defence & Security Conference: https://defencesecurityconference.eu/
@@ -1537,7 +1537,7 @@ def scrape_euractiv(scraper: Scraper) -> list[Event]:
     # Also pull detail links from topic/event pages already linked in detail pages by adding a few
     # category pages can be unnecessary; the official home currently links through relevant events.
     for href in sorted(links):
-        detail = extract_event_from_detail(scraper, "Euractiv", href)
+        detail = extract_event_from_detail(scraper, "Rapporteur", href)
         if detail:
             events.append(detail)
     return events
