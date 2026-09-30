@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-09-30T14:23:46+00:00",
+  "last_updated_utc": "2026-09-30T14:50:41+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -21,31 +21,6 @@
     "Sponsor confidence is high for manual entries, medium for labelled text/logo extraction, and low for affiliation/programme inference."
   ],
   "events": [
-    {
-      "organization": "POLITICO",
-      "title": "Back in the game? Europe’s race for digital leadership",
-      "date": "2026-01-27",
-      "date_text": "January 27, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Digital",
-      "url": "https://www.politico.eu/event/back-in-the-game-europes-race-for-digital-leadership/",
-      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany Spain US Australia Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Brussels Playbook Capitals Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Pla",
-      "sponsors": [
-        {
-          "name": "Connect Europe",
-          "role": "Sponsor / partner",
-          "source_url": "https://www.politico.eu/event/back-in-the-game-europes-race-for-digital-leadership/",
-          "extraction": "auto-section-logo",
-          "confidence": "medium"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "c73c0e47a4301ae1"
-    },
     {
       "organization": "The Parliament",
       "title": "APA Awards 2026",
@@ -218,45 +193,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "830a4866a0915289"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "SMEs Forum 2026",
-      "date": "2026-03-19",
-      "date_text": "March 19, 2026",
-      "end_date": "2026-03-19",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "TownHall Europe",
-      "category": "Summits",
-      "url": "https://events.theparliamentmagazine.eu/event/smes-forum-2026/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Screenshot",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/smes-forum-2026/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Sage",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/smes-forum-2026/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        },
-        {
-          "name": "Shopify",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/smes-forum-2026/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "a2b009321b4da14f"
     },
     {
       "organization": "The Parliament",
@@ -544,21 +480,21 @@
       "id": "9c50cad627bec8e0"
     },
     {
-      "organization": "Euractiv",
+      "organization": "Rapporteur",
       "title": "Euractiv Pro Briefing - FIRST AID edition III",
       "date": "2026-05-27",
       "date_text": "27-05-2026",
       "end_date": "",
       "time_text": "8:30",
-      "city": "Brussels",
-      "venue": "Rapporteur Office",
+      "city": "Rapporteur Office",
+      "venue": "",
       "category": "Policy Events, Health and Consumers, Digital",
       "url": "https://events.rapporteur.com/event/info/euractiv-pro-briefing-first-aid-edition-iii",
       "description": "Events Calendar Rapporteur organises policy events in Brussels and other European capitals. Find out more about Rapporteur Event Partnerships",
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "11e3872ebff38b3c"
+      "id": "75c4d42265501ef1"
     },
     {
       "organization": "The Parliament",
@@ -645,21 +581,21 @@
       "id": "caa90ab2ae140d2f"
     },
     {
-      "organization": "Euractiv",
+      "organization": "Rapporteur",
       "title": "Euractiv Pro Briefing - VOLTAGE edition III",
       "date": "2026-06-03",
       "date_text": "03-06-2026",
       "end_date": "",
       "time_text": "8:30",
-      "city": "Brussels",
-      "venue": "Rapporteur Office",
+      "city": "Rapporteur Office",
+      "venue": "",
       "category": "Policy Events, Awards, Energy and Environment",
       "url": "https://events.rapporteur.com/event/info/euractiv-pro-briefing-voltage-edition-iii",
       "description": "Events Calendar Rapporteur organises policy events in Brussels and other European capitals. Find out more about Rapporteur Event Partnerships",
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "bed99ea7c8b41d01"
+      "id": "0e3194748f007215"
     },
     {
       "organization": "The Parliament",
@@ -718,31 +654,14 @@
       "id": "91b1d99f837e50f5"
     },
     {
-      "organization": "POLITICO",
-      "title": "Brüssel-Alumni Stammtisch – Special Edition",
-      "date": "2026-06-04",
-      "date_text": "June 4, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Agriculture and Food, Technology, Politics",
-      "url": "https://www.politico.eu/event/brussel-alumni-stammtisch/",
-      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany Spain US Australia Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Brussels Playbook Capitals Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Pla",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "5d9025f06ec1e9a1"
-    },
-    {
-      "organization": "Euractiv",
+      "organization": "Rapporteur",
       "title": "Media Partnership: The Automotive Aftermarket - Driving Force of Europe's Competitiveness and Resilience",
       "date": "2026-06-09",
       "date_text": "09-06-2026",
       "end_date": "",
       "time_text": "",
-      "city": "Brussels",
-      "venue": "Renaissance Hotel",
+      "city": "Renaissance Hotel",
+      "venue": "",
       "category": "Policy Events, Economy and Jobs, Technology",
       "url": "https://events.rapporteur.com/event/info/the-automotive-aftermarket-driving-force-of-europes-competitiveness-and-resilience",
       "description": "Events Calendar Rapporteur organises policy events in Brussels and other European capitals. Find out more about Rapporteur Event Partnerships",
@@ -757,58 +676,41 @@
       ],
       "confidence": "high",
       "source_official": true,
-      "id": "21ab00addb3b3fd0"
+      "id": "8960b9a2583165d3"
     },
     {
-      "organization": "Euractiv",
+      "organization": "Rapporteur",
       "title": "The EU Fertiliser Action Plan, ETS, CBAM and the Fertiliser Industry",
       "date": "2026-06-09",
       "date_text": "09-06-2026",
       "end_date": "",
       "time_text": "",
-      "city": "Brussels",
-      "venue": "Hybrid",
+      "city": "Hybrid",
+      "venue": "",
       "category": "Policy Events, Agriculture and Food, Technology",
       "url": "https://events.rapporteur.com/event/info/the-eu-fertiliser-action-plan-ets-cbam-and-the-fertiliser-industry",
       "description": "Events Calendar Rapporteur organises policy events in Brussels and other European capitals. Find out more about Rapporteur Event Partnerships",
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "7ccb26ef77f2c2a4"
+      "id": "63e491c0375540ba"
     },
     {
-      "organization": "POLITICO",
-      "title": "POLITICO Pro Petit-Déjeuner – Budget 2027 : est-ce que ça va (vraiment) mal finir ?",
-      "date": "2026-06-10",
-      "date_text": "2026-10-06T08:15:00+00:00",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Agriculture and Food, Technology, Politics",
-      "url": "https://www.politico.eu/event/budget-2027-est-ce-que-ca-va-vraiment-mal-finir/",
-      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany Spain US Australia Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Brussels Playbook Capitals Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Pla",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "8eaade38dbfae217"
-    },
-    {
-      "organization": "Euractiv",
+      "organization": "Rapporteur",
       "title": "Hybrid construction as a solution to mitigate climate and housing crises",
       "date": "2026-06-11",
       "date_text": "11-06-2026",
       "end_date": "",
       "time_text": "",
-      "city": "Brussels",
-      "venue": "Hybrid",
+      "city": "Hybrid",
+      "venue": "",
       "category": "Policy Events, Awards, Energy and Environment",
       "url": "https://events.rapporteur.com/event/info/hybrid-construction-as-a-solution-to-mitigate-climate-and-housing-crises",
       "description": "Events Calendar Rapporteur organises policy events in Brussels and other European capitals. Find out more about Rapporteur Event Partnerships",
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "c1703ef0c484f9e3"
+      "id": "e9938e1df107ca7a"
     },
     {
       "organization": "The Parliament",
@@ -843,31 +745,14 @@
       "id": "db31efcd44690c58"
     },
     {
-      "organization": "POLITICO",
-      "title": "AperoPro: The incoming Irish Presidency of the Council of the EU",
-      "date": "2026-06-17",
-      "date_text": "June 17, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Agriculture and Food, Technology, Digital",
-      "url": "https://www.politico.eu/event/aperopro-the-incoming-irish-presidency-of-the-council-of-the-eu/",
-      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany Spain US Australia Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Brussels Playbook Capitals Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Pla",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "8fc2194b29467423"
-    },
-    {
-      "organization": "Euractiv",
+      "organization": "Rapporteur",
       "title": "Tech Policy Conference 2026",
       "date": "2026-06-23",
       "date_text": "23-06-2026",
       "end_date": "",
       "time_text": "09:30",
-      "city": "Brussels",
-      "venue": "Provided upon registration",
+      "city": "Provided upon registration",
+      "venue": "",
       "category": "Policy Events, Technology, Digital",
       "url": "https://events.rapporteur.com/event/info/tech-policy-conference-2026",
       "description": "Events Calendar Rapporteur organises policy events in Brussels and other European capitals. Find out more about Rapporteur Event Partnerships",
@@ -882,27 +767,27 @@
       ],
       "confidence": "high",
       "source_official": true,
-      "id": "be657544d6cfac30"
+      "id": "eb4c228759c3c6c0"
     },
     {
-      "organization": "Euractiv",
+      "organization": "Rapporteur",
       "title": "Europe’s competitiveness in emerging technologies – What is the role of standards, markets and quantum innovation?",
       "date": "2026-06-24",
       "date_text": "24-06-2026",
       "end_date": "",
       "time_text": "",
-      "city": "Brussels",
-      "venue": "Hybrid",
+      "city": "Hybrid",
+      "venue": "",
       "category": "Policy Events, Technology, Digital",
       "url": "https://events.rapporteur.com/event/info/europes-competitiveness-in-emerging-technologies-what-is-the-role-of-standards-markets-and-quantum-innovation",
       "description": "Events Calendar Rapporteur organises policy events in Brussels and other European capitals. Find out more about Rapporteur Event Partnerships",
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "601131454e584c92"
+      "id": "c645a000a1f375bd"
     },
     {
-      "organization": "Euractiv",
+      "organization": "Rapporteur",
       "title": "Media Partnership - From E-Waste to Strategic Autonomy: Can the Circular Economy Act Deliver for Europe’s Raw Materials?",
       "date": "2026-06-25",
       "date_text": "25-06-2026",
@@ -916,27 +801,52 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "c033e1d60be1b44a"
+      "id": "c35b0cedfdc25fa9"
     },
     {
-      "organization": "Euractiv",
+      "organization": "Rapporteur",
       "title": "Powering Europe's competitiveness: delivering clean energy and infrastructure for growth",
       "date": "2026-06-25",
       "date_text": "25-06-2026",
       "end_date": "",
       "time_text": "",
-      "city": "Brussels",
-      "venue": "Hybrid",
+      "city": "Hybrid",
+      "venue": "",
       "category": "Policy Events, Awards, Energy and Environment",
       "url": "https://events.rapporteur.com/event/info/powering-europes-competitiveness-delivering-clean-energy-and-infrastructure-for-growth",
       "description": "Events Calendar Rapporteur organises policy events in Brussels and other European capitals. Find out more about Rapporteur Event Partnerships",
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "c465d27baa56ff44"
+      "id": "e446ff05f68525fb"
     },
     {
-      "organization": "Euractiv",
+      "organization": "POLITICO",
+      "title": "AI and future of work: Is the EU prepared for the transition?",
+      "date": "2026-06-29",
+      "date_text": "June 29, 2026",
+      "end_date": "",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Agriculture and Food, Technology, Digital",
+      "url": "https://www.politico.eu/event/ai-and-future-of-work/",
+      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany Spain US Australia Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Brussels Playbook Capitals Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Pla",
+      "sponsors": [
+        {
+          "name": "OpenAI",
+          "role": "Sponsor / partner",
+          "source_url": "https://www.politico.eu/event/ai-and-future-of-work/",
+          "extraction": "auto-section-logo",
+          "confidence": "medium"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "714fd6ff0b503607"
+    },
+    {
+      "organization": "Rapporteur",
       "title": "Euractiv Pro Briefing - FIREPOWER edition I",
       "date": "2026-06-29",
       "date_text": "29-06-2026",
@@ -950,24 +860,24 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "465a5c21a111dd42"
+      "id": "73a92b5db5c0b075"
     },
     {
-      "organization": "Euractiv",
+      "organization": "Rapporteur",
       "title": "Energy poverty in Europe – How can EU social, housing and climate policies deliver a fair transition?",
       "date": "2026-06-30",
       "date_text": "30-06-2026",
       "end_date": "",
       "time_text": "",
-      "city": "Brussels",
-      "venue": "Hybrid",
+      "city": "Hybrid",
+      "venue": "",
       "category": "Policy Events, Awards, Energy and Environment",
       "url": "https://events.rapporteur.com/event/info/energy-poverty-in-europe-how-can-eu-social-housing-and-climate-policies-deliver-a-fair-transition",
       "description": "Events Calendar Rapporteur organises policy events in Brussels and other European capitals. Find out more about Rapporteur Event Partnerships",
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "296e2e3b3cb83828"
+      "id": "b0898de73da06f47"
     },
     {
       "organization": "The Parliament",
@@ -1088,38 +998,6 @@
     },
     {
       "organization": "The Parliament",
-      "title": "Unlocking demand for clean ammonia in Europe",
-      "date": "2026-07-02",
-      "date_text": "July 2, 2026",
-      "end_date": "2026-07-02",
-      "time_text": "10:00 am",
-      "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/unlocking-demand-for-clean-ammonia-in-europe/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Ammonia Europe 12 12 55 110964",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/unlocking-demand-for-clean-ammonia-in-europe/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Ammoniaenergy",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/unlocking-demand-for-clean-ammonia-in-europe/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "ae9f3658da46cf61"
-    },
-    {
-      "organization": "The Parliament",
       "title": "Europe’s automotive transformation: Building a competitive and sustainable future",
       "date": "2026-07-07",
       "date_text": "July 7, 2026",
@@ -1144,7 +1022,7 @@
       "id": "6477e8bf992f6cac"
     },
     {
-      "organization": "Euractiv",
+      "organization": "Rapporteur",
       "title": "Euractiv Pro Briefing - BUDGET edition I",
       "date": "2026-07-09",
       "date_text": "09-07-2026",
@@ -1158,10 +1036,10 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "336fd6da6fe5736a"
+      "id": "547d2fe6e8d71c1b"
     },
     {
-      "organization": "Euractiv",
+      "organization": "Rapporteur",
       "title": "Media Partnership - Baltic Energy Initiative – cooperation among energy companies from the Baltic Sea region",
       "date": "2026-09-03",
       "date_text": "03-09-2026",
@@ -1175,41 +1053,41 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "f905a5fe07f170f7"
+      "id": "b51f69412df43730"
     },
     {
-      "organization": "Euractiv",
+      "organization": "Rapporteur",
       "title": "Media Partnership - Making Europe the New Silicon Valley of the World",
       "date": "2026-09-07",
       "date_text": "07-09-2026",
       "end_date": "",
       "time_text": "",
-      "city": "Brussels",
-      "venue": "The Merode",
+      "city": "The Merode",
+      "venue": "",
       "category": "Policy Events, Technology, Digital",
       "url": "https://events.rapporteur.com/event/info/media-partnership-making-europe-the-new-silicon-valley-of-the-world",
       "description": "Events Calendar Rapporteur organises policy events in Brussels and other European capitals. Find out more about Rapporteur Event Partnerships",
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "5a9543abb244382d"
+      "id": "31b840397078cf64"
     },
     {
-      "organization": "Euractiv",
+      "organization": "Rapporteur",
       "title": "Legal certainty and competitiveness - Is greater tax alignment needed in the EU?",
       "date": "2026-09-08",
       "date_text": "08-09-2026",
       "end_date": "",
       "time_text": "",
-      "city": "Brussels",
-      "venue": "Rapporteur Office",
+      "city": "Rapporteur Office",
+      "venue": "",
       "category": "Policy Events, Economy and Jobs, Technology",
       "url": "https://events.rapporteur.com/event/info/legal-certainty-and-competitiveness-is-greater-tax-alignment-needed-in-the-eu",
       "description": "Events Calendar Rapporteur organises policy events in Brussels and other European capitals. Find out more about Rapporteur Event Partnerships",
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "78081ba1d46f98f0"
+      "id": "5c3a56188f2c7952"
     },
     {
       "organization": "The Parliament",
@@ -1246,41 +1124,41 @@
       "id": "e57522a8a8f54f7a"
     },
     {
-      "organization": "Euractiv",
+      "organization": "Rapporteur",
       "title": "Euractiv Pro Briefing - HARVEST edition III",
       "date": "2026-09-09",
       "date_text": "09-09-2026",
       "end_date": "",
       "time_text": "8:30",
-      "city": "Brussels",
-      "venue": "Rapporteur Office",
+      "city": "Rapporteur Office",
+      "venue": "",
       "category": "Policy Events, Agriculture and Food, Technology",
       "url": "https://events.rapporteur.com/event/info/euractiv-pro-briefing-harvest-edition-iii",
       "description": "Events Calendar Rapporteur organises policy events in Brussels and other European capitals. Find out more about Rapporteur Event Partnerships",
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "5a97f3ee86f579b7"
+      "id": "08437baacadb08f2"
     },
     {
-      "organization": "Euractiv",
+      "organization": "Rapporteur",
       "title": "Media Partnership - PKEE Energy Day 2026 - How to Restore EU Competitiveness and Strengthen Economic Resilience?",
       "date": "2026-09-09",
       "date_text": "09-09-2026",
       "end_date": "",
       "time_text": "",
-      "city": "Brussels",
-      "venue": "Solvay Library",
+      "city": "Solvay Library",
+      "venue": "",
       "category": "Policy Events, Awards, Energy and Environment",
       "url": "https://events.rapporteur.com/event/info/media-partnership-pkee-energy-day-2026-how-to-restore-eu-competitiveness-and-strengthen-economic-resilience",
       "description": "Events Calendar Rapporteur organises policy events in Brussels and other European capitals. Find out more about Rapporteur Event Partnerships",
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "7ab38720401ea9af"
+      "id": "386c03071e6b86fe"
     },
     {
-      "organization": "Euractiv",
+      "organization": "Rapporteur",
       "title": "Ending HIV in Europe - Are we moving fast enough to achieve the 2030 targets?",
       "date": "2026-09-10",
       "date_text": "10-09-2026",
@@ -1294,24 +1172,24 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "e79c55fa8eb0e642"
+      "id": "45e697c5566e5eac"
     },
     {
-      "organization": "Euractiv",
+      "organization": "Rapporteur",
       "title": "Flying through global uncertainty - What is Europe’s plan for aviation?",
       "date": "2026-09-10",
       "date_text": "10-09-2026",
       "end_date": "",
       "time_text": "",
-      "city": "Brussels",
-      "venue": "Rapporteur Office",
+      "city": "Rapporteur Office",
+      "venue": "",
       "category": "Policy Events, Technology, Digital",
       "url": "https://events.rapporteur.com/event/info/flying-through-global-uncertainty-what-is-europes-plan-for-aviation",
       "description": "Events Calendar Rapporteur organises policy events in Brussels and other European capitals. Find out more about Rapporteur Event Partnerships",
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "0b4530b5f98a9c2a"
+      "id": "29924c60d3dadaa3"
     },
     {
       "organization": "The Parliament",
@@ -1381,38 +1259,38 @@
       "id": "49dfd56b095c641a"
     },
     {
-      "organization": "Euractiv",
+      "organization": "Rapporteur",
       "title": "Preparing for RED IV – How can renewable energy deliver for heating, industry and rural communities?",
       "date": "2026-09-29",
       "date_text": "29-09-2026",
       "end_date": "",
       "time_text": "",
-      "city": "Brussels",
-      "venue": "Hybrid",
+      "city": "Hybrid",
+      "venue": "",
       "category": "Policy Events, Awards, Energy and Environment",
       "url": "https://events.rapporteur.com/event/info/preparing-for-red-iv-how-can-renewable-energy-deliver-for-heating-industry-and-rural-communities",
       "description": "Events Calendar Rapporteur organises policy events in Brussels and other European capitals. Find out more about Rapporteur Event Partnerships",
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "f1bb61488e2e50cc"
+      "id": "83963e637f1e7ceb"
     },
     {
-      "organization": "Euractiv",
+      "organization": "Rapporteur",
       "title": "Rapporteur Pro Briefing - THE HACK edition III",
       "date": "2026-09-30",
       "date_text": "30-09-2026",
       "end_date": "",
       "time_text": "8:30",
-      "city": "Brussels",
-      "venue": "Rapporteur Office",
+      "city": "Rapporteur Office",
+      "venue": "",
       "category": "Policy Events, Technology, Digital",
       "url": "https://events.rapporteur.com/event/info/euractiv-pro-briefing-the-hack-edition-iii",
       "description": "Events Calendar Rapporteur organises policy events in Brussels and other European capitals. Find out more about Rapporteur Event Partnerships",
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "3b3d4c8720739642"
+      "id": "8168d13b8fcf18c6"
     },
     {
       "organization": "The Parliament",
@@ -1479,24 +1357,24 @@
       "id": "0f9a1966db1bf466"
     },
     {
-      "organization": "Euractiv",
+      "organization": "Rapporteur",
       "title": "Political Communication Summit 2026",
       "date": "2026-10-07",
       "date_text": "07-10-2026",
       "end_date": "",
       "time_text": "18:00",
-      "city": "Brussels",
-      "venue": "Vienna City Hall (Wiener Rathaus)",
+      "city": "Vienna City Hall (Wiener Rathaus)",
+      "venue": "",
       "category": "Policy Events, Awards, Digital",
       "url": "https://events.rapporteur.com/event/info/political-communication-summit-2026",
       "description": "Events Calendar Rapporteur organises policy events in Brussels and other European capitals. Find out more about Rapporteur Event Partnerships",
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "ccf89a091e5e0d81"
+      "id": "3dcbefcdd903e6f9"
     },
     {
-      "organization": "Euractiv",
+      "organization": "Rapporteur",
       "title": "EU Code Week 2026 Launch Event: Building Resilience, Connecting & Empowering Communities in the Age of AI",
       "date": "2026-10-12",
       "date_text": "12-10-2026",
@@ -1510,7 +1388,7 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "b97a9507ce8e9bc7"
+      "id": "c76caa6c5693204b"
     },
     {
       "organization": "The Parliament",
@@ -1559,89 +1437,89 @@
       "id": "ce612768d591b2ba"
     },
     {
-      "organization": "Euractiv",
+      "organization": "Rapporteur",
       "title": "From pilot to scale: How can Europe create the right conditions for regenerative agriculture?",
       "date": "2026-10-13",
       "date_text": "13-10-2026",
       "end_date": "",
       "time_text": "",
-      "city": "Brussels",
-      "venue": "Rapporteur Office",
+      "city": "Rapporteur Office",
+      "venue": "",
       "category": "Policy Events, Agriculture and Food, Technology",
       "url": "https://events.rapporteur.com/event/info/from-pilot-to-scale-how-can-europe-create-the-right-conditions-for-regenerative-agriculture",
       "description": "Events Calendar Rapporteur organises policy events in Brussels and other European capitals. Find out more about Rapporteur Event Partnerships",
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "a7fd1e9816b8e451"
+      "id": "97f280c99d3bc409"
     },
     {
-      "organization": "Euractiv",
+      "organization": "Rapporteur",
       "title": "Integrated welfare payments – How can Europe build more connected and efficient systems?",
       "date": "2026-10-13",
       "date_text": "13-10-2026",
       "end_date": "",
       "time_text": "",
-      "city": "Brussels",
-      "venue": "Rapporteur Office",
+      "city": "Rapporteur Office",
+      "venue": "",
       "category": "Policy Events, Economy and Jobs, Technology",
       "url": "https://events.rapporteur.com/event/info/integrated-welfare-payments-how-can-europe-build-more-connected-and-efficient-systems",
       "description": "Events Calendar Rapporteur organises policy events in Brussels and other European capitals. Find out more about Rapporteur Event Partnerships",
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "ce782ada0d29af42"
+      "id": "1ed269cdda75fda8"
     },
     {
-      "organization": "Euractiv",
+      "organization": "Rapporteur",
       "title": "Media Partnership - Global Dialogues 2026. Rethinking Cancer Care, Together: A Person-Centred Approach",
       "date": "2026-10-13",
       "date_text": "13-10-2026",
       "end_date": "",
       "time_text": "",
-      "city": "Brussels",
-      "venue": "Press Club",
+      "city": "Press Club",
+      "venue": "",
       "category": "Policy Events, Health and Consumers, Digital",
       "url": "https://events.rapporteur.com/event/info/global-dialogues-2026-rethinking-cancer-care-together-a-person-centred-approach",
       "description": "Events Calendar Rapporteur organises policy events in Brussels and other European capitals. Find out more about Rapporteur Event Partnerships",
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "89ae1c9a7729e4c5"
+      "id": "b8a539d75894b389"
     },
     {
-      "organization": "Euractiv",
+      "organization": "Rapporteur",
       "title": "Media Partnership - Reality Check: Delivering Europe’s Industrial Transition",
       "date": "2026-10-13",
       "date_text": "13-10-2026",
       "end_date": "",
       "time_text": "",
-      "city": "Brussels",
-      "venue": "Residence Palace",
+      "city": "Residence Palace",
+      "venue": "",
       "category": "Policy Events, Agriculture and Food, Technology",
       "url": "https://events.rapporteur.com/event/info/media-partnership-reality-check-delivering-europes-industrial-transition",
       "description": "Events Calendar Rapporteur organises policy events in Brussels and other European capitals. Find out more about Rapporteur Event Partnerships",
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "6f31d772f08ab992"
+      "id": "4160fec596f77f1f"
     },
     {
-      "organization": "Euractiv",
+      "organization": "Rapporteur",
       "title": "On the Road to 2040 - Is transport fit for a 90% GHG reduction?",
       "date": "2026-10-13",
       "date_text": "13-10-2026",
       "end_date": "",
       "time_text": "",
-      "city": "Brussels",
-      "venue": "Rapporteur Office",
+      "city": "Rapporteur Office",
+      "venue": "",
       "category": "Policy Events, Awards, Energy and Environment",
       "url": "https://events.rapporteur.com/event/info/on-the-road-to-2040-is-transport-fit-for-a-90-ghg-reduction",
       "description": "Events Calendar Rapporteur organises policy events in Brussels and other European capitals. Find out more about Rapporteur Event Partnerships",
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "b2a03a751626aeaf"
+      "id": "648fa4fa0a4d049d"
     },
     {
       "organization": "The Parliament",
@@ -1719,38 +1597,21 @@
       "id": "b8ba053783fe4a10"
     },
     {
-      "organization": "The Parliament",
-      "title": "Public Sector Cyber Security Republic of Ireland 2026",
-      "date": "2026-10-14",
-      "date_text": "October 14, 2026",
-      "end_date": "2026-10-14",
-      "time_text": "",
-      "city": "Dublin",
-      "venue": "Clayton Hotel Cardiff Lane",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/public-sector-cyber-security-republic-of-ireland-2026/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "f89b1c524456e71a"
-    },
-    {
-      "organization": "Euractiv",
+      "organization": "Rapporteur",
       "title": "Transport Policy Conference 2026",
       "date": "2026-10-15",
       "date_text": "15-10-2026",
       "end_date": "",
       "time_text": "09:30",
-      "city": "Brussels",
-      "venue": "Provided upon registration",
+      "city": "Provided upon registration",
+      "venue": "",
       "category": "Policy Events, Technology, Digital",
       "url": "https://events.rapporteur.com/event/info/transport-policy-conference-2026",
       "description": "Events Calendar Rapporteur organises policy events in Brussels and other European capitals. Find out more about Rapporteur Event Partnerships",
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "b7522a6dc0653aa9"
+      "id": "3708b150dcc27281"
     },
     {
       "organization": "The Parliament",
@@ -1801,23 +1662,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "64edabfcca2f1a11"
-    },
-    {
-      "organization": "Euractiv",
-      "title": "Energy efficiency – How can it shape Europe’s post-2030 energy and climate framework?",
-      "date": "2026-10-29",
-      "date_text": "29-10-2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Online",
-      "venue": "",
-      "category": "Policy Events, Awards, Energy and Environment",
-      "url": "https://events.rapporteur.com/event/info/energy-efficiency-how-can-it-shape-europes-post-2030-energy-and-climate-framework",
-      "description": "Events Calendar Rapporteur organises policy events in Brussels and other European capitals. Find out more about Rapporteur Event Partnerships",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "bb8f6f3916f4b9c0"
     },
     {
       "organization": "Logos",
@@ -1929,6 +1773,23 @@
       "id": "7467790a7973ccd8"
     },
     {
+      "organization": "Rapporteur",
+      "title": "Energy efficiency – How can it shape Europe’s post-2030 energy and climate framework?",
+      "date": "2026-10-29",
+      "date_text": "29-10-2026",
+      "end_date": "",
+      "time_text": "",
+      "city": "Online",
+      "venue": "",
+      "category": "Policy Events, Awards, Energy and Environment",
+      "url": "https://events.rapporteur.com/event/info/energy-efficiency-how-can-it-shape-europes-post-2030-energy-and-climate-framework",
+      "description": "Events Calendar Rapporteur organises policy events in Brussels and other European capitals. Find out more about Rapporteur Event Partnerships",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "8e93c3eb1932fe16"
+    },
+    {
       "organization": "The Parliament",
       "title": "European Defence and Security Conference",
       "date": "2026-10-29",
@@ -1963,21 +1824,21 @@
       "id": "943801ed802d4431"
     },
     {
-      "organization": "Euractiv",
+      "organization": "Rapporteur",
       "title": "How can the revised EU Standardisation Regulation strengthen Europe’s future competitiveness?",
       "date": "2026-11-03",
       "date_text": "03-11-2026",
       "end_date": "",
       "time_text": "",
-      "city": "Brussels",
-      "venue": "Rapporteur Office",
+      "city": "Rapporteur Office",
+      "venue": "",
       "category": "Policy Events, Economy and Jobs, Technology",
       "url": "https://events.rapporteur.com/event/info/how-can-the-revised-eu-standardisation-regulation-strengthen-europes-future-competitiveness",
       "description": "Events Calendar Rapporteur organises policy events in Brussels and other European capitals. Find out more about Rapporteur Event Partnerships",
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "fccb16039beccfb2"
+      "id": "c95efc96248643d3"
     },
     {
       "organization": "The Parliament",
@@ -2023,31 +1884,6 @@
     },
     {
       "organization": "The Parliament",
-      "title": "Science that competes: Preparing Europe’s Biotech Ecosystem for Global Leadership",
-      "date": "2026-11-04",
-      "date_text": "November 4, 2026",
-      "end_date": "2026-11-04",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/science-that-competes-preparing-europes-biotech-ecosystem-for-global-leadership/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Bayer",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/science-that-competes-preparing-europes-biotech-ecosystem-for-global-leadership/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "2a40ded44781a88b"
-    },
-    {
-      "organization": "The Parliament",
       "title": "EU-Mercosur Forum 2026",
       "date": "2026-11-05",
       "date_text": "November 5, 2026",
@@ -2064,63 +1900,21 @@
       "id": "8effb3468157fc8b"
     },
     {
-      "organization": "Euractiv",
+      "organization": "Rapporteur",
       "title": "Media Partnership: Effective, Proportionate, Dissuasive - Keeping Europe’s IP Framework in Balance",
       "date": "2026-11-10",
       "date_text": "10-11-2026",
       "end_date": "",
       "time_text": "",
-      "city": "Brussels",
-      "venue": "Hybrid",
+      "city": "Hybrid",
+      "venue": "",
       "category": "Policy Events, Technology, Digital",
       "url": "https://events.rapporteur.com/event/info/media-partnership-effective-proportionate-dissuasive-keeping-europes-ip-framework-in-balance",
       "description": "Events Calendar Rapporteur organises policy events in Brussels and other European capitals. Find out more about Rapporteur Event Partnerships",
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "45a5aeb476d8f011"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "Refining and fuel manufacturing: A strategic asset Europe cannot afford to lose",
-      "date": "2026-11-10",
-      "date_text": "November 10, 2026",
-      "end_date": "2026-11-10",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/refining-and-fuel-manufacturing-a-strategic-asset-europe-cannot-afford-to-lose/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "649b817c13853e45"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "The future of medical technology in Europe: Innovation, access and trust",
-      "date": "2026-11-10",
-      "date_text": "November 10, 2026",
-      "end_date": "2026-11-10",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/the-future-of-medical-technology-in-europe-innovation-access-and-trust/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "MedTech Europe",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/the-future-of-medical-technology-in-europe-innovation-access-and-trust/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "74c7fa814922c065"
+      "id": "0c406337bdcd2053"
     },
     {
       "organization": "The Parliament",
@@ -2148,21 +1942,21 @@
       "id": "a3ca6aafe3d02987"
     },
     {
-      "organization": "Euractiv",
+      "organization": "Rapporteur",
       "title": "Europe's Life Sciences Competitiveness Agenda - Innovation, investment and global leadership in a changing world",
       "date": "2026-11-17",
       "date_text": "17-11-2026",
       "end_date": "",
       "time_text": "12:30",
-      "city": "Brussels",
-      "venue": "Hybrid",
+      "city": "Hybrid",
+      "venue": "",
       "category": "Policy Events, Health and Consumers, Digital",
       "url": "https://events.rapporteur.com/event/info/europes-life-sciences-competitiveness-agenda-innovation-investment-and-global-leadership-in-a-changing-world",
       "description": "Events Calendar Rapporteur organises policy events in Brussels and other European capitals. Find out more about Rapporteur Event Partnerships",
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "e642b05feed42e4f"
+      "id": "e83bce7ec26af5c6"
     },
     {
       "organization": "The Parliament",
@@ -2247,31 +2041,6 @@
       "id": "659b07da2dbfb200"
     },
     {
-      "organization": "The Parliament",
-      "title": "Should journalists be afraid of content creators?",
-      "date": "2026-11-23",
-      "date_text": "November 23, 2026",
-      "end_date": "2026-11-23",
-      "time_text": "6:30 pm",
-      "city": "Brussels",
-      "venue": "The Merode",
-      "category": "PM+ Talks",
-      "url": "https://events.theparliamentmagazine.eu/event/pmtalks-should-journalists-be-afraid-of-content-creators/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Themerode",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/pmtalks-should-journalists-be-afraid-of-content-creators/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "72704044c6764099"
-    },
-    {
       "organization": "POLITICO",
       "title": "POLITICO Health Care Summit 2026",
       "date": "2026-12-01",
@@ -2304,38 +2073,38 @@
       "id": "1e750dc4e38e3fc7"
     },
     {
-      "organization": "Euractiv",
+      "organization": "Rapporteur",
       "title": "Europe’s refining and fuel manufacturing sector – Competitiveness, decarbonisation and strategic resilience",
       "date": "2026-12-02",
       "date_text": "02-12-2026",
       "end_date": "",
       "time_text": "",
-      "city": "Brussels",
-      "venue": "Hybrid",
+      "city": "Hybrid",
+      "venue": "",
       "category": "Policy Events, Awards, Energy and Environment",
       "url": "https://events.rapporteur.com/event/info/europes-refining-and-fuel-manufacturing-sector-competitiveness-decarbonisation-and-strategic-resilience",
       "description": "Events Calendar Rapporteur organises policy events in Brussels and other European capitals. Find out more about Rapporteur Event Partnerships",
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "280ccaf80bc7a0e1"
+      "id": "1a8d94244a82956f"
     },
     {
-      "organization": "Euractiv",
+      "organization": "Rapporteur",
       "title": "Energy & Environment Policy Conference 2026",
       "date": "2026-12-03",
       "date_text": "03-12-2026",
       "end_date": "",
       "time_text": "",
-      "city": "Brussels",
-      "venue": "Provided upon registration",
+      "city": "Provided upon registration",
+      "venue": "",
       "category": "Policy Events, Awards, Energy and Environment",
       "url": "https://events.rapporteur.com/event/info/energy-environment-policy-conference-2026",
       "description": "Events Calendar Rapporteur organises policy events in Brussels and other European capitals. Find out more about Rapporteur Event Partnerships",
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "bf873b54959e682a"
+      "id": "dbc0ae1622723e0c"
     },
     {
       "organization": "The Parliament",
@@ -2363,41 +2132,41 @@
       "id": "3953c20d36959c04"
     },
     {
-      "organization": "Euractiv",
+      "organization": "Rapporteur",
       "title": "Media Partnership: Sovereignty Through Partnership: Trusted Technology in an Interconnected World",
       "date": "2026-12-09",
       "date_text": "09-12-2026",
       "end_date": "",
       "time_text": "",
-      "city": "Brussels",
-      "venue": "Hybrid",
+      "city": "Hybrid",
+      "venue": "",
       "category": "Policy Events, Technology, Digital",
       "url": "https://events.rapporteur.com/event/info/media-partnership-sovereignty-through-partnership-trusted-technology-in-an-interconnected-world",
       "description": "Events Calendar Rapporteur organises policy events in Brussels and other European capitals. Find out more about Rapporteur Event Partnerships",
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "2bf25c9c7222b0fb"
+      "id": "39e62919f0871289"
     },
     {
-      "organization": "Euractiv",
+      "organization": "Rapporteur",
       "title": "Delivering clean ammonia - Making EU climate and energy policy fit-for-purpose",
       "date": "2026-12-10",
       "date_text": "10-12-2026",
       "end_date": "",
       "time_text": "",
-      "city": "Brussels",
-      "venue": "Hybrid",
+      "city": "Hybrid",
+      "venue": "",
       "category": "Policy Events, Awards, Energy and Environment",
       "url": "https://events.rapporteur.com/event/info/delivering-clean-ammonia-making-eu-climate-and-energy-policy-fit-for-purpose",
       "description": "Events Calendar Rapporteur organises policy events in Brussels and other European capitals. Find out more about Rapporteur Event Partnerships",
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "8315e2a5e643c236"
+      "id": "6bb8f3c3ba411632"
     },
     {
-      "organization": "Euractiv",
+      "organization": "Rapporteur",
       "title": "EU-China relations - Rebalancing trade while keeping Europe competitive",
       "date": "2026-12-10",
       "date_text": "10-12-2026",
@@ -2411,7 +2180,7 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "da176c6b0e3020c7"
+      "id": "23f2bceb226bce21"
     }
   ]
 }
