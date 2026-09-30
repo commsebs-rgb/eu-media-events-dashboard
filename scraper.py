@@ -165,6 +165,20 @@ KNOWN_EVENT_FIXES = [
         "confidence": "high",
     },
     {
+        "url_contains": ["defence-space-summit-2026"],
+        "title_contains": ["defence space summit", "defence & space summit"],
+        "title": "Euronews Defence & Space Summit 2026",
+        "category": "Defence & Security",
+        "confidence": "high",
+    },
+    {
+        "url_contains": ["eu-enlargement-summit-2026"],
+        "title_contains": ["eu enlargement summit", "enlargement summit"],
+        "title": "Euronews EU Enlargement Summit 2026",
+        "category": "Politics, Enlargement",
+        "confidence": "high",
+    },
+    {
         "url_contains": ["health-care-summit-2026", "healthcare-summit-2026"],
         "title_contains": ["health care summit", "healthcare summit"],
         "title": "POLITICO Health Care Summit 2026",
@@ -1857,6 +1871,8 @@ def discover_euronews_event_links(scraper: Scraper) -> set[str]:
     """
     links = {
         "https://events.euronews.com/health_summit_2026",
+        "https://events.euronews.com/defence-space-summit-2026",
+        "https://events.euronews.com/eu-enlargement-summit-2026",
     }
     seeds = ["https://events.euronews.com/events", "https://events.euronews.com/"]
     bad_paths = {"/", "/events", "/privacy", "/terms", "/privacy-policy", "/terms-and-conditions"}
@@ -2058,6 +2074,12 @@ def apply_manual_sponsors(events: list[Event]) -> None:
 def dedupe_events(events: Iterable[Event]) -> list[Event]:
     merged: dict[str, Event] = {}
     for event in events:
+        # Euronews microsites should always remain attributed to Euronews,
+        # even if another source discovers the same URL.
+        if "events.euronews.com" in (event.url or ""):
+            event.organization = "Euronews"
+        if event.organization.lower() == "the parliament" and "events.euronews.com" in (event.url or ""):
+            event.organization = "Euronews"
         if not event.title or not event.date or not in_range(event.date):
             continue
         key = "|".join([
