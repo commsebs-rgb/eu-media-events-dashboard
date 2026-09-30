@@ -165,20 +165,6 @@ KNOWN_EVENT_FIXES = [
         "confidence": "high",
     },
     {
-        "url_contains": ["defence-space-summit-2026"],
-        "title_contains": ["defence space summit", "defence & space summit"],
-        "title": "Euronews Defence & Space Summit 2026",
-        "category": "Defence & Security",
-        "confidence": "high",
-    },
-    {
-        "url_contains": ["eu-enlargement-summit-2026"],
-        "title_contains": ["eu enlargement summit", "enlargement summit"],
-        "title": "Euronews EU Enlargement Summit 2026",
-        "category": "Politics, Enlargement",
-        "confidence": "high",
-    },
-    {
         "url_contains": ["health-care-summit-2026", "healthcare-summit-2026"],
         "title_contains": ["health care summit", "healthcare summit"],
         "title": "POLITICO Health Care Summit 2026",
@@ -1835,6 +1821,16 @@ def scrape_politico(scraper: Scraper) -> list[Event]:
 
 
 
+def remove_wrong_euronews_duplicates(events: list[Event]) -> list[Event]:
+    """Remove events incorrectly attributed to other organisations when sourced from Euronews microsites."""
+    cleaned = []
+    for event in events:
+        if "events.euronews.com" in event.url.lower() and event.organization.lower() != "euronews":
+            event.organization = "Euronews"
+        cleaned.append(event)
+    return cleaned
+
+
 def remove_unreliable_politico_dates(events: list[Event]) -> list[Event]:
     """Drop POLITICO events whose date looks like a reused agenda/listing date.
 
@@ -1926,6 +1922,8 @@ def scrape_euronews(scraper: Scraper) -> list[Event]:
         seen_urls.add(href)
         ev = extract_event_from_detail(scraper, "Euronews", href, "Euronews Events")
         if ev:
+            # Any official Euronews microsite must remain attributed to Euronews.
+            ev.organization = "Euronews"
             events.append(ev)
 
     # Safety net for the current official Euronews event microsite. The page is still
@@ -2074,12 +2072,6 @@ def apply_manual_sponsors(events: list[Event]) -> None:
 def dedupe_events(events: Iterable[Event]) -> list[Event]:
     merged: dict[str, Event] = {}
     for event in events:
-        # Euronews microsites should always remain attributed to Euronews,
-        # even if another source discovers the same URL.
-        if "events.euronews.com" in (event.url or ""):
-            event.organization = "Euronews"
-        if event.organization.lower() == "the parliament" and "events.euronews.com" in (event.url or ""):
-            event.organization = "Euronews"
         if not event.title or not event.date or not in_range(event.date):
             continue
         key = "|".join([
@@ -2160,6 +2152,7 @@ def main() -> None:
         except Exception as exc:
             print(f"[warn] {fn.__name__} failed: {exc}")
     apply_known_event_fixes(all_events)
+    all_events = remove_wrong_euronews_duplicates(all_events)
     all_events = remove_unreliable_politico_dates(all_events)
     events = dedupe_events(all_events)
     apply_manual_sponsors(events)
