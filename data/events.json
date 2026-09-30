@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-09-30T15:52:44+00:00",
+  "last_updated_utc": "2026-09-30T16:19:19+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -154,45 +154,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "72e2709ffde23522"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "Euronews Health Summit 2026",
-      "date": "2026-03-17",
-      "date_text": "Tuesday, March 17, 2026",
-      "end_date": "2026-11-03",
-      "time_text": "Doors open at 12:30 PM",
-      "city": "Brussels",
-      "venue": "Cardo Brussels",
-      "category": "Health",
-      "url": "https://events.theparliamentmagazine.eu/event/health-summit-2026/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Boehringer Ingelheim",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/health-summit-2026/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        },
-        {
-          "name": "Gedeonrichter",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/health-summit-2026/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        },
-        {
-          "name": "Sobi",
-          "role": "Partner / sponsor",
-          "source_url": "https://events.theparliamentmagazine.eu/event/health-summit-2026/",
-          "extraction": "official-page safeguard",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "830a4866a0915289"
     },
     {
       "organization": "The Parliament",
@@ -752,38 +713,6 @@
       "id": "e9938e1df107ca7a"
     },
     {
-      "organization": "The Parliament",
-      "title": "European Biotech Forum 2026",
-      "date": "2026-06-11",
-      "date_text": "June 11, 2026",
-      "end_date": "2026-06-11",
-      "time_text": "9:00 am",
-      "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "Summits",
-      "url": "https://events.theparliamentmagazine.eu/event/european-biotech-forum-2026/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Amgen",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/european-biotech-forum-2026/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        },
-        {
-          "name": "Europabio",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/european-biotech-forum-2026/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "db31efcd44690c58"
-    },
-    {
       "organization": "Rapporteur",
       "title": "Tech Policy Conference 2026",
       "date": "2026-06-23",
@@ -1323,20 +1252,20 @@
     },
     {
       "organization": "Euronews",
-      "title": "Be part of it. Join us!",
+      "title": "Euronews Defence & Space Summit 2026",
       "date": "2026-09-30",
       "date_text": "30 September 2026",
       "end_date": "",
-      "time_text": "",
-      "city": "Where:",
-      "venue": "",
-      "category": "Euronews Events",
-      "url": "https://events.euronews.com/defence-space-summit-2026",
+      "time_text": "9:00 AM CEST",
+      "city": "Brussels",
+      "venue": "Albert Hall",
+      "category": "Defence & Security",
+      "url": "https://events.euronews.com/defence-space-summit-2026/sitemap.xml",
       "description": "Euronews Defence & Space Summit 2026 When: Wednesday, 30 September 2026 When: Wednesday, 30 September 2026 Time: Doors open at 9am Sessions until 6pm Where: Where: Albert Hall, Avenue Eudore Pirmez 9, 1040 Brussels",
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "69c3cd7dbfb993ec"
+      "id": "871165b3c550dcf4"
     },
     {
       "organization": "Rapporteur",
@@ -1871,23 +1800,6 @@
     },
     {
       "organization": "The Parliament",
-      "title": "European Defence and Security Conference",
-      "date": "2026-10-29",
-      "date_text": "October 29, 2026",
-      "end_date": "2026-10-29",
-      "time_text": "9:00 am",
-      "city": "Brussels",
-      "venue": "Egmont Palace",
-      "category": "Policy Events, Summits, PM+ Talks",
-      "url": "https://events.theparliamentmagazine.eu/event/european-defence-and-security-conference/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "0ae3d42a712a05a9"
-    },
-    {
-      "organization": "The Parliament",
       "title": "ADIPEC 2026",
       "date": "2026-11-02",
       "date_text": "November 2, 2026",
@@ -1902,23 +1814,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "943801ed802d4431"
-    },
-    {
-      "organization": "Euronews",
-      "title": "Euronews Enlargement Summit 2026",
-      "date": "2026-11-03",
-      "date_text": "3 November 2026",
-      "end_date": "",
-      "time_text": "10:00 am",
-      "city": "Autoworld",
-      "venue": "",
-      "category": "Euronews Events",
-      "url": "https://events.euronews.com/eu-enlargement-summit-2026",
-      "description": "The prospect of a larger European Union is moving from long-term ambition to an increasingly practical question. Candidate countries are advancing their bids for membership, while war, geopolitical competition and economic pressures are reshaping the conditions in which Enlargement must take place. On 3 November 2026 , the Euronews EU Enlargement Summit will bring together policymakers, political leaders, experts and business representatives in Brussels, with the debate broadcast live to Euronews audiences. The summit will examine what the next phase of Enlargement could mean for the EU and its prospective members. Discussions will focus on the progress of candidate countries, the reforms, c",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "0eb19adf075eddd9"
     },
     {
       "organization": "Rapporteur",
@@ -1936,6 +1831,23 @@
       "confidence": "high",
       "source_official": true,
       "id": "c95efc96248643d3"
+    },
+    {
+      "organization": "Euronews",
+      "title": "Euronews EU Enlargement Summit 2026",
+      "date": "2026-11-04",
+      "date_text": "4 November 2026",
+      "end_date": "",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Politics, Enlargement",
+      "url": "https://events.euronews.com/eu-enlargement-summit-2026",
+      "description": "The prospect of a larger European Union is moving from long-term ambition to an increasingly practical question. Candidate countries are advancing their bids for membership, while war, geopolitical competition and economic pressures are reshaping the conditions in which Enlargement must take place. On 3 November 2026 , the Euronews EU Enlargement Summit will bring together policymakers, political leaders, experts and business representatives in Brussels, with the debate broadcast live to Euronews audiences. The summit will examine what the next phase of Enlargement could mean for the EU and its prospective members. Discussions will focus on the progress of candidate countries, the reforms, c",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "ddb65b0a275b4fe0"
     },
     {
       "organization": "The Parliament",
