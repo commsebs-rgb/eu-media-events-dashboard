@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-10-08T12:11:06+00:00",
+  "last_updated_utc": "2026-10-09T12:03:16+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -139,6 +139,38 @@
       "confidence": "high",
       "source_official": true,
       "id": "7eb7f7972daf1a58"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "International Women’s Day Talks 2026",
+      "date": "2026-03-04",
+      "date_text": "March 4, 2026",
+      "end_date": "2026-03-04",
+      "time_text": "9:00 am",
+      "city": "Brussels",
+      "venue": "TownHall Europe",
+      "category": "PM+ Talks",
+      "url": "https://events.theparliamentmagazine.eu/event/international-womens-day-talks-2/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Besins Healthcare",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/international-womens-day-talks-2/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Abbvie",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/international-womens-day-talks-2/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "e3df981a963a0215"
     },
     {
       "organization": "Euronews",
@@ -574,6 +606,23 @@
       "id": "caa90ab2ae140d2f"
     },
     {
+      "organization": "The Parliament",
+      "title": "European Industry Forum Dinner",
+      "date": "2026-06-03",
+      "date_text": "June 3, 2026",
+      "end_date": "2026-06-03",
+      "time_text": "7:00 pm",
+      "city": "Brussels",
+      "venue": "Stanhope Hotel Brussels",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/european-industry-forum-dinner/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "91b1d99f837e50f5"
+    },
+    {
       "organization": "POLITICO",
       "title": "Brüssel-Alumni Stammtisch – Special Edition",
       "date": "2026-06-04",
@@ -775,6 +824,31 @@
     },
     {
       "organization": "The Parliament",
+      "title": "Europe’s automotive transformation: Building a competitive and sustainable future",
+      "date": "2026-07-07",
+      "date_text": "July 7, 2026",
+      "end_date": "2026-07-07",
+      "time_text": "12:30 pm",
+      "city": "Strasbourg",
+      "venue": "European Parliament, Strasbourg",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/europes-automotive-transformation-building-a-competitive-and-sustainable-future/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Auto",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/europes-automotive-transformation-building-a-competitive-and-sustainable-future/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "6477e8bf992f6cac"
+    },
+    {
+      "organization": "The Parliament",
       "title": "2nd Crop Protection Regulatory Conference",
       "date": "2026-09-08",
       "date_text": "September 8, 2026",
@@ -789,6 +863,23 @@
       "confidence": "high",
       "source_official": true,
       "id": "9fadf605680b3555"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "The 35th Economic Forum “Architecture of the New Order – Stability in Times of Change”",
+      "date": "2026-09-08",
+      "date_text": "September 8, 2026",
+      "end_date": "2026-09-10",
+      "time_text": "",
+      "city": "Karpacz",
+      "venue": "Gołębiewski Hotel",
+      "category": "Media Partner",
+      "url": "https://events.theparliamentmagazine.eu/event/the-35th-economic-forum-architecture-of-the-new-order-stability-in-times-of-change/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "e57522a8a8f54f7a"
     },
     {
       "organization": "The Parliament",
@@ -941,7 +1032,7 @@
     {
       "organization": "Rapporteur",
       "title": "Delivering clean ammonia - Making EU climate and energy policy fit-for-purpose",
-      "date": "2026-10-08",
+      "date": "2026-10-09",
       "date_text": "2026",
       "end_date": "",
       "time_text": "",
@@ -953,12 +1044,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "92bc94afb1920ebe"
+      "id": "349f340dd47fbb56"
     },
     {
       "organization": "Rapporteur",
       "title": "Ending HIV in Europe - Are we moving fast enough to achieve the 2030 targets?",
-      "date": "2026-10-08",
+      "date": "2026-10-09",
       "date_text": "2026",
       "end_date": "",
       "time_text": "",
@@ -970,12 +1061,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "b342bcb3f4dd0156"
+      "id": "33674c2e87c5b11d"
     },
     {
       "organization": "Rapporteur",
       "title": "Energy & Environment Policy Conference 2026",
-      "date": "2026-10-08",
+      "date": "2026-10-09",
       "date_text": "2026",
       "end_date": "",
       "time_text": "",
@@ -987,12 +1078,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "16e4a5f7c2ce5018"
+      "id": "68b36ab4472f27ad"
     },
     {
       "organization": "Rapporteur",
       "title": "Energy efficiency – How can it shape Europe’s post-2030 energy and climate framework?",
-      "date": "2026-10-08",
+      "date": "2026-10-09",
       "date_text": "2026",
       "end_date": "",
       "time_text": "",
@@ -1004,12 +1095,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "ada6f75582732c46"
+      "id": "55464dc056e4820f"
     },
     {
       "organization": "Rapporteur",
       "title": "Energy poverty in Europe – How can EU social, housing and climate policies deliver a fair transition?",
-      "date": "2026-10-08",
+      "date": "2026-10-09",
       "date_text": "2026",
       "end_date": "",
       "time_text": "",
@@ -1021,12 +1112,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "1bd672ef860180ae"
+      "id": "501b16e596af967a"
     },
     {
       "organization": "Rapporteur",
       "title": "EU Code Week 2026 Launch Event: Building Resilience, Connecting & Empowering Communities in the Age of AI",
-      "date": "2026-10-08",
+      "date": "2026-10-09",
       "date_text": "2026",
       "end_date": "",
       "time_text": "14:00 ",
@@ -1038,12 +1129,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "9e9ae8f0343177e0"
+      "id": "a0f82ae9d66c5de8"
     },
     {
       "organization": "Rapporteur",
       "title": "EU-China relations - Rebalancing trade while keeping Europe competitive",
-      "date": "2026-10-08",
+      "date": "2026-10-09",
       "date_text": "2026",
       "end_date": "",
       "time_text": "",
@@ -1055,12 +1146,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "6978f28c709250f1"
+      "id": "2801799cd863967f"
     },
     {
       "organization": "Rapporteur",
       "title": "Euractiv Pro Briefing - BUDGET edition I",
-      "date": "2026-10-08",
+      "date": "2026-10-09",
       "date_text": "2026",
       "end_date": "",
       "time_text": "12:30",
@@ -1072,12 +1163,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "d7549134b89838e3"
+      "id": "a2b1d0b9f4c6c3ac"
     },
     {
       "organization": "Rapporteur",
       "title": "Euractiv Pro Briefing - FIREPOWER edition I",
-      "date": "2026-10-08",
+      "date": "2026-10-09",
       "date_text": "2026",
       "end_date": "",
       "time_text": "12:30",
@@ -1089,12 +1180,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "24fd92d628ab5cf1"
+      "id": "d926ac5aad64f912"
     },
     {
       "organization": "Rapporteur",
       "title": "Euractiv Pro Briefing - FIRST AID edition III",
-      "date": "2026-10-08",
+      "date": "2026-10-09",
       "date_text": "2026",
       "end_date": "",
       "time_text": "8:30",
@@ -1106,12 +1197,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "33b46efb1bd654e6"
+      "id": "d2138c2af0c21e82"
     },
     {
       "organization": "Rapporteur",
       "title": "Euractiv Pro Briefing - HARVEST edition III",
-      "date": "2026-10-08",
+      "date": "2026-10-09",
       "date_text": "2026",
       "end_date": "",
       "time_text": "8:30",
@@ -1123,12 +1214,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "f5dca0f26feb55ab"
+      "id": "f711785e1fcc4e62"
     },
     {
       "organization": "Rapporteur",
       "title": "Euractiv Pro Briefing - VOLTAGE edition III",
-      "date": "2026-10-08",
+      "date": "2026-10-09",
       "date_text": "2026",
       "end_date": "",
       "time_text": "8:30",
@@ -1140,12 +1231,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "dc9a78c2b7c4d47b"
+      "id": "f85774680b6fa4e4"
     },
     {
       "organization": "Rapporteur",
       "title": "Europe's Life Sciences Competitiveness Agenda - Innovation, investment and global leadership in a changing world",
-      "date": "2026-10-08",
+      "date": "2026-10-09",
       "date_text": "2026",
       "end_date": "",
       "time_text": "12:30",
@@ -1157,12 +1248,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "48aa664ce7343582"
+      "id": "73f35a56d5cec709"
     },
     {
       "organization": "Rapporteur",
       "title": "Europe’s competitiveness in emerging technologies – What is the role of standards, markets and quantum innovation?",
-      "date": "2026-10-08",
+      "date": "2026-10-09",
       "date_text": "2026",
       "end_date": "",
       "time_text": "",
@@ -1174,12 +1265,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "796ece4a3c8e84b0"
+      "id": "7c258d60aa4d6116"
     },
     {
       "organization": "Rapporteur",
       "title": "Europe’s refining and fuel manufacturing sector – Competitiveness, decarbonisation and strategic resilience",
-      "date": "2026-10-08",
+      "date": "2026-10-09",
       "date_text": "2026",
       "end_date": "",
       "time_text": "",
@@ -1191,12 +1282,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "da46e981863bedc0"
+      "id": "a16e1fc45297d6fe"
     },
     {
       "organization": "Rapporteur",
       "title": "FIREPOWER: Europe’s Defence Investment Race",
-      "date": "2026-10-08",
+      "date": "2026-10-09",
       "date_text": "2026",
       "end_date": "",
       "time_text": "17:30",
@@ -1204,16 +1295,16 @@
       "venue": "",
       "category": "",
       "url": "https://events.rapporteur.com/event/info/firepower-europes-defence-investment-race",
-      "description": "17:30 – 18:00 | ‘Ask Me Anything’ with Commissioner Andrius Kubilius An open conversation with European Commissioner for Defence and Space Andrius Kubilius, led by Rapporteur Defence Editor Alice Tidey. As Europe moves to strengthen its defence capabilities and industrial base, the Commissioner will address the key questions shaping the sector — from Europe’s defence priorities and investment needs to industrial capacity, procurement and the role of EU-level action. Following an initial conversation with Alice Tidey, the floor will open to the audience, giving participants the opportunity to put their questions directly to Commissioner Kubilius. 18:00 – 18:45 | Panel Discussion: The Defence ",
+      "description": "This event is by invitation only. Any questions please contact fruzsina.csonka@rapporteur.com 17:30 – 18:00 | ‘Ask Me Anything’ with Commissioner Andrius Kubilius An open conversation with European Commissioner for Defence and Space Andrius Kubilius, led by Rapporteur Defence Editor Alice Tidey. As Europe moves to strengthen its defence capabilities and industrial base, the Commissioner will address the key questions shaping the sector — from Europe’s defence priorities and investment needs to industrial capacity, procurement and the role of EU-level action. Following an initial conversation with Alice Tidey, the floor will open to the audience, giving participants the opportunity to put the",
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "7fdc9303bcc76541"
+      "id": "daa808c24eb27b56"
     },
     {
       "organization": "Rapporteur",
       "title": "Flying through global uncertainty - What is Europe’s plan for aviation?",
-      "date": "2026-10-08",
+      "date": "2026-10-09",
       "date_text": "2026",
       "end_date": "",
       "time_text": "",
@@ -1225,12 +1316,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "ddd8af786c10c91d"
+      "id": "85a95ec5fdf36070"
     },
     {
       "organization": "Rapporteur",
       "title": "From ambition to action - Is the Critical Raw Materials Act delivering for nickel?",
-      "date": "2026-10-08",
+      "date": "2026-10-09",
       "date_text": "2026",
       "end_date": "",
       "time_text": "",
@@ -1242,12 +1333,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "b1a4b4f9620ef231"
+      "id": "26b9d6dee60a15b4"
     },
     {
       "organization": "Rapporteur",
       "title": "From pilot to scale: How can Europe create the right conditions for regenerative agriculture?",
-      "date": "2026-10-08",
+      "date": "2026-10-09",
       "date_text": "2026",
       "end_date": "",
       "time_text": "",
@@ -1255,16 +1346,16 @@
       "venue": "",
       "category": "Agriculture and Food, Technology, Digital",
       "url": "https://events.rapporteur.com/event/info/from-pilot-to-scale-how-can-europe-create-the-right-conditions-for-regenerative-agriculture",
-      "description": "Please note that this event is in-person only and will not be livestreamed. REGISTER HERE Regenerative agriculture is gaining attention as a way to improve soil health, strengthen biodiversity, increase resilience to extreme weather, and support more sustainable food production. Across Europe, farmers are adopting practices such as cover cropping, reduced tillage and crop diversification, while policymakers explore ways to support the transition. Initiatives including the EU Soil Strategy, the Nature Restoration Law, CAP reform discussions and the 2024 Carbon Removal and Carbon Farming Certification Framework highlight the growing focus on climate-smart farming and the role of agriculture in",
+      "description": "Please note that this event is in-person only and will not be livestreamed. We have now reached full capacity and are unable to accomadate further in-person registrations. Regenerative agriculture is gaining attention as a way to improve soil health, strengthen biodiversity, increase resilience to extreme weather, and support more sustainable food production. Across Europe, farmers are adopting practices such as cover cropping, reduced tillage and crop diversification, while policymakers explore ways to support the transition. Initiatives including the EU Soil Strategy, the Nature Restoration Law, CAP reform discussions and the 2024 Carbon Removal and Carbon Farming Certification Framework h",
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "2a9040d0cad85d37"
+      "id": "239ce58727052e69"
     },
     {
       "organization": "Rapporteur",
       "title": "How can the revised EU Standardisation Regulation strengthen Europe’s future competitiveness?",
-      "date": "2026-10-08",
+      "date": "2026-10-09",
       "date_text": "2026",
       "end_date": "",
       "time_text": "",
@@ -1276,12 +1367,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "fad69d25cdae527b"
+      "id": "2c3b0fc9534f913c"
     },
     {
       "organization": "Rapporteur",
       "title": "Hybrid construction as a solution to mitigate climate and housing crises",
-      "date": "2026-10-08",
+      "date": "2026-10-09",
       "date_text": "2026",
       "end_date": "",
       "time_text": "",
@@ -1293,16 +1384,16 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "9020b0ab7bbfa542"
+      "id": "80823b9499540ba1"
     },
     {
       "organization": "Rapporteur",
       "title": "Integrated welfare payments – How can Europe build more connected and efficient systems?",
-      "date": "2026-10-08",
+      "date": "2026-10-09",
       "date_text": "2026",
       "end_date": "",
       "time_text": "",
-      "city": "Rapporteur Office",
+      "city": "Hybrid",
       "venue": "",
       "category": "Economy and Jobs, Technology, Digital",
       "url": "https://events.rapporteur.com/event/info/integrated-welfare-payments-how-can-europe-build-more-connected-and-efficient-systems",
@@ -1310,12 +1401,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "f296d9983a06cc18"
+      "id": "8af9c2cc5a233c94"
     },
     {
       "organization": "Rapporteur",
       "title": "Legal certainty and competitiveness - Is greater tax alignment needed in the EU?",
-      "date": "2026-10-08",
+      "date": "2026-10-09",
       "date_text": "2026",
       "end_date": "",
       "time_text": "",
@@ -1327,12 +1418,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "49103381f355f67e"
+      "id": "ce463dd94aa75aac"
     },
     {
       "organization": "Rapporteur",
       "title": "Media Partnership - Baltic Energy Initiative – cooperation among energy companies from the Baltic Sea region",
-      "date": "2026-10-08",
+      "date": "2026-10-09",
       "date_text": "2026",
       "end_date": "",
       "time_text": "",
@@ -1344,12 +1435,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "cbad82e9866c5582"
+      "id": "60bc6dcc367b322e"
     },
     {
       "organization": "Rapporteur",
       "title": "Media Partnership - From E-Waste to Strategic Autonomy: Can the Circular Economy Act Deliver for Europe’s Raw Materials?",
-      "date": "2026-10-08",
+      "date": "2026-10-09",
       "date_text": "2026",
       "end_date": "",
       "time_text": "",
@@ -1361,12 +1452,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "422c1774fbe65ba1"
+      "id": "2a5e923f0dc80a76"
     },
     {
       "organization": "Rapporteur",
       "title": "Media Partnership - Global Dialogues 2026. Rethinking Cancer Care, Together: A Person-Centred Approach",
-      "date": "2026-10-08",
+      "date": "2026-10-09",
       "date_text": "2026",
       "end_date": "",
       "time_text": "",
@@ -1378,12 +1469,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "50aaa0ac0bf1efba"
+      "id": "12dda7a9ff873f23"
     },
     {
       "organization": "Rapporteur",
       "title": "Media Partnership - Making Europe the New Silicon Valley of the World",
-      "date": "2026-10-08",
+      "date": "2026-10-09",
       "date_text": "2026",
       "end_date": "",
       "time_text": "",
@@ -1395,12 +1486,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "c4bc8fd5b6070e70"
+      "id": "00d0f7105985a696"
     },
     {
       "organization": "Rapporteur",
       "title": "Media Partnership - PKEE Energy Day 2026 - How to Restore EU Competitiveness and Strengthen Economic Resilience?",
-      "date": "2026-10-08",
+      "date": "2026-10-09",
       "date_text": "2026",
       "end_date": "",
       "time_text": "",
@@ -1412,12 +1503,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "5edb598f2d601e3e"
+      "id": "dd1f3c427de4ac52"
     },
     {
       "organization": "Rapporteur",
       "title": "Media Partnership - Reality Check: Delivering Europe’s Industrial Transition",
-      "date": "2026-10-08",
+      "date": "2026-10-09",
       "date_text": "2026",
       "end_date": "",
       "time_text": "",
@@ -1429,12 +1520,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "fbaebc7fb26af652"
+      "id": "3f20b29f9f03d316"
     },
     {
       "organization": "Rapporteur",
       "title": "Media Partnership: Effective, Proportionate, Dissuasive - Keeping Europe’s IP Framework in Balance",
-      "date": "2026-10-08",
+      "date": "2026-10-09",
       "date_text": "2026",
       "end_date": "",
       "time_text": "",
@@ -1446,12 +1537,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "e1469b007eb89682"
+      "id": "dda0d1563c23c53a"
     },
     {
       "organization": "Rapporteur",
       "title": "Media Partnership: Sovereignty Through Partnership: Trusted Technology in an Interconnected World",
-      "date": "2026-10-08",
+      "date": "2026-10-09",
       "date_text": "2026",
       "end_date": "",
       "time_text": "",
@@ -1463,12 +1554,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "9e56e51d1a668637"
+      "id": "16c4cbfe884a81c2"
     },
     {
       "organization": "Rapporteur",
       "title": "On the Road to 2040 - Is transport fit for a 90% GHG reduction?",
-      "date": "2026-10-08",
+      "date": "2026-10-09",
       "date_text": "2026",
       "end_date": "",
       "time_text": "",
@@ -1480,12 +1571,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "900ca5627b3d89f9"
+      "id": "d6cedb0588cb81b3"
     },
     {
       "organization": "Rapporteur",
       "title": "Political Communication Summit 2026",
-      "date": "2026-10-08",
+      "date": "2026-10-09",
       "date_text": "2026",
       "end_date": "",
       "time_text": "18:00",
@@ -1497,12 +1588,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "6fad41bfeb3cf4a6"
+      "id": "5288bef0377dbc34"
     },
     {
       "organization": "Rapporteur",
       "title": "Powering Europe's competitiveness: delivering clean energy and infrastructure for growth",
-      "date": "2026-10-08",
+      "date": "2026-10-09",
       "date_text": "2026",
       "end_date": "",
       "time_text": "",
@@ -1514,12 +1605,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "0d7f244c6a9121e8"
+      "id": "2d6cf1ebac616cea"
     },
     {
       "organization": "Rapporteur",
       "title": "Preparing for RED IV – How can renewable energy deliver for heating, industry and rural communities?",
-      "date": "2026-10-08",
+      "date": "2026-10-09",
       "date_text": "2026",
       "end_date": "",
       "time_text": "",
@@ -1531,12 +1622,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "ea9d3912792057ee"
+      "id": "6bec3e3408c957af"
     },
     {
       "organization": "Rapporteur",
       "title": "Rapporteur Pro Briefing - THE HACK edition III",
-      "date": "2026-10-08",
+      "date": "2026-10-09",
       "date_text": "2026",
       "end_date": "",
       "time_text": "8:30",
@@ -1548,12 +1639,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "d985dfca6117f200"
+      "id": "35c21e452e631269"
     },
     {
       "organization": "Rapporteur",
       "title": "Tech Policy Conference 2026",
-      "date": "2026-10-08",
+      "date": "2026-10-09",
       "date_text": "2026",
       "end_date": "",
       "time_text": "09:30",
@@ -1573,12 +1664,12 @@
       ],
       "confidence": "high",
       "source_official": true,
-      "id": "6cf68d021311eb53"
+      "id": "d3c446d845d5c361"
     },
     {
       "organization": "Rapporteur",
       "title": "Transport Policy Conference 2026",
-      "date": "2026-10-08",
+      "date": "2026-10-09",
       "date_text": "2026",
       "end_date": "",
       "time_text": "09:30",
@@ -1594,11 +1685,18 @@
           "source_url": "https://events.rapporteur.com/event/info/transport-policy-conference-2026",
           "extraction": "auto-labelled-text",
           "confidence": "medium"
+        },
+        {
+          "name": "WGMM",
+          "role": "Supported by",
+          "source_url": "https://events.rapporteur.com/event/info/transport-policy-conference-2026",
+          "extraction": "auto-labelled-text",
+          "confidence": "medium"
         }
       ],
       "confidence": "high",
       "source_official": true,
-      "id": "dee29484843ca1d1"
+      "id": "6ca2be7d06e28723"
     },
     {
       "organization": "The Parliament",
@@ -1722,6 +1820,31 @@
       "id": "9655c86d9bd3242b"
     },
     {
+      "organization": "The Parliament",
+      "title": "How can Europe lead in cloud and AI? Building policy, power and trust",
+      "date": "2026-10-20",
+      "date_text": "October 20, 2026",
+      "end_date": "2026-10-20",
+      "time_text": "",
+      "city": "Strasbourg",
+      "venue": "European Parliament, Strasbourg",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/how-can-europe-lead-in-cloud-and-ai-building-policy-power-and-trust/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Microsoft",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/how-can-europe-lead-in-cloud-and-ai-building-policy-power-and-trust/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "64edabfcca2f1a11"
+    },
+    {
       "organization": "Logos",
       "title": "European Defence & Security Conference 2026",
       "date": "2026-10-29",
@@ -1801,6 +1924,48 @@
           "name": "IQM",
           "role": "Partner / sponsor",
           "source_url": "https://defencesecurityconference.eu/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Mwa Svg",
+          "role": "Partner / sponsor",
+          "source_url": "https://defencesecurityconference.eu/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Defencesecurityconference",
+          "role": "Partner / sponsor",
+          "source_url": "https://defencesecurityconference.eu/partners/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Fincantieri 2",
+          "role": "Partner / sponsor",
+          "source_url": "https://defencesecurityconference.eu/partners/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Arsenal Bulgaria",
+          "role": "Partner / sponsor",
+          "source_url": "https://defencesecurityconference.eu/partners/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Screenshot",
+          "role": "Partner / sponsor",
+          "source_url": "https://defencesecurityconference.eu/partners/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Resilient Blaa",
+          "role": "Partner / sponsor",
+          "source_url": "https://defencesecurityconference.eu/partners/",
           "extraction": "auto-section-logo",
           "confidence": "high"
         }
@@ -1929,20 +2094,28 @@
     },
     {
       "organization": "The Parliament",
-      "title": "Refining and fuel manufacturing: A strategic asset Europe cannot afford to lose",
-      "date": "2026-11-10",
-      "date_text": "November 10, 2026",
-      "end_date": "2026-11-10",
+      "title": "Hotel Europe: The Future Of Travel & Technology",
+      "date": "2026-11-16",
+      "date_text": "November 16, 2026",
+      "end_date": "2026-11-19",
       "time_text": "",
       "city": "Brussels",
-      "venue": "European Parliament, Brussels",
+      "venue": "Bump Policy Experience Space",
       "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/refining-and-fuel-manufacturing-a-strategic-asset-europe-cannot-afford-to-lose/",
+      "url": "https://events.theparliamentmagazine.eu/event/hotel-europe-the-future-of-travel-technology/",
       "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [],
+      "sponsors": [
+        {
+          "name": "Booking",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/hotel-europe-the-future-of-travel-technology/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        }
+      ],
       "confidence": "high",
       "source_official": true,
-      "id": "649b817c13853e45"
+      "id": "a3ca6aafe3d02987"
     },
     {
       "organization": "The Parliament",
@@ -1975,6 +2148,38 @@
       "confidence": "high",
       "source_official": true,
       "id": "212fab235e7099ab"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "The Science behind Recreational Nicotine Products: Examining the Evidence for the Next Generation of European Health Policy",
+      "date": "2026-11-17",
+      "date_text": "November 17, 2026",
+      "end_date": "2026-11-17",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "European Parliament, Brussels",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/the-science-of-nicotine-evidence-for-the-next-generation-of-european-health-policy/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Network",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/the-science-of-nicotine-evidence-for-the-next-generation-of-european-health-policy/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Kenvue",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/the-science-of-nicotine-evidence-for-the-next-generation-of-european-health-policy/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "de5e4522a02ef706"
     },
     {
       "organization": "The Parliament",
@@ -2110,28 +2315,28 @@
     },
     {
       "organization": "The Parliament",
-      "title": "Insects for Europe: A blueprint for EU leadership in a circular bioeconomy",
-      "date": "2026-12-08",
-      "date_text": "December 8, 2026",
-      "end_date": "2026-12-08",
+      "title": "Putting Menopause on the Map: From National Action to European Impact",
+      "date": "2026-12-10",
+      "date_text": "December 10, 2026",
+      "end_date": "2026-12-10",
       "time_text": "",
       "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "Media Partner",
-      "url": "https://events.theparliamentmagazine.eu/event/insects-for-europe-a-blueprint-for-eu-leadership-in-a-circular-bioeconomy/",
+      "venue": "Blankspace Brussels",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/putting-menopause-on-the-map-from-national-action-to-european-impact/",
       "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
       "sponsors": [
         {
-          "name": "Ipiff",
+          "name": "Besins Healthcare",
           "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/insects-for-europe-a-blueprint-for-eu-leadership-in-a-circular-bioeconomy/",
+          "source_url": "https://events.theparliamentmagazine.eu/event/putting-menopause-on-the-map-from-national-action-to-european-impact/",
           "extraction": "auto-section-link-domain",
           "confidence": "high"
         }
       ],
       "confidence": "high",
       "source_official": true,
-      "id": "3953c20d36959c04"
+      "id": "ee7b301019c9a659"
     }
   ]
 }
