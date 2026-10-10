@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-10-09T12:03:16+00:00",
+  "last_updated_utc": "2026-10-10T11:20:02+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -21,48 +21,6 @@
     "Sponsor confidence is high for manual entries, medium for labelled text/logo extraction, and low for affiliation/programme inference."
   ],
   "events": [
-    {
-      "organization": "POLITICO",
-      "title": "Davos 2026 – Party",
-      "date": "2026-01-22",
-      "date_text": "January 22, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Agriculture and Food, Technology, Politics",
-      "url": "https://www.politico.eu/event/davos-2026-party/",
-      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany Spain US Australia Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Brussels Playbook Capitals Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Pla",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "6a9b1f248aad800e"
-    },
-    {
-      "organization": "POLITICO",
-      "title": "Back in the game? Europe’s race for digital leadership",
-      "date": "2026-01-27",
-      "date_text": "January 27, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Digital",
-      "url": "https://www.politico.eu/event/back-in-the-game-europes-race-for-digital-leadership/",
-      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany Spain US Australia Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Brussels Playbook Capitals Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Pla",
-      "sponsors": [
-        {
-          "name": "Connect Europe",
-          "role": "Sponsor / partner",
-          "source_url": "https://www.politico.eu/event/back-in-the-game-europes-race-for-digital-leadership/",
-          "extraction": "auto-section-logo",
-          "confidence": "medium"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "c73c0e47a4301ae1"
-    },
     {
       "organization": "The Parliament",
       "title": "APA Awards 2026",
@@ -607,6 +565,45 @@
     },
     {
       "organization": "The Parliament",
+      "title": "European Industry Forum 2026",
+      "date": "2026-06-03",
+      "date_text": "June 3, 2026",
+      "end_date": "2026-06-03",
+      "time_text": "9:00 am",
+      "city": "Brussels",
+      "venue": "TownHall Europe",
+      "category": "Summits",
+      "url": "https://events.theparliamentmagazine.eu/event/european-industry-forum-2026/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "GE Aerospace 25 11 38 277993",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/european-industry-forum-2026/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Iru",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/european-industry-forum-2026/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Internationalcopper",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/european-industry-forum-2026/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "4b99cf6c49ca8221"
+    },
+    {
+      "organization": "The Parliament",
       "title": "European Industry Forum Dinner",
       "date": "2026-06-03",
       "date_text": "June 3, 2026",
@@ -623,80 +620,36 @@
       "id": "91b1d99f837e50f5"
     },
     {
-      "organization": "POLITICO",
-      "title": "Brüssel-Alumni Stammtisch – Special Edition",
-      "date": "2026-06-04",
-      "date_text": "June 4, 2026",
-      "end_date": "",
-      "time_text": "",
+      "organization": "The Parliament",
+      "title": "European Biotech Forum 2026",
+      "date": "2026-06-11",
+      "date_text": "June 11, 2026",
+      "end_date": "2026-06-11",
+      "time_text": "9:00 am",
       "city": "Brussels",
-      "venue": "",
-      "category": "Agriculture and Food, Technology, Politics",
-      "url": "https://www.politico.eu/event/brussel-alumni-stammtisch/",
-      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany Spain US Australia Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Brussels Playbook Capitals Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Pla",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "5d9025f06ec1e9a1"
-    },
-    {
-      "organization": "POLITICO",
-      "title": "POLITICO Pro Petit-Déjeuner – Budget 2027 : est-ce que ça va (vraiment) mal finir ?",
-      "date": "2026-06-10",
-      "date_text": "2026-10-06T08:15:00+00:00",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Agriculture and Food, Technology, Politics",
-      "url": "https://www.politico.eu/event/budget-2027-est-ce-que-ca-va-vraiment-mal-finir/",
-      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany Spain US Australia Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Brussels Playbook Capitals Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Pla",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "8eaade38dbfae217"
-    },
-    {
-      "organization": "POLITICO",
-      "title": "AperoPro: The incoming Irish Presidency of the Council of the EU",
-      "date": "2026-06-17",
-      "date_text": "June 17, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Agriculture and Food, Technology, Digital",
-      "url": "https://www.politico.eu/event/aperopro-the-incoming-irish-presidency-of-the-council-of-the-eu/",
-      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany Spain US Australia Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Brussels Playbook Capitals Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Pla",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "8fc2194b29467423"
-    },
-    {
-      "organization": "POLITICO",
-      "title": "AI and future of work: Is the EU prepared for the transition?",
-      "date": "2026-06-29",
-      "date_text": "June 29, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Agriculture and Food, Technology, Digital",
-      "url": "https://www.politico.eu/event/ai-and-future-of-work/",
-      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany Spain US Australia Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Brussels Playbook Capitals Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Pla",
+      "venue": "European Parliament, Brussels",
+      "category": "Summits",
+      "url": "https://events.theparliamentmagazine.eu/event/european-biotech-forum-2026/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
       "sponsors": [
         {
-          "name": "OpenAI",
-          "role": "Sponsor / partner",
-          "source_url": "https://www.politico.eu/event/ai-and-future-of-work/",
-          "extraction": "auto-section-logo",
-          "confidence": "medium"
+          "name": "Amgen",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/european-biotech-forum-2026/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Europabio",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/european-biotech-forum-2026/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
         }
       ],
       "confidence": "high",
       "source_official": true,
-      "id": "714fd6ff0b503607"
+      "id": "db31efcd44690c58"
     },
     {
       "organization": "The Parliament",
@@ -1032,7 +985,7 @@
     {
       "organization": "Rapporteur",
       "title": "Delivering clean ammonia - Making EU climate and energy policy fit-for-purpose",
-      "date": "2026-10-09",
+      "date": "2026-10-10",
       "date_text": "2026",
       "end_date": "",
       "time_text": "",
@@ -1044,12 +997,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "349f340dd47fbb56"
+      "id": "db43cd4d10be288e"
     },
     {
       "organization": "Rapporteur",
       "title": "Ending HIV in Europe - Are we moving fast enough to achieve the 2030 targets?",
-      "date": "2026-10-09",
+      "date": "2026-10-10",
       "date_text": "2026",
       "end_date": "",
       "time_text": "",
@@ -1061,12 +1014,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "33674c2e87c5b11d"
+      "id": "116e7d8fe41c22d9"
     },
     {
       "organization": "Rapporteur",
       "title": "Energy & Environment Policy Conference 2026",
-      "date": "2026-10-09",
+      "date": "2026-10-10",
       "date_text": "2026",
       "end_date": "",
       "time_text": "",
@@ -1078,12 +1031,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "68b36ab4472f27ad"
+      "id": "27c6f5ddc7f22241"
     },
     {
       "organization": "Rapporteur",
       "title": "Energy efficiency – How can it shape Europe’s post-2030 energy and climate framework?",
-      "date": "2026-10-09",
+      "date": "2026-10-10",
       "date_text": "2026",
       "end_date": "",
       "time_text": "",
@@ -1095,12 +1048,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "55464dc056e4820f"
+      "id": "967be104eba9978d"
     },
     {
       "organization": "Rapporteur",
       "title": "Energy poverty in Europe – How can EU social, housing and climate policies deliver a fair transition?",
-      "date": "2026-10-09",
+      "date": "2026-10-10",
       "date_text": "2026",
       "end_date": "",
       "time_text": "",
@@ -1112,12 +1065,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "501b16e596af967a"
+      "id": "b8e79b9a8c3d810b"
     },
     {
       "organization": "Rapporteur",
       "title": "EU Code Week 2026 Launch Event: Building Resilience, Connecting & Empowering Communities in the Age of AI",
-      "date": "2026-10-09",
+      "date": "2026-10-10",
       "date_text": "2026",
       "end_date": "",
       "time_text": "14:00 ",
@@ -1129,12 +1082,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "a0f82ae9d66c5de8"
+      "id": "2123f79ac2d04409"
     },
     {
       "organization": "Rapporteur",
       "title": "EU-China relations - Rebalancing trade while keeping Europe competitive",
-      "date": "2026-10-09",
+      "date": "2026-10-10",
       "date_text": "2026",
       "end_date": "",
       "time_text": "",
@@ -1146,12 +1099,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "2801799cd863967f"
+      "id": "066279d62282cff5"
     },
     {
       "organization": "Rapporteur",
       "title": "Euractiv Pro Briefing - BUDGET edition I",
-      "date": "2026-10-09",
+      "date": "2026-10-10",
       "date_text": "2026",
       "end_date": "",
       "time_text": "12:30",
@@ -1163,12 +1116,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "a2b1d0b9f4c6c3ac"
+      "id": "b2c9b1f9c4995c71"
     },
     {
       "organization": "Rapporteur",
       "title": "Euractiv Pro Briefing - FIREPOWER edition I",
-      "date": "2026-10-09",
+      "date": "2026-10-10",
       "date_text": "2026",
       "end_date": "",
       "time_text": "12:30",
@@ -1180,12 +1133,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "d926ac5aad64f912"
+      "id": "ff7c64ff4d97eae0"
     },
     {
       "organization": "Rapporteur",
       "title": "Euractiv Pro Briefing - FIRST AID edition III",
-      "date": "2026-10-09",
+      "date": "2026-10-10",
       "date_text": "2026",
       "end_date": "",
       "time_text": "8:30",
@@ -1197,12 +1150,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "d2138c2af0c21e82"
+      "id": "5492a95b059571ce"
     },
     {
       "organization": "Rapporteur",
       "title": "Euractiv Pro Briefing - HARVEST edition III",
-      "date": "2026-10-09",
+      "date": "2026-10-10",
       "date_text": "2026",
       "end_date": "",
       "time_text": "8:30",
@@ -1214,12 +1167,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "f711785e1fcc4e62"
+      "id": "d5502801d51d4fed"
     },
     {
       "organization": "Rapporteur",
       "title": "Euractiv Pro Briefing - VOLTAGE edition III",
-      "date": "2026-10-09",
+      "date": "2026-10-10",
       "date_text": "2026",
       "end_date": "",
       "time_text": "8:30",
@@ -1231,12 +1184,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "f85774680b6fa4e4"
+      "id": "5ce2dc80db605fdf"
     },
     {
       "organization": "Rapporteur",
       "title": "Europe's Life Sciences Competitiveness Agenda - Innovation, investment and global leadership in a changing world",
-      "date": "2026-10-09",
+      "date": "2026-10-10",
       "date_text": "2026",
       "end_date": "",
       "time_text": "12:30",
@@ -1248,12 +1201,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "73f35a56d5cec709"
+      "id": "60409186b03d5b30"
     },
     {
       "organization": "Rapporteur",
       "title": "Europe’s competitiveness in emerging technologies – What is the role of standards, markets and quantum innovation?",
-      "date": "2026-10-09",
+      "date": "2026-10-10",
       "date_text": "2026",
       "end_date": "",
       "time_text": "",
@@ -1265,12 +1218,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "7c258d60aa4d6116"
+      "id": "688c87f7a56074af"
     },
     {
       "organization": "Rapporteur",
       "title": "Europe’s refining and fuel manufacturing sector – Competitiveness, decarbonisation and strategic resilience",
-      "date": "2026-10-09",
+      "date": "2026-10-10",
       "date_text": "2026",
       "end_date": "",
       "time_text": "",
@@ -1282,12 +1235,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "a16e1fc45297d6fe"
+      "id": "48772f3488c07444"
     },
     {
       "organization": "Rapporteur",
       "title": "FIREPOWER: Europe’s Defence Investment Race",
-      "date": "2026-10-09",
+      "date": "2026-10-10",
       "date_text": "2026",
       "end_date": "",
       "time_text": "17:30",
@@ -1299,12 +1252,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "daa808c24eb27b56"
+      "id": "b8b10b9478b7e115"
     },
     {
       "organization": "Rapporteur",
       "title": "Flying through global uncertainty - What is Europe’s plan for aviation?",
-      "date": "2026-10-09",
+      "date": "2026-10-10",
       "date_text": "2026",
       "end_date": "",
       "time_text": "",
@@ -1316,12 +1269,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "85a95ec5fdf36070"
+      "id": "16c2de45a5e054fd"
     },
     {
       "organization": "Rapporteur",
       "title": "From ambition to action - Is the Critical Raw Materials Act delivering for nickel?",
-      "date": "2026-10-09",
+      "date": "2026-10-10",
       "date_text": "2026",
       "end_date": "",
       "time_text": "",
@@ -1333,12 +1286,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "26b9d6dee60a15b4"
+      "id": "bdfacd905f63792b"
     },
     {
       "organization": "Rapporteur",
       "title": "From pilot to scale: How can Europe create the right conditions for regenerative agriculture?",
-      "date": "2026-10-09",
+      "date": "2026-10-10",
       "date_text": "2026",
       "end_date": "",
       "time_text": "",
@@ -1350,12 +1303,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "239ce58727052e69"
+      "id": "b9d496710257a2b7"
     },
     {
       "organization": "Rapporteur",
       "title": "How can the revised EU Standardisation Regulation strengthen Europe’s future competitiveness?",
-      "date": "2026-10-09",
+      "date": "2026-10-10",
       "date_text": "2026",
       "end_date": "",
       "time_text": "",
@@ -1367,12 +1320,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "2c3b0fc9534f913c"
+      "id": "2fdf877af397c523"
     },
     {
       "organization": "Rapporteur",
       "title": "Hybrid construction as a solution to mitigate climate and housing crises",
-      "date": "2026-10-09",
+      "date": "2026-10-10",
       "date_text": "2026",
       "end_date": "",
       "time_text": "",
@@ -1384,12 +1337,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "80823b9499540ba1"
+      "id": "cf88c5c4b362bf17"
     },
     {
       "organization": "Rapporteur",
       "title": "Integrated welfare payments – How can Europe build more connected and efficient systems?",
-      "date": "2026-10-09",
+      "date": "2026-10-10",
       "date_text": "2026",
       "end_date": "",
       "time_text": "",
@@ -1401,12 +1354,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "8af9c2cc5a233c94"
+      "id": "9ca3aeafa3ba8026"
     },
     {
       "organization": "Rapporteur",
       "title": "Legal certainty and competitiveness - Is greater tax alignment needed in the EU?",
-      "date": "2026-10-09",
+      "date": "2026-10-10",
       "date_text": "2026",
       "end_date": "",
       "time_text": "",
@@ -1418,12 +1371,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "ce463dd94aa75aac"
+      "id": "8a3bb6ea64411942"
     },
     {
       "organization": "Rapporteur",
       "title": "Media Partnership - Baltic Energy Initiative – cooperation among energy companies from the Baltic Sea region",
-      "date": "2026-10-09",
+      "date": "2026-10-10",
       "date_text": "2026",
       "end_date": "",
       "time_text": "",
@@ -1435,12 +1388,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "60bc6dcc367b322e"
+      "id": "20852602c52c5fa3"
     },
     {
       "organization": "Rapporteur",
       "title": "Media Partnership - From E-Waste to Strategic Autonomy: Can the Circular Economy Act Deliver for Europe’s Raw Materials?",
-      "date": "2026-10-09",
+      "date": "2026-10-10",
       "date_text": "2026",
       "end_date": "",
       "time_text": "",
@@ -1452,12 +1405,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "2a5e923f0dc80a76"
+      "id": "345263204eb14082"
     },
     {
       "organization": "Rapporteur",
       "title": "Media Partnership - Global Dialogues 2026. Rethinking Cancer Care, Together: A Person-Centred Approach",
-      "date": "2026-10-09",
+      "date": "2026-10-10",
       "date_text": "2026",
       "end_date": "",
       "time_text": "",
@@ -1469,12 +1422,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "12dda7a9ff873f23"
+      "id": "b0d0541be582ecf9"
     },
     {
       "organization": "Rapporteur",
       "title": "Media Partnership - Making Europe the New Silicon Valley of the World",
-      "date": "2026-10-09",
+      "date": "2026-10-10",
       "date_text": "2026",
       "end_date": "",
       "time_text": "",
@@ -1486,12 +1439,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "00d0f7105985a696"
+      "id": "01482fd1b0ebe50d"
     },
     {
       "organization": "Rapporteur",
       "title": "Media Partnership - PKEE Energy Day 2026 - How to Restore EU Competitiveness and Strengthen Economic Resilience?",
-      "date": "2026-10-09",
+      "date": "2026-10-10",
       "date_text": "2026",
       "end_date": "",
       "time_text": "",
@@ -1503,12 +1456,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "dd1f3c427de4ac52"
+      "id": "9e60cd80c12e8847"
     },
     {
       "organization": "Rapporteur",
       "title": "Media Partnership - Reality Check: Delivering Europe’s Industrial Transition",
-      "date": "2026-10-09",
+      "date": "2026-10-10",
       "date_text": "2026",
       "end_date": "",
       "time_text": "",
@@ -1520,12 +1473,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "3f20b29f9f03d316"
+      "id": "c048139bb3e59a57"
     },
     {
       "organization": "Rapporteur",
       "title": "Media Partnership: Effective, Proportionate, Dissuasive - Keeping Europe’s IP Framework in Balance",
-      "date": "2026-10-09",
+      "date": "2026-10-10",
       "date_text": "2026",
       "end_date": "",
       "time_text": "",
@@ -1537,12 +1490,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "dda0d1563c23c53a"
+      "id": "22d6b774e2b350ff"
     },
     {
       "organization": "Rapporteur",
       "title": "Media Partnership: Sovereignty Through Partnership: Trusted Technology in an Interconnected World",
-      "date": "2026-10-09",
+      "date": "2026-10-10",
       "date_text": "2026",
       "end_date": "",
       "time_text": "",
@@ -1554,12 +1507,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "16c4cbfe884a81c2"
+      "id": "0c6ad579626b95d7"
     },
     {
       "organization": "Rapporteur",
       "title": "On the Road to 2040 - Is transport fit for a 90% GHG reduction?",
-      "date": "2026-10-09",
+      "date": "2026-10-10",
       "date_text": "2026",
       "end_date": "",
       "time_text": "",
@@ -1571,12 +1524,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "d6cedb0588cb81b3"
+      "id": "7e50fd5e7d11b2d7"
     },
     {
       "organization": "Rapporteur",
       "title": "Political Communication Summit 2026",
-      "date": "2026-10-09",
+      "date": "2026-10-10",
       "date_text": "2026",
       "end_date": "",
       "time_text": "18:00",
@@ -1588,12 +1541,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "5288bef0377dbc34"
+      "id": "f9b5fdb4f60417dd"
     },
     {
       "organization": "Rapporteur",
       "title": "Powering Europe's competitiveness: delivering clean energy and infrastructure for growth",
-      "date": "2026-10-09",
+      "date": "2026-10-10",
       "date_text": "2026",
       "end_date": "",
       "time_text": "",
@@ -1605,12 +1558,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "2d6cf1ebac616cea"
+      "id": "5123f590a1ae3f70"
     },
     {
       "organization": "Rapporteur",
       "title": "Preparing for RED IV – How can renewable energy deliver for heating, industry and rural communities?",
-      "date": "2026-10-09",
+      "date": "2026-10-10",
       "date_text": "2026",
       "end_date": "",
       "time_text": "",
@@ -1622,12 +1575,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "6bec3e3408c957af"
+      "id": "95a6b21fc65c9152"
     },
     {
       "organization": "Rapporteur",
       "title": "Rapporteur Pro Briefing - THE HACK edition III",
-      "date": "2026-10-09",
+      "date": "2026-10-10",
       "date_text": "2026",
       "end_date": "",
       "time_text": "8:30",
@@ -1639,12 +1592,12 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "35c21e452e631269"
+      "id": "fd84be59540b7ea6"
     },
     {
       "organization": "Rapporteur",
       "title": "Tech Policy Conference 2026",
-      "date": "2026-10-09",
+      "date": "2026-10-10",
       "date_text": "2026",
       "end_date": "",
       "time_text": "09:30",
@@ -1664,12 +1617,12 @@
       ],
       "confidence": "high",
       "source_official": true,
-      "id": "d3c446d845d5c361"
+      "id": "377aa7fba710864f"
     },
     {
       "organization": "Rapporteur",
       "title": "Transport Policy Conference 2026",
-      "date": "2026-10-09",
+      "date": "2026-10-10",
       "date_text": "2026",
       "end_date": "",
       "time_text": "09:30",
@@ -1677,7 +1630,7 @@
       "venue": "",
       "category": "Technology, Digital, Transport",
       "url": "https://events.rapporteur.com/event/info/transport-policy-conference-2026",
-      "description": "On the move to a greener path register here 09:30 - 09:45 KEYNOTE ADDRESS: Decarbonising transport in the EU – What impact on industry? The EU’s push to decarbonise transport is accelerating, with new rules on CO2 standards, clean fuels, batteries, and infrastructure set to reshape the sector in the coming years. While these measures are central to meeting Europe’s climate goals, they also raise difficult questions about costs, investment needs, and global competitiveness. Industry faces the challenge of adapting to ambitious targets while maintaining production, innovation, and jobs in Europe. This plenary will open the discussion by looking at the broader industrial implications of the tra",
+      "description": "On the move to a greener path register here 09:30 - 09:35 KEYNOTE ADDRESS: Decarbonising transport in the EU – What impact on industry? The EU’s push to decarbonise transport is accelerating, with new rules on CO2 standards, clean fuels, batteries, and infrastructure set to reshape the sector in the coming years. While these measures are central to meeting Europe’s climate goals, they also raise difficult questions about costs, investment needs, and global competitiveness. Industry faces the challenge of adapting to ambitious targets while maintaining production, innovation, and jobs in Europe. This plenary will open the discussion by looking at the broader industrial implications of the tra",
       "sponsors": [
         {
           "name": "Tyres Europe",
@@ -1696,7 +1649,7 @@
       ],
       "confidence": "high",
       "source_official": true,
-      "id": "6ca2be7d06e28723"
+      "id": "f6c2ce3760555dbe"
     },
     {
       "organization": "The Parliament",
@@ -1796,6 +1749,31 @@
     },
     {
       "organization": "The Parliament",
+      "title": "How bold can Europe be? Delivering on the Biotech Act for clinical trials",
+      "date": "2026-10-13",
+      "date_text": "October 13, 2026",
+      "end_date": "2026-10-13",
+      "time_text": "12:00 pm",
+      "city": "Brussels",
+      "venue": "European Parliament, Brussels",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/how-bold-can-europe-be-delivering-on-the-biotech-act-for-clinical-trials/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Lilly",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/how-bold-can-europe-be-delivering-on-the-biotech-act-for-clinical-trials/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "b8ba053783fe4a10"
+    },
+    {
+      "organization": "The Parliament",
       "title": "Driving Europe’s sovereignty: Autonomous vehicles, chips, and the race for competitiveness",
       "date": "2026-10-20",
       "date_text": "October 20, 2026",
@@ -1818,6 +1796,31 @@
       "confidence": "high",
       "source_official": true,
       "id": "9655c86d9bd3242b"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "Global Outlook – European Energy Perspective",
+      "date": "2026-10-20",
+      "date_text": "October 20, 2026",
+      "end_date": "2026-10-20",
+      "time_text": "",
+      "city": "Strasbourg",
+      "venue": "European Parliament, Strasbourg",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/global-outlook-european-energy-perspective/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Exxonmobil",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/global-outlook-european-energy-perspective/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "f0754c73053dc2b2"
     },
     {
       "organization": "The Parliament",
@@ -1976,6 +1979,23 @@
     },
     {
       "organization": "The Parliament",
+      "title": "European Defence and Security Conference",
+      "date": "2026-10-29",
+      "date_text": "October 29, 2026",
+      "end_date": "2026-10-29",
+      "time_text": "9:00 am",
+      "city": "Brussels",
+      "venue": "Egmont Palace",
+      "category": "Policy Events, Summits, PM+ Talks",
+      "url": "https://events.theparliamentmagazine.eu/event/european-defence-and-security-conference/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "0ae3d42a712a05a9"
+    },
+    {
+      "organization": "The Parliament",
       "title": "ADIPEC 2026",
       "date": "2026-11-02",
       "date_text": "November 2, 2026",
@@ -1990,6 +2010,31 @@
       "confidence": "high",
       "source_official": true,
       "id": "943801ed802d4431"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "Unlocking the Potential of Biocontrol: Towards a Future-Proof, Science-Based Framework for European Agriculture",
+      "date": "2026-11-03",
+      "date_text": "November 3, 2026",
+      "end_date": "2026-11-03",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "European Parliament, Brussels",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/unlocking-the-potential-of-biocontrol-towards-a-future-proof-science-based-framework-for-european-agriculture/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Corteva",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/unlocking-the-potential-of-biocontrol-towards-a-future-proof-science-based-framework-for-european-agriculture/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "424236a241b9e8bf"
     },
     {
       "organization": "Euronews",
@@ -2094,6 +2139,48 @@
     },
     {
       "organization": "The Parliament",
+      "title": "Refining and fuel manufacturing: A strategic asset Europe cannot afford to lose",
+      "date": "2026-11-10",
+      "date_text": "November 10, 2026",
+      "end_date": "2026-11-10",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "European Parliament, Brussels",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/refining-and-fuel-manufacturing-a-strategic-asset-europe-cannot-afford-to-lose/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "649b817c13853e45"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "The future of medical technology in Europe: Innovation, access and trust",
+      "date": "2026-11-10",
+      "date_text": "November 10, 2026",
+      "end_date": "2026-11-10",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "European Parliament, Brussels",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/the-future-of-medical-technology-in-europe-innovation-access-and-trust/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "MedTech Europe",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/the-future-of-medical-technology-in-europe-innovation-access-and-trust/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "74c7fa814922c065"
+    },
+    {
+      "organization": "The Parliament",
       "title": "Hotel Europe: The Future Of Travel & Technology",
       "date": "2026-11-16",
       "date_text": "November 16, 2026",
@@ -2180,31 +2267,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "de5e4522a02ef706"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "Unlocking the Potential of Biocontrol: Towards a Future-Proof, Science-Based Framework for European Agriculture",
-      "date": "2026-11-18",
-      "date_text": "November 18, 2026",
-      "end_date": "2026-11-18",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/unlocking-the-potential-of-biocontrol-towards-a-future-proof-science-based-framework-for-european-agriculture/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Corteva",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/unlocking-the-potential-of-biocontrol-towards-a-future-proof-science-based-framework-for-european-agriculture/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "7f1bee60ebf0fc5f"
     },
     {
       "organization": "The Parliament",
@@ -2312,6 +2374,31 @@
       "confidence": "high",
       "source_official": true,
       "id": "96e8090abb6e7deb"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "Insects for Europe: A blueprint for EU leadership in a circular bioeconomy",
+      "date": "2026-12-08",
+      "date_text": "December 8, 2026",
+      "end_date": "2026-12-08",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "European Parliament, Brussels",
+      "category": "Media Partner",
+      "url": "https://events.theparliamentmagazine.eu/event/insects-for-europe-a-blueprint-for-eu-leadership-in-a-circular-bioeconomy/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Ipiff",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/insects-for-europe-a-blueprint-for-eu-leadership-in-a-circular-bioeconomy/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "3953c20d36959c04"
     },
     {
       "organization": "The Parliament",
