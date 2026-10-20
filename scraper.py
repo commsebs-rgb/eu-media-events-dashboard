@@ -814,12 +814,57 @@ def date_text_near_title(lines: list[str], title: str, url: str = "", *, allow_u
     return ""
 
 
+def rapporteur_date_above_title(lines: list[str], title: str, url: str = "") -> str:
+    """Read the visible event date immediately above the title on Rapporteur pages.
+
+    This is more reliable than generic structured dates, which can include dates for
+    related events elsewhere on the page. The search is limited to a few lines above
+    the matching title.
+    """
+    def norm(value: str) -> str:
+        return re.sub(r"\W+", " ", clean(value).lower()).strip()
+
+    target = norm(title)
+    if not target:
+        return ""
+
+    title_indexes = []
+    for i, line in enumerate(lines):
+        candidate = norm(line)
+        if candidate == target or (len(candidate) >= 18 and (target in candidate or candidate in target)):
+            title_indexes.append(i)
+
+    for idx in title_indexes:
+        for j in range(idx - 1, max(-1, idx - 7), -1):
+            line = clean(lines[j])
+            if not line:
+                continue
+            value = first_date_text(line)
+            if not value:
+                value = infer_date_text_with_year(line, url, title, allow_url_title_year=True)
+            iso = parse_iso_date(value) if value else ""
+            if iso and in_range(iso):
+                return value
+            if j < idx - 1 and line.lower() in {"related events", "past events", "upcoming events", "programme", "program", "speakers", "partners", "sponsors", "location", "schedule"}:
+                break
+    return ""
+
+
 def select_event_date_text(soup: BeautifulSoup, lines: list[str], full_text: str, title: str, url: str, organization: str) -> str:
     fix = event_fix_for(title, url)
     if fix:
         return fix.get("date_text", "")
 
     org_low = organization.lower()
+
+    # Rapporteur's official detail pages display the event date immediately above
+    # the title. Prefer that visible event-level date over metadata that may contain
+    # dates from related-event cards.
+    if org_low in {"rapporteur", "euractiv"}:
+        visible_date = rapporteur_date_above_title(lines, title, url)
+        visible_iso = parse_iso_date(visible_date) if visible_date else ""
+        if visible_iso and in_range(visible_iso):
+            return visible_date
 
     # 1) Event-level structured dates are most reliable, but they must belong to this
     # event page. This avoids pulling dates from related cards or agenda snippets.
@@ -1776,6 +1821,7 @@ def scrape_euractiv(scraper: Scraper) -> list[Event]:
     for href in sorted(links):
         detail = extract_event_from_detail(scraper, "Rapporteur", href)
         if detail:
+            print(f"[rapporteur-date] {detail.date} | {detail.title} | {detail.url}")
             events.append(detail)
     return events
 
