@@ -36,7 +36,7 @@ from dataclasses import asdict, dataclass, field
 from datetime import date, datetime, timezone
 from pathlib import Path
 from typing import Iterable, Optional
-from urllib.parse import urljoin, urlparse
+from urllib.parse import urljoin, urlparse, urlunparse, parse_qsl, urlencode
 
 import dateparser
 import requests
@@ -338,6 +338,99 @@ class Scraper:
 
 def clean(text: str) -> str:
     return re.sub(r"\s+", " ", (text or "")).strip()
+
+
+POLITICO_CANONICAL_EVENT_URLS = {
+    "ai-tech-week-2026": "https://www.politico.eu/ai-tech-week-2026/",
+    "health-care-summit-2026": "https://www.politico.eu/health-care-summit-2026/",
+    "energy-climate-forum-2026": "https://www.politico.eu/energy-climate-forum-2026/",
+}
+
+def normalize_event_url(url: str, organization: str = "", title: str = "") -> str:
+    """Return a clean, user-facing event URL, never a sitemap/feed URL.
+
+    Some sitemaps expose paths such as /event-slug/sitemap.xml. Those must resolve
+    to the event detail page, not become the clickable event URL.
+    """
+    url = clean(url).replace("&amp;", "&").strip().strip(chr(34) + chr(39) + "<>")
+    if not url:
+        return ""
+    if url.startswith("//"):
+        url = "https:" + url
+    parsed = urlparse(url)
+    if parsed.scheme not in {"http", "https"} or not parsed.netloc:
+        return ""
+
+    org = clean(organization).lower()
+    blob = (clean(title) + " " + url).lower()
+    if org == "politico":
+        for token, canonical in POLITICO_CANONICAL_EVENT_URLS.items():
+            if token in blob:
+                return canonical
+
+    path = re.sub(
+        r"/(?:sitemap(?:_index)?|wp-sitemap(?:-[a-z0-9_-]+)?)\.xml/?$",
+        "",
+        parsed.path,
+        flags=re.I,
+    )
+    if not path:
+        path = "/"
+    # Remove WordPress feeds and AMP suffixes if accidentally discovered as links.
+    path = re.sub(r"/feed/?$", "", path, flags=re.I)
+    path = re.sub(r"/amp/?$", "/", path, flags=re.I)
+    path = re.sub(r"/{2,}", "/", path)
+    if path != "/":
+        path = path.rstrip("/") + "/"
+
+    # Remove tracking parameters but preserve meaningful query parameters.
+    tracking = {"fbclid", "gclid", "mc_cid", "mc_eid", "ref"}
+    query = [
+        (k, v) for k, v in parse_qsl(parsed.query, keep_blank_values=True)
+        if not k.lower().startswith("utm_") and k.lower() not in tracking
+    ]
+    return urlunparse(parsed._replace(path=path, query=urlencode(query, doseq=True), fragment=""))
+
+def is_valid_event_url(url: str, organization: str = "") -> bool:
+    """Reject listing, sitemap, feed, login, and non-HTML URLs as event destinations."""
+    if not url:
+        return False
+    parsed = urlparse(url)
+    host = parsed.netloc.lower().removeprefix("www.")
+    path = parsed.path.lower().rstrip("/")
+    if parsed.scheme not in {"http", "https"} or not host or not path:
+        return False
+    if path in {"/", "/events", "/event", "/calendar", "/sitemap.xml", "/sitemap_index.xml"}:
+        return False
+    if re.search(r"(?:sitemap[^/]*\.xml|\.xml|\.rss|\.ics|\.pdf|\.jpe?g|\.png|\.webp)$", path):
+        return False
+    if re.search(r"/(?:feed|wp-json|login|register|privacy|terms)(?:/|$)", path):
+        return False
+    org = clean(organization).lower()
+    if org == "the parliament" and not re.search(r"/event/[^/]+$", path):
+        return False
+    if org == "friends of europe" and not re.search(r"/events/[^/]+$", path):
+        return False
+    if org == "politico" and host == "events.politico.com" and not re.search(r"/event/[^/]+$", path):
+        return False
+    if host == "events.euronews.com" and path == "/events":
+        return False
+    return True
+
+def event_url_score(url: str, organization: str = "") -> int:
+    """Score URLs so a valid detail page always wins over a sitemap/feed URL."""
+    if not is_valid_event_url(url, organization):
+        return 0
+    parsed = urlparse(url)
+    host = parsed.netloc.lower().removeprefix("www.")
+    score = 100
+    if host == "events.politico.com":
+        score -= 20  # public politico.eu landing pages are preferable when available
+    if parsed.query:
+        score -= 3
+    if parsed.path.lower().endswith("/amp/"):
+        score -= 5
+    return score
 
 
 def normalize_company_name(name: str) -> str:
@@ -927,6 +1020,48 @@ def add_sponsor_candidate(candidates: list[Sponsor], name: str, role: str, sourc
         candidates.append(Sponsor(name=name, role=role, source_url=source_url, extraction=extraction, confidence=confidence))
 
 
+def normalize_friends_partner_name(name: str) -> str:
+    """Normalize logo alt text while preserving initials and full foundation/organisation names."""
+    name = clean(name)
+    name = re.sub(r"^image:\s*", "", name, flags=re.I)
+    name = re.sub(r"\.(svg|png|jpe?g|webp|avif)$", "", name, flags=re.I)
+    name = re.sub(r"\s+(?:logo|partner logo|partners logo|sponsor logo)$", "", name, flags=re.I)
+    name = re.sub(r"\s+(?:see|visit) (?:their )?website$", "", name, flags=re.I)
+    name = re.sub(r"\s+", " ", name).strip(" :-–—")
+    canon = {
+        "john s. latsis benefit foundation": "John S. Latsis Benefit Foundation",
+        "john s. latsis public benefit foundation": "John S. Latsis Public Benefit Foundation",
+        "jdf oe foundation": "Jacques Delors Friends of Europe Foundation",
+        "jdfoe foundation": "Jacques Delors Friends of Europe Foundation",
+        "kkr": "KKR",
+        "eib": "EIB",
+        "unops": "UNOPS",
+    }
+    return canon.get(name.lower(), name)
+
+
+def is_friends_partner_label(label: str) -> bool:
+    """Validate a name found inside Friends of Europe's explicitly labelled Partners area.
+
+    The Partners section can include companies, foundations, associations and public
+    organisations. Since the name comes from the official partner area, do not apply
+    the dashboard's narrower private-company-only filter here.
+    """
+    label = normalize_friends_partner_name(label)
+    low = label.lower().strip(" :")
+    if not label or len(label) < 2 or len(label) > 110:
+        return False
+    if low in NAV_NOISE | GENERIC_IMAGE_ALTS | TITLE_NOISE:
+        return False
+    if "@" in label or re.search(r"\b(email protected|register|read more|learn more|website|logo|image)\b", low):
+        return False
+    if re.search(r"\b(speakers?|participants?|panellists?|panelists?|moderator|schedule|programme|program|contact|about|what happened)\b", low):
+        return False
+    if len(label.split()) > 12 or not re.search(r"[A-Za-z]", label):
+        return False
+    return True
+
+
 def dedupe_sponsors(candidates: list[Sponsor]) -> list[Sponsor]:
     out: list[Sponsor] = []
     rank = {"high": 3, "medium": 2, "low": 1}
@@ -935,8 +1070,13 @@ def dedupe_sponsors(candidates: list[Sponsor]) -> list[Sponsor]:
         return re.sub(r"\W+", "", name).lower()
 
     for s in candidates:
-        name = normalize_company_name(s.name)
-        if not key_for(name) or not is_plausible_sponsor(name):
+        is_friends_partner = (
+            "friendsofeurope.org" in (s.source_url or "").lower()
+            and (s.extraction or "").startswith("friends-of-europe")
+        )
+        name = normalize_friends_partner_name(s.name) if is_friends_partner else normalize_company_name(s.name)
+        plausible = is_friends_partner_label(name) if is_friends_partner else is_plausible_sponsor(name)
+        if not key_for(name) or not plausible:
             continue
         s.name = name
         k = key_for(name)
@@ -1213,6 +1353,69 @@ def extract_partner_section_sponsors(soup: BeautifulSoup, source_url: str) -> li
     return dedupe_sponsors(candidates)
 
 
+def extract_friends_of_europe_sponsors(soup: BeautifulSoup, source_url: str) -> list[Sponsor]:
+    """Read sponsor/co-organiser names only from Friends of Europe's Partners section."""
+    candidates: list[Sponsor] = []
+    heading_re = re.compile(
+        r"^(partners?|sponsors?|supporters?|co[- ]?organised with|co[- ]?organized with|"
+        r"in partnership with|supported by|with the support of)$",
+        re.I,
+    )
+
+    # These pages use a Partners tab, followed by a "Co-organised with" subheading
+    # and a grid of linked partner logos. Restrict extraction to those sections.
+    for block in section_blocks_after_heading(soup, heading_re, max_siblings=22):
+        for img in block.find_all("img"):
+            parent_link = img.find_parent("a", href=True)
+            alt = clean(img.get("alt", "") or img.get("title", "") or img.get("aria-label", ""))
+            name = normalize_friends_partner_name(alt)
+            if not is_friends_partner_label(name):
+                # Use the image filename only when the logo has no meaningful accessible label.
+                for attr in ("src", "data-src", "data-lazy-src", "data-original"):
+                    raw_src = clean(img.get(attr, ""))
+                    candidate = normalize_friends_partner_name(title_from_image_src(raw_src))
+                    if is_friends_partner_label(candidate):
+                        name = candidate
+                        break
+            if not is_friends_partner_label(name) and parent_link:
+                name = normalize_friends_partner_name(parent_link.get_text(" ", strip=True))
+            if is_friends_partner_label(name):
+                candidates.append(Sponsor(
+                    name=name,
+                    role="Sponsor / partner",
+                    source_url=source_url,
+                    extraction="friends-of-europe-partners-tab",
+                    confidence="high",
+                ))
+
+        # Text-only links in the Partners area can also identify co-organisers.
+        for a in block.find_all("a", href=True):
+            if a.find("img"):
+                continue
+            label = normalize_friends_partner_name(a.get_text(" ", strip=True))
+            if is_friends_partner_label(label):
+                candidates.append(Sponsor(
+                    name=label,
+                    role="Sponsor / partner",
+                    source_url=source_url,
+                    extraction="friends-of-europe-partners-tab",
+                    confidence="high",
+                ))
+
+    # Some pages expose a concise "Co-organised with" text line.
+    for line in clean_lines(soup):
+        match = re.match(r"^(?:co[- ]?organised|co[- ]?organized)\s+with\s+(.+?)\s*$", line, re.I)
+        if match:
+            name = normalize_friends_partner_name(match.group(1))
+            if is_friends_partner_label(name):
+                candidates.append(Sponsor(
+                    name=name,
+                    role="Co-organiser / partner",
+                    source_url=source_url,
+                    extraction="friends-of-europe-partners-tab",
+                    confidence="high",
+                ))
+    return dedupe_sponsors(candidates)
 
 
 def is_previous_edition_context(text: str) -> bool:
@@ -1315,6 +1518,8 @@ def extract_sponsors_from_soup(soup: BeautifulSoup, source_url: str) -> list[Spo
         return extract_politico_sponsors(soup, source_url)
     if "euronews.com" in host:
         return extract_partner_section_sponsors(soup, source_url)
+    if "friendsofeurope.org" in host:
+        return extract_friends_of_europe_sponsors(soup, source_url)
     if "defencesecurityconference.eu" in host:
         return extract_defsec_current_sponsors(soup, source_url)
     return extract_partner_section_sponsors(soup, source_url)
@@ -1390,6 +1595,9 @@ def page_heading_candidates(soup: BeautifulSoup, organization: str) -> list[str]
 
 
 def extract_event_from_detail(scraper: Scraper, organization: str, url: str, default_category: str = "", default_title: str = "") -> Optional[Event]:
+    url = normalize_event_url(url, organization, default_title)
+    if not is_valid_event_url(url, organization):
+        return None
     soup = scraper.soup(url)
     if not soup:
         return None
@@ -1591,16 +1799,16 @@ def discover_parliament_event_links(scraper: Scraper) -> set[str]:
         if not soup:
             continue
         for a in soup.find_all("a", href=True):
-            href = urljoin(seed, a["href"])
+            href = normalize_event_url(urljoin(seed, a["href"]), "The Parliament", clean(a.get_text(" ", strip=True)))
             parsed = urlparse(href)
-            if parsed.netloc != "events.theparliamentmagazine.eu":
+            if parsed.netloc.lower().removeprefix("www.") != "events.theparliamentmagazine.eu":
                 continue
-            if "/event/" not in parsed.path:
+            if not is_valid_event_url(href, "The Parliament"):
                 continue
             label = clean(a.get_text(" ", strip=True))
             if is_bad_title(label):
                 continue
-            links.add(href.split("#")[0])
+            links.add(href)
     return links
 
 
@@ -1745,12 +1953,14 @@ def discover_politico_event_links(scraper: Scraper) -> dict[str, str]:
         if not soup:
             continue
         for a in soup.find_all("a", href=True):
-            href = urljoin(seed, a["href"]).split("#")[0]
+            label = clean(a.get_text(" ", strip=True))
+            href = normalize_event_url(urljoin(seed, a["href"]).split("#")[0], "POLITICO", label)
             parsed = urlparse(href)
             if parsed.netloc not in allowed_hosts:
                 continue
+            if not is_valid_event_url(href, "POLITICO"):
+                continue
             path = parsed.path.rstrip("/") + "/"
-            label = clean(a.get_text(" ", strip=True))
             context = surrounding_text(a)
             if blocked_re.search(path):
                 continue
@@ -1789,9 +1999,11 @@ def discover_politico_event_links(scraper: Scraper) -> dict[str, str]:
             if loc.endswith(".xml") and re.search(r"(event|page|post).*sitemap", loc, re.I) and loc not in visited_sitemaps and len(visited_sitemaps) < 12:
                 sitemap_seeds.append(loc)
         for loc in locs:
-            href = clean(loc).split("#")[0]
+            href = normalize_event_url(clean(loc).split("#")[0], "POLITICO", title_from_url_slug(clean(loc)))
             parsed = urlparse(href)
             if parsed.netloc not in {"www.politico.eu", "politico.eu"}:
+                continue
+            if not is_valid_event_url(href, "POLITICO"):
                 continue
             blob = href.lower()
             if re.search(r"(ai-tech-week-2026|health-care-summit-2026|healthcare-summit-2026|energy-climate-forum-2026|summit|forum|roundtable|conference)", blob):
@@ -1914,22 +2126,22 @@ def discover_euronews_event_links(scraper: Scraper) -> set[str]:
 
         # 1) Normal anchor links.
         for a in soup.find_all("a", href=True):
-            href = urljoin(seed, a["href"]).split("#")[0]
+            href = normalize_event_url(urljoin(seed, a["href"]).split("#")[0], "Euronews")
             parsed = urlparse(href)
-            if parsed.netloc == "events.euronews.com" and parsed.path not in bad_paths:
+            if parsed.netloc.lower().removeprefix("www.") == "events.euronews.com" and parsed.path not in bad_paths and is_valid_event_url(href, "Euronews"):
                 if not any(x in parsed.path for x in ["/speaker/", "/session/", "/privacy", "/terms"]):
                     links.add(href)
 
         # 2) JS/JSON-rendered links embedded in the HTML.
         for raw in re.findall(r"https?://events\.euronews\.com/[A-Za-z0-9_./%-]+", html):
-            href = raw.split("#")[0].rstrip('\"\'<>),.;')
+            href = normalize_event_url(raw.split("#")[0].rstrip('\"\'<>),.;'), "Euronews")
             parsed = urlparse(href)
-            if parsed.path not in bad_paths and not any(x in parsed.path for x in ["/speaker/", "/session/", "/privacy", "/terms"]):
+            if parsed.path not in bad_paths and is_valid_event_url(href, "Euronews") and not any(x in parsed.path for x in ["/speaker/", "/session/", "/privacy", "/terms"]):
                 links.add(href)
         for raw in re.findall(r"[\"'](/(?:[A-Za-z0-9]+[A-Za-z0-9_-]*(?:/[A-Za-z0-9_-]+)*))[\"']", html):
-            href = urljoin(seed, raw).split("#")[0]
+            href = normalize_event_url(urljoin(seed, raw).split("#")[0], "Euronews")
             parsed = urlparse(href)
-            if parsed.netloc == "events.euronews.com" and parsed.path not in bad_paths:
+            if parsed.netloc.lower().removeprefix("www.") == "events.euronews.com" and parsed.path not in bad_paths and is_valid_event_url(href, "Euronews"):
                 if not any(x in parsed.path for x in ["/speaker/", "/session/", "/privacy", "/terms", "/static", "/assets"]):
                     links.add(href)
 
@@ -1939,9 +2151,9 @@ def discover_euronews_event_links(scraper: Scraper) -> set[str]:
         if not xml:
             continue
         for m in re.finditer(r"https://events\.euronews\.com/[^<\s]+", xml):
-            href = m.group(0).strip().split("#")[0]
+            href = normalize_event_url(m.group(0).strip().split("#")[0], "Euronews")
             parsed = urlparse(href)
-            if parsed.path not in bad_paths and not any(x in href for x in ["/speaker/", "/session/", "/privacy", "/terms"]):
+            if parsed.path not in bad_paths and is_valid_event_url(href, "Euronews") and not any(x in href for x in ["/speaker/", "/session/", "/privacy", "/terms"]):
                 links.add(href)
     return links
 
@@ -1956,16 +2168,7 @@ def scrape_euronews(scraper: Scraper) -> list[Event]:
         ev = extract_event_from_detail(scraper, "Euronews", href, "Euronews Events")
         if ev:
             # Any official Euronews microsite must remain attributed to Euronews.
-            # Force official titles for known Euronews summit microsites to avoid
-            # generic metadata titles such as "Events" or URL slugs.
             ev.organization = "Euronews"
-            url_low = href.lower()
-            if "defence-space-summit-2026" in url_low:
-                ev.title = "Euronews Defence & Space Summit 2026"
-            elif "eu-enlargement-summit-2026" in url_low:
-                ev.title = "Euronews EU Enlargement Summit 2026"
-            elif "health_summit_2026" in url_low:
-                ev.title = "Euronews Health Summit 2026"
             events.append(ev)
 
     # Safety net for the current official Euronews event microsite. The page is still
@@ -2028,6 +2231,77 @@ def scrape_euronews(scraper: Scraper) -> list[Event]:
 
     return events
 
+
+
+
+
+def discover_friends_of_europe_event_links(scraper: Scraper) -> dict[str, str]:
+    """Discover event detail pages from Friends of Europe's official upcoming-events listing."""
+    seeds = [
+        "https://www.friendsofeurope.org/events?events-date=next",
+        "https://www.friendsofeurope.org/events?events-date=all",
+    ]
+    links: dict[str, str] = {}
+    for seed in seeds:
+        soup = scraper.soup(seed)
+        if not soup:
+            continue
+        for a in soup.find_all("a", href=True):
+            raw_href = urljoin(seed, a.get("href", "")).split("#")[0]
+            href = normalize_event_url(raw_href, "Friends of Europe", clean(a.get_text(" ", strip=True)))
+            parsed = urlparse(href)
+            host = parsed.netloc.lower().removeprefix("www.")
+            path = parsed.path.lower().rstrip("/")
+            if host != "friendsofeurope.org" or not is_valid_event_url(href, "Friends of Europe"):
+                continue
+            if not re.match(r"^/events/[^/]+$", path):
+                continue
+            label = clean(a.get_text(" ", strip=True))
+            label = re.sub(r"^read more about\s*", "", label, flags=re.I)
+            label = label.strip().strip(chr(34)).strip(chr(39)).strip(" “”").strip()
+            if is_bad_title(label) or len(label) < 6:
+                label = title_from_url_slug(href)
+            if label and not is_bad_title(label):
+                links[href] = label
+
+        # Some cards are rendered with the event URL in JSON rather than a visible anchor.
+        html = scraper.get(seed) or ""
+        for raw_href in re.findall(r"https?://(?:www\.)?friendsofeurope\.org/events/[A-Za-z0-9_/%-]+", html):
+            href = normalize_event_url(raw_href, "Friends of Europe")
+            parsed = urlparse(href)
+            if is_valid_event_url(href, "Friends of Europe") and re.match(r"^/events/[^/]+$", parsed.path.lower().rstrip("/")):
+                links.setdefault(href, title_from_url_slug(href))
+    return links
+
+
+def scrape_friends_of_europe(scraper: Scraper) -> list[Event]:
+    """Scrape Friends of Europe event pages and their official Partners tabs."""
+    events: list[Event] = []
+    links = discover_friends_of_europe_event_links(scraper)
+    print(f"[info] Friends of Europe event links discovered: {len(links)}")
+    for href, listing_title in sorted(links.items()):
+        ev = extract_event_from_detail(
+            scraper,
+            "Friends of Europe",
+            href,
+            default_title=listing_title,
+        )
+        if not ev:
+            print(f"[skip] Friends of Europe event has no reliable 2026 date/title: {listing_title} | {href}")
+            continue
+        ev.url = normalize_event_url(ev.url or href, "Friends of Europe", ev.title)
+        # Pull the official "Area of Expertise" label where the detail page exposes it.
+        soup = scraper.soup(ev.url)
+        if soup:
+            lines = clean_lines(soup)
+            area = next_line_after(lines, ["Area of Expertise", "Area of expertise", "Topic"])
+            if area and len(area) <= 90 and area.lower() not in NAV_NOISE:
+                ev.category = area
+            ev.sponsors.extend(extract_friends_of_europe_sponsors(soup, ev.url))
+        ev.sponsors = dedupe_sponsors(ev.sponsors)
+        ev.confidence = "high" if ev.date and ev.title else ev.confidence
+        events.append(ev)
+    return events
 
 
 def is_actual_event(event: Event) -> bool:
@@ -2152,6 +2426,9 @@ def dedupe_events(events: Iterable[Event]) -> list[Event]:
     for event in events:
         if not event.title or not event.date or not in_range(event.date):
             continue
+        event.url = normalize_event_url(event.url, event.organization, event.title)
+        if event.url and not is_valid_event_url(event.url, event.organization):
+            event.url = ""
         key = "|".join([
             event.organization.lower(),
             re.sub(r"\W+", "", event.title.lower())[:90],
@@ -2161,8 +2438,12 @@ def dedupe_events(events: Iterable[Event]) -> list[Event]:
             merged[key] = event
             continue
         existing = merged[key]
-        if event.url and (not existing.url or len(event.url) > len(existing.url)):
-            existing.url = event.url
+        existing.url = normalize_event_url(existing.url, existing.organization, existing.title)
+        candidate_url = normalize_event_url(event.url, event.organization, event.title)
+        if candidate_url and event_url_score(candidate_url, event.organization) > event_url_score(existing.url, existing.organization):
+            existing.url = candidate_url
+        elif candidate_url and event_url_score(candidate_url, event.organization) == event_url_score(existing.url, existing.organization) and len(candidate_url) < len(existing.url):
+            existing.url = candidate_url
         if event.description and len(event.description) > len(existing.description):
             existing.description = event.description
         if event.city and not existing.city:
@@ -2177,9 +2458,14 @@ def dedupe_events(events: Iterable[Event]) -> list[Event]:
         seen = set()
         sponsors = []
         for sponsor in event.sponsors:
-            sponsor.name = normalize_company_name(sponsor.name)
+            is_friends_partner = (
+                "friendsofeurope.org" in (sponsor.source_url or "").lower()
+                and (sponsor.extraction or "").startswith("friends-of-europe")
+            )
+            sponsor.name = normalize_friends_partner_name(sponsor.name) if is_friends_partner else normalize_company_name(sponsor.name)
             key = re.sub(r"\W+", "", sponsor.name).lower()
-            if key and key not in seen and is_plausible_sponsor(sponsor.name, require_private=True):
+            plausible = is_friends_partner_label(sponsor.name) if is_friends_partner else is_plausible_sponsor(sponsor.name, require_private=True)
+            if key and key not in seen and plausible:
                 seen.add(key)
                 sponsors.append(sponsor)
         event.sponsors = sponsors
@@ -2203,10 +2489,13 @@ def build_payload(events: list[Event]) -> dict:
             "https://events.euractiv.com/",
             "https://events.euronews.com/events",
             "https://events.theparliamentmagazine.eu/",
+            "https://www.friendsofeurope.org/events?events-date=next",
             "https://defencesecurityconference.eu/",
         ],
         "source_notes": [
             "Only public official source pages and their linked event detail pages are scraped.",
+            "Friends of Europe events are discovered from the official upcoming and all-events listings; sponsor/partner names are extracted from each event's Partners tab, including Co-organised with logos.",
+            "Event URLs are normalised to event detail pages; sitemap, feed, login and other non-event URLs are never used as clickable event links. Known POLITICO summits use their public official landing pages.",
             "Logos is intentionally limited to the official European Defence & Security Conference 2026 site to avoid mixing in Logos insights/news pages or unrelated conference microsites.",
             "Events are scraped for the full 2026 year by default; the dashboard automatically shows upcoming events first and moves past events into the Past view. POLITICO dates are accepted only from event-level metadata, explicit official safeguards, or reliable detail-page labels to prevent repeated listing/agenda dates from being reused. POLITICO AI & Tech Week 2026 is tracked as an official must-have page with partner safeguards and will still be re-scanned daily for new/changed partners.",
             "Sponsors mean private companies, trade associations, coalitions or other entities that sponsor, present, support, partner with, host or co-organise the event with the tracked media organisation.",
@@ -2221,7 +2510,7 @@ def main() -> None:
     DATA_DIR.mkdir(exist_ok=True)
     scraper = Scraper()
     all_events: list[Event] = []
-    scrapers = [scrape_politico, scrape_euractiv, scrape_the_parliament, scrape_euronews, scrape_logos]
+    scrapers = [scrape_politico, scrape_euractiv, scrape_the_parliament, scrape_euronews, scrape_friends_of_europe, scrape_logos]
     for fn in scrapers:
         try:
             events = fn(scraper)
