@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-10-21T10:21:15+00:00",
+  "last_updated_utc": "2026-10-22T10:22:53+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -483,23 +483,6 @@
       "id": "9c50cad627bec8e0"
     },
     {
-      "organization": "POLITICO",
-      "title": "The King’s Speech preview: Everything policy pros need to know",
-      "date": "2026-05-12",
-      "date_text": "May 12, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Agriculture and Food, Technology, Digital",
-      "url": "https://www.politico.eu/event/the-kings-speech-preview-everything-policy-pros-need-to-know/",
-      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany Spain US Australia Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Brussels Playbook Capitals Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Pla",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "5f2b231e387fc3d4"
-    },
-    {
       "organization": "The Parliament",
       "title": "Cyprus forward: Shaping EU and Mediterranean horizons",
       "date": "2026-05-27",
@@ -582,23 +565,6 @@
       "confidence": "medium",
       "source_official": true,
       "id": "d75729ba5983b177"
-    },
-    {
-      "organization": "POLITICO",
-      "title": "The UK Online Safety Act: What You Need to Know",
-      "date": "2026-06-01",
-      "date_text": "June 1, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Agriculture and Food, Technology, Politics",
-      "url": "https://www.politico.eu/event/the-uk-online-safety-act-what-you-need-to-know/",
-      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany Spain US Australia Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Brussels Playbook Capitals Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Pla",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "02df87a038459bee"
     },
     {
       "organization": "The Parliament",
@@ -1496,14 +1462,14 @@
           "confidence": "high"
         },
         {
-          "name": "ArianeGroup 1",
+          "name": "Naval Group",
           "role": "Partner / sponsor",
           "source_url": "https://defencesecurityconference.eu/",
           "extraction": "auto-section-logo",
           "confidence": "high"
         },
         {
-          "name": "Naval Group",
+          "name": "ArianeGroup 1",
           "role": "Partner / sponsor",
           "source_url": "https://defencesecurityconference.eu/",
           "extraction": "auto-section-logo",
@@ -1793,23 +1759,6 @@
       "id": "8effb3468157fc8b"
     },
     {
-      "organization": "POLITICO",
-      "title": "The US Midterms: What Changes for Europe?",
-      "date": "2026-11-09",
-      "date_text": "November 9, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Agriculture and Food, Technology, Politics",
-      "url": "https://www.politico.eu/event/the-us-midterms-what-changes-for-europe/",
-      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany Spain US Australia Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Brussels Playbook Capitals Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Pla",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "735d2e53852bf911"
-    },
-    {
       "organization": "Rapporteur",
       "title": "From Deployment to Scale - Building Europe’s CO2 Transportation Infrastructure and Markets",
       "date": "2026-11-10",
@@ -1959,6 +1908,23 @@
       "confidence": "high",
       "source_official": true,
       "id": "a3ca6aafe3d02987"
+    },
+    {
+      "organization": "Rapporteur",
+      "title": "Ecosystems - Brussels buzzword or Europe’s best bet to scale?",
+      "date": "2026-11-17",
+      "date_text": "17-11-2026",
+      "end_date": "",
+      "time_text": "",
+      "city": "Hybrid",
+      "venue": "",
+      "category": "Technology, Digital, Transport",
+      "url": "https://events.rapporteur.com/event/info/ecosystems-brussels-buzzword-or-europes-best-bet-to-scale/",
+      "description": "REGISTER HERE Europe does not lack ideas, entrepreneurs or world-class research. Its challenge is turning innovation into successful companies that can scale, create industrial jobs and compete globally. As highlighted in the Draghi report, Europe's innovation gap is increasingly a competitiveness issue, while global competitors have developed powerful industrial and innovation ecosystems capable of moving rapidly from technological breakthroughs to commercial deployment. This challenge is particularly visible in mobility. As Europe seeks to decarbonise transport while protecting its industrial base, competition from China and the US is intensifying across electric vehicles, batteries and cl",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "826ef08f8173577e"
     },
     {
       "organization": "Rapporteur",
@@ -2169,7 +2135,7 @@
       "venue": "",
       "category": "Defense",
       "url": "https://events.rapporteur.com/event/info/firepower-europes-defence-investment-race/",
-      "description": "This event is by invitation only. Any questions please contact fruzsina.csonka@rapporteur.com 17:30 – 18:00 | ‘Ask Me Anything’ with Commissioner Andrius Kubilius An open conversation with European Commissioner for Defence and Space Andrius Kubilius, led by Rapporteur Defence Editor Alice Tidey. As Europe moves to strengthen its defence capabilities and industrial base, the Commissioner will address the key questions shaping the sector — from Europe’s defence priorities and investment needs to industrial capacity, procurement and the role of EU-level action. Following an initial conversation with Alice Tidey, the floor will open to the audience, giving participants the opportunity to put the",
+      "description": "This event is by invitation only. Any questions please contact fruzsina.csonka@rapporteur.com 17:30 – 18:15 | Panel Discussion: The Defence Investment Race: Where Should Industry Put Its Money? A high-level discussion on where governments need industry to invest now — and which capability gaps are creating real demand. Leaders from investment and defence institutions will explore procurement signals, access to finance, and how SMEs and start-ups can break into defence markets. The panel will also examine how industry can avoid building capacity without a clear route to market, and what Europe’s defence ecosystem needs to build today — not five years from now. Confirmed speakers: Anders Sjöbo",
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
