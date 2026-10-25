@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-10-24T09:43:20+00:00",
+  "last_updated_utc": "2026-10-25T09:58:19+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -1498,6 +1498,13 @@
         },
         {
           "name": "OHB",
+          "role": "Partner / sponsor",
+          "source_url": "https://defencesecurityconference.eu/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "EFA GROUP Vector",
           "role": "Partner / sponsor",
           "source_url": "https://defencesecurityconference.eu/",
           "extraction": "auto-section-logo",
