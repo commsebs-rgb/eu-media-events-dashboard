@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-10-25T09:58:19+00:00",
+  "last_updated_utc": "2026-10-26T11:17:48+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -83,23 +83,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "ab55d13e89564730"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "EU Presidency Outlook: Cyprus",
-      "date": "2026-02-03",
-      "date_text": "February 3, 2026",
-      "end_date": "2026-02-03",
-      "time_text": "8:00 am",
-      "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "PM+ Talks",
-      "url": "https://events.theparliamentmagazine.eu/event/eu-presidency-outlook-cyprus/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "7eb7f7972daf1a58"
     },
     {
       "organization": "The Parliament",
@@ -568,94 +551,6 @@
     },
     {
       "organization": "The Parliament",
-      "title": "European Industry Forum 2026",
-      "date": "2026-06-03",
-      "date_text": "June 3, 2026",
-      "end_date": "2026-06-03",
-      "time_text": "9:00 am",
-      "city": "Brussels",
-      "venue": "TownHall Europe",
-      "category": "Summits",
-      "url": "https://events.theparliamentmagazine.eu/event/european-industry-forum-2026/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "GE Aerospace 25 11 38 277993",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/european-industry-forum-2026/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Iru",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/european-industry-forum-2026/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Internationalcopper",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/european-industry-forum-2026/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "4b99cf6c49ca8221"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "European Industry Forum Dinner",
-      "date": "2026-06-03",
-      "date_text": "June 3, 2026",
-      "end_date": "2026-06-03",
-      "time_text": "7:00 pm",
-      "city": "Brussels",
-      "venue": "Stanhope Hotel Brussels",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/european-industry-forum-dinner/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "91b1d99f837e50f5"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "European Biotech Forum 2026",
-      "date": "2026-06-11",
-      "date_text": "June 11, 2026",
-      "end_date": "2026-06-11",
-      "time_text": "9:00 am",
-      "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "Summits",
-      "url": "https://events.theparliamentmagazine.eu/event/european-biotech-forum-2026/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Amgen",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/european-biotech-forum-2026/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        },
-        {
-          "name": "Europabio",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/european-biotech-forum-2026/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "db31efcd44690c58"
-    },
-    {
-      "organization": "The Parliament",
       "title": "MEP Awards 2026",
       "date": "2026-06-30",
       "date_text": "June 30, 2026",
@@ -706,45 +601,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "44efd8422555acfc"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "EU Presidency Forum: Ireland",
-      "date": "2026-07-02",
-      "date_text": "July 2, 2026",
-      "end_date": "2026-07-02",
-      "time_text": "8:30 am",
-      "city": "Brussels",
-      "venue": "TownHall Europe",
-      "category": "PM+ Talks",
-      "url": "https://events.theparliamentmagazine.eu/event/eu-presidency-forum-ireland/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Booking",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/eu-presidency-forum-ireland/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Takeda",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/eu-presidency-forum-ireland/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        },
-        {
-          "name": "Europeanmovement",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/eu-presidency-forum-ireland/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "231d12a9c18ca3f1"
     },
     {
       "organization": "Rapporteur",
@@ -1371,56 +1227,6 @@
       "id": "9655c86d9bd3242b"
     },
     {
-      "organization": "The Parliament",
-      "title": "Global Outlook – European Energy Perspective",
-      "date": "2026-10-20",
-      "date_text": "October 20, 2026",
-      "end_date": "2026-10-20",
-      "time_text": "",
-      "city": "Strasbourg",
-      "venue": "European Parliament, Strasbourg",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/global-outlook-european-energy-perspective/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Exxonmobil",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/global-outlook-european-energy-perspective/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "f0754c73053dc2b2"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "How can Europe lead in cloud and AI? Building policy, power and trust",
-      "date": "2026-10-20",
-      "date_text": "October 20, 2026",
-      "end_date": "2026-10-20",
-      "time_text": "",
-      "city": "Strasbourg",
-      "venue": "European Parliament, Strasbourg",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/how-can-europe-lead-in-cloud-and-ai-building-policy-power-and-trust/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Microsoft",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/how-can-europe-lead-in-cloud-and-ai-building-policy-power-and-trust/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "64edabfcca2f1a11"
-    },
-    {
       "organization": "Logos",
       "title": "European Defence & Security Conference 2026",
       "date": "2026-10-29",
@@ -1735,7 +1541,15 @@
       "category": "Summits",
       "url": "https://events.theparliamentmagazine.eu/event/eu-mercosur-forum-2026/",
       "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [],
+      "sponsors": [
+        {
+          "name": "Apexbrasil",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/eu-mercosur-forum-2026/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
       "confidence": "high",
       "source_official": true,
       "id": "8effb3468157fc8b"
@@ -2130,38 +1944,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "94df012ecaeede65"
-    },
-    {
-      "organization": "POLITICO",
-      "title": "POLITICO Health Care Summit 2026",
-      "date": "2026-12-01",
-      "date_text": "1–2 December 2026",
-      "end_date": "2026-12-02",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Health",
-      "url": "https://www.politico.eu/health-care-summit-2026/",
-      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany Spain US Australia Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Brussels Playbook Capitals Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Pla",
-      "sponsors": [
-        {
-          "name": "MedTech Europe",
-          "role": "Partner",
-          "source_url": "https://www.politico.eu/health-care-summit-2026/",
-          "extraction": "known-official-page",
-          "confidence": "high"
-        },
-        {
-          "name": "EFPIA",
-          "role": "Partner",
-          "source_url": "https://www.politico.eu/health-care-summit-2026/",
-          "extraction": "known-official-page",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "8c798c8412cf3203"
     },
     {
       "organization": "The Parliament",
