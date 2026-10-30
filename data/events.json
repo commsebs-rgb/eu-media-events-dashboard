@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-10-29T11:40:32+00:00",
+  "last_updated_utc": "2026-10-30T11:33:28+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -100,6 +100,38 @@
       "confidence": "high",
       "source_official": true,
       "id": "7eb7f7972daf1a58"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "International Women’s Day Talks 2026",
+      "date": "2026-03-04",
+      "date_text": "March 4, 2026",
+      "end_date": "2026-03-04",
+      "time_text": "9:00 am",
+      "city": "Brussels",
+      "venue": "TownHall Europe",
+      "category": "PM+ Talks",
+      "url": "https://events.theparliamentmagazine.eu/event/international-womens-day-talks-2/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Besins Healthcare",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/international-womens-day-talks-2/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Abbvie",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/international-womens-day-talks-2/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "e3df981a963a0215"
     },
     {
       "organization": "Euronews",
@@ -624,6 +656,59 @@
     },
     {
       "organization": "The Parliament",
+      "title": "MEP Awards 2026",
+      "date": "2026-06-30",
+      "date_text": "June 30, 2026",
+      "end_date": "2026-06-30",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "Albert Hall",
+      "category": "Awards",
+      "url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "MSD",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Coca Cola Europe",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Booking",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Microsoft",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Camparigroup",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "44efd8422555acfc"
+    },
+    {
+      "organization": "The Parliament",
       "title": "EU Presidency Forum: Ireland",
       "date": "2026-07-02",
       "date_text": "July 2, 2026",
@@ -660,23 +745,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "231d12a9c18ca3f1"
-    },
-    {
-      "organization": "Rapporteur",
-      "title": "Euractiv Pro Briefing - BUDGET edition I",
-      "date": "2026-07-09",
-      "date_text": "09-07-2026",
-      "end_date": "",
-      "time_text": "12:30",
-      "city": "Online",
-      "venue": "",
-      "category": "Technology, Economy, Health",
-      "url": "https://events.rapporteur.com/event/info/euractiv-pro-briefing-budget-edition-i/",
-      "description": "This event is exclusive to Euractiv BUDGET newsletter subscribers. If you are interested in a trial, contact our Pro team here . This online event will offer an opportunity to deep-dive into EU policy with Euractiv's Budget Reporter, Victoria Becker, along with other reporters from various desks. You will hear their personal insights by interacting with them in a private, off-the-record setting. Don’t miss this exclusive opportunity to engage with our experts and deepen your understanding of critical budget policies....staying a step ahead! Join the debate! Location Online Schedule 12:30 - 13:30 CET Contact Laurine Augere Laurine.Augere@rapporteur.com Subscribe to Rapporteur events",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "f819e0260bbda065"
     },
     {
       "organization": "Rapporteur",
@@ -1497,7 +1565,7 @@
       "venue": "",
       "category": "Awards, Energy and Environment, Technology",
       "url": "https://events.rapporteur.com/event/info/energy-efficiency-how-can-it-shape-europes-post-2030-energy-and-climate-framework/",
-      "description": "REGISTER HERE As the EU prepares its post-2030 energy and climate framework, energy efficiency is expected to remain a key pillar of the Energy Union. Building on the revised Energy Efficiency Directive, policymakers are now reflecting on how to boost implementation and align the framework with the challenges of the decade ahead. Discussions are evolving beyond targets alone to consider the broader value of energy efficiency, including its contribution to affordability, competitiveness and energy security. While approaches such as Energy Efficiency First and the valuation of wider benefits are gaining attention, stakeholders continue to debate whether these tools help unlock investment or ad",
+      "description": "WATCH THE RECORDING As the EU prepares its post-2030 energy and climate framework, energy efficiency is expected to remain a key pillar of the Energy Union. Building on the revised Energy Efficiency Directive, policymakers are now reflecting on how to boost implementation and align the framework with the challenges of the decade ahead. Discussions are evolving beyond targets alone to consider the broader value of energy efficiency, including its contribution to affordability, competitiveness and energy security. While approaches such as Energy Efficiency First and the valuation of wider benefits are gaining attention, stakeholders continue to debate whether these tools help unlock investment",
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
@@ -1543,7 +1611,7 @@
       "date": "2026-11-03",
       "date_text": "03-11-2026",
       "end_date": "",
-      "time_text": "12:30 ",
+      "time_text": "",
       "city": "Martens Centre HQ",
       "venue": "",
       "category": "Technology, Economy, Health",
@@ -1565,7 +1633,7 @@
       "venue": "",
       "category": "Politics, Enlargement",
       "url": "https://events.euronews.com/EU-Enlargement-Summit-2026/",
-      "description": "The prospect of a larger European Union is moving from long-term ambition to an increasingly practical question. Candidate countries are advancing their bids for membership, while war, geopolitical competition and economic pressures are reshaping the conditions in which Enlargement must take place. On 3 November 2026 , the Euronews EU Enlargement Summit will bring together policymakers, political leaders, experts and business representatives in Brussels, with the debate broadcast live to Euronews audiences. The summit will examine what the next phase of Enlargement could mean for the EU and its prospective members. Discussions will focus on the progress of candidate countries, the reforms, c",
+      "description": "Euronews Enlargement Summit 2026 When: Tuesday, 3 November 2026 Time: Doors open at 11:00 am CEST Where: Autoworld Parc du Cinquantenaire 11 1000 Bruxelles The prospect of a larger European Union is moving from long-term ambition to an increasingly practical question. Candidate countries are advancing their bids for membership, while war, geopolitical competition and economic pressures are reshaping the conditions in which Enlargement must take place. On 3 November 2026 , the Euronews EU Enlargement Summit will bring together policymakers, political leaders, experts and business representatives in Brussels, with the debate broadcast live to Euronews audiences. The summit will examine what th",
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
@@ -1594,12 +1662,12 @@
       "date": "2026-11-04",
       "date_text": "04-11-2026",
       "end_date": "",
-      "time_text": "08:00 ",
+      "time_text": "",
       "city": "European Parliament, Spinelli building, room 7F387",
       "venue": "",
       "category": "Technology, Digital, Energy",
       "url": "https://events.rapporteur.com/event/info/u15-social-media-forum-beyond-prohibition-would-a-social-media-ban-save-our-children/",
-      "description": "REGISTER HERE The Commission's proposed EU KIDS Act would bar children under 13 from social media and set 15 as the EU-wide minimum age for opening an account of their own. Few dispute that children need better protection online. The harder question is what will actually work, and at what cost to privacy, competition and digital freedoms. This forum brings together policymakers, researchers, civil society and industry to test whether age limits can be enforced in practice, how age verification would operate, and what else could make platforms safer: better design, more transparent recommender systems and stronger digital literacy. Sponsored by: EPICENTER Media Partner: Rapporteur REGISTER HE",
+      "description": "REGISTER HERE The Commission's proposed EU KIDS Act would bar children under 13 from social media and set 15 as the EU-wide minimum age for opening an account of their own. Few dispute that children need better protection online. The harder question is what will actually work, and at what cost to privacy, competition and digital freedoms. This forum brings together policymakers, researchers, civil society and industry to test whether age limits can be enforced in practice, how age verification would operate, and what else could make platforms safer: better design, more transparent recommender systems and stronger digital literacy. Sponsored by: The European Liberal Forum and EPICENTER Media ",
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
@@ -1909,6 +1977,31 @@
     },
     {
       "organization": "The Parliament",
+      "title": "Energy Infrastructure for Europe’s Next Decade: Delivering Decarbonisation, Competitiveness and Resilience through the Mediterranean",
+      "date": "2026-11-17",
+      "date_text": "November 17, 2026",
+      "end_date": "2026-11-17",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "European Parliament, Brussels",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/infrastructure-for-europes-next-decade-delivering-decarbonisation-competitiveness-and-resilience-through-southeast-europe/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "DESFA",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/infrastructure-for-europes-next-decade-delivering-decarbonisation-competitiveness-and-resilience-through-southeast-europe/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "dc9687144b9fc867"
+    },
+    {
+      "organization": "The Parliament",
       "title": "Startup Acquisitions and European Growth: The Role of M&A in Scaling Companies",
       "date": "2026-11-17",
       "date_text": "November 17, 2026",
@@ -2081,38 +2174,6 @@
       "id": "94df012ecaeede65"
     },
     {
-      "organization": "POLITICO",
-      "title": "POLITICO Health Care Summit 2026",
-      "date": "2026-12-01",
-      "date_text": "1–2 December 2026",
-      "end_date": "2026-12-02",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Health",
-      "url": "https://www.politico.eu/health-care-summit-2026/",
-      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany Spain US Australia Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Brussels Playbook Capitals Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Pla",
-      "sponsors": [
-        {
-          "name": "MedTech Europe",
-          "role": "Partner",
-          "source_url": "https://www.politico.eu/health-care-summit-2026/",
-          "extraction": "known-official-page",
-          "confidence": "high"
-        },
-        {
-          "name": "EFPIA",
-          "role": "Partner",
-          "source_url": "https://www.politico.eu/health-care-summit-2026/",
-          "extraction": "known-official-page",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "8c798c8412cf3203"
-    },
-    {
       "organization": "The Parliament",
       "title": "Building Europe’s digital autonomy: Balancing sovereignty, scale and openness",
       "date": "2026-12-01",
@@ -2138,6 +2199,31 @@
       "id": "96e8090abb6e7deb"
     },
     {
+      "organization": "The Parliament",
+      "title": "Making the PPWR work: A reality check on implementation, competitiveness and the consumer impact",
+      "date": "2026-12-01",
+      "date_text": "December 1, 2026",
+      "end_date": "2026-12-01",
+      "time_text": "8:00 am",
+      "city": "Brussels",
+      "venue": "European Parliament, Brussels",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/making-the-ppwr-work-a-reality-check-on-implementation-competitiveness-and-the-consumer-impact/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Unesda",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/making-the-ppwr-work-a-reality-check-on-implementation-competitiveness-and-the-consumer-impact/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "ad9a510f7246d91d"
+    },
+    {
       "organization": "Rapporteur",
       "title": "Europe’s refining and fuel manufacturing sector – Competitiveness, decarbonisation and strategic resilience",
       "date": "2026-12-02",
@@ -2160,13 +2246,35 @@
       "date": "2026-12-03",
       "date_text": "03-12-2026",
       "end_date": "",
-      "time_text": "",
+      "time_text": "09:30",
       "city": "Provided upon registration",
       "venue": "",
       "category": "Awards, Energy and Environment, Technology",
       "url": "https://events.rapporteur.com/event/info/energy-environment-policy-conference-2026/",
-      "description": "Building a clean future for Europe REGISTER HERE KEYNOTE ADDRESS: Europe’s Energy Transition: Balancing Competitiveness, Security, Climate As Europe enters a new political and economic cycle, the pressure is growing to reconcile climate ambition with industrial competitiveness and energy security. From geopolitical tensions and volatile energy markets to rising global competition, policymakers and businesses are navigating an increasingly complex landscape. At the same time, the clean transition is moving from targets and announcements to implementation, with increasing pressure to simplify rules, accelerate investment, and maintain public support. Against this backdrop, this event will brin",
-      "sponsors": [],
+      "description": "Building a clean future for Europe REGISTER HERE 09:30 - 10:00 KEYNOTE ADDRESS: Europe’s Energy Transition: Balancing Competitiveness, Security, Climate As Europe enters a new political and economic cycle, the pressure is growing to reconcile climate ambition with industrial competitiveness and energy security. From geopolitical tensions and volatile energy markets to rising global competition, policymakers and businesses are navigating an increasingly complex landscape. At the same time, the clean transition is moving from targets and announcements to implementation, with increasing pressure to simplify rules, accelerate investment, and maintain public support. Against this backdrop, this e",
+      "sponsors": [
+        {
+          "name": "MOL Group",
+          "role": "Supported by",
+          "source_url": "https://events.rapporteur.com/event/info/energy-environment-policy-conference-2026/",
+          "extraction": "auto-labelled-text",
+          "confidence": "medium"
+        },
+        {
+          "name": "GSCC",
+          "role": "Supported by",
+          "source_url": "https://events.rapporteur.com/event/info/energy-environment-policy-conference-2026/",
+          "extraction": "auto-labelled-text",
+          "confidence": "medium"
+        },
+        {
+          "name": "Iberdrola",
+          "role": "Supported by",
+          "source_url": "https://events.rapporteur.com/event/info/energy-environment-policy-conference-2026/",
+          "extraction": "auto-labelled-text",
+          "confidence": "medium"
+        }
+      ],
       "confidence": "high",
       "source_official": true,
       "id": "ca21251cf632f358"
@@ -2187,6 +2295,23 @@
       "confidence": "high",
       "source_official": true,
       "id": "1235b49d7c007747"
+    },
+    {
+      "organization": "Rapporteur",
+      "title": "Media Partnership: Annual EU Civil Justice Conference",
+      "date": "2026-12-08",
+      "date_text": "08-12-2026",
+      "end_date": "",
+      "time_text": "0.17",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Economy and Jobs, Technology, Digital",
+      "url": "https://events.rapporteur.com/event/info/media-partnership-annual-eu-civil-justice-conference/",
+      "description": "REGISTER HERE The EU’s civil justice and liability framework is entering a decisive phase, with major implications for legal certainty, risk allocation, the competitiveness of European economic operators and the functioning of the Single Market. The revised Product Liability Directive (PLD) and the Representative Actions Directive (RAD), together with the intensifying debate over unregulated Third-Party Litigation Funding (TPLF), are reshaping the balance between litigation risk, consumer protection and business exposure across the Union. The reforms coincide with the EU’s renewed prioritisation of Competitiveness, Simplification and Better Regulation, raising the question of whether the EU’",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "dd26544ead4c1180"
     },
     {
       "organization": "The Parliament",
