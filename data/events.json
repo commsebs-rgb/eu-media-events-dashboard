@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-10-30T11:33:28+00:00",
+  "last_updated_utc": "2026-10-31T11:04:40+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -2002,38 +2002,6 @@
     },
     {
       "organization": "The Parliament",
-      "title": "Startup Acquisitions and European Growth: The Role of M&A in Scaling Companies",
-      "date": "2026-11-17",
-      "date_text": "November 17, 2026",
-      "end_date": "2026-11-17",
-      "time_text": "8:30 am",
-      "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/startup-acquisitions-and-european-growth-the-role-of-ma-in-scaling-companies/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Screenshot",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/startup-acquisitions-and-european-growth-the-role-of-ma-in-scaling-companies/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Aboutamazon",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/startup-acquisitions-and-european-growth-the-role-of-ma-in-scaling-companies/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "212fab235e7099ab"
-    },
-    {
-      "organization": "The Parliament",
       "title": "The Science behind Recreational Nicotine Products: Examining the Evidence for the Next Generation of European Health Policy",
       "date": "2026-11-17",
       "date_text": "November 17, 2026",
@@ -2172,6 +2140,38 @@
       "confidence": "high",
       "source_official": true,
       "id": "94df012ecaeede65"
+    },
+    {
+      "organization": "POLITICO",
+      "title": "POLITICO Health Care Summit 2026",
+      "date": "2026-12-01",
+      "date_text": "1–2 December 2026",
+      "end_date": "2026-12-02",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Health",
+      "url": "https://www.politico.eu/health-care-summit-2026/",
+      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany Spain US Australia Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Brussels Playbook Capitals Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Pla",
+      "sponsors": [
+        {
+          "name": "MedTech Europe",
+          "role": "Partner",
+          "source_url": "https://www.politico.eu/health-care-summit-2026/",
+          "extraction": "known-official-page",
+          "confidence": "high"
+        },
+        {
+          "name": "EFPIA",
+          "role": "Partner",
+          "source_url": "https://www.politico.eu/health-care-summit-2026/",
+          "extraction": "known-official-page",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "8c798c8412cf3203"
     },
     {
       "organization": "The Parliament",
