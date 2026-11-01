@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-10-31T11:04:40+00:00",
+  "last_updated_utc": "2026-11-01T11:59:48+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -653,59 +653,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "db31efcd44690c58"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "MEP Awards 2026",
-      "date": "2026-06-30",
-      "date_text": "June 30, 2026",
-      "end_date": "2026-06-30",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "Albert Hall",
-      "category": "Awards",
-      "url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "MSD",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Coca Cola Europe",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Booking",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Microsoft",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        },
-        {
-          "name": "Camparigroup",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "44efd8422555acfc"
     },
     {
       "organization": "The Parliament",
@@ -1868,56 +1815,6 @@
     },
     {
       "organization": "The Parliament",
-      "title": "The future of medical technology in Europe: Innovation, access and trust",
-      "date": "2026-11-10",
-      "date_text": "November 10, 2026",
-      "end_date": "2026-11-10",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/the-future-of-medical-technology-in-europe-innovation-access-and-trust/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "MedTech Europe",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/the-future-of-medical-technology-in-europe-innovation-access-and-trust/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "74c7fa814922c065"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "Unlocking the Potential of Biocontrol: Towards a Future-Proof, Science-Based Framework for European Agriculture",
-      "date": "2026-11-12",
-      "date_text": "November 12, 2026",
-      "end_date": "2026-11-12",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/unlocking-the-potential-of-biocontrol-towards-a-future-proof-science-based-framework-for-european-agriculture/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Corteva",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/unlocking-the-potential-of-biocontrol-towards-a-future-proof-science-based-framework-for-european-agriculture/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "d1bb41dafddceaf7"
-    },
-    {
-      "organization": "The Parliament",
       "title": "Hotel Europe: The Future Of Travel & Technology",
       "date": "2026-11-16",
       "date_text": "November 16, 2026",
@@ -1999,6 +1896,38 @@
       "confidence": "high",
       "source_official": true,
       "id": "dc9687144b9fc867"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "Startup Acquisitions and European Growth: The Role of M&A in Scaling Companies",
+      "date": "2026-11-17",
+      "date_text": "November 17, 2026",
+      "end_date": "2026-11-17",
+      "time_text": "8:30 am",
+      "city": "Brussels",
+      "venue": "European Parliament, Brussels",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/startup-acquisitions-and-european-growth-the-role-of-ma-in-scaling-companies/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Screenshot",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/startup-acquisitions-and-european-growth-the-role-of-ma-in-scaling-companies/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Aboutamazon",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/startup-acquisitions-and-european-growth-the-role-of-ma-in-scaling-companies/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "212fab235e7099ab"
     },
     {
       "organization": "The Parliament",
@@ -2100,31 +2029,6 @@
       "id": "659b07da2dbfb200"
     },
     {
-      "organization": "The Parliament",
-      "title": "Should journalists be afraid of content creators?",
-      "date": "2026-11-23",
-      "date_text": "November 23, 2026",
-      "end_date": "2026-11-23",
-      "time_text": "6:30 pm",
-      "city": "Brussels",
-      "venue": "The Merode",
-      "category": "PM+ Talks",
-      "url": "https://events.theparliamentmagazine.eu/event/pmtalks-should-journalists-be-afraid-of-content-creators/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Themerode",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/pmtalks-should-journalists-be-afraid-of-content-creators/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "72704044c6764099"
-    },
-    {
       "organization": "Rapporteur",
       "title": "FIREPOWER: Europe’s Defence Investment Race",
       "date": "2026-11-30",
@@ -2197,31 +2101,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "96e8090abb6e7deb"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "Making the PPWR work: A reality check on implementation, competitiveness and the consumer impact",
-      "date": "2026-12-01",
-      "date_text": "December 1, 2026",
-      "end_date": "2026-12-01",
-      "time_text": "8:00 am",
-      "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/making-the-ppwr-work-a-reality-check-on-implementation-competitiveness-and-the-consumer-impact/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Unesda",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/making-the-ppwr-work-a-reality-check-on-implementation-competitiveness-and-the-consumer-impact/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "ad9a510f7246d91d"
     },
     {
       "organization": "Rapporteur",
@@ -2314,31 +2193,6 @@
       "id": "dd26544ead4c1180"
     },
     {
-      "organization": "The Parliament",
-      "title": "Insects for Europe: A blueprint for EU leadership in a circular bioeconomy",
-      "date": "2026-12-08",
-      "date_text": "December 8, 2026",
-      "end_date": "2026-12-08",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "Media Partner",
-      "url": "https://events.theparliamentmagazine.eu/event/insects-for-europe-a-blueprint-for-eu-leadership-in-a-circular-bioeconomy/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Ipiff",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/insects-for-europe-a-blueprint-for-eu-leadership-in-a-circular-bioeconomy/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "3953c20d36959c04"
-    },
-    {
       "organization": "Rapporteur",
       "title": "Media Partnership: Sovereignty Through Partnership: Trusted Technology in an Interconnected World",
       "date": "2026-12-09",
@@ -2405,31 +2259,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "1a0cf628cd0c9c0a"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "Putting Menopause on the Map: From National Action to European Impact",
-      "date": "2026-12-10",
-      "date_text": "December 10, 2026",
-      "end_date": "2026-12-10",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "Blankspace Brussels",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/putting-menopause-on-the-map-from-national-action-to-european-impact/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Besins Healthcare",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/putting-menopause-on-the-map-from-national-action-to-european-impact/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "ee7b301019c9a659"
     }
   ]
 }
