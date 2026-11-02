@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-11-01T11:59:48+00:00",
+  "last_updated_utc": "2026-11-02T13:40:48+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -157,6 +157,23 @@
       "confidence": "high",
       "source_official": true,
       "id": "e0247dcbca38386b"
+    },
+    {
+      "organization": "POLITICO",
+      "title": "Pro Roundtable – Competition and Industrial Policy",
+      "date": "2026-03-19",
+      "date_text": "March 19, 2026",
+      "end_date": "",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Agriculture and Food, Technology, Digital",
+      "url": "https://www.politico.eu/event/pro-roundtable-competition-industrial-policy/",
+      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany Spain US Australia Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Brussels Playbook Capitals Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Pla",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "46e2350a70ffbbe0"
     },
     {
       "organization": "The Parliament",
@@ -382,6 +399,23 @@
       "confidence": "high",
       "source_official": true,
       "id": "eceb7b16d7b8502c"
+    },
+    {
+      "organization": "POLITICO",
+      "title": "POLITICO & Bayer’s Competitive Europe Salon Dinner",
+      "date": "2026-05-05",
+      "date_text": "May 5, 2026",
+      "end_date": "",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Agriculture and Food, Technology, Politics",
+      "url": "https://www.politico.eu/event/politico-bayers-competitive-europe-salon-dinner/",
+      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany Spain US Australia Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Brussels Playbook Capitals Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Pla",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "4bfbb98c293cc1ec"
     },
     {
       "organization": "POLITICO",
@@ -653,6 +687,59 @@
       "confidence": "high",
       "source_official": true,
       "id": "db31efcd44690c58"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "MEP Awards 2026",
+      "date": "2026-06-30",
+      "date_text": "June 30, 2026",
+      "end_date": "2026-06-30",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "Albert Hall",
+      "category": "Awards",
+      "url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "MSD",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Coca Cola Europe",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Booking",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Microsoft",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Camparigroup",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "44efd8422555acfc"
     },
     {
       "organization": "The Parliament",
@@ -1714,23 +1801,6 @@
     },
     {
       "organization": "Rapporteur",
-      "title": "From heatwaves to fire risk - What Europe's refrigerant choices mean on the ground",
-      "date": "2026-11-09",
-      "date_text": "09-11-2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Rapporteur Office",
-      "venue": "",
-      "category": "Awards, Energy and Environment, Technology",
-      "url": "https://events.rapporteur.com/event/info/from-heatwaves-to-fire-risk-what-europes-refrigerant-choices-mean-on-the-ground/",
-      "description": "Please note that this event is taking place in-person only and will not be livestreamed. This event is by invitation only. If you would like to attend, please contact juliette.burton@rapporteur.com. As Europe experiences rising temperatures and growing demand for cooling, refrigeration and air-conditioning technologies are becoming increasingly important for households, businesses and essential services. From preserving food and medicines to maintaining comfortable indoor environments, reliable cooling plays a vital role in everyday life. At the same time, Europe's cooling and refrigeration sector is undergoing a significant transition, driven by climate objectives, evolving EU regulations a",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "b06f61ebbcef3d03"
-    },
-    {
-      "organization": "Rapporteur",
       "title": "From Deployment to Scale - Building Europe’s CO2 Transportation Infrastructure and Markets",
       "date": "2026-11-10",
       "date_text": "10-11-2026",
@@ -1812,6 +1882,56 @@
       "confidence": "high",
       "source_official": true,
       "id": "41e7d7ea28e459a4"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "The future of medical technology in Europe: Innovation, access and trust",
+      "date": "2026-11-10",
+      "date_text": "November 10, 2026",
+      "end_date": "2026-11-10",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "European Parliament, Brussels",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/the-future-of-medical-technology-in-europe-innovation-access-and-trust/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "MedTech Europe",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/the-future-of-medical-technology-in-europe-innovation-access-and-trust/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "74c7fa814922c065"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "Unlocking the Potential of Biocontrol: Towards a Future-Proof, Science-Based Framework for European Agriculture",
+      "date": "2026-11-12",
+      "date_text": "November 12, 2026",
+      "end_date": "2026-11-12",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "European Parliament, Brussels",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/unlocking-the-potential-of-biocontrol-towards-a-future-proof-science-based-framework-for-european-agriculture/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Corteva",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/unlocking-the-potential-of-biocontrol-towards-a-future-proof-science-based-framework-for-european-agriculture/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "d1bb41dafddceaf7"
     },
     {
       "organization": "The Parliament",
@@ -2004,6 +2124,23 @@
       "id": "2b895de7f0d502b7"
     },
     {
+      "organization": "POLITICO",
+      "title": "Pro Roundtable – Cyber",
+      "date": "2026-11-19",
+      "date_text": "November 19, 2026",
+      "end_date": "",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Agriculture and Food, Technology, Politics",
+      "url": "https://www.politico.eu/event/pro-roundtable-cyber/",
+      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany Spain US Australia Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Brussels Playbook Capitals Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Pla",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "c3b18f59fe4ecd4a"
+    },
+    {
       "organization": "The Parliament",
       "title": "2nd European Bioeconomy Conference",
       "date": "2026-11-19",
@@ -2029,6 +2166,31 @@
       "id": "659b07da2dbfb200"
     },
     {
+      "organization": "The Parliament",
+      "title": "Should journalists be afraid of content creators?",
+      "date": "2026-11-23",
+      "date_text": "November 23, 2026",
+      "end_date": "2026-11-23",
+      "time_text": "6:30 pm",
+      "city": "Brussels",
+      "venue": "The Merode",
+      "category": "PM+ Talks",
+      "url": "https://events.theparliamentmagazine.eu/event/pmtalks-should-journalists-be-afraid-of-content-creators/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Themerode",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/pmtalks-should-journalists-be-afraid-of-content-creators/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "72704044c6764099"
+    },
+    {
       "organization": "Rapporteur",
       "title": "FIREPOWER: Europe’s Defence Investment Race",
       "date": "2026-11-30",
@@ -2044,38 +2206,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "94df012ecaeede65"
-    },
-    {
-      "organization": "POLITICO",
-      "title": "POLITICO Health Care Summit 2026",
-      "date": "2026-12-01",
-      "date_text": "1–2 December 2026",
-      "end_date": "2026-12-02",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Health",
-      "url": "https://www.politico.eu/health-care-summit-2026/",
-      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany Spain US Australia Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Brussels Playbook Capitals Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Pla",
-      "sponsors": [
-        {
-          "name": "MedTech Europe",
-          "role": "Partner",
-          "source_url": "https://www.politico.eu/health-care-summit-2026/",
-          "extraction": "known-official-page",
-          "confidence": "high"
-        },
-        {
-          "name": "EFPIA",
-          "role": "Partner",
-          "source_url": "https://www.politico.eu/health-care-summit-2026/",
-          "extraction": "known-official-page",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "8c798c8412cf3203"
     },
     {
       "organization": "The Parliament",
@@ -2101,6 +2231,31 @@
       "confidence": "high",
       "source_official": true,
       "id": "96e8090abb6e7deb"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "Making the PPWR work: A reality check on implementation, competitiveness and the consumer impact",
+      "date": "2026-12-01",
+      "date_text": "December 1, 2026",
+      "end_date": "2026-12-01",
+      "time_text": "8:00 am",
+      "city": "Brussels",
+      "venue": "European Parliament, Brussels",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/making-the-ppwr-work-a-reality-check-on-implementation-competitiveness-and-the-consumer-impact/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Unesda",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/making-the-ppwr-work-a-reality-check-on-implementation-competitiveness-and-the-consumer-impact/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "ad9a510f7246d91d"
     },
     {
       "organization": "Rapporteur",
@@ -2193,6 +2348,48 @@
       "id": "dd26544ead4c1180"
     },
     {
+      "organization": "The Parliament",
+      "title": "Insects for Europe: A blueprint for EU leadership in a circular bioeconomy",
+      "date": "2026-12-08",
+      "date_text": "December 8, 2026",
+      "end_date": "2026-12-08",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "European Parliament, Brussels",
+      "category": "Media Partner",
+      "url": "https://events.theparliamentmagazine.eu/event/insects-for-europe-a-blueprint-for-eu-leadership-in-a-circular-bioeconomy/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Ipiff",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/insects-for-europe-a-blueprint-for-eu-leadership-in-a-circular-bioeconomy/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "3953c20d36959c04"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "The Year Ahead",
+      "date": "2026-12-08",
+      "date_text": "December 8, 2026",
+      "end_date": "2026-12-08",
+      "time_text": "8:00 am",
+      "city": "Brussels",
+      "venue": "European Parliament, Brussels",
+      "category": "PM+ Talks",
+      "url": "https://events.theparliamentmagazine.eu/event/the-year-ahead/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "7d121b3ad912936a"
+    },
+    {
       "organization": "Rapporteur",
       "title": "Media Partnership: Sovereignty Through Partnership: Trusted Technology in an Interconnected World",
       "date": "2026-12-09",
@@ -2259,6 +2456,31 @@
       "confidence": "high",
       "source_official": true,
       "id": "1a0cf628cd0c9c0a"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "Putting Menopause on the Map: From National Action to European Impact",
+      "date": "2026-12-10",
+      "date_text": "December 10, 2026",
+      "end_date": "2026-12-10",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "Blankspace Brussels",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/putting-menopause-on-the-map-from-national-action-to-european-impact/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Besins Healthcare",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/putting-menopause-on-the-map-from-national-action-to-european-impact/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "ee7b301019c9a659"
     }
   ]
 }
