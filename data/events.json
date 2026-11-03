@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-11-02T13:40:48+00:00",
+  "last_updated_utc": "2026-11-03T12:57:21+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -157,62 +157,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "e0247dcbca38386b"
-    },
-    {
-      "organization": "POLITICO",
-      "title": "Pro Roundtable – Competition and Industrial Policy",
-      "date": "2026-03-19",
-      "date_text": "March 19, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Agriculture and Food, Technology, Digital",
-      "url": "https://www.politico.eu/event/pro-roundtable-competition-industrial-policy/",
-      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany Spain US Australia Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Brussels Playbook Capitals Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Pla",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "46e2350a70ffbbe0"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "SMEs Forum 2026",
-      "date": "2026-03-19",
-      "date_text": "March 19, 2026",
-      "end_date": "2026-03-19",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "TownHall Europe",
-      "category": "Summits",
-      "url": "https://events.theparliamentmagazine.eu/event/smes-forum-2026/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Screenshot",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/smes-forum-2026/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Sage",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/smes-forum-2026/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        },
-        {
-          "name": "Shopify",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/smes-forum-2026/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "a2b009321b4da14f"
     },
     {
       "organization": "The Parliament",
@@ -399,23 +343,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "eceb7b16d7b8502c"
-    },
-    {
-      "organization": "POLITICO",
-      "title": "POLITICO & Bayer’s Competitive Europe Salon Dinner",
-      "date": "2026-05-05",
-      "date_text": "May 5, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Agriculture and Food, Technology, Politics",
-      "url": "https://www.politico.eu/event/politico-bayers-competitive-europe-salon-dinner/",
-      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany Spain US Australia Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Brussels Playbook Capitals Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Pla",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "4bfbb98c293cc1ec"
     },
     {
       "organization": "POLITICO",
@@ -1448,7 +1375,7 @@
       "venue": "Egmont Palace",
       "category": "Defence & Security",
       "url": "",
-      "description": "6th European Defence & Security Conference 29 October 2026 | Egmont Palace, Brussels REGISTER NOW",
+      "description": "6th European Defence & Security Conference 29 October 2026 | Egmont Palace, Brussels PHOTO GALLERY",
       "sponsors": [
         {
           "name": "MBDA",
@@ -1633,7 +1560,7 @@
       "venue": "",
       "category": "Technology, Economy, Health",
       "url": "https://events.rapporteur.com/event/info/global-europe-instrument-role-of-european-development-banks-in-delivering-eu-external-action/",
-      "description": "REGISTER HERE More information about the event is available here . As discussions on the European Union's next Multiannual Financial Framework (MFF) advance, development finance is emerging as a key pillar of the EU's external action. Against a backdrop of geopolitical uncertainty, growing investment needs and constrained public resources, the Joint European Financiers for International Cooperation (JEFIC) will convene a high-level discussion on the role of European development banks in delivering the Union's external action objectives. The event will bring together representatives of EU institutions, Member States, development finance institutions and other stakeholders to discuss how the E",
+      "description": "We have now reached full capacity and are unable to accommodate further registrations. More information about the event is available here . As discussions on the European Union's next Multiannual Financial Framework (MFF) advance, development finance is emerging as a key pillar of the EU's external action. Against a backdrop of geopolitical uncertainty, growing investment needs and constrained public resources, the Joint European Financiers for International Cooperation (JEFIC) will convene a high-level discussion on the role of European development banks in delivering the Union's external action objectives. The event will bring together representatives of EU institutions, Member States, dev",
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
@@ -1667,7 +1594,7 @@
       "venue": "",
       "category": "Politics, Enlargement",
       "url": "https://events.euronews.com/EU-Enlargement-Summit-2026/",
-      "description": "Euronews Enlargement Summit 2026 When: Tuesday, 3 November 2026 Time: Doors open at 11:00 am CEST Where: Autoworld Parc du Cinquantenaire 11 1000 Bruxelles The prospect of a larger European Union is moving from long-term ambition to an increasingly practical question. Candidate countries are advancing their bids for membership, while war, geopolitical competition and economic pressures are reshaping the conditions in which Enlargement must take place. On 3 November 2026 , the Euronews EU Enlargement Summit will bring together policymakers, political leaders, experts and business representatives in Brussels, with the debate broadcast live to Euronews audiences. The summit will examine what th",
+      "description": "Euronews Enlargement Summit 2026 When: Tuesday, 3 November 2026 Time: Doors open at 10:30am CEST Where: Autoworld Parc du Cinquantenaire 11 1000 Bruxelles The prospect of a larger European Union is moving from long-term ambition to an increasingly practical question. Candidate countries are advancing their bids for membership, while war, geopolitical competition and economic pressures are reshaping the conditions in which Enlargement must take place. On 3 November 2026 , the Euronews EU Enlargement Summit will bring together policymakers, political leaders, experts and business representatives in Brussels, with the debate broadcast live to Euronews audiences. The summit will examine what the",
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
@@ -1748,31 +1675,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "a79218710d72fbb0"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "Science that competes: Preparing Europe’s Biotech Ecosystem for Global Leadership",
-      "date": "2026-11-04",
-      "date_text": "November 4, 2026",
-      "end_date": "2026-11-04",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/science-that-competes-preparing-europes-biotech-ecosystem-for-global-leadership/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Bayer",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/science-that-competes-preparing-europes-biotech-ecosystem-for-global-leadership/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "2a40ded44781a88b"
     },
     {
       "organization": "The Parliament",
@@ -2124,23 +2026,6 @@
       "id": "2b895de7f0d502b7"
     },
     {
-      "organization": "POLITICO",
-      "title": "Pro Roundtable – Cyber",
-      "date": "2026-11-19",
-      "date_text": "November 19, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Agriculture and Food, Technology, Politics",
-      "url": "https://www.politico.eu/event/pro-roundtable-cyber/",
-      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany Spain US Australia Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Brussels Playbook Capitals Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Pla",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "c3b18f59fe4ecd4a"
-    },
-    {
       "organization": "The Parliament",
       "title": "2nd European Bioeconomy Conference",
       "date": "2026-11-19",
@@ -2206,6 +2091,38 @@
       "confidence": "high",
       "source_official": true,
       "id": "94df012ecaeede65"
+    },
+    {
+      "organization": "POLITICO",
+      "title": "POLITICO Health Care Summit 2026",
+      "date": "2026-12-01",
+      "date_text": "1–2 December 2026",
+      "end_date": "2026-12-02",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Health",
+      "url": "https://www.politico.eu/health-care-summit-2026/",
+      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany Spain US Australia Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Brussels Playbook Capitals Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Pla",
+      "sponsors": [
+        {
+          "name": "MedTech Europe",
+          "role": "Partner",
+          "source_url": "https://www.politico.eu/health-care-summit-2026/",
+          "extraction": "known-official-page",
+          "confidence": "high"
+        },
+        {
+          "name": "EFPIA",
+          "role": "Partner",
+          "source_url": "https://www.politico.eu/health-care-summit-2026/",
+          "extraction": "known-official-page",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "8c798c8412cf3203"
     },
     {
       "organization": "The Parliament",
@@ -2371,23 +2288,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "3953c20d36959c04"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "The Year Ahead",
-      "date": "2026-12-08",
-      "date_text": "December 8, 2026",
-      "end_date": "2026-12-08",
-      "time_text": "8:00 am",
-      "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "PM+ Talks",
-      "url": "https://events.theparliamentmagazine.eu/event/the-year-ahead/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "7d121b3ad912936a"
     },
     {
       "organization": "Rapporteur",
