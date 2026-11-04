@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-11-03T12:57:21+00:00",
+  "last_updated_utc": "2026-11-04T13:08:34+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -83,23 +83,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "ab55d13e89564730"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "EU Presidency Outlook: Cyprus",
-      "date": "2026-02-03",
-      "date_text": "February 3, 2026",
-      "end_date": "2026-02-03",
-      "time_text": "8:00 am",
-      "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "PM+ Talks",
-      "url": "https://events.theparliamentmagazine.eu/event/eu-presidency-outlook-cyprus/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "7eb7f7972daf1a58"
     },
     {
       "organization": "The Parliament",
@@ -708,38 +691,21 @@
       "id": "231d12a9c18ca3f1"
     },
     {
-      "organization": "Rapporteur",
-      "title": "Media Partnership - Baltic Energy Initiative – cooperation among energy companies from the Baltic Sea region",
-      "date": "2026-09-03",
-      "date_text": "03-09-2026",
+      "organization": "POLITICO",
+      "title": "Mansion House Preview: What to Expect From Rachel Reeves’ Defining Speech",
+      "date": "2026-07-13",
+      "date_text": "July 13, 2026",
       "end_date": "",
       "time_text": "",
-      "city": "Warsaw",
+      "city": "Brussels",
       "venue": "",
-      "category": "Awards, Energy and Environment, Technology",
-      "url": "https://events.rapporteur.com/event/info/baltic-energy-initiative-cooperation-among-energy-companies-from-the-baltic-sea-region/",
-      "description": "Register here Initiated by ORLEN, the Baltic Energy Initiative is intended to become a new regional platform for cooperation among energy companies from the Baltic Sea countries. Its aim is to create a common business voice towards the institutions of the European Union, strengthen cooperation in areas related to the energy transition and regional security, and give the Baltic Sea a stronger role in the European energy debate. The initiative is inspired by cooperation platforms already operating in other parts of Europe, such as the North Sea Wind Power Hub or the Observatoire Méditerranéen de l'Energie. By bringing together leading energy companies and infrastructure operators, the Baltic E",
+      "category": "Awards, Agriculture and Food, Technology",
+      "url": "https://www.politico.eu/event/mansion-house-preview-what-to-expect-from-rachel-reeves-defining-speech/",
+      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany Spain US Australia Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Brussels Playbook Capitals Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Pla",
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "b9e89c77d9bdb495"
-    },
-    {
-      "organization": "Rapporteur",
-      "title": "Media Partnership - Making Europe the New Silicon Valley of the World",
-      "date": "2026-09-07",
-      "date_text": "07-09-2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "The Merode",
-      "venue": "",
-      "category": "Technology, Digital, Economy",
-      "url": "https://events.rapporteur.com/event/info/media-partnership-making-europe-the-new-silicon-valley-of-the-world/",
-      "description": "Please note that this event is in-person only and will not be livestreamed. REGISTER HERE Summer is over and the policy calendar is starting to move again. With the Irish presidency putting competitiveness at the centre of its agenda through the One Europe, One Market roadmap, September is the moment to set priorities before the autumn dossiers pile up. Join EPICENTER, in media partnership with Euractiv, for an evening of drinks and discussion on what it would actually take for Europe to become a genuine hub for investment, innovation and talent. We're bringing together policymakers from the European Commission and Parliament, Brussels based think tanks and industry representatives who all h",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "71dc86b11716d90d"
+      "id": "607bd5a77a68ee6e"
     },
     {
       "organization": "Rapporteur",
@@ -1678,6 +1644,31 @@
     },
     {
       "organization": "The Parliament",
+      "title": "Science that competes: Preparing Europe’s Biotech Ecosystem for Global Leadership",
+      "date": "2026-11-04",
+      "date_text": "November 4, 2026",
+      "end_date": "2026-11-04",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "European Parliament, Brussels",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/science-that-competes-preparing-europes-biotech-ecosystem-for-global-leadership/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Bayer",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/science-that-competes-preparing-europes-biotech-ecosystem-for-global-leadership/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "2a40ded44781a88b"
+    },
+    {
+      "organization": "The Parliament",
       "title": "EU-Mercosur Forum 2026",
       "date": "2026-11-05",
       "date_text": "November 5, 2026",
@@ -1836,31 +1827,6 @@
       "id": "d1bb41dafddceaf7"
     },
     {
-      "organization": "The Parliament",
-      "title": "Hotel Europe: The Future Of Travel & Technology",
-      "date": "2026-11-16",
-      "date_text": "November 16, 2026",
-      "end_date": "2026-11-19",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "Bump Policy Experience Space",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/hotel-europe-the-future-of-travel-technology/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Booking",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/hotel-europe-the-future-of-travel-technology/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "a3ca6aafe3d02987"
-    },
-    {
       "organization": "Rapporteur",
       "title": "Ecosystems - Brussels buzzword or Europe’s best bet to scale?",
       "date": "2026-11-17",
@@ -1888,7 +1854,7 @@
       "venue": "",
       "category": "Health and Consumers, Digital, Economy",
       "url": "https://events.rapporteur.com/event/info/europes-life-sciences-competitiveness-agenda-innovation-investment-and-global-leadership-in-a-changing-world/",
-      "description": "REGISTER HERE Panel 1: The EU Biotech Act - Europe's opportunity to reclaim innovation leadership Time: 12:30 - 13:15 CET Europe's life sciences sector remains one of the continent's greatest scientific assets, yet concerns continue to grow over its ability to compete with increasingly attractive innovation ecosystems in the United States and Asia. Investment decisions, research activity and clinical development programmes are increasingly shaped by global competition, raising questions about whether Europe is providing the right conditions for innovators to develop and scale breakthrough technologies. The forthcoming EU Biotech Act is widely seen as an opportunity to strengthen Europe's pos",
+      "description": "REGISTER HERE Time: 12:30 - 12:45 KEYNOTE ADDRESS by Olivér Várhelyi, European Commissioner for Health and Animal Welfare --------------------------------------------------------------------------------------------- Time: 12:45 - 13:30 CET Panel 1: The EU Biotech Act - Europe's opportunity to reclaim innovation leadership Europe's life sciences sector remains one of the continent's greatest scientific assets, yet concerns continue to grow over its ability to compete with increasingly attractive innovation ecosystems in the United States and Asia. Investment decisions, research activity and clinical development programmes are increasingly shaped by global competition, raising questions about ",
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
@@ -2077,6 +2043,23 @@
     },
     {
       "organization": "Rapporteur",
+      "title": "Pro Briefing - The Hack",
+      "date": "2026-11-24",
+      "date_text": "24-11-2026",
+      "end_date": "",
+      "time_text": "12:30",
+      "city": "Online",
+      "venue": "",
+      "category": "Technology, Digital, Energy",
+      "url": "https://events.rapporteur.com/event/info/rapporteur-pro-briefing-the-hack-technology/",
+      "description": "This event is exclusive to Rapporteur The Hack newsletter subscribers. If you are interested in a trial, contact our Pro team here . This online event will offer an opportunity to deep-dive into EU policy with Rapporteur's Tech Editor, Natasha Lomas, and her team of reporters. You will hear their personal insights by interacting with them in a private, off-the-record setting. Don’t miss this exclusive opportunity to engage with our experts and deepen your understanding of critical tech policies....staying a step ahead! By invitation only. Location Online Schedule 12:30 - 13:30 CET Contact Laurine Augere Laurine.Augere@rapporteur.com Subscribe to Rapporteur events",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "fcaace56488cd628"
+    },
+    {
+      "organization": "Rapporteur",
       "title": "FIREPOWER: Europe’s Defence Investment Race",
       "date": "2026-11-30",
       "date_text": "30-11-2026",
@@ -2091,38 +2074,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "94df012ecaeede65"
-    },
-    {
-      "organization": "POLITICO",
-      "title": "POLITICO Health Care Summit 2026",
-      "date": "2026-12-01",
-      "date_text": "1–2 December 2026",
-      "end_date": "2026-12-02",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Health",
-      "url": "https://www.politico.eu/health-care-summit-2026/",
-      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany Spain US Australia Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Brussels Playbook Capitals Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Pla",
-      "sponsors": [
-        {
-          "name": "MedTech Europe",
-          "role": "Partner",
-          "source_url": "https://www.politico.eu/health-care-summit-2026/",
-          "extraction": "known-official-page",
-          "confidence": "high"
-        },
-        {
-          "name": "EFPIA",
-          "role": "Partner",
-          "source_url": "https://www.politico.eu/health-care-summit-2026/",
-          "extraction": "known-official-page",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "8c798c8412cf3203"
     },
     {
       "organization": "The Parliament",
@@ -2232,6 +2183,23 @@
     },
     {
       "organization": "Rapporteur",
+      "title": "Pro Briefing - Voltage",
+      "date": "2026-12-07",
+      "date_text": "07-12-2026",
+      "end_date": "",
+      "time_text": "12:30",
+      "city": "Online",
+      "venue": "",
+      "category": "Awards, Energy and Environment, Technology",
+      "url": "https://events.rapporteur.com/event/info/pro-briefing-voltage/",
+      "description": "This event is exclusive to Rapporteur Voltage newsletter subscribers. If you are interested in a trial, contact our Pro team here . This online event will offer an opportunity to deep-dive into EU policy with Rapporteur's EET Editor, Robert Hodgson, and his team of reporters. You will hear their personal insights by interacting with them in a private, off-the-record setting. Don’t miss this exclusive opportunity to engage with our experts and deepen your understanding of critical energy, environment & transport policies....staying a step ahead! By invitation only. Location Online Schedule 12:30 - 13:30 CET Contact Laurine Augere Laurine.Augere@rapporteur.com Subscribe to Rapporteur events",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "61be354316ae9d51"
+    },
+    {
+      "organization": "Rapporteur",
       "title": "How can the revised EU Standardisation Regulation strengthen Europe’s future competitiveness?",
       "date": "2026-12-08",
       "date_text": "08-12-2026",
@@ -2290,6 +2258,23 @@
       "id": "3953c20d36959c04"
     },
     {
+      "organization": "The Parliament",
+      "title": "The Year Ahead",
+      "date": "2026-12-08",
+      "date_text": "December 8, 2026",
+      "end_date": "2026-12-08",
+      "time_text": "8:00 am",
+      "city": "Brussels",
+      "venue": "European Parliament, Brussels",
+      "category": "PM+ Talks",
+      "url": "https://events.theparliamentmagazine.eu/event/the-year-ahead/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "7d121b3ad912936a"
+    },
+    {
       "organization": "Rapporteur",
       "title": "Media Partnership: Sovereignty Through Partnership: Trusted Technology in an Interconnected World",
       "date": "2026-12-09",
@@ -2305,6 +2290,23 @@
       "confidence": "high",
       "source_official": true,
       "id": "3421ca7ed37e702d"
+    },
+    {
+      "organization": "Rapporteur",
+      "title": "Pro Briefing - Harvest",
+      "date": "2026-12-09",
+      "date_text": "09-12-2026",
+      "end_date": "",
+      "time_text": "12:30",
+      "city": "Online",
+      "venue": "",
+      "category": "Agriculture and Food, Technology, Digital",
+      "url": "https://events.rapporteur.com/event/info/pro-briefing-harvest/",
+      "description": "This event is exclusive to Rapporteur Harvest newsletter subscribers. If you are interested in a trial, contact our Pro team here . This online event will offer an opportunity to deep-dive into EU policy with Rapporteur's Agrifood Editor, Angelo Di Mambro, and his team of reporters. You will hear their personal insights by interacting with them in a private, off-the-record setting. Don’t miss this exclusive opportunity to engage with our experts and deepen your understanding of critical agrifood policies....staying a step ahead! By invitation only. Location Online Schedule 12:30 - 13:30 CET Contact Laurine Augere Laurine.Augere@rapporteur.com Subscribe to Rapporteur events",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "b1873fc06ef871fe"
     },
     {
       "organization": "Rapporteur",
