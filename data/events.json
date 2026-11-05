@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-11-04T13:08:34+00:00",
+  "last_updated_utc": "2026-11-05T13:21:55+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -83,6 +83,23 @@
       "confidence": "high",
       "source_official": true,
       "id": "ab55d13e89564730"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "EU Presidency Outlook: Cyprus",
+      "date": "2026-02-03",
+      "date_text": "February 3, 2026",
+      "end_date": "2026-02-03",
+      "time_text": "8:00 am",
+      "city": "Brussels",
+      "venue": "European Parliament, Brussels",
+      "category": "PM+ Talks",
+      "url": "https://events.theparliamentmagazine.eu/event/eu-presidency-outlook-cyprus/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "7eb7f7972daf1a58"
     },
     {
       "organization": "The Parliament",
@@ -600,59 +617,6 @@
     },
     {
       "organization": "The Parliament",
-      "title": "MEP Awards 2026",
-      "date": "2026-06-30",
-      "date_text": "June 30, 2026",
-      "end_date": "2026-06-30",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "Albert Hall",
-      "category": "Awards",
-      "url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "MSD",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Coca Cola Europe",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Booking",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Microsoft",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        },
-        {
-          "name": "Camparigroup",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "44efd8422555acfc"
-    },
-    {
-      "organization": "The Parliament",
       "title": "EU Presidency Forum: Ireland",
       "date": "2026-07-02",
       "date_text": "July 2, 2026",
@@ -689,40 +653,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "231d12a9c18ca3f1"
-    },
-    {
-      "organization": "POLITICO",
-      "title": "Mansion House Preview: What to Expect From Rachel Reeves’ Defining Speech",
-      "date": "2026-07-13",
-      "date_text": "July 13, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Awards, Agriculture and Food, Technology",
-      "url": "https://www.politico.eu/event/mansion-house-preview-what-to-expect-from-rachel-reeves-defining-speech/",
-      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany Spain US Australia Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Brussels Playbook Capitals Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Pla",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "607bd5a77a68ee6e"
-    },
-    {
-      "organization": "Rapporteur",
-      "title": "Legal certainty and competitiveness - Is greater tax alignment needed in the EU?",
-      "date": "2026-09-08",
-      "date_text": "08-09-2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Rapporteur Office",
-      "venue": "",
-      "category": "Economy and Jobs, Technology, Digital",
-      "url": "https://events.rapporteur.com/event/info/legal-certainty-and-competitiveness-is-greater-tax-alignment-needed-in-the-eu/",
-      "description": "Please note that this event is in person only and will not be live-streamed. Taxation plays an important role in funding public services. Today, tax policy remains largely a national competence, with Member States determining how taxes are collected and used. The European Union’s fragmented tax rules are sometimes viewed as a challenge for competitiveness, as greater alignment could reduce administrative and economic costs. Harmonised tax rules may also support broader EU objectives by promoting fair competition for businesses, improving the functioning of the single market, and facilitating its further development. Progress toward tax harmonisation has been limited by two factors. First, de",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "c16fc33ab03dc198"
     },
     {
       "organization": "Rapporteur",
@@ -827,31 +757,6 @@
       "id": "1731638ed245d541"
     },
     {
-      "organization": "The Parliament",
-      "title": "Cepi Bioeconomy LAB: Bio-based products showcase",
-      "date": "2026-09-28",
-      "date_text": "September 28, 2026",
-      "end_date": "2026-09-28",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "House of Austrian Economy (AT60)",
-      "category": "Media Partner",
-      "url": "https://events.theparliamentmagazine.eu/event/cepi-bioeconomy-lab-bio-based-products-showcase/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Cepi",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/cepi-bioeconomy-lab-bio-based-products-showcase/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "49dfd56b095c641a"
-    },
-    {
       "organization": "Euronews",
       "title": "Euronews Travel & Tourism Summit 2026",
       "date": "2026-09-29",
@@ -918,31 +823,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "a679886dfc935715"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "Alzheimer’s in Europe: Turning innovation into patient access",
-      "date": "2026-09-30",
-      "date_text": "September 30, 2026",
-      "end_date": "2026-09-30",
-      "time_text": "8:00 am",
-      "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/alzheimers-in-europe-turning-innovation-into-patient-access/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "EFPIA",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/alzheimers-in-europe-turning-innovation-into-patient-access/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "6ef64aa77d5b1630"
     },
     {
       "organization": "The Parliament",
@@ -1644,31 +1524,6 @@
     },
     {
       "organization": "The Parliament",
-      "title": "Science that competes: Preparing Europe’s Biotech Ecosystem for Global Leadership",
-      "date": "2026-11-04",
-      "date_text": "November 4, 2026",
-      "end_date": "2026-11-04",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/science-that-competes-preparing-europes-biotech-ecosystem-for-global-leadership/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Bayer",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/science-that-competes-preparing-europes-biotech-ecosystem-for-global-leadership/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "2a40ded44781a88b"
-    },
-    {
-      "organization": "The Parliament",
       "title": "EU-Mercosur Forum 2026",
       "date": "2026-11-05",
       "date_text": "November 5, 2026",
@@ -1803,28 +1658,28 @@
     },
     {
       "organization": "The Parliament",
-      "title": "Unlocking the Potential of Biocontrol: Towards a Future-Proof, Science-Based Framework for European Agriculture",
-      "date": "2026-11-12",
-      "date_text": "November 12, 2026",
-      "end_date": "2026-11-12",
+      "title": "Hotel Europe: The Future Of Travel & Technology",
+      "date": "2026-11-16",
+      "date_text": "November 16, 2026",
+      "end_date": "2026-11-19",
       "time_text": "",
       "city": "Brussels",
-      "venue": "European Parliament, Brussels",
+      "venue": "Bump Policy Experience Space",
       "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/unlocking-the-potential-of-biocontrol-towards-a-future-proof-science-based-framework-for-european-agriculture/",
+      "url": "https://events.theparliamentmagazine.eu/event/hotel-europe-the-future-of-travel-technology/",
       "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
       "sponsors": [
         {
-          "name": "Corteva",
+          "name": "Booking",
           "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/unlocking-the-potential-of-biocontrol-towards-a-future-proof-science-based-framework-for-european-agriculture/",
-          "extraction": "auto-section-link-domain",
+          "source_url": "https://events.theparliamentmagazine.eu/event/hotel-europe-the-future-of-travel-technology/",
+          "extraction": "auto-section-logo",
           "confidence": "high"
         }
       ],
       "confidence": "high",
       "source_official": true,
-      "id": "d1bb41dafddceaf7"
+      "id": "a3ca6aafe3d02987"
     },
     {
       "organization": "Rapporteur",
@@ -2076,6 +1931,55 @@
       "id": "94df012ecaeede65"
     },
     {
+      "organization": "POLITICO",
+      "title": "POLITICO Health Care Summit 2026",
+      "date": "2026-12-01",
+      "date_text": "1–2 December 2026",
+      "end_date": "2026-12-02",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Health",
+      "url": "https://www.politico.eu/health-care-summit-2026/",
+      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany Spain US Australia Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Brussels Playbook Capitals Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Pla",
+      "sponsors": [
+        {
+          "name": "MedTech Europe",
+          "role": "Partner",
+          "source_url": "https://www.politico.eu/health-care-summit-2026/",
+          "extraction": "known-official-page",
+          "confidence": "high"
+        },
+        {
+          "name": "EFPIA",
+          "role": "Partner",
+          "source_url": "https://www.politico.eu/health-care-summit-2026/",
+          "extraction": "known-official-page",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "8c798c8412cf3203"
+    },
+    {
+      "organization": "Rapporteur",
+      "title": "Media Partnership: The Resilience of the Future Tax Base, and Tax & Circular Economy Symposium",
+      "date": "2026-12-01",
+      "date_text": "01-12-2026",
+      "end_date": "",
+      "time_text": "12:30",
+      "city": "Hybrid",
+      "venue": "",
+      "category": "Technology, Economy, Health",
+      "url": "https://events.rapporteur.com/event/info/the-resilience-of-the-future-tax-base-tax-circular-economy-symposium/",
+      "description": "REGISTER HERE Tax systems play a vital role in shaping economies and society. Major trends, including demographic change, climate risks, the adoption of artificial intelligence, and declining multilateralism are transforming economic activity and the future of tax revenues. The European Business Tax Forum (EBTF) and The Ex’tax Project Foundation invite you to explore how tax frameworks can respond to these developments while supporting Europe’s long-term competitiveness and resilience. The event brings together senior policy makers, business leaders, and fiscal experts for two complementary sessions. Resilience of the Future Tax Base | 12:30-14:15 CET The first session will feature the launc",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "65ed2dd514b958fc"
+    },
+    {
       "organization": "The Parliament",
       "title": "Building Europe’s digital autonomy: Balancing sovereignty, scale and openness",
       "date": "2026-12-01",
@@ -2099,31 +2003,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "96e8090abb6e7deb"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "Making the PPWR work: A reality check on implementation, competitiveness and the consumer impact",
-      "date": "2026-12-01",
-      "date_text": "December 1, 2026",
-      "end_date": "2026-12-01",
-      "time_text": "8:00 am",
-      "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/making-the-ppwr-work-a-reality-check-on-implementation-competitiveness-and-the-consumer-impact/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Unesda",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/making-the-ppwr-work-a-reality-check-on-implementation-competitiveness-and-the-consumer-impact/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "ad9a510f7246d91d"
     },
     {
       "organization": "Rapporteur",
@@ -2231,31 +2110,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "dd26544ead4c1180"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "Insects for Europe: A blueprint for EU leadership in a circular bioeconomy",
-      "date": "2026-12-08",
-      "date_text": "December 8, 2026",
-      "end_date": "2026-12-08",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "Media Partner",
-      "url": "https://events.theparliamentmagazine.eu/event/insects-for-europe-a-blueprint-for-eu-leadership-in-a-circular-bioeconomy/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Ipiff",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/insects-for-europe-a-blueprint-for-eu-leadership-in-a-circular-bioeconomy/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "3953c20d36959c04"
     },
     {
       "organization": "The Parliament",
