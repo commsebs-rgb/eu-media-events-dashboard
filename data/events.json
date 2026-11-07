@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-11-06T13:06:08+00:00",
+  "last_updated_utc": "2026-11-07T11:53:29+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -1366,6 +1366,31 @@
     },
     {
       "organization": "The Parliament",
+      "title": "Science that competes: Preparing Europe’s Biotech Ecosystem for Global Leadership",
+      "date": "2026-11-04",
+      "date_text": "November 4, 2026",
+      "end_date": "2026-11-04",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "European Parliament, Brussels",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/science-that-competes-preparing-europes-biotech-ecosystem-for-global-leadership/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Bayer",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/science-that-competes-preparing-europes-biotech-ecosystem-for-global-leadership/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "2a40ded44781a88b"
+    },
+    {
+      "organization": "The Parliament",
       "title": "EU-Mercosur Forum 2026",
       "date": "2026-11-05",
       "date_text": "November 5, 2026",
@@ -1500,6 +1525,31 @@
     },
     {
       "organization": "The Parliament",
+      "title": "Unlocking the Potential of Biocontrol: Towards a Future-Proof, Science-Based Framework for European Agriculture",
+      "date": "2026-11-12",
+      "date_text": "November 12, 2026",
+      "end_date": "2026-11-12",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "European Parliament, Brussels",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/unlocking-the-potential-of-biocontrol-towards-a-future-proof-science-based-framework-for-european-agriculture/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Corteva",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/unlocking-the-potential-of-biocontrol-towards-a-future-proof-science-based-framework-for-european-agriculture/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "d1bb41dafddceaf7"
+    },
+    {
+      "organization": "The Parliament",
       "title": "Hotel Europe: The Future Of Travel & Technology",
       "date": "2026-11-16",
       "date_text": "November 16, 2026",
@@ -1583,6 +1633,70 @@
       "id": "dc9687144b9fc867"
     },
     {
+      "organization": "The Parliament",
+      "title": "Startup Acquisitions and European Growth: The Role of M&A in Scaling Companies",
+      "date": "2026-11-17",
+      "date_text": "November 17, 2026",
+      "end_date": "2026-11-17",
+      "time_text": "8:30 am",
+      "city": "Brussels",
+      "venue": "European Parliament, Brussels",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/startup-acquisitions-and-european-growth-the-role-of-ma-in-scaling-companies/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Screenshot",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/startup-acquisitions-and-european-growth-the-role-of-ma-in-scaling-companies/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Aboutamazon",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/startup-acquisitions-and-european-growth-the-role-of-ma-in-scaling-companies/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "212fab235e7099ab"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "The Science behind Recreational Nicotine Products: Examining the Evidence for the Next Generation of European Health Policy",
+      "date": "2026-11-17",
+      "date_text": "November 17, 2026",
+      "end_date": "2026-11-17",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "European Parliament, Brussels",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/the-science-of-nicotine-evidence-for-the-next-generation-of-european-health-policy/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Network",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/the-science-of-nicotine-evidence-for-the-next-generation-of-european-health-policy/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Kenvue",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/the-science-of-nicotine-evidence-for-the-next-generation-of-european-health-policy/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "de5e4522a02ef706"
+    },
+    {
       "organization": "Rapporteur",
       "title": "From ambition to action - Is the Critical Raw Materials Act delivering for nickel?",
       "date": "2026-11-18",
@@ -1648,6 +1762,31 @@
       "confidence": "high",
       "source_official": true,
       "id": "659b07da2dbfb200"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "Should journalists be afraid of content creators?",
+      "date": "2026-11-23",
+      "date_text": "November 23, 2026",
+      "end_date": "2026-11-23",
+      "time_text": "6:30 pm",
+      "city": "Brussels",
+      "venue": "The Merode",
+      "category": "PM+ Talks",
+      "url": "https://events.theparliamentmagazine.eu/event/pmtalks-should-journalists-be-afraid-of-content-creators/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Themerode",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/pmtalks-should-journalists-be-afraid-of-content-creators/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "72704044c6764099"
     },
     {
       "organization": "Rapporteur",
@@ -2015,6 +2154,31 @@
       "confidence": "high",
       "source_official": true,
       "id": "1a0cf628cd0c9c0a"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "Putting Menopause on the Map: From National Action to European Impact",
+      "date": "2026-12-10",
+      "date_text": "December 10, 2026",
+      "end_date": "2026-12-10",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "Blankspace Brussels",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/putting-menopause-on-the-map-from-national-action-to-european-impact/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Besins Healthcare",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/putting-menopause-on-the-map-from-national-action-to-european-impact/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "ee7b301019c9a659"
     }
   ]
 }
