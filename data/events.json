@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-11-08T12:05:11+00:00",
+  "last_updated_utc": "2026-11-09T14:04:28+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -428,6 +428,31 @@
       "confidence": "high",
       "source_official": true,
       "id": "db31efcd44690c58"
+    },
+    {
+      "organization": "POLITICO",
+      "title": "AI and future of work: Is the EU prepared for the transition?",
+      "date": "2026-06-29",
+      "date_text": "June 29, 2026",
+      "end_date": "",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Agriculture and Food, Technology, Digital",
+      "url": "https://www.politico.eu/event/ai-and-future-of-work/",
+      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany Spain US Australia Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Brussels Playbook Capitals Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Pla",
+      "sponsors": [
+        {
+          "name": "OpenAI",
+          "role": "Sponsor / partner",
+          "source_url": "https://www.politico.eu/event/ai-and-future-of-work/",
+          "extraction": "auto-section-logo",
+          "confidence": "medium"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "714fd6ff0b503607"
     },
     {
       "organization": "The Parliament",
@@ -1500,6 +1525,31 @@
     },
     {
       "organization": "The Parliament",
+      "title": "The future of medical technology in Europe: Innovation, access and trust",
+      "date": "2026-11-10",
+      "date_text": "November 10, 2026",
+      "end_date": "2026-11-10",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "European Parliament, Brussels",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/the-future-of-medical-technology-in-europe-innovation-access-and-trust/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "MedTech Europe",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/the-future-of-medical-technology-in-europe-innovation-access-and-trust/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "74c7fa814922c065"
+    },
+    {
+      "organization": "The Parliament",
       "title": "Unlocking the Potential of Biocontrol: Towards a Future-Proof, Science-Based Framework for European Agriculture",
       "date": "2026-11-12",
       "date_text": "November 12, 2026",
@@ -1737,31 +1787,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "659b07da2dbfb200"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "Should journalists be afraid of content creators?",
-      "date": "2026-11-23",
-      "date_text": "November 23, 2026",
-      "end_date": "2026-11-23",
-      "time_text": "6:30 pm",
-      "city": "Brussels",
-      "venue": "The Merode",
-      "category": "PM+ Talks",
-      "url": "https://events.theparliamentmagazine.eu/event/pmtalks-should-journalists-be-afraid-of-content-creators/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Themerode",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/pmtalks-should-journalists-be-afraid-of-content-creators/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "72704044c6764099"
     },
     {
       "organization": "Rapporteur",
