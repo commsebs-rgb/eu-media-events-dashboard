@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-11-09T14:04:28+00:00",
+  "last_updated_utc": "2026-11-10T13:38:19+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -24,6 +24,31 @@
     "Sponsor confidence is high for manual entries, medium for labelled text/logo extraction, and low for affiliation/programme inference."
   ],
   "events": [
+    {
+      "organization": "POLITICO",
+      "title": "Back in the game? Europe’s race for digital leadership",
+      "date": "2026-01-27",
+      "date_text": "January 27, 2026",
+      "end_date": "",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Digital",
+      "url": "https://www.politico.eu/event/back-in-the-game-europes-race-for-digital-leadership/",
+      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany Spain US Australia Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Brussels Playbook Capitals Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Pla",
+      "sponsors": [
+        {
+          "name": "Connect Europe",
+          "role": "Sponsor / partner",
+          "source_url": "https://www.politico.eu/event/back-in-the-game-europes-race-for-digital-leadership/",
+          "extraction": "auto-section-logo",
+          "confidence": "medium"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "c73c0e47a4301ae1"
+    },
     {
       "organization": "The Parliament",
       "title": "APA Awards 2026",
@@ -428,6 +453,23 @@
       "confidence": "high",
       "source_official": true,
       "id": "db31efcd44690c58"
+    },
+    {
+      "organization": "POLITICO",
+      "title": "AperoPro: The incoming Irish Presidency of the Council of the EU",
+      "date": "2026-06-17",
+      "date_text": "June 17, 2026",
+      "end_date": "",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Agriculture and Food, Technology, Digital",
+      "url": "https://www.politico.eu/event/aperopro-the-incoming-irish-presidency-of-the-council-of-the-eu/",
+      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany Spain US Australia Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Brussels Playbook Capitals Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Pla",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "8fc2194b29467423"
     },
     {
       "organization": "POLITICO",
@@ -919,56 +961,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "8d502088ad488120"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "EU – Brazil: Trusted Industrial Partnership for a competitive sustainable economy",
-      "date": "2026-10-13",
-      "date_text": "October 13, 2026",
-      "end_date": "2026-10-13",
-      "time_text": "6:30 pm",
-      "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/eu-brazil-trusted-industrial-partnership-for-a-competitive-sustainable-economy/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Apexbrasil",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/eu-brazil-trusted-industrial-partnership-for-a-competitive-sustainable-economy/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "dcff4ab4c28a1184"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "How bold can Europe be? Delivering on the Biotech Act for clinical trials",
-      "date": "2026-10-13",
-      "date_text": "October 13, 2026",
-      "end_date": "2026-10-13",
-      "time_text": "12:00 pm",
-      "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/how-bold-can-europe-be-delivering-on-the-biotech-act-for-clinical-trials/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Lilly",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/how-bold-can-europe-be-delivering-on-the-biotech-act-for-clinical-trials/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "b8ba053783fe4a10"
     },
     {
       "organization": "Rapporteur",
@@ -1500,56 +1492,6 @@
     },
     {
       "organization": "The Parliament",
-      "title": "Staying Ahead of Fraud: Real Stories, Emerging Threats and Europe’s Response",
-      "date": "2026-11-10",
-      "date_text": "November 10, 2026",
-      "end_date": "2026-11-10",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/staying-ahead-of-fraud-real-stories-emerging-threats-and-europes-response/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Visa",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/staying-ahead-of-fraud-real-stories-emerging-threats-and-europes-response/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "41e7d7ea28e459a4"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "The future of medical technology in Europe: Innovation, access and trust",
-      "date": "2026-11-10",
-      "date_text": "November 10, 2026",
-      "end_date": "2026-11-10",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/the-future-of-medical-technology-in-europe-innovation-access-and-trust/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "MedTech Europe",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/the-future-of-medical-technology-in-europe-innovation-access-and-trust/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "74c7fa814922c065"
-    },
-    {
-      "organization": "The Parliament",
       "title": "Unlocking the Potential of Biocontrol: Towards a Future-Proof, Science-Based Framework for European Agriculture",
       "date": "2026-11-12",
       "date_text": "November 12, 2026",
@@ -1789,6 +1731,31 @@
       "id": "659b07da2dbfb200"
     },
     {
+      "organization": "The Parliament",
+      "title": "Should journalists be afraid of content creators?",
+      "date": "2026-11-23",
+      "date_text": "November 23, 2026",
+      "end_date": "2026-11-23",
+      "time_text": "6:30 pm",
+      "city": "Brussels",
+      "venue": "The Merode",
+      "category": "PM+ Talks",
+      "url": "https://events.theparliamentmagazine.eu/event/pmtalks-should-journalists-be-afraid-of-content-creators/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Themerode",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/pmtalks-should-journalists-be-afraid-of-content-creators/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "72704044c6764099"
+    },
+    {
       "organization": "Rapporteur",
       "title": "Pro Briefing - The Hack",
       "date": "2026-11-24",
@@ -1949,7 +1916,7 @@
       "venue": "",
       "category": "Awards, Energy and Environment, Technology",
       "url": "https://events.rapporteur.com/event/info/energy-environment-policy-conference-2026/",
-      "description": "Building a clean future for Europe REGISTER HERE 09:30 - 10:00 KEYNOTE ADDRESS: Europe’s Energy Transition: Balancing Competitiveness, Security, Climate As Europe enters a new political and economic cycle, the pressure is growing to reconcile climate ambition with industrial competitiveness and energy security. From geopolitical tensions and volatile energy markets to rising global competition, policymakers and businesses are navigating an increasingly complex landscape. At the same time, the clean transition is moving from targets and announcements to implementation, with increasing pressure to simplify rules, accelerate investment, and maintain public support. Against this backdrop, this e",
+      "description": "Building a clean future for Europe REGISTER HERE 09:30 - 09:40 KEYNOTE ADDRESS: Europe’s Energy Transition: Balancing Competitiveness, Security, Climate As Europe enters a new political and economic cycle, the pressure is growing to reconcile climate ambition with industrial competitiveness and energy security. From geopolitical tensions and volatile energy markets to rising global competition, policymakers and businesses are navigating an increasingly complex landscape. At the same time, the clean transition is moving from targets and announcements to implementation, with increasing pressure to simplify rules, accelerate investment, and maintain public support. Against this backdrop, this e",
       "sponsors": [
         {
           "name": "MOL Group",
