@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-11-10T13:38:19+00:00",
+  "last_updated_utc": "2026-11-11T12:52:46+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -24,31 +24,6 @@
     "Sponsor confidence is high for manual entries, medium for labelled text/logo extraction, and low for affiliation/programme inference."
   ],
   "events": [
-    {
-      "organization": "POLITICO",
-      "title": "Back in the game? Europe’s race for digital leadership",
-      "date": "2026-01-27",
-      "date_text": "January 27, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Digital",
-      "url": "https://www.politico.eu/event/back-in-the-game-europes-race-for-digital-leadership/",
-      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany Spain US Australia Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Brussels Playbook Capitals Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Pla",
-      "sponsors": [
-        {
-          "name": "Connect Europe",
-          "role": "Sponsor / partner",
-          "source_url": "https://www.politico.eu/event/back-in-the-game-europes-race-for-digital-leadership/",
-          "extraction": "auto-section-logo",
-          "confidence": "medium"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "c73c0e47a4301ae1"
-    },
     {
       "organization": "The Parliament",
       "title": "APA Awards 2026",
@@ -455,48 +430,6 @@
       "id": "db31efcd44690c58"
     },
     {
-      "organization": "POLITICO",
-      "title": "AperoPro: The incoming Irish Presidency of the Council of the EU",
-      "date": "2026-06-17",
-      "date_text": "June 17, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Agriculture and Food, Technology, Digital",
-      "url": "https://www.politico.eu/event/aperopro-the-incoming-irish-presidency-of-the-council-of-the-eu/",
-      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany Spain US Australia Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Brussels Playbook Capitals Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Pla",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "8fc2194b29467423"
-    },
-    {
-      "organization": "POLITICO",
-      "title": "AI and future of work: Is the EU prepared for the transition?",
-      "date": "2026-06-29",
-      "date_text": "June 29, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Agriculture and Food, Technology, Digital",
-      "url": "https://www.politico.eu/event/ai-and-future-of-work/",
-      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany Spain US Australia Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Brussels Playbook Capitals Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Pla",
-      "sponsors": [
-        {
-          "name": "OpenAI",
-          "role": "Sponsor / partner",
-          "source_url": "https://www.politico.eu/event/ai-and-future-of-work/",
-          "extraction": "auto-section-logo",
-          "confidence": "medium"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "714fd6ff0b503607"
-    },
-    {
       "organization": "The Parliament",
       "title": "MEP Awards 2026",
       "date": "2026-06-30",
@@ -604,23 +537,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "4e0c0de09b455e15"
-    },
-    {
-      "organization": "Rapporteur",
-      "title": "Media Partnership - PKEE Energy Day 2026 - How to Restore EU Competitiveness and Strengthen Economic Resilience?",
-      "date": "2026-09-09",
-      "date_text": "09-09-2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Solvay Library",
-      "venue": "",
-      "category": "Awards, Energy and Environment, Technology",
-      "url": "https://events.rapporteur.com/event/info/media-partnership-pkee-energy-day-2026-how-to-restore-eu-competitiveness-and-strengthen-economic-resilience/",
-      "description": "REGISTER HERE Please note that this event is in-person only and will not be livestreamed. Europe is entering a defining phase of its energy transition. As the European Union seeks to strengthen its competitiveness, enhance economic resilience and deliver on its climate and energy objectives, policymakers and industry leaders face increasingly complex choices. Geopolitical uncertainty, growing global competition, rising investment needs and the imperative to ensure affordable, secure and sustainable energy are reshaping the debate on Europe's future development model. PKEE Energy Day 2026 will take place at this pivotal moment. Hosted by the Polish Electricity Association (PKEE), it will take",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "5a8b9d556074d635"
     },
     {
       "organization": "Rapporteur",
@@ -1018,56 +934,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "9655c86d9bd3242b"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "Global Outlook – European Energy Perspective",
-      "date": "2026-10-20",
-      "date_text": "October 20, 2026",
-      "end_date": "2026-10-20",
-      "time_text": "",
-      "city": "Strasbourg",
-      "venue": "European Parliament, Strasbourg",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/global-outlook-european-energy-perspective/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Exxonmobil",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/global-outlook-european-energy-perspective/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "f0754c73053dc2b2"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "How can Europe lead in cloud and AI? Building policy, power and trust",
-      "date": "2026-10-20",
-      "date_text": "October 20, 2026",
-      "end_date": "2026-10-20",
-      "time_text": "",
-      "city": "Strasbourg",
-      "venue": "European Parliament, Strasbourg",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/how-can-europe-lead-in-cloud-and-ai-building-policy-power-and-trust/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Microsoft",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/how-can-europe-lead-in-cloud-and-ai-building-policy-power-and-trust/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "64edabfcca2f1a11"
     },
     {
       "organization": "Logos",
@@ -1492,6 +1358,56 @@
     },
     {
       "organization": "The Parliament",
+      "title": "Staying Ahead of Fraud: Real Stories, Emerging Threats and Europe’s Response",
+      "date": "2026-11-10",
+      "date_text": "November 10, 2026",
+      "end_date": "2026-11-10",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "European Parliament, Brussels",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/staying-ahead-of-fraud-real-stories-emerging-threats-and-europes-response/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Visa",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/staying-ahead-of-fraud-real-stories-emerging-threats-and-europes-response/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "41e7d7ea28e459a4"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "The future of medical technology in Europe: Innovation, access and trust",
+      "date": "2026-11-10",
+      "date_text": "November 10, 2026",
+      "end_date": "2026-11-10",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "European Parliament, Brussels",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/the-future-of-medical-technology-in-europe-innovation-access-and-trust/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "MedTech Europe",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/the-future-of-medical-technology-in-europe-innovation-access-and-trust/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "74c7fa814922c065"
+    },
+    {
+      "organization": "The Parliament",
       "title": "Unlocking the Potential of Biocontrol: Towards a Future-Proof, Science-Based Framework for European Agriculture",
       "date": "2026-11-12",
       "date_text": "November 12, 2026",
@@ -1573,31 +1489,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "ea2243328160f13c"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "Energy Infrastructure for Europe’s Next Decade: Delivering Decarbonisation, Competitiveness and Resilience through the Mediterranean",
-      "date": "2026-11-17",
-      "date_text": "November 17, 2026",
-      "end_date": "2026-11-17",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/infrastructure-for-europes-next-decade-delivering-decarbonisation-competitiveness-and-resilience-through-southeast-europe/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "DESFA",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/infrastructure-for-europes-next-decade-delivering-decarbonisation-competitiveness-and-resilience-through-southeast-europe/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "dc9687144b9fc867"
     },
     {
       "organization": "The Parliament",
@@ -1766,7 +1657,7 @@
       "venue": "",
       "category": "Technology, Digital, Energy",
       "url": "https://events.rapporteur.com/event/info/rapporteur-pro-briefing-the-hack-technology/",
-      "description": "This event is exclusive to Rapporteur The Hack newsletter subscribers. If you are interested in a trial, contact our Pro team here . This online event will offer an opportunity to deep-dive into EU policy with Rapporteur's Tech Editor, Natasha Lomas, and her team of reporters. You will hear their personal insights by interacting with them in a private, off-the-record setting. Don’t miss this exclusive opportunity to engage with our experts and deepen your understanding of critical tech policies....staying a step ahead! By invitation only. Location Online Schedule 12:30 - 13:30 CET Contact Laurine Augere Laurine.Augere@rapporteur.com Subscribe to Rapporteur events",
+      "description": "This event is exclusive to Rapporteur The Hack newsletter subscribers. If you are interested in a trial, contact our Pro team here . This online event will offer an opportunity to deep-dive into EU policy with Rapporteur's Tech Editor, Natasha Lomas, and her team of reporters. You will hear their personal insights by interacting with them in a private, off-the-record setting. Don’t miss this exclusive opportunity to engage with our experts and deepen your understanding of critical tech policies....staying a step ahead! By invitation only. Join the debate! Location Online Schedule 12:30 - 13:30 CET Contact Laurine Augere Laurine.Augere@rapporteur.com Subscribe to Rapporteur events",
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
@@ -1788,38 +1679,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "94df012ecaeede65"
-    },
-    {
-      "organization": "POLITICO",
-      "title": "POLITICO Health Care Summit 2026",
-      "date": "2026-12-01",
-      "date_text": "1–2 December 2026",
-      "end_date": "2026-12-02",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Health",
-      "url": "https://www.politico.eu/health-care-summit-2026/",
-      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany Spain US Australia Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Brussels Playbook Capitals Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Pla",
-      "sponsors": [
-        {
-          "name": "MedTech Europe",
-          "role": "Partner",
-          "source_url": "https://www.politico.eu/health-care-summit-2026/",
-          "extraction": "known-official-page",
-          "confidence": "high"
-        },
-        {
-          "name": "EFPIA",
-          "role": "Partner",
-          "source_url": "https://www.politico.eu/health-care-summit-2026/",
-          "extraction": "known-official-page",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "8c798c8412cf3203"
     },
     {
       "organization": "Rapporteur",
@@ -1989,7 +1848,7 @@
       "venue": "",
       "category": "Economy and Jobs, Technology, Digital",
       "url": "https://events.rapporteur.com/event/info/media-partnership-annual-eu-civil-justice-conference/",
-      "description": "REGISTER HERE The EU’s civil justice and liability framework is entering a decisive phase, with major implications for legal certainty, risk allocation, the competitiveness of European economic operators and the functioning of the Single Market. The revised Product Liability Directive (PLD) and the Representative Actions Directive (RAD), together with the intensifying debate over unregulated Third-Party Litigation Funding (TPLF), are reshaping the balance between litigation risk, consumer protection and business exposure across the Union. The reforms coincide with the EU’s renewed prioritisation of Competitiveness, Simplification and Better Regulation, raising the question of whether the EU’",
+      "description": "REGISTER HERE The EU’s civil justice and liability framework is entering a decisive phase. The revised Product Liability Directive (PLD), the Representative Actions Directive (RAD) and the debate on Third-Party Litigation Funding (TPLF) are reshaping the balance between consumer protection and business exposure. The reforms come as the EU makes competitiveness, simplification and better regulation its political priority. The central question is whether the cumulative effect of new liability rules is compatible with the EU’s ambition to reduce regulatory burden and strengthen innovation. The economic stakes are significant. ECIPE estimates that the revised PLD could reduce EU GDP by 0.17–0.24",
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
@@ -2121,6 +1980,23 @@
       "confidence": "high",
       "source_official": true,
       "id": "1a0cf628cd0c9c0a"
+    },
+    {
+      "organization": "Rapporteur",
+      "title": "Media Partnership - Powering Europe: Baltic Sea Offshore Wind Momentum",
+      "date": "2026-12-10",
+      "date_text": "10-12-2026",
+      "end_date": "",
+      "time_text": "",
+      "city": "Permanent Representation of Poland to the EU",
+      "venue": "",
+      "category": "Awards, Energy and Environment, Technology",
+      "url": "https://events.rapporteur.com/event/info/media-partnership-powering-europe-baltic-sea-offshore-wind-momentum/",
+      "description": "REGISTER HERE The development of offshore wind in the Baltic Sea is a regional endeavour, extending beyond individual projects and national markets. With estimated offshore wind potential of around 93 GW, the Baltic Sea offers a major opportunity to advance Europe’s energy transition and strengthen energy security. Turning this potential into operational capacity will require cross-border cooperation, strategic partnerships and a resilient energy system. Poland’s plans for up to 18 GW of offshore wind capacity by 2040 are central to this regional ambition. PGE Polska Grupa Energetyczna holds the country’s largest offshore wind development portfolio, with contracts for difference secured for ",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "091df819cbd064eb"
     },
     {
       "organization": "The Parliament",
