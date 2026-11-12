@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-11-11T12:52:46+00:00",
+  "last_updated_utc": "2026-11-12T13:56:03+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -24,6 +24,31 @@
     "Sponsor confidence is high for manual entries, medium for labelled text/logo extraction, and low for affiliation/programme inference."
   ],
   "events": [
+    {
+      "organization": "POLITICO",
+      "title": "Back in the game? Europe’s race for digital leadership",
+      "date": "2026-01-27",
+      "date_text": "January 27, 2026",
+      "end_date": "",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Digital",
+      "url": "https://www.politico.eu/event/back-in-the-game-europes-race-for-digital-leadership/",
+      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany Spain US Australia Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Brussels Playbook Capitals Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Pla",
+      "sponsors": [
+        {
+          "name": "Connect Europe",
+          "role": "Sponsor / partner",
+          "source_url": "https://www.politico.eu/event/back-in-the-game-europes-race-for-digital-leadership/",
+          "extraction": "auto-section-logo",
+          "confidence": "medium"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "c73c0e47a4301ae1"
+    },
     {
       "organization": "The Parliament",
       "title": "APA Awards 2026",
@@ -398,6 +423,40 @@
       "id": "91b1d99f837e50f5"
     },
     {
+      "organization": "POLITICO",
+      "title": "Brüssel-Alumni Stammtisch – Special Edition",
+      "date": "2026-06-04",
+      "date_text": "June 4, 2026",
+      "end_date": "",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Agriculture and Food, Technology, Digital",
+      "url": "https://www.politico.eu/event/brussel-alumni-stammtisch/",
+      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany Spain US Australia Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Brussels Playbook Capitals Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Pla",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "5d9025f06ec1e9a1"
+    },
+    {
+      "organization": "POLITICO",
+      "title": "POLITICO Pro Petit-Déjeuner – Budget 2027 : est-ce que ça va (vraiment) mal finir ?",
+      "date": "2026-06-10",
+      "date_text": "2026-10-06T08:15:00+00:00",
+      "end_date": "",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Agriculture and Food, Technology, Digital",
+      "url": "https://www.politico.eu/event/budget-2027-est-ce-que-ca-va-vraiment-mal-finir/",
+      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany Spain US Australia Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Brussels Playbook Capitals Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Pla",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "8eaade38dbfae217"
+    },
+    {
       "organization": "The Parliament",
       "title": "European Biotech Forum 2026",
       "date": "2026-06-11",
@@ -428,6 +487,48 @@
       "confidence": "high",
       "source_official": true,
       "id": "db31efcd44690c58"
+    },
+    {
+      "organization": "POLITICO",
+      "title": "AperoPro: The incoming Irish Presidency of the Council of the EU",
+      "date": "2026-06-17",
+      "date_text": "June 17, 2026",
+      "end_date": "",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Agriculture and Food, Technology, Digital",
+      "url": "https://www.politico.eu/event/aperopro-the-incoming-irish-presidency-of-the-council-of-the-eu/",
+      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany Spain US Australia Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Brussels Playbook Capitals Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Pla",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "8fc2194b29467423"
+    },
+    {
+      "organization": "POLITICO",
+      "title": "AI and future of work: Is the EU prepared for the transition?",
+      "date": "2026-06-29",
+      "date_text": "June 29, 2026",
+      "end_date": "",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Agriculture and Food, Technology, Digital",
+      "url": "https://www.politico.eu/event/ai-and-future-of-work/",
+      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany Spain US Australia Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Brussels Playbook Capitals Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Pla",
+      "sponsors": [
+        {
+          "name": "OpenAI",
+          "role": "Sponsor / partner",
+          "source_url": "https://www.politico.eu/event/ai-and-future-of-work/",
+          "extraction": "auto-section-logo",
+          "confidence": "medium"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "714fd6ff0b503607"
     },
     {
       "organization": "The Parliament",
@@ -1345,7 +1446,7 @@
       "date": "2026-11-10",
       "date_text": "November 10, 2026",
       "end_date": "2026-11-10",
-      "time_text": "",
+      "time_text": "6:30 pm",
       "city": "Brussels",
       "venue": "European Parliament, Brussels",
       "category": "Policy Events",
@@ -1408,31 +1509,6 @@
     },
     {
       "organization": "The Parliament",
-      "title": "Unlocking the Potential of Biocontrol: Towards a Future-Proof, Science-Based Framework for European Agriculture",
-      "date": "2026-11-12",
-      "date_text": "November 12, 2026",
-      "end_date": "2026-11-12",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/unlocking-the-potential-of-biocontrol-towards-a-future-proof-science-based-framework-for-european-agriculture/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Corteva",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/unlocking-the-potential-of-biocontrol-towards-a-future-proof-science-based-framework-for-european-agriculture/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "d1bb41dafddceaf7"
-    },
-    {
-      "organization": "The Parliament",
       "title": "Hotel Europe: The Future Of Travel & Technology",
       "date": "2026-11-16",
       "date_text": "November 16, 2026",
@@ -1489,6 +1565,31 @@
       "confidence": "high",
       "source_official": true,
       "id": "ea2243328160f13c"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "Energy Infrastructure for Europe’s Next Decade: Delivering Decarbonisation, Competitiveness and Resilience through the Mediterranean",
+      "date": "2026-11-17",
+      "date_text": "November 17, 2026",
+      "end_date": "2026-11-17",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "European Parliament, Brussels",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/infrastructure-for-europes-next-decade-delivering-decarbonisation-competitiveness-and-resilience-through-southeast-europe/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "DESFA",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/infrastructure-for-europes-next-decade-delivering-decarbonisation-competitiveness-and-resilience-through-southeast-europe/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "dc9687144b9fc867"
     },
     {
       "organization": "The Parliament",
@@ -1679,6 +1780,38 @@
       "confidence": "high",
       "source_official": true,
       "id": "94df012ecaeede65"
+    },
+    {
+      "organization": "POLITICO",
+      "title": "POLITICO Health Care Summit 2026",
+      "date": "2026-12-01",
+      "date_text": "1–2 December 2026",
+      "end_date": "2026-12-02",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Health",
+      "url": "https://www.politico.eu/health-care-summit-2026/",
+      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany Spain US Australia Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Brussels Playbook Capitals Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Pla",
+      "sponsors": [
+        {
+          "name": "MedTech Europe",
+          "role": "Partner",
+          "source_url": "https://www.politico.eu/health-care-summit-2026/",
+          "extraction": "known-official-page",
+          "confidence": "high"
+        },
+        {
+          "name": "EFPIA",
+          "role": "Partner",
+          "source_url": "https://www.politico.eu/health-care-summit-2026/",
+          "extraction": "known-official-page",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "8c798c8412cf3203"
     },
     {
       "organization": "Rapporteur",
