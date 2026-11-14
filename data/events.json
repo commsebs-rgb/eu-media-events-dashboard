@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-11-13T13:17:38+00:00",
+  "last_updated_utc": "2026-11-14T12:21:29+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -24,31 +24,6 @@
     "Sponsor confidence is high for manual entries, medium for labelled text/logo extraction, and low for affiliation/programme inference."
   ],
   "events": [
-    {
-      "organization": "POLITICO",
-      "title": "Back in the game? Europe’s race for digital leadership",
-      "date": "2026-01-27",
-      "date_text": "January 27, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Digital",
-      "url": "https://www.politico.eu/event/back-in-the-game-europes-race-for-digital-leadership/",
-      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany Spain US Australia Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Brussels Playbook Capitals Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Pla",
-      "sponsors": [
-        {
-          "name": "Connect Europe",
-          "role": "Sponsor / partner",
-          "source_url": "https://www.politico.eu/event/back-in-the-game-europes-race-for-digital-leadership/",
-          "extraction": "auto-section-logo",
-          "confidence": "medium"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "c73c0e47a4301ae1"
-    },
     {
       "organization": "The Parliament",
       "title": "APA Awards 2026",
@@ -423,40 +398,6 @@
       "id": "91b1d99f837e50f5"
     },
     {
-      "organization": "POLITICO",
-      "title": "Brüssel-Alumni Stammtisch – Special Edition",
-      "date": "2026-06-04",
-      "date_text": "June 4, 2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Agriculture and Food, Technology, Digital",
-      "url": "https://www.politico.eu/event/brussel-alumni-stammtisch/",
-      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany Spain US Australia Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Brussels Playbook Capitals Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Pla",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "5d9025f06ec1e9a1"
-    },
-    {
-      "organization": "POLITICO",
-      "title": "POLITICO Pro Petit-Déjeuner – Budget 2027 : est-ce que ça va (vraiment) mal finir ?",
-      "date": "2026-06-10",
-      "date_text": "2026-10-06T08:15:00+00:00",
-      "end_date": "",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Agriculture and Food, Technology, Digital",
-      "url": "https://www.politico.eu/event/budget-2027-est-ce-que-ca-va-vraiment-mal-finir/",
-      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany Spain US Australia Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Brussels Playbook Capitals Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Pla",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "8eaade38dbfae217"
-    },
-    {
       "organization": "The Parliament",
       "title": "European Biotech Forum 2026",
       "date": "2026-06-11",
@@ -489,21 +430,57 @@
       "id": "db31efcd44690c58"
     },
     {
-      "organization": "POLITICO",
-      "title": "AperoPro: The incoming Irish Presidency of the Council of the EU",
-      "date": "2026-06-17",
-      "date_text": "June 17, 2026",
-      "end_date": "",
+      "organization": "The Parliament",
+      "title": "MEP Awards 2026",
+      "date": "2026-06-30",
+      "date_text": "June 30, 2026",
+      "end_date": "2026-06-30",
       "time_text": "",
       "city": "Brussels",
-      "venue": "",
-      "category": "Agriculture and Food, Technology, Digital",
-      "url": "https://www.politico.eu/event/aperopro-the-incoming-irish-presidency-of-the-council-of-the-eu/",
-      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany Spain US Australia Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Brussels Playbook Capitals Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Pla",
-      "sponsors": [],
+      "venue": "Albert Hall",
+      "category": "Awards",
+      "url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "MSD",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Coca Cola Europe",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Booking",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Microsoft",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        },
+        {
+          "name": "Camparigroup",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/mep-awards-2026/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
       "confidence": "high",
       "source_official": true,
-      "id": "8fc2194b29467423"
+      "id": "44efd8422555acfc"
     },
     {
       "organization": "The Parliament",
@@ -1230,6 +1207,23 @@
     },
     {
       "organization": "The Parliament",
+      "title": "Public Affairs Summit",
+      "date": "2026-11-04",
+      "date_text": "November 4, 2026",
+      "end_date": "2026-11-05",
+      "time_text": "9:00 am",
+      "city": "Brussels",
+      "venue": "Square Brussels",
+      "category": "Media Partner",
+      "url": "https://events.theparliamentmagazine.eu/event/public-affairs-summit-3/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "a79218710d72fbb0"
+    },
+    {
+      "organization": "The Parliament",
       "title": "Science that competes: Preparing Europe’s Biotech Ecosystem for Global Leadership",
       "date": "2026-11-04",
       "date_text": "November 4, 2026",
@@ -1628,6 +1622,31 @@
       "id": "659b07da2dbfb200"
     },
     {
+      "organization": "The Parliament",
+      "title": "Should journalists be afraid of content creators?",
+      "date": "2026-11-23",
+      "date_text": "November 23, 2026",
+      "end_date": "2026-11-23",
+      "time_text": "6:30 pm",
+      "city": "Brussels",
+      "venue": "The Merode",
+      "category": "PM+ Talks",
+      "url": "https://events.theparliamentmagazine.eu/event/pmtalks-should-journalists-be-afraid-of-content-creators/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Themerode",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/pmtalks-should-journalists-be-afraid-of-content-creators/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "72704044c6764099"
+    },
+    {
       "organization": "Rapporteur",
       "title": "Pro Briefing - The Hack",
       "date": "2026-11-24",
@@ -1643,6 +1662,23 @@
       "confidence": "high",
       "source_official": true,
       "id": "fcaace56488cd628"
+    },
+    {
+      "organization": "Rapporteur",
+      "title": "Made with Europe – Building a competitive and open European automotive industry",
+      "date": "2026-11-26",
+      "date_text": "26-11-2026",
+      "end_date": "",
+      "time_text": "",
+      "city": "Hybrid",
+      "venue": "",
+      "category": "Technology, Digital, Transport",
+      "url": "https://events.rapporteur.com/event/info/made-with-europe-building-a-competitive-and-open-european-automotive-industry/",
+      "description": "REGISTER HERE As the EU seeks to strengthen its industrial base and accelerate the transition to clean mobility, the debate over what constitutes a European-made vehicle is becoming increasingly important. The proposed Industrial Accelerator Act (IAA) and its “Made in Europe” provisions raise fundamental questions about competitiveness, investment, supply chain resilience, and Europe’s relationships with trusted international partners. While strengthening European manufacturing is a shared objective, overly restrictive local-content and assembly requirements risk disrupting established supply chains, increasing costs and undermining the benefits of the EU’s international trade agreements. Co",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "5f8cf92ee4a743a4"
     },
     {
       "organization": "Rapporteur",
@@ -2010,6 +2046,31 @@
       "confidence": "high",
       "source_official": true,
       "id": "091df819cbd064eb"
+    },
+    {
+      "organization": "The Parliament",
+      "title": "Putting Menopause on the Map: From National Action to European Impact",
+      "date": "2026-12-10",
+      "date_text": "December 10, 2026",
+      "end_date": "2026-12-10",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "Blankspace Brussels",
+      "category": "Policy Events",
+      "url": "https://events.theparliamentmagazine.eu/event/putting-menopause-on-the-map-from-national-action-to-european-impact/",
+      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
+      "sponsors": [
+        {
+          "name": "Besins Healthcare",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/putting-menopause-on-the-map-from-national-action-to-european-impact/",
+          "extraction": "auto-section-link-domain",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "ee7b301019c9a659"
     }
   ]
 }
