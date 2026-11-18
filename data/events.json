@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-11-17T14:37:19+00:00",
+  "last_updated_utc": "2026-11-18T14:12:18+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -520,40 +520,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "231d12a9c18ca3f1"
-    },
-    {
-      "organization": "Rapporteur",
-      "title": "Euractiv Pro Briefing - HARVEST edition III",
-      "date": "2026-09-09",
-      "date_text": "09-09-2026",
-      "end_date": "",
-      "time_text": "8:30",
-      "city": "Rapporteur Office",
-      "venue": "",
-      "category": "Agriculture and Food, Technology, Digital",
-      "url": "https://events.rapporteur.com/event/info/euractiv-pro-briefing-harvest-edition-iii/",
-      "description": "This event is exclusive to Euractiv HARVEST Pro newsletter subscribers. If you are interested in a trial, contact our Pro team here . This in-person only event will offer an opportunity to deep-dive into EU policy with Euractiv's Agrifood Editor, Angelo Di Mambro, and his team of reporters. You will hear their personal insights by interacting with them in a private, off-the-record setting. Don’t miss this exclusive opportunity to engage with our experts and deepen your understanding of critical agrifood policies....staying a step ahead! By invitation only. Location Rapporteur Office Boulevard Charlemagne 1, 1041 Brussels Google Maps Schedule 8:30 - 9:30 CET Contact Laurine Augere Laurine.Aug",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "4e0c0de09b455e15"
-    },
-    {
-      "organization": "Rapporteur",
-      "title": "Ending HIV in Europe - Are we moving fast enough to achieve the 2030 targets?",
-      "date": "2026-09-10",
-      "date_text": "10-09-2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Online",
-      "venue": "",
-      "category": "Health and Consumers, Digital, Economy",
-      "url": "https://events.rapporteur.com/event/info/ending-hiv-in-europe-are-we-moving-fast-enough-to-achieve-the-2030-targets/",
-      "description": "WATCH THE RECORDING HERE Although HIV is preventable, it remains a significant public health concern in EU/EEA countries, with around 24,000–25,000 new diagnoses reported each year. This figure has stabilised in recent years and is no longer decreasing, with increases observed in certain geographies and population groups. The European Centre for Disease Prevention and Control (ECDC) estimates that close to 800,000 people are living with HIV in the region, most of whom are diagnosed. However, nearly half of new diagnoses occur at a late stage of infection, often several years after exposure, when individuals may be diagnosed too late for optimal medical outcomes, face a significantly higher r",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "43fb53330903db02"
     },
     {
       "organization": "Rapporteur",
@@ -1079,23 +1045,6 @@
       "id": "8f2bdb6eff34c3af"
     },
     {
-      "organization": "The Parliament",
-      "title": "ADIPEC 2026",
-      "date": "2026-11-02",
-      "date_text": "November 2, 2026",
-      "end_date": "2026-11-05",
-      "time_text": "",
-      "city": "Abu Dhabi",
-      "venue": "ADNEC Centre Abu Dhabi",
-      "category": "Media Partner",
-      "url": "https://events.theparliamentmagazine.eu/event/adipec-2026/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "943801ed802d4431"
-    },
-    {
       "organization": "Rapporteur",
       "title": "Media Partnership - Global Europe Instrument: Role of European Development Banks in Delivering EU External Action",
       "date": "2026-11-03",
@@ -1179,73 +1128,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "9452c07683506993"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "A stronger single market: Local investment, market realities and consumer value",
-      "date": "2026-11-04",
-      "date_text": "November 4, 2026",
-      "end_date": "2026-11-04",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/a-stronger-single-market-local-investment-market-realities-and-consumer-value/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Cocacolaep",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/a-stronger-single-market-local-investment-market-realities-and-consumer-value/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "25ef301de52943c7"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "Public Affairs Summit",
-      "date": "2026-11-04",
-      "date_text": "November 4, 2026",
-      "end_date": "2026-11-05",
-      "time_text": "9:00 am",
-      "city": "Brussels",
-      "venue": "Square Brussels",
-      "category": "Media Partner",
-      "url": "https://events.theparliamentmagazine.eu/event/public-affairs-summit-3/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "a79218710d72fbb0"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "Science that competes: Preparing Europe’s Biotech Ecosystem for Global Leadership",
-      "date": "2026-11-04",
-      "date_text": "November 4, 2026",
-      "end_date": "2026-11-04",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/science-that-competes-preparing-europes-biotech-ecosystem-for-global-leadership/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Bayer",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/science-that-competes-preparing-europes-biotech-ecosystem-for-global-leadership/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "2a40ded44781a88b"
     },
     {
       "organization": "The Parliament",
@@ -1442,7 +1324,7 @@
       "venue": "",
       "category": "Technology, Digital, Transport",
       "url": "https://events.rapporteur.com/event/info/ecosystems-brussels-buzzword-or-europes-best-bet-to-scale/",
-      "description": "REGISTER HERE Europe does not lack ideas, entrepreneurs or world-class research. Its challenge is turning innovation into successful companies that can scale, create industrial jobs and compete globally. As highlighted in the Draghi report, Europe's innovation gap is increasingly a competitiveness issue, while global competitors have developed powerful industrial and innovation ecosystems capable of moving rapidly from technological breakthroughs to commercial deployment. This challenge is particularly visible in mobility. As Europe seeks to decarbonise transport while protecting its industrial base, competition from China and the US is intensifying across electric vehicles, batteries and cl",
+      "description": "Watch the recording here Europe does not lack ideas, entrepreneurs or world-class research. Its challenge is turning innovation into successful companies that can scale, create industrial jobs and compete globally. As highlighted in the Draghi report, Europe's innovation gap is increasingly a competitiveness issue, while global competitors have developed powerful industrial and innovation ecosystems capable of moving rapidly from technological breakthroughs to commercial deployment. This challenge is particularly visible in mobility. As Europe seeks to decarbonise transport while protecting its industrial base, competition from China and the US is intensifying across electric vehicles, batte",
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
@@ -1459,7 +1341,7 @@
       "venue": "",
       "category": "Health and Consumers, Digital, Economy",
       "url": "https://events.rapporteur.com/event/info/europes-life-sciences-competitiveness-agenda-innovation-investment-and-global-leadership-in-a-changing-world/",
-      "description": "Watch live here Time: 12:30 - 12:45 KEYNOTE ADDRESS by Olivér Várhelyi, European Commissioner for Health and Animal Welfare --------------------------------------------------------------------------------------------- Time: 12:45 - 13:30 CET Panel 1: The EU Biotech Act - Europe's opportunity to reclaim innovation leadership Europe's life sciences sector remains one of the continent's greatest scientific assets, yet concerns continue to grow over its ability to compete with increasingly attractive innovation ecosystems in the United States and Asia. Investment decisions, research activity and clinical development programmes are increasingly shaped by global competition, raising questions abou",
+      "description": "Watch the recording here Time: 12:30 - 12:45 KEYNOTE ADDRESS by Olivér Várhelyi, European Commissioner for Health and Animal Welfare --------------------------------------------------------------------------------------------- Time: 12:45 - 13:30 CET Panel 1: The EU Biotech Act - Europe's opportunity to reclaim innovation leadership Europe's life sciences sector remains one of the continent's greatest scientific assets, yet concerns continue to grow over its ability to compete with increasingly attractive innovation ecosystems in the United States and Asia. Investment decisions, research activity and clinical development programmes are increasingly shaped by global competition, raising quest",
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
@@ -1565,7 +1447,7 @@
       "venue": "",
       "category": "Awards, Energy and Environment, Technology",
       "url": "https://events.rapporteur.com/event/info/from-ambition-to-action-is-the-critical-raw-materials-act-delivering-for-nickel/",
-      "description": "Register here The EU’s Critical Raw Materials Act (CRMA) was designed to strengthen Europe’s access to the materials essential for its green, digital and defence ambitions. With targets for domestic extraction, processing and recycling, faster permitting and the designation of Strategic Projects, the legislation represents a significant attempt to reduce Europe’s strategic dependencies and build more resilient supply chains. Nickel, classified by the EU as both a critical and strategic raw material, provides an important test of whether these ambitions are translating into improved conditions on the ground. European nickel producers face high energy and operating costs, lengthy investment cy",
+      "description": "Watch the recording here The EU’s Critical Raw Materials Act (CRMA) was designed to strengthen Europe’s access to the materials essential for its green, digital and defence ambitions. With targets for domestic extraction, processing and recycling, faster permitting and the designation of Strategic Projects, the legislation represents a significant attempt to reduce Europe’s strategic dependencies and build more resilient supply chains. Nickel, classified by the EU as both a critical and strategic raw material, provides an important test of whether these ambitions are translating into improved conditions on the ground. European nickel producers face high energy and operating costs, lengthy in",
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
@@ -1679,6 +1561,23 @@
       "confidence": "high",
       "source_official": true,
       "id": "5f8cf92ee4a743a4"
+    },
+    {
+      "organization": "Rapporteur",
+      "title": "Federalism - A route to complete the single market?",
+      "date": "2026-11-30",
+      "date_text": "30-11-2026",
+      "end_date": "",
+      "time_text": "",
+      "city": "European Parliament",
+      "venue": "",
+      "category": "Technology, Economy, Health",
+      "url": "https://events.rapporteur.com/event/info/federalism-a-route-to-complete-the-single-market/",
+      "description": "REGISTER HERE The single market is Europe’s biggest economic achievement, and it is still unfinished. IMF estimates suggest the non-tariff barriers left between member states work like a 45% tariff on goods and a 110% tariff on services. That is far higher than the 15% tariff the US now charges on European goods. The European Parliamentary Research Service puts the gain from completing the single market at between €651 billion and €1.1 trillion a year. So why, after more than thirty years, is the single market still incomplete? One answer blames how the Union is built. The treaties give the EU five exclusive competences and fifteen shared ones, so the line between Brussels and national capit",
+      "sponsors": [],
+      "confidence": "high",
+      "source_official": true,
+      "id": "154b77f4ec2bba55"
     },
     {
       "organization": "Rapporteur",
