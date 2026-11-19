@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-11-18T14:12:18+00:00",
+  "last_updated_utc": "2026-11-19T14:35:54+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -520,23 +520,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "231d12a9c18ca3f1"
-    },
-    {
-      "organization": "Rapporteur",
-      "title": "Flying through global uncertainty - What is Europe’s plan for aviation?",
-      "date": "2026-09-10",
-      "date_text": "10-09-2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "Rapporteur Office",
-      "venue": "",
-      "category": "Technology, Digital, Transport",
-      "url": "https://events.rapporteur.com/event/info/flying-through-global-uncertainty-what-is-europes-plan-for-aviation/",
-      "description": "European airlines remain central to Europe’s connectivity and global competitiveness. Yet, the sector faces an increasingly complex operating environment, geopolitical instability, energy market volatility, and evolving travel demand. Higher fuel costs, disproportionate airport charges, air traffic controller disruptions, and border security delays are also adding further pressure. This all raises serious questions about Europe’s ability to maintain its position as a leading global destination and hub while maintaining the cost of flying for passengers. The regulatory framework is also evolving rapidly. The upcoming EU Emissions Trading System (ETS) for aviation risks exacerbating geopolitic",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "3b344db3cf5066b1"
     },
     {
       "organization": "Rapporteur",
@@ -1564,23 +1547,6 @@
     },
     {
       "organization": "Rapporteur",
-      "title": "Federalism - A route to complete the single market?",
-      "date": "2026-11-30",
-      "date_text": "30-11-2026",
-      "end_date": "",
-      "time_text": "",
-      "city": "European Parliament",
-      "venue": "",
-      "category": "Technology, Economy, Health",
-      "url": "https://events.rapporteur.com/event/info/federalism-a-route-to-complete-the-single-market/",
-      "description": "REGISTER HERE The single market is Europe’s biggest economic achievement, and it is still unfinished. IMF estimates suggest the non-tariff barriers left between member states work like a 45% tariff on goods and a 110% tariff on services. That is far higher than the 15% tariff the US now charges on European goods. The European Parliamentary Research Service puts the gain from completing the single market at between €651 billion and €1.1 trillion a year. So why, after more than thirty years, is the single market still incomplete? One answer blames how the Union is built. The treaties give the EU five exclusive competences and fifteen shared ones, so the line between Brussels and national capit",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "154b77f4ec2bba55"
-    },
-    {
-      "organization": "Rapporteur",
       "title": "FIREPOWER: Europe’s Defence Investment Race",
       "date": "2026-11-30",
       "date_text": "30-11-2026",
@@ -1597,36 +1563,21 @@
       "id": "94df012ecaeede65"
     },
     {
-      "organization": "POLITICO",
-      "title": "POLITICO Health Care Summit 2026",
-      "date": "2026-12-01",
-      "date_text": "1–2 December 2026",
-      "end_date": "2026-12-02",
+      "organization": "Rapporteur",
+      "title": "Media Partnership: Federalism - A route to complete the single market?",
+      "date": "2026-11-30",
+      "date_text": "30-11-2026",
+      "end_date": "",
       "time_text": "",
-      "city": "Brussels",
+      "city": "European Parliament",
       "venue": "",
-      "category": "Health",
-      "url": "https://www.politico.eu/health-care-summit-2026/",
-      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany Spain US Australia Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Brussels Playbook Capitals Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Pla",
-      "sponsors": [
-        {
-          "name": "MedTech Europe",
-          "role": "Partner",
-          "source_url": "https://www.politico.eu/health-care-summit-2026/",
-          "extraction": "known-official-page",
-          "confidence": "high"
-        },
-        {
-          "name": "EFPIA",
-          "role": "Partner",
-          "source_url": "https://www.politico.eu/health-care-summit-2026/",
-          "extraction": "known-official-page",
-          "confidence": "high"
-        }
-      ],
+      "category": "Technology, Economy, Health",
+      "url": "https://events.rapporteur.com/event/info/federalism-a-route-to-complete-the-single-market/",
+      "description": "REGISTER HERE The single market is Europe’s biggest economic achievement, and it is still unfinished. IMF estimates suggest the non-tariff barriers left between member states work like a 45% tariff on goods and a 110% tariff on services. That is far higher than the 15% tariff the US now charges on European goods. The European Parliamentary Research Service puts the gain from completing the single market at between €651 billion and €1.1 trillion a year. So why, after more than thirty years, is the single market still incomplete? One answer blames how the Union is built. The treaties give the EU five exclusive competences and fifteen shared ones, so the line between Brussels and national capit",
+      "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "8c798c8412cf3203"
+      "id": "f9485ff70a3fba11"
     },
     {
       "organization": "Rapporteur",
@@ -1889,7 +1840,7 @@
       "venue": "",
       "category": "Awards, Energy and Environment, Technology",
       "url": "https://events.rapporteur.com/event/info/delivering-clean-ammonia-making-eu-climate-and-energy-policy-fit-for-purpose/",
-      "description": "Register here As the EU seeks to balance climate ambitions, energy security and industrial competitiveness, clean ammonia can contribute to the decarbonisation of industry and transport. However, high production costs, uncertain demand, and investment risks continue to constrain its deployment. The review of the Renewable Energy Directive (RED IV), and the revision of the EU Emissions Trading System (ETS) offer opportunities to address these challenges. This Rapporteur Hybrid Conference will explore how the two frameworks can support clean ammonia production and uptake, provide clearer investment signals and safeguard Europe’s industrial competitiveness. OPENING REMARKS: Stephen Jackson, Chi",
+      "description": "Register here As the EU seeks to balance climate ambitions, energy security and industrial competitiveness, clean ammonia can contribute to the decarbonisation of industry and transport. However, high production costs, uncertain demand, and investment risks continue to constrain its deployment. The review of the Renewable Energy Directive (RED IV), and the revision of the EU Emissions Trading System (ETS) offer opportunities to address these challenges. This Rapporteur Hybrid Conference will explore how the two frameworks can support clean ammonia production and uptake, provide clearer investment signals and safeguard Europe’s industrial competitiveness. OPENING REMARKS: Stephen Jackson , Ch",
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
