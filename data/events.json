@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-11-19T14:35:54+00:00",
+  "last_updated_utc": "2026-11-20T14:10:51+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -1156,31 +1156,6 @@
     },
     {
       "organization": "The Parliament",
-      "title": "Beyond a Health Issue: Uniting Stakeholders Behind the FEMM Report on Menopause",
-      "date": "2026-11-10",
-      "date_text": "November 10, 2026",
-      "end_date": "2026-11-10",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/beyond-a-health-issue-uniting-stakeholders-behind-the-femm-report-on-menopause/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Bayer",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/beyond-a-health-issue-uniting-stakeholders-behind-the-femm-report-on-menopause/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "40a7aa5c2e446d40"
-    },
-    {
-      "organization": "The Parliament",
       "title": "Refining and fuel manufacturing: A strategic asset Europe cannot afford to lose",
       "date": "2026-11-10",
       "date_text": "November 10, 2026",
@@ -1195,31 +1170,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "649b817c13853e45"
-    },
-    {
-      "organization": "The Parliament",
-      "title": "Staying Ahead of Fraud: Real Stories, Emerging Threats and Europe’s Response",
-      "date": "2026-11-10",
-      "date_text": "November 10, 2026",
-      "end_date": "2026-11-10",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "European Parliament, Brussels",
-      "category": "Policy Events",
-      "url": "https://events.theparliamentmagazine.eu/event/staying-ahead-of-fraud-real-stories-emerging-threats-and-europes-response/",
-      "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
-      "sponsors": [
-        {
-          "name": "Visa",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/staying-ahead-of-fraud-real-stories-emerging-threats-and-europes-response/",
-          "extraction": "auto-section-link-domain",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "41e7d7ea28e459a4"
     },
     {
       "organization": "The Parliament",
@@ -1277,7 +1227,7 @@
       "date": "2026-11-16",
       "date_text": "November 16, 2026",
       "end_date": "2026-11-19",
-      "time_text": "",
+      "time_text": "9:00 am",
       "city": "Brussels",
       "venue": "Bump Policy Experience Space",
       "category": "Policy Events",
@@ -1804,7 +1754,7 @@
       "time_text": "",
       "city": "Hybrid",
       "venue": "",
-      "category": "Technology, Digital, Energy",
+      "category": "Technology, Digital, Economy",
       "url": "https://events.rapporteur.com/event/info/media-partnership-sovereignty-through-partnership-trusted-technology-in-an-interconnected-world/",
       "description": "REGISTER HERE Europe is entering an important phase in the debate over technology sovereignty. As the European Union seeks to strengthen its security, economic resilience, and AI competitiveness, policymakers are considering how Europe can exercise greater control over critical technologies, infrastructure, and data. At the same time, cloud computing, AI, and other advanced technologies are increasingly global in their development and deployment, making openness, competition, and international partnerships crucial components of Europe’s ability to innovate and scale. Sovereignty Through Partnership: Trusted Technology in an Interconnected World will take place in Brussels at a pivotal moment",
       "sponsors": [],
