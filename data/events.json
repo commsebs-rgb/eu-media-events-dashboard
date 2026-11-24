@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-11-23T16:09:23+00:00",
+  "last_updated_utc": "2026-11-24T16:03:19+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -53,6 +53,13 @@
         },
         {
           "name": "Herbalife",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/apa-awards/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
+          "name": "Steel Packaging 24 11 51 896710",
           "role": "Partner",
           "source_url": "https://events.theparliamentmagazine.eu/event/apa-awards/",
           "extraction": "auto-section-logo",
@@ -1506,7 +1513,7 @@
       "venue": "",
       "category": "Defense",
       "url": "https://events.rapporteur.com/event/info/firepower-europes-defence-investment-race/",
-      "description": "This event is by invitation only. Any questions regarding participation please contact mediasolutions@rapporteur.com 17:30 – 18:15 | Panel Discussion: The Defence Investment Race: Where Should Industry Put Its Money? A high-level discussion on where governments need industry to invest now — and which capability gaps are creating real demand. Leaders from investment and defence institutions will explore procurement signals, access to finance, and how SMEs and start-ups can break into defence markets. The panel will also examine how industry can avoid building capacity without a clear route to market, and what Europe’s defence ecosystem needs to build today — not five years from now. Confirmed",
+      "description": "This event is by invitation only. Any questions regarding participation please contact mediasolutions@rapporteur.com 17:30 – 18:15 | Panel Discussion: The Defence Investment Race: Where Should Industry Put Its Money? A high-level discussion on where governments need industry to invest now — and which capability gaps are creating real demand. Leaders from investment and defence institutions will explore procurement signals, access to finance, and how SMEs and start-ups can break into defence markets. The panel will also examine how industry can avoid building capacity without a clear route to market, and what Europe’s defence ecosystem needs to build today — not five years from now. Speakers:",
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
