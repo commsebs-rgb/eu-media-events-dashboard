@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-11-24T16:03:19+00:00",
+  "last_updated_utc": "2026-11-25T15:47:10+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -527,23 +527,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "231d12a9c18ca3f1"
-    },
-    {
-      "organization": "Rapporteur",
-      "title": "Euractiv Pro Briefing - FIRST AID edition III",
-      "date": "2026-09-22",
-      "date_text": "22-09-2026",
-      "end_date": "",
-      "time_text": "8:30",
-      "city": "Rapporteur Office",
-      "venue": "",
-      "category": "Health and Consumers, Digital, Health",
-      "url": "https://events.rapporteur.com/event/info/euractiv-pro-briefing-first-aid-edition-iii/",
-      "description": "This event is exclusive to Euractiv FIRST AID newsletter subscribers. If you are interested in a trial, contact our Pro team here . This in-person event will offer an opportunity to deep-dive into EU policy with Euractiv's Health Editor, Brenda Strohmaier, and her team of reporters. You will hear their personal insights by interacting with them in a private, off-the-record setting. Don’t miss this exclusive opportunity to engage with our experts and deepen your understanding of critical health policies....staying a step ahead! By invitation only. Location Rapporteur Office Boulevard Charlemagne 1, 1041 Brussels Google Maps Schedule 8:30 - 9:30 Contact Laurine Augere Laurine.Augere@rapporteur",
-      "sponsors": [],
-      "confidence": "high",
-      "source_official": true,
-      "id": "3b3238c905fb3a66"
     },
     {
       "organization": "Rapporteur",
