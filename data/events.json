@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-11-25T15:47:10+00:00",
+  "last_updated_utc": "2026-11-26T15:28:34+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -38,6 +38,13 @@
       "description": "Home Policy Events Summits PM+ Talks Awards About Us Partnership PARTNER WITH US PM+ MEMBERSHIP The Parliament",
       "sponsors": [
         {
+          "name": "Steel Packaging 24 11 51 896710",
+          "role": "Partner",
+          "source_url": "https://events.theparliamentmagazine.eu/event/apa-awards/",
+          "extraction": "auto-section-logo",
+          "confidence": "high"
+        },
+        {
           "name": "EFFAS",
           "role": "Partner",
           "source_url": "https://events.theparliamentmagazine.eu/event/apa-awards/",
@@ -59,21 +66,14 @@
           "confidence": "high"
         },
         {
-          "name": "Steel Packaging 24 11 51 896710",
-          "role": "Partner",
-          "source_url": "https://events.theparliamentmagazine.eu/event/apa-awards/",
-          "extraction": "auto-section-logo",
-          "confidence": "high"
-        },
-        {
-          "name": "Aboca",
+          "name": "Steelforpackagingeurope",
           "role": "Partner",
           "source_url": "https://events.theparliamentmagazine.eu/event/apa-awards/",
           "extraction": "auto-section-link-domain",
           "confidence": "high"
         },
         {
-          "name": "Steelforpackagingeurope",
+          "name": "Aboca",
           "role": "Partner",
           "source_url": "https://events.theparliamentmagazine.eu/event/apa-awards/",
           "extraction": "auto-section-link-domain",
@@ -246,14 +246,14 @@
           "confidence": "high"
         },
         {
-          "name": "Metalpackagingeurope",
+          "name": "Unesda",
           "role": "Partner",
           "source_url": "https://events.theparliamentmagazine.eu/event/circular-economy-forum/",
           "extraction": "auto-section-link-domain",
           "confidence": "high"
         },
         {
-          "name": "Unesda",
+          "name": "Metalpackagingeurope",
           "role": "Partner",
           "source_url": "https://events.theparliamentmagazine.eu/event/circular-economy-forum/",
           "extraction": "auto-section-link-domain",
@@ -1479,7 +1479,7 @@
       "venue": "",
       "category": "Technology, Digital, Transport",
       "url": "https://events.rapporteur.com/event/info/made-with-europe-building-a-competitive-and-open-european-automotive-industry/",
-      "description": "REGISTER HERE As the EU seeks to strengthen its industrial base and accelerate the transition to clean mobility, the debate over what constitutes a European-made vehicle is becoming increasingly important. The proposed Industrial Accelerator Act (IAA) and its “Made in Europe” provisions raise fundamental questions about competitiveness, investment, supply chain resilience, and Europe’s relationships with trusted international partners. While strengthening European manufacturing is a shared objective, overly restrictive local-content and assembly requirements risk disrupting established supply chains, increasing costs and undermining the benefits of the EU’s international trade agreements. Co",
+      "description": "WATCH THE RECORDING HERE As the EU seeks to strengthen its industrial base and accelerate the transition to clean mobility, the debate over what constitutes a European-made vehicle is becoming increasingly important. The proposed Industrial Accelerator Act (IAA) and its “Made in Europe” provisions raise fundamental questions about competitiveness, investment, supply chain resilience, and Europe’s relationships with trusted international partners. While strengthening European manufacturing is a shared objective, overly restrictive local-content and assembly requirements risk disrupting established supply chains, increasing costs and undermining the benefits of the EU’s international trade agr",
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
@@ -1496,7 +1496,7 @@
       "venue": "",
       "category": "Defense",
       "url": "https://events.rapporteur.com/event/info/firepower-europes-defence-investment-race/",
-      "description": "This event is by invitation only. Any questions regarding participation please contact mediasolutions@rapporteur.com 17:30 – 18:15 | Panel Discussion: The Defence Investment Race: Where Should Industry Put Its Money? A high-level discussion on where governments need industry to invest now — and which capability gaps are creating real demand. Leaders from investment and defence institutions will explore procurement signals, access to finance, and how SMEs and start-ups can break into defence markets. The panel will also examine how industry can avoid building capacity without a clear route to market, and what Europe’s defence ecosystem needs to build today — not five years from now. Speakers:",
+      "description": "This event is by invitation only. 17:30 – 18:15 | Panel Discussion: The Defence Investment Race: Where Should Industry Put Its Money? A high-level discussion on where governments need industry to invest now — and which capability gaps are creating real demand. Leaders from investment and defence institutions will explore procurement signals, access to finance, and how SMEs and start-ups can break into defence markets. The panel will also examine how industry can avoid building capacity without a clear route to market, and what Europe’s defence ecosystem needs to build today — not five years from now. Speakers: Anders Sjöborg , Deputy Chief Executive, European Defense Agency Oliver Cusworth ,",
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
@@ -1518,38 +1518,6 @@
       "confidence": "high",
       "source_official": true,
       "id": "f9485ff70a3fba11"
-    },
-    {
-      "organization": "POLITICO",
-      "title": "POLITICO Health Care Summit 2026",
-      "date": "2026-12-01",
-      "date_text": "1–2 December 2026",
-      "end_date": "2026-12-02",
-      "time_text": "",
-      "city": "Brussels",
-      "venue": "",
-      "category": "Health",
-      "url": "https://www.politico.eu/health-care-summit-2026/",
-      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany Spain US Australia Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Brussels Playbook Capitals Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Pla",
-      "sponsors": [
-        {
-          "name": "MedTech Europe",
-          "role": "Partner",
-          "source_url": "https://www.politico.eu/health-care-summit-2026/",
-          "extraction": "known-official-page",
-          "confidence": "high"
-        },
-        {
-          "name": "EFPIA",
-          "role": "Partner",
-          "source_url": "https://www.politico.eu/health-care-summit-2026/",
-          "extraction": "known-official-page",
-          "confidence": "high"
-        }
-      ],
-      "confidence": "high",
-      "source_official": true,
-      "id": "8c798c8412cf3203"
     },
     {
       "organization": "Rapporteur",
@@ -1803,7 +1771,7 @@
     },
     {
       "organization": "Rapporteur",
-      "title": "Delivering clean ammonia - Making EU climate and energy policy fit-for-purpose",
+      "title": "Delivering 'clean ammonia' - Making EU climate and energy policy fit-for-purpose",
       "date": "2026-12-10",
       "date_text": "10-12-2026",
       "end_date": "",
@@ -1816,7 +1784,7 @@
       "sponsors": [],
       "confidence": "high",
       "source_official": true,
-      "id": "5bf6c06c06751a20"
+      "id": "981a09738a53960e"
     },
     {
       "organization": "Rapporteur",
