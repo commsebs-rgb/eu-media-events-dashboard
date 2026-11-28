@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-11-27T15:16:46+00:00",
+  "last_updated_utc": "2026-11-28T14:23:03+00:00",
   "date_window": {
     "start": "2026-01-01",
     "end": "2026-12-31"
@@ -1501,6 +1501,38 @@
       "confidence": "high",
       "source_official": true,
       "id": "f9485ff70a3fba11"
+    },
+    {
+      "organization": "POLITICO",
+      "title": "POLITICO Health Care Summit 2026",
+      "date": "2026-12-01",
+      "date_text": "1–2 December 2026",
+      "end_date": "2026-12-02",
+      "time_text": "",
+      "city": "Brussels",
+      "venue": "",
+      "category": "Health",
+      "url": "https://www.politico.eu/health-care-summit-2026/",
+      "description": "Menu Search for: Search Edition: Europe Europe UK France Germany Spain US Australia Policy areas Agriculture and Food Central Banker Competition and Industrial Policy Cybersecurity and Data Protection Defense Energy and Climate Energy and Climate UK Energie et Climat France Energie & Klima DE Financial Services Financial Services UK Gesundheit Health Care Industrie & Handel DE Mobility Paris Influence Sustainability Technology Tech France Technologie & KI Technology UK Trade Trade UK Newsletters Berlin Playbook Brussels Playbook Brussels Playbook Capitals Dimanchissime EU Influence Forecast Global Playbook Global Policy Lab: Living Cities Global Security Le Weekly London Influence London Pla",
+      "sponsors": [
+        {
+          "name": "MedTech Europe",
+          "role": "Partner",
+          "source_url": "https://www.politico.eu/health-care-summit-2026/",
+          "extraction": "known-official-page",
+          "confidence": "high"
+        },
+        {
+          "name": "EFPIA",
+          "role": "Partner",
+          "source_url": "https://www.politico.eu/health-care-summit-2026/",
+          "extraction": "known-official-page",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high",
+      "source_official": true,
+      "id": "8c798c8412cf3203"
     },
     {
       "organization": "Rapporteur",
